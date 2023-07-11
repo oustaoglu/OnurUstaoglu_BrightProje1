@@ -14,7 +14,7 @@ namespace EducationApp.Data.Concrete.EFCore.Contexts
         public DbSet<Product> Products { get; set; }
         public DbSet<Instructor> Instructors { get; set; }
         public DbSet<Category> Categories { get; set; }
-        public DbSet<ProductInstructor> ProductInstructors { get; set; }
+        public DbSet<ProductCategory> ProductCategories { get; set; }
 
 		protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
 		{

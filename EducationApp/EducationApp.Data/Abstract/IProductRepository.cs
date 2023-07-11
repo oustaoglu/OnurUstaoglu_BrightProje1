@@ -9,5 +9,8 @@ namespace EducationApp.Data.Abstract
 {
 	public interface IProductRepository : IGenericRepository<Product>
 	{
+		Task<List<Product>> GetHomePageProductsAsync();
+		Task<List<Product>> GetAllActiveProductsAsync(string categoryUrl = null, string instructorUrl = null);
+		Task<Product> GetProductByUrlAsync(string bookUrl);
 	}
 }

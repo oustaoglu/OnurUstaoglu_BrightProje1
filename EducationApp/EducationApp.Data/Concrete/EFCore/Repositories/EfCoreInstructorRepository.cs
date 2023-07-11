@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace EducationApp.Data.Concrete.EFCore.Repositories
 {
-	public class EfCoreInstructorRepository : IGenericRepository<Instructor>, IInstructorRepository
+	public class EfCoreInstructorRepository : EfCoreGenericRepository<Instructor>, IInstructorRepository
 	{
 	}
 }

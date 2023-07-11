@@ -34,16 +34,51 @@ namespace EducationApp.Data.Concrete.EFCore.Configs
 				new Category
 				{
 					Id = 1,
-					Name = "Bilim Kurgu",
-					Description = "Bilim Kurgu Kitapları",
-					Url = "bilim-kurgu"
+					Name = "Yazılım Geliştime",
+					Description = "sadafsffddsavb",
+					Url = "yazilim-gelistirme"
 				},
 				new Category
 				{
 					Id = 2,
-					Name = "Türkiye Tarihi",
-					Description = "Türkiye Tarihi Kitapları",
-					Url = "turkiye-tarihi"
+					Name = "Mobil",
+					Description = "asdasfdsffsdf",
+					Url = "mobil"
+				},
+				new Category
+				{
+					Id = 3,
+					Name = "Web",
+					Description = "asdasfdsffsdf",
+					Url = "web"
+				},
+				new Category
+				{
+					Id = 4,
+					Name = "Veri Tabanı",
+					Description = "asdasfdsffsdf",
+					Url = "veri-tabanı"
+				},
+				new Category
+				{
+					Id = 5,
+					Name = "Veri ve Veri Bilimi",
+					Description = "asdasfdsffsdf",
+					Url = "veri-ve-veri-bilimi"
+				},
+				new Category
+				{
+					Id = 6,
+					Name = "DevOps",
+					Description = "asdasfdsffsdf",
+					Url = "devops"
+				},
+				new Category
+				{
+					Id = 7,
+					Name = "Bulut",
+					Description = "asdasfdsffsdf",
+					Url = "bulut"
 				});
 		}
 	}

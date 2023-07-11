@@ -9,6 +9,14 @@ namespace EducationApp.Business.Abstract
 {
 	public interface IProductService
 	{
+		Task<Product> GetByIdAsync(int id);
+		Task<List<Product>> GetAllAsync();
+		Task CreateAsync(Product product);
+		void Update(Product product);
+		void Delete(Product product);
+
 		Task<List<Product>> GetHomePageProductsAsync();
+		Task<List<Product>> GetAllActiveProductsAsync(string categoryUrl = null, string instructorUrl = null);
+		Task<Product> GetProductByUrlAsync(string productUrl);
 	}
 }

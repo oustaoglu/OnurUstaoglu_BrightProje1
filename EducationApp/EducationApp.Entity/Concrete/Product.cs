@@ -18,5 +18,6 @@ namespace EducationApp.Entity.Concrete
 		public bool IsHome { get; set; }
 		public int InstructorId { get; set; }
 		public Instructor Instructor { get; set; }
+		public List<ProductCategory> ProductCategories { get; set; }
 	}
 }

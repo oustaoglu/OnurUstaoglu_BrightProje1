@@ -1,0 +1,21 @@
+﻿@model List<ProductViewModel>
+@{
+    ViewData["Title"] = "BooksApp Ana Sayfa";
+}
+<div class="row">
+
+    <div class="col-10">
+        <div class="row g-3">
+            @foreach (var productViewModel in Model)
+            {
+                <div class="col-2">
+                    @await Html.PartialAsync("_ProductPartial",productViewModel)
+                </div>
+            }
+        </div>
+    </div>
+    <div class="col-2">
+        @await Component.InvokeAsync("Categories")
+        @await Component.InvokeAsync("Instructors")
+    </div>
+</div>

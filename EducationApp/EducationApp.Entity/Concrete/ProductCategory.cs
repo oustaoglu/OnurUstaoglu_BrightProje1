@@ -6,11 +6,11 @@ using System.Threading.Tasks;
 
 namespace EducationApp.Entity.Concrete
 {
-	public class ProductInstructor
+	public class ProductCategory
 	{
         public int ProductId { get; set; }
         public Product Product { get; set; }
-        public int InstructorId { get; set; }
-        public Instructor Instructor { get; set; }
+        public int CategoryId { get; set; }
+        public Category Category { get; set; }
     }
 }
