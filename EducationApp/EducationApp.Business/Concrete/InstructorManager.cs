@@ -23,7 +23,12 @@ namespace EducationApp.Business.Concrete
 			await _instructorRepository.CreateAsync(instructor);
 		}
 
-		public void Delete(Instructor instructor)
+        public async Task CreateWithUrl(Instructor instructor)
+        {
+            await _instructorRepository.CreateWithUrl(instructor);
+        }
+
+        public void Delete(Instructor instructor)
 		{
 			_instructorRepository.Delete(instructor);
 		}
@@ -34,7 +39,13 @@ namespace EducationApp.Business.Concrete
             return result;
 		}
 
-		public async Task<Instructor> GetByIdAsync(int id)
+        public async Task<List<Instructor>> GetAllInstructorsAsync(bool isDeleted, bool? isActive = null)
+        {
+            var result = await _instructorRepository.GetAllInstructorsAsync(isDeleted, isActive);
+            return result;
+        }
+
+        public async Task<Instructor> GetByIdAsync(int id)
 		{
 			var result = await _instructorRepository.GetByIdAsync(id);
 			return result;

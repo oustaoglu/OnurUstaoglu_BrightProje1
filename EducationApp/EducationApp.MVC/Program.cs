@@ -1,3 +1,4 @@
+using AspNetCoreHero.ToastNotification;
 using EducationApp.Business.Abstract;
 using EducationApp.Business.Concrete;
 using EducationApp.Data.Abstract;
@@ -15,6 +16,13 @@ builder.Services.AddScoped<IProductRepository, EfCoreProductRepository>();
 builder.Services.AddScoped<IInstructorRepository, EfCoreInstructorRepository>();
 builder.Services.AddScoped<ICategoryRepository, EfCoreCategoryRepository>();
 
+builder.Services.AddNotyf(config =>
+{
+    config.DurationInSeconds = 5;
+    config.IsDismissable = true;
+    config.Position = NotyfPosition.BottomRight;
+});
+
 var app = builder.Build();
 
 if (!app.Environment.IsDevelopment())
@@ -30,8 +38,29 @@ app.UseRouting();
 
 app.UseAuthorization();
 
+
+
 app.MapControllerRoute(
-	name: "default",
-	pattern: "{controller=Home}/{action=Index}/{id?}");
+    name: "productsinstructor",
+    pattern: "ürünler/{instructorurl?}",
+    defaults: new { controller = "EducationApp", action = "ProductList" }
+    );
+
+app.MapControllerRoute(
+    name: "productscategory",
+    pattern: "ürünler/{categoryurl?}",
+    defaults: new { controller = "EducationApp", action = "ProductList" }
+    );
+
+
+app.MapAreaControllerRoute(
+    name: "Admin",
+    areaName: "Admin",
+    pattern: "admin/{controller=Home}/{action=Index}/{id?}"
+    );
+
+app.MapControllerRoute(
+    name: "default",
+    pattern: "{controller=Home}/{action=Index}/{id?}");
 
 app.Run();

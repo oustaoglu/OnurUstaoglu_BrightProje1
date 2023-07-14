@@ -74,3 +74,4 @@ C:\Users\onrus\OneDrive\Belgeler\OnurUstaoglu_BrightProje1\EducationApp\Educatio
 C:\Users\onrus\OneDrive\Belgeler\OnurUstaoglu_BrightProje1\EducationApp\EducationApp.MVC\bin\Debug\net7.0\EducationApp.Core.pdb
 C:\Users\onrus\OneDrive\Belgeler\OnurUstaoglu_BrightProje1\EducationApp\EducationApp.MVC\bin\Debug\net7.0\EducationApp.Data.pdb
 C:\Users\onrus\OneDrive\Belgeler\OnurUstaoglu_BrightProje1\EducationApp\EducationApp.MVC\bin\Debug\net7.0\EducationApp.Entity.pdb
+C:\Users\onrus\OneDrive\Belgeler\OnurUstaoglu_BrightProje1\EducationApp\EducationApp.MVC\obj\Debug\net7.0\EducationApp.MVC.MvcApplicationPartsAssemblyInfo.cs

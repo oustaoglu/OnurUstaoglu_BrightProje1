@@ -46,7 +46,7 @@ namespace EducationApp.Data.Concrete.EFCore.Configs
 					Id = 1,
 					Name = ".NET (.NET Core, MVC, Web & Desktop)",
 					Description = "test.",
-					Url = "ogrenci-kiz-1",
+					Url = ".net-core-mvc",
 					ImageUrl = "1.jpg",
 					Price = 100,
 					Time = DateTime.Now,
@@ -56,9 +56,9 @@ namespace EducationApp.Data.Concrete.EFCore.Configs
 				new Product
 				{
 					Id = 2,
-					Name = "Java (Spring, Java SE, Java EE),",
+					Name = "Java (Spring, Java SE, Java EE)",
 					Description = "testtt.",
-					Url = "sicak-kafa-20",
+					Url = "java",
 					ImageUrl = "2.jpg",
 					Price = 100,
 					Time = DateTime.Now,
@@ -70,7 +70,7 @@ namespace EducationApp.Data.Concrete.EFCore.Configs
 					Id = 3,
 					Name = "Python",
 					Description = "test.",
-					Url = "ogrenci-kiz-1",
+					Url = "python",
 					ImageUrl = "3.jpg",
 					Price = 100,
 					Time = DateTime.Now,
@@ -82,7 +82,7 @@ namespace EducationApp.Data.Concrete.EFCore.Configs
 					Id = 4,
 					Name = "JavaScript",
 					Description = "test.",
-					Url = "ogrenci-kiz-1",
+					Url = "javascript",
 					ImageUrl = "4.jpg",
 					Price = 100,
 					Time = DateTime.Now,
@@ -92,9 +92,9 @@ namespace EducationApp.Data.Concrete.EFCore.Configs
 				new Product
 				{
 					Id = 5,
-					Name = ".NET (.NET Core, MVC, Web & Desktop)",
+					Name = "C/C++",
 					Description = "test.",
-					Url = "ogrenci-kiz-1",
+					Url = "c/c++	",
 					ImageUrl = "5.jpg",
 					Price = 100,
 					Time = DateTime.Now,
@@ -104,9 +104,9 @@ namespace EducationApp.Data.Concrete.EFCore.Configs
 				new Product
 				{
 					Id = 6,
-					Name = "Java (Spring, Java SE, Java EE),",
+					Name = "iOS & Android",
 					Description = "testtt.",
-					Url = "sicak-kafa-20",
+					Url = "ios-android",
 					ImageUrl = "6.jpg",
 					Price = 100,
 					Time = DateTime.Now,
@@ -116,9 +116,9 @@ namespace EducationApp.Data.Concrete.EFCore.Configs
 				new Product
 				{
 					Id = 7,
-					Name = "Python",
+					Name = "React Native",
 					Description = "test.",
-					Url = "ogrenci-kiz-1",
+					Url = "react-native",
 					ImageUrl = "7.jpg",
 					Price = 100,
 					Time = DateTime.Now,
@@ -128,9 +128,9 @@ namespace EducationApp.Data.Concrete.EFCore.Configs
 				new Product
 				{
 					Id = 8,
-					Name = "JavaScript",
+					Name = "Flutter",
 					Description = "test.",
-					Url = "ogrenci-kiz-1",
+					Url = "flutter",
 					ImageUrl = "8.jpg",
 					Price = 100,
 					Time = DateTime.Now,
@@ -140,9 +140,9 @@ namespace EducationApp.Data.Concrete.EFCore.Configs
 				new Product
 				{
 					Id = 9,
-					Name = "MVC (.NET & Java)",
+					Name = "Ionic",
 					Description = "test.",
-					Url = "ogrenci-kiz-1",
+					Url = "ionic",
 					ImageUrl = "9.jpg",
 					Price = 100,
 					Time = DateTime.Now,
@@ -152,9 +152,9 @@ namespace EducationApp.Data.Concrete.EFCore.Configs
 				new Product
 				{
 					Id = 10,
-					Name = "PHP",
+					Name = "Unity",
 					Description = "test.",
-					Url = "ogrenci-kiz-1",
+					Url = "unity",
 					ImageUrl = "10.jpg",
 					Price = 100,
 					Time = DateTime.Now,
@@ -164,9 +164,9 @@ namespace EducationApp.Data.Concrete.EFCore.Configs
 				new Product
 				{
 					Id = 11,
-					Name = "React",
+					Name = "Unreal Engine",
 					Description = "test.",
-					Url = "ogrenci-kiz-1",
+					Url = "unreal-engine",
 					ImageUrl = "11.jpg",
 					Price = 100,
 					Time = DateTime.Now,
@@ -176,9 +176,9 @@ namespace EducationApp.Data.Concrete.EFCore.Configs
 				new Product
 				{
 					Id = 12,
-					Name = "Node.js",
+					Name = "GameMaker Studio",
 					Description = "testtt.",
-					Url = "sicak-kafa-20",
+					Url = "gamemaker-studio",
 					ImageUrl = "12.jpg",
 					Price = 100,
 					Time = DateTime.Now,
@@ -188,9 +188,9 @@ namespace EducationApp.Data.Concrete.EFCore.Configs
 				new Product
 				{
 					Id = 13,
-					Name = "Angular",
+					Name = "Buildbox",
 					Description = "test.",
-					Url = "ogrenci-kiz-1",
+					Url = "buildbox",
 					ImageUrl = "13.jpg",
 					Price = 100,
 					Time = DateTime.Now,
@@ -200,16 +200,207 @@ namespace EducationApp.Data.Concrete.EFCore.Configs
 				new Product
 				{
 					Id = 14,
-					Name = "Microsoft SQL Server",
+					Name = "PHP",
 					Description = "test.",
-					Url = "ogrenci-kiz-1",
+					Url = "php",
 					ImageUrl = "14.jpg",
 					Price = 100,
 					Time = DateTime.Now,
 					IsHome = true,
 					InstructorId = 14
-				});
-				
+				},
+                new Product
+                {
+                    Id = 15,
+                    Name = "React",
+                    Description = "test.",
+                    Url = "react",
+                    ImageUrl = "8.jpg",
+                    Price = 100,
+                    Time = DateTime.Now,
+                    IsHome = true,
+                    InstructorId = 8
+                },
+                new Product
+                {
+                    Id = 16,
+                    Name = "Angular",
+                    Description = "test.",
+                    Url = "angular",
+                    ImageUrl = "9.jpg",
+                    Price = 100,
+                    Time = DateTime.Now,
+                    IsHome = true,
+                    InstructorId = 9
+                },
+                new Product
+                {
+                    Id = 17,
+                    Name = "Node.js",
+                    Description = "test.",
+                    Url = "nodejs",
+                    ImageUrl = "10.jpg",
+                    Price = 100,
+                    Time = DateTime.Now,
+                    IsHome = true,
+                    InstructorId = 10
+                },
+                new Product
+                {
+                    Id = 18,
+                    Name = "Microsoft SQL Server",
+                    Description = "test.",
+                    Url = "microsoft-sql-server",
+                    ImageUrl = "11.jpg",
+                    Price = 100,
+                    Time = DateTime.Now,
+                    IsHome = true,
+                    InstructorId = 11
+                },
+                new Product
+                {
+                    Id = 19,
+                    Name = "MySQL",
+                    Description = "testtt.",
+                    Url = "mysql",
+                    ImageUrl = "12.jpg",
+                    Price = 100,
+                    Time = DateTime.Now,
+                    IsHome = true,
+                    InstructorId = 12
+                },
+                new Product
+                {
+                    Id = 20,
+                    Name = "PostgreSQL",
+                    Description = "test.",
+                    Url = "postgresql",
+                    ImageUrl = "13.jpg",
+                    Price = 100,
+                    Time = DateTime.Now,
+                    IsHome = true,
+                    InstructorId = 13
+                },
+                new Product
+                {
+                    Id = 21,
+                    Name = "SQLite",
+                    Description = "test.",
+                    Url = "sqlite",
+                    ImageUrl = "11.jpg",
+                    Price = 100,
+                    Time = DateTime.Now,
+                    IsHome = true,
+                    InstructorId = 11
+                },
+                new Product
+                {
+                    Id = 22,
+                    Name = "Oracle",
+                    Description = "testtt.",
+                    Url = "oracle",
+                    ImageUrl = "12.jpg",
+                    Price = 100,
+                    Time = DateTime.Now,
+                    IsHome = true,
+                    InstructorId = 12
+                },
+                new Product
+                {
+                    Id = 23,
+                    Name = "Docker",
+                    Description = "test.",
+                    Url = "docker",
+                    ImageUrl = "13.jpg",
+                    Price = 100,
+                    Time = DateTime.Now,
+                    IsHome = true,
+                    InstructorId = 13
+                },
+                new Product
+                {
+                    Id = 24,
+                    Name = "Jenkins",
+                    Description = "test.",
+                    Url = "jenkins",
+                    ImageUrl = "14.jpg",
+                    Price = 100,
+                    Time = DateTime.Now,
+                    IsHome = true,
+                    InstructorId = 14
+                },
+                new Product
+                {
+                    Id = 25,
+                    Name = "Ansible",
+                    Description = "test.",
+                    Url = "ansible",
+                    ImageUrl = "8.jpg",
+                    Price = 100,
+                    Time = DateTime.Now,
+                    IsHome = true,
+                    InstructorId = 8
+                },
+                new Product
+                {
+                    Id = 26,
+                    Name = "Sonarcube",
+                    Description = "test.",
+                    Url = "sonarcube",
+                    ImageUrl = "9.jpg",
+                    Price = 100,
+                    Time = DateTime.Now,
+                    IsHome = true,
+                    InstructorId = 9
+                },
+                new Product
+                {
+                    Id = 27,
+                    Name = "AWS",
+                    Description = "test.",
+                    Url = "aws",
+                    ImageUrl = "10.jpg",
+                    Price = 100,
+                    Time = DateTime.Now,
+                    IsHome = true,
+                    InstructorId = 10
+                },
+                new Product
+                {
+                    Id = 28,
+                    Name = "Azure",
+                    Description = "test.",
+                    Url = "azure",
+                    ImageUrl = "11.jpg",
+                    Price = 100,
+                    Time = DateTime.Now,
+                    IsHome = true,
+                    InstructorId = 11
+                },
+                new Product
+                {
+                    Id = 29,
+                    Name = "Serverless",
+                    Description = "testtt.",
+                    Url = "serverless",
+                    ImageUrl = "12.jpg",
+                    Price = 100,
+                    Time = DateTime.Now,
+                    IsHome = true,
+                    InstructorId = 12
+                },
+                new Product
+                {
+                    Id = 30,
+                    Name = "Cloud Storage",
+                    Description = "testtt.",
+                    Url = "cloudstorage",
+                    ImageUrl = "12.jpg",
+                    Price = 100,
+                    Time = DateTime.Now,
+                    IsHome = true,
+                    InstructorId = 12
+                });
 		}
 	}
 }

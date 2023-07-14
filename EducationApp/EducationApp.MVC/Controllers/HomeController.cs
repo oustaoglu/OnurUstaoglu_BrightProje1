@@ -18,16 +18,15 @@ namespace EducationApp.MVC.Controllers
         public async Task<IActionResult> Index()
         {
             List<Product> productList = await _productManager.GetHomePageProductsAsync();
-
-            List<ProductViewModel> productViewModelList = productList.Select(b => new ProductViewModel
+            List<ProductViewModel> productViewModelList = productList.Select(p => new ProductViewModel
             {
-                Id = b.Id,
-                Name = b.Name,
-                Price = b.Price,
-                Url = b.Url,
-                ImageUrl = b.ImageUrl,
-                InstructorName = b.Instructor.FirstName + " " + b.Instructor.LastName,
-                InstructorUrl = b.Instructor.Url,
+                Id = p.Id,
+                Name = p.Name,
+                Price = p.Price,
+                Url = p.Url,
+                ImageUrl = p.ImageUrl,
+                InstructorName = p.Instructor.FirstName + " " + p.Instructor.LastName,
+                InstructorUrl = p.Instructor.Url,
             }).ToList();
             return View(productViewModelList);
         }
