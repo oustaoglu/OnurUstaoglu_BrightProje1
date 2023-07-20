@@ -6,18 +6,18 @@ using System.Diagnostics;
 
 namespace EducationApp.MVC.Controllers
 {
-	public class HomeController : Controller
-	{
-		private readonly IProductService _productManager;
+    public class HomeController : Controller
+    {
+        private readonly IProductService _productManager;
 
-		public HomeController(ICategoryService categoryManager, IProductService productManager)
-		{
-			_productManager = productManager;
-		}
+        public HomeController(ICategoryService categoryManager, IProductService productManager)
+        {
+            _productManager = productManager;
+        }
 
         public async Task<IActionResult> Index()
         {
-            List<Product> productList = await _productManager.GetHomePageProductsAsync();
+            List<Product> productList = await _productManager.GetProductsWithFullDataAsync(true, true);
             List<ProductViewModel> productViewModelList = productList.Select(p => new ProductViewModel
             {
                 Id = p.Id,

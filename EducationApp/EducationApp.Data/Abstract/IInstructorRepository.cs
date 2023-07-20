@@ -10,6 +10,10 @@ namespace EducationApp.Data.Abstract
     public interface IInstructorRepository : IGenericRepository<Instructor>
     {
         Task CreateWithUrl(Instructor instructor);
+        Task<List<Instructor>> GetAllActiveInstructorsAsync(string categoryUrl, string instructorUrl);
         Task<List<Instructor>> GetAllInstructorsAsync(bool isDeleted, bool? isActive);
+        Task<List<Instructor>> GetHomePageInstructorsAsync();
+        Task<Instructor> GetInstructorsByUrlAsync(string url);
+        Task<List<Instructor>> GetInstructorsWithFullDataAsync(bool? isActive);
     }
 }

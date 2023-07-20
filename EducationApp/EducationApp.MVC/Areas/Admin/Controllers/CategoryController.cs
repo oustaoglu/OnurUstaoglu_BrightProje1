@@ -1,8 +1,8 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 
-namespace EducationApp.MVC.Areas.Adnin.Controllers
+namespace EducationApp.MVC.Areas.Admin.Controllers
 {
-    public class HomeController : Controller
+    public class CategoryController : Controller
     {
         public IActionResult Index()
         {

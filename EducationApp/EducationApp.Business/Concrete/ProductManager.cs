@@ -55,11 +55,16 @@ namespace EducationApp.Business.Concrete
 			var result = await _productRepository.GetAllActiveProductsAsync(categoryUrl, instructorUrl);
 			return result;
 		}
-		public async Task<Product> GetProductByUrlAsync(string productUrl)
+		public async Task<Product> GetProductsByUrlAsync(string productUrl)
 		{
-			var result = await _productRepository.GetProductByUrlAsync(productUrl);
+			var result = await _productRepository.GetProductsByUrlAsync(productUrl);
 			return result;
 		}
 
-	}
+        public async Task<List<Product>> GetProductsWithFullDataAsync(bool? isHome = null, bool? isActive = null)
+        {
+            var result = await _productRepository.GetProductsWithFullDataAsync(isHome, isActive);
+            return result;
+        }
+    }
 }

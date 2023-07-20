@@ -27,8 +27,8 @@ var app = builder.Build();
 
 if (!app.Environment.IsDevelopment())
 {
-	app.UseExceptionHandler("/Home/Error");
-	app.UseHsts();
+    app.UseExceptionHandler("/Home/Error");
+    app.UseHsts();
 }
 
 app.UseHttpsRedirection();
@@ -39,19 +39,17 @@ app.UseRouting();
 app.UseAuthorization();
 
 
+app.MapControllerRoute(
+    name: "productscategory",
+    pattern: "kategoriler/{categoryurl?}",
+    defaults: new { controller = "EducationApp", action = "ProductList" }
+    );
 
 app.MapControllerRoute(
     name: "productsinstructor",
-    pattern: "ürünler/{instructorurl?}",
-    defaults: new { controller = "EducationApp", action = "ProductList" }
+    pattern: "egitmenler/{instructorurl?}",
+    defaults: new { controller = "EducationApp", action = "InstructorList" }
     );
-
-app.MapControllerRoute(
-    name: "productscategory",
-    pattern: "ürünler/{categoryurl?}",
-    defaults: new { controller = "EducationApp", action = "ProductList" }
-    );
-
 
 app.MapAreaControllerRoute(
     name: "Admin",

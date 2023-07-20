@@ -33,8 +33,7 @@ namespace EducationApp.MVC.ViewComponents
                     Url = c.Url
                 }).ToList();
 
-            categoryListViewModel.CategoryViewModelList= categoryViewModelList;
-            
+            categoryListViewModel.CategoryViewModelList = categoryViewModelList;
             return View(categoryListViewModel);
         }
     }

@@ -14,5 +14,7 @@ namespace EducationApp.Business.Abstract
 		Task CreateAsync(Category category);
 		void Update(Category category);
 		void Delete(Category category);
-	}
+
+        Task<List<Category>> GetAllCategoriesAsync(bool isDeleted, bool? isActive = null);
+    }
 }

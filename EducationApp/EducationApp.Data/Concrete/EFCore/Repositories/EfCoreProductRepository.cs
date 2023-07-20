@@ -18,34 +18,34 @@ namespace EducationApp.Data.Concrete.EFCore.Repositories
 
 			var result = _context
 				.Products
-				.Where(b => b.IsActive && !b.IsDeleted)
+				.Where(p => p.IsActive && !p.IsDeleted)
+				.Include(p => p.Instructor)
 				.AsQueryable();
 			if (categoryUrl != null)
 			{
 				result = result
-					.Include(b => b.ProductCategories)
-					.ThenInclude(bc => bc.Category)
-					.Where(b => b.ProductCategories.Any(bc => bc.Category.Url == categoryUrl))
+					.Include(p => p.ProductCategories)
+					.ThenInclude(pc => pc.Category)
+					.Where(p => p.ProductCategories.Any(pc => pc.Category.Url == categoryUrl))
 					.AsQueryable();
 			}
 			if (instructorUrl != null)
 			{
 				result = result
-					.Include(b => b.Instructor)
-					.Where(b => b.Instructor.Url == instructorUrl)
+					.Where(p => p.Instructor.Url == instructorUrl)
 					.AsQueryable();
 			}
 			return await result.ToListAsync();
 		}
 
-		public async Task<Product> GetProductByUrlAsync(string bookUrl)
+		public async Task<Product> GetProductsByUrlAsync(string productUrl)
 		{
 			var result = await _context
 				.Products
-				.Where(b => b.IsActive && !b.IsDeleted && b.Url == bookUrl)
-				.Include(b => b.ProductCategories)
-				.ThenInclude(bc => bc.Category)
-				.Include(b => b.Instructor)
+				.Where(p => p.IsActive && !p.IsDeleted && p.Url == productUrl)
+				.Include(p => p.ProductCategories)
+				.ThenInclude(pc => pc.Category)
+				.Include(p => p.Instructor)
 				.FirstOrDefaultAsync();
 			return result;
 		}
@@ -54,12 +54,39 @@ namespace EducationApp.Data.Concrete.EFCore.Repositories
 		{
 			var result = await _context
 				.Products
-				.Where(b => b.IsActive && !b.IsDeleted && b.IsHome)
-				.Include(b => b.ProductCategories)
-				.ThenInclude(bc => bc.Category)
-				.Include(b => b.Instructor)
+				.Where(p => p.IsActive && !p.IsDeleted && p.IsHome)
+				.Include(p => p.ProductCategories)
+				.ThenInclude(pc => pc.Category)
+				.Include(p => p.Instructor)
 				.ToListAsync();
 			return result;
 		}
-	}
+
+        public async Task<List<Product>> GetProductsWithFullDataAsync(bool? isHome, bool? isActive)
+        {
+            var result = _context
+				.Products
+				.Where(b => !b.IsDeleted)
+				.AsQueryable();
+
+            if (isHome != null)
+            {
+                result = result
+                    .Where(b => b.IsHome == isHome)
+                    .AsQueryable();
+            }
+
+            if (isActive != null)
+            {
+                result = result
+                    .Where(b => b.IsActive == isActive)
+                    .AsQueryable();
+            }
+            result = result
+                .Include(b => b.Instructor)
+                .AsQueryable();
+
+            return await result.ToListAsync();
+        }
+    }
 }

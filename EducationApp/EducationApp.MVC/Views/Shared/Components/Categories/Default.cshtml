@@ -5,7 +5,7 @@
        asp-controller="EducationApp"
        asp-action="ProductList"
        asp-route-categoryurl=""
-       asp-route-instructorurl="">Tüm İçerikler</a>
+       asp-route-instructorurl="">Kategoriler</a>
     @foreach (var categoryViewModel in Model.CategoryViewModelList)
     {
         <a class="list-group-item list-group-item-action @(Model.SelectedCategoryUrl==categoryViewModel.Url ? "active" : "")"

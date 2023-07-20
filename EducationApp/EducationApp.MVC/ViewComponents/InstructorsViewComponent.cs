@@ -6,7 +6,7 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace BooksApp.MVC.ViewComponents
 {
-    public class InstructorsViewComponent: ViewComponent
+    public class InstructorsViewComponent : ViewComponent
     {
         private readonly IInstructorService _instructorManager;
 
@@ -16,11 +16,11 @@ namespace BooksApp.MVC.ViewComponents
         }
         public async Task<IViewComponentResult> InvokeAsync()
         {
-            List<Instructor> authorList = await _instructorManager.GetAllAsync();
-            List<InstructorViewModel> instructorViewModelList = authorList.Select(a => new InstructorViewModel
+            List<Instructor> instructorList = await _instructorManager.GetAllAsync();
+            List<InstructorViewModel> instructorViewModelList = instructorList.Select(i => new InstructorViewModel
             {
-                Name=a.FirstName + " " + a.LastName,
-                Url=a.Url
+                Name = i.FirstName + " " + i.LastName,
+                Url = i.Url
             }).ToList();
             return View(instructorViewModelList);
         }

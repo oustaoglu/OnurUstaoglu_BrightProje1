@@ -15,7 +15,11 @@ namespace EducationApp.Business.Abstract
 		void Update(Instructor instructor);
 		void Delete(Instructor instructor);
 
+        Task<List<Instructor>> GetHomePageInstructorsAsync();
         Task<List<Instructor>> GetAllInstructorsAsync(bool isDeleted, bool? isActive = null);
         Task CreateWithUrl(Instructor instructor);
+        Task<List<Instructor>> GetAllActiveInstructorsAsync(string categoryUrl, string productUrl);
+        Task<List<Instructor>> GetInstructorsWithFullDataAsync(bool? isActive = null);
+        Task<Instructor> GetInstructorsByUrlAsync(string url);
     }
 }

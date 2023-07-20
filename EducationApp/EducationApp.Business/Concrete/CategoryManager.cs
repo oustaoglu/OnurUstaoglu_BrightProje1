@@ -34,7 +34,13 @@ namespace EducationApp.Business.Concrete
 			return result;
 		}
 
-		public async Task<Category> GetByIdAsync(int id)
+        public async Task<List<Category>> GetAllCategoriesAsync(bool isDeleted, bool? isActive = null)
+        {
+            var result = await _categoryRepository.GetAllCategoriesAsync(isDeleted, isActive);
+            return result;
+        }
+
+        public async Task<Category> GetByIdAsync(int id)
 		{
 			var result = await _categoryRepository.GetByIdAsync(id);
 			return result;

@@ -1,4 +1,5 @@
 ﻿using EducationApp.Business.Abstract;
+using EducationApp.Business.Concrete;
 using EducationApp.Entity.Concrete;
 using EducationApp.MVC.Models;
 using Microsoft.AspNetCore.Mvc;
@@ -8,10 +9,12 @@ namespace EducationApp.MVC.Controllers
     public class EducationAppController : Controller
     {
         private readonly IProductService _productManager;
+        private readonly IInstructorService _instructorManager;
 
-        public EducationAppController(IProductService productManager)
+        public EducationAppController(IProductService productManager, IInstructorService instructorManager)
         {
             _productManager = productManager;
+            _instructorManager = instructorManager;
         }
 
         public async Task<IActionResult> ProductList(string categoryurl = null, string instructorurl = null)
@@ -28,6 +31,59 @@ namespace EducationApp.MVC.Controllers
                 InstructorUrl = p.Instructor.Url,
             }).ToList();
             return View(productViewModelList);
+        }
+        public async Task<IActionResult> ProductDetails(string url)
+        {
+            Product product = await _productManager.GetProductsByUrlAsync(url);
+            ProductDetailsViewModel productDetailsViewModel = new ProductDetailsViewModel
+            {
+                Id = product.Id,
+                Name = product.Name,
+                InstructorName = product.Instructor.FirstName + " " + product.Instructor.LastName,
+                InstructorAbout = product.Instructor.About,
+                InstructorUrl = product.Instructor.Url,
+                Url = product.Url,
+                ImageUrl = product.ImageUrl,
+                Description = product.Description,
+                Price = product.Price,
+                Categories = product.ProductCategories.Select(bc => new CategoryViewModel
+                {
+                    Name = bc.Category.Name,
+                    Url = bc.Category.Url
+                }).ToList()
+            };
+            return View(productDetailsViewModel);
+        }
+        public async Task<IActionResult> InstructorList(string categoryurl = null, string instructorurl = null)
+        {
+            List<Instructor> instructorList = await _instructorManager.GetAllActiveInstructorsAsync(categoryurl, instructorurl);
+            List<InstructorViewModel> instructorViewModelList = instructorList.Select(p => new InstructorViewModel
+            {
+                Url = p.Url,
+            }).ToList();
+            return View(instructorViewModelList);
+        }
+        public async Task<IActionResult> InstructorDetails(string url)
+        {
+            Instructor instructor = await _instructorManager.GetInstructorsByUrlAsync(url);
+            InstructorDetailsViewModel instructorDetailsViewModel = new InstructorDetailsViewModel
+            {
+                Id = instructor.Id,
+                //Name = instructor.Name,
+                //InstructorName = instructor.Instructor.FirstName + " " + instructor.Instructor.LastName,
+                //InstructorAbout = instructor.Instructor.About,
+                //InstructorUrl = instructor.Instructor.Url,
+                Url = instructor.Url,
+                //ImageUrl = instructor.ImageUrl,
+                //Description = instructor.Description,
+                //Price = instructor.Price,
+                //Categories = instructor.ProductCategories.Select(bc => new CategoryViewModel
+                //{
+                //    Name = bc.Category.Name,
+                //    Url = bc.Category.Url
+                //}).ToList()
+            };
+            return View(instructorDetailsViewModel);
         }
     }
 }

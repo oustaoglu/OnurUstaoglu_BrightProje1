@@ -36,7 +36,6 @@
                             <img src="~/images/instructors/@instructor.PhotoUrl" width="50">
                         </td>
                         <td>@instructor.Name</td>
-                        <td class="@(instructor.IsAlive ? "" : "text-danger")">@(instructor.IsAlive ? instructor.Age() : "d." + instructor.BirthOfYear.ToString())</td>
                         <td>@instructor.CreatedDate.ToShortDateString()</td>
                         <td>@instructor.ModifiedDate.ToShortDateString()</td>
                         <td>

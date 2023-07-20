@@ -11,6 +11,7 @@ namespace EducationApp.Data.Abstract
 	{
 		Task<List<Product>> GetHomePageProductsAsync();
 		Task<List<Product>> GetAllActiveProductsAsync(string categoryUrl = null, string instructorUrl = null);
-		Task<Product> GetProductByUrlAsync(string bookUrl);
-	}
+        Task<Product> GetProductsByUrlAsync(string productUrl);
+        Task<List<Product>> GetProductsWithFullDataAsync(bool? isHome, bool? isActive);
+    }
 }

@@ -7,7 +7,7 @@ using EducationApp.MVC.Areas.Admin.Models;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 
-namespace EducationApp.MVC.Areas.Adnin.Controllers
+namespace EducationApp.MVC.Areas.Admin.Controllers
 {
     [Area("Admin")]
     public class InstructorController : Controller
