@@ -69,10 +69,10 @@ namespace EducationApp.MVC.Controllers
             InstructorDetailsViewModel instructorDetailsViewModel = new InstructorDetailsViewModel
             {
                 Id = instructor.Id,
-                //Name = instructor.Name,
-                //InstructorName = instructor.Instructor.FirstName + " " + instructor.Instructor.LastName,
-                //InstructorAbout = instructor.Instructor.About,
-                //InstructorUrl = instructor.Instructor.Url,
+                //Name = instructor.FirstName,
+                InstructorName = instructor.FirstName + " " + instructor.LastName,
+                InstructorAbout = instructor.About,
+                InstructorUrl = instructor.Url,
                 Url = instructor.Url,
                 //ImageUrl = instructor.ImageUrl,
                 //Description = instructor.Description,
