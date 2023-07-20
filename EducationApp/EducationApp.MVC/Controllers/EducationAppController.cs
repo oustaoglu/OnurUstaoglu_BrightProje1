@@ -59,7 +59,9 @@ namespace EducationApp.MVC.Controllers
             List<Instructor> instructorList = await _instructorManager.GetAllActiveInstructorsAsync(categoryurl, instructorurl);
             List<InstructorViewModel> instructorViewModelList = instructorList.Select(p => new InstructorViewModel
             {
+                Name = p.FirstName + " " + p.LastName,
                 Url = p.Url,
+                ImageUrl = p.PhotoUrl
             }).ToList();
             return View(instructorViewModelList);
         }
@@ -69,19 +71,11 @@ namespace EducationApp.MVC.Controllers
             InstructorDetailsViewModel instructorDetailsViewModel = new InstructorDetailsViewModel
             {
                 Id = instructor.Id,
-                //Name = instructor.FirstName,
                 InstructorName = instructor.FirstName + " " + instructor.LastName,
                 InstructorAbout = instructor.About,
                 InstructorUrl = instructor.Url,
                 Url = instructor.Url,
-                //ImageUrl = instructor.ImageUrl,
-                //Description = instructor.Description,
-                //Price = instructor.Price,
-                //Categories = instructor.ProductCategories.Select(bc => new CategoryViewModel
-                //{
-                //    Name = bc.Category.Name,
-                //    Url = bc.Category.Url
-                //}).ToList()
+                ImageUrl= instructor.PhotoUrl
             };
             return View(instructorDetailsViewModel);
         }

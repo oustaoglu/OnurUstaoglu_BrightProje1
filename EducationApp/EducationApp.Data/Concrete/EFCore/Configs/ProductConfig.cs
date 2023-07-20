@@ -44,7 +44,7 @@ namespace EducationApp.Data.Concrete.EFCore.Configs
 				new Product
 				{
 					Id = 1,
-					Name = ".NET (.NET Core, MVC, Web & Desktop)",
+					Name = ".NET (.NET Core, MVC, Web API)",
 					Description = "test.",
 					Url = ".net-core-mvc",
 					ImageUrl = "1.jpg",
