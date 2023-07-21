@@ -59,6 +59,7 @@ namespace EducationApp.MVC.Controllers
             List<Instructor> instructorList = await _instructorManager.GetAllActiveInstructorsAsync(categoryurl, instructorurl);
             List<InstructorViewModel> instructorViewModelList = instructorList.Select(p => new InstructorViewModel
             {
+                Id=p.Id,
                 Name = p.FirstName + " " + p.LastName,
                 Url = p.Url,
                 ImageUrl = p.PhotoUrl

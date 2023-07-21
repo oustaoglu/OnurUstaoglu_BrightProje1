@@ -71,6 +71,7 @@ namespace EducationApp.Data.Concrete.EFCore.Repositories
                 .FirstOrDefaultAsync();
             return result;
         }
+
         public async Task<List<Instructor>> GetInstructorsWithFullDataAsync(bool? isActive)
         {
             var result = _context

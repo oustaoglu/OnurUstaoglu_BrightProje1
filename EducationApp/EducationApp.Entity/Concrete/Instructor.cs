@@ -15,6 +15,8 @@ namespace EducationApp.Entity.Concrete
 		public string Url { get; set; }
 		public string About { get; set; }
 		public string PhotoUrl { get; set; }
+        public int ProductId { get; set; }
+        public Product Product { get; set; }
         public List<Product> Products { get; set; }
 	}
 }
