@@ -48,20 +48,20 @@ namespace EducationApp.Data.Migrations
                         new
                         {
                             Id = 1,
-                            CreatedDate = new DateTime(2023, 7, 25, 23, 13, 27, 429, DateTimeKind.Local).AddTicks(7440),
+                            CreatedDate = new DateTime(2023, 7, 28, 1, 46, 45, 977, DateTimeKind.Local).AddTicks(9614),
                             IsActive = true,
                             IsDeleted = false,
-                            ModifiedDate = new DateTime(2023, 7, 25, 23, 13, 27, 429, DateTimeKind.Local).AddTicks(7457),
-                            UserId = "1a47a145-39ca-40a7-8240-03c389b2b454"
+                            ModifiedDate = new DateTime(2023, 7, 28, 1, 46, 45, 977, DateTimeKind.Local).AddTicks(9634),
+                            UserId = "300b6f1f-4e38-4bec-87b2-f3debcc2b62f"
                         },
                         new
                         {
                             Id = 2,
-                            CreatedDate = new DateTime(2023, 7, 25, 23, 13, 27, 429, DateTimeKind.Local).AddTicks(7461),
+                            CreatedDate = new DateTime(2023, 7, 28, 1, 46, 45, 977, DateTimeKind.Local).AddTicks(9641),
                             IsActive = true,
                             IsDeleted = false,
-                            ModifiedDate = new DateTime(2023, 7, 25, 23, 13, 27, 429, DateTimeKind.Local).AddTicks(7462),
-                            UserId = "c9070744-681b-4a3c-874f-ca48b061fb44"
+                            ModifiedDate = new DateTime(2023, 7, 28, 1, 46, 45, 977, DateTimeKind.Local).AddTicks(9641),
+                            UserId = "20aacc70-f2b6-4393-a1c0-0e4b350ab564"
                         });
                 });
 
@@ -129,77 +129,77 @@ namespace EducationApp.Data.Migrations
                         new
                         {
                             Id = 1,
-                            CreatedDate = new DateTime(2023, 7, 25, 23, 13, 27, 430, DateTimeKind.Local).AddTicks(3857),
+                            CreatedDate = new DateTime(2023, 7, 28, 1, 46, 45, 978, DateTimeKind.Local).AddTicks(7180),
                             Description = "Yazılım geliştirme, bilgisayar programlarının tasarımı, oluşturulması ve sürdürülmesi sürecidir. Bu süreç, kullanıcı ihtiyaçlarını karşılamak, işlevsellik sağlamak ve teknolojik çözümler üretmek için kodlama, test etme ve dağıtma adımlarını içerir. Yazılım geliştirme, bilgisayar, mobil cihazlar, web uygulamaları, oyunlar ve daha fazlası gibi çeşitli alanlarda kullanılır. Bu süreçte programlama dilleri, veritabanları, algoritmalar ve yazılım tasarım prensipleri gibi araçlar kullanılır. Yazılım geliştirme, hızlı teknolojik ilerlemelerle birlikte sürekli evrilen ve iyileşen bir disiplindir ve kullanıcıların ihtiyaçlarını karşılamak için yenilikçi ve güvenilir çözümler sunmayı hedefler.",
                             IsActive = true,
                             IsDeleted = false,
-                            ModifiedDate = new DateTime(2023, 7, 25, 23, 13, 27, 430, DateTimeKind.Local).AddTicks(3863),
+                            ModifiedDate = new DateTime(2023, 7, 28, 1, 46, 45, 978, DateTimeKind.Local).AddTicks(7187),
                             Name = "Yazılım Geliştime",
                             Url = "yazilim-gelistirme"
                         },
                         new
                         {
                             Id = 2,
-                            CreatedDate = new DateTime(2023, 7, 25, 23, 13, 27, 430, DateTimeKind.Local).AddTicks(3866),
+                            CreatedDate = new DateTime(2023, 7, 28, 1, 46, 45, 978, DateTimeKind.Local).AddTicks(7192),
                             Description = "Mobil uygulama geliştirme, mobil platformlarda çalışabilen kullanışlı ve etkileşimli yazılım uygulamalarının tasarımı, oluşturulması ve dağıtılması sürecidir. Bu süreç, kullanıcı ihtiyaçlarını karşılamak, sorunlara çözüm sunmak ve kullanıcı deneyimini geliştirmek için programlama, arayüz tasarımı, test etme ve dağıtma adımlarını içerir. Mobil uygulama geliştiricileri, Android veya iOS gibi belirli platformlar için uygun programlama dilleri ve geliştirme araçları kullanır. Bu süreç, hızlı teknolojik değişimlerle birlikte sürekli gelişir ve kullanıcıların günlük yaşamlarını kolaylaştıran, eğlence sunan ve işlevsellik sağlayan yenilikçi uygulamaların ortaya çıkmasını sağlar. Mobil uygulama geliştirme, geniş bir kullanıcı tabanına erişmek ve büyüyen mobil pazarlardan yararlanmak isteyen işletmeler ve geliştiriciler için önemli bir stratejidir.",
                             IsActive = true,
                             IsDeleted = false,
-                            ModifiedDate = new DateTime(2023, 7, 25, 23, 13, 27, 430, DateTimeKind.Local).AddTicks(3867),
+                            ModifiedDate = new DateTime(2023, 7, 28, 1, 46, 45, 978, DateTimeKind.Local).AddTicks(7192),
                             Name = "Mobil Uygulama Geliştirme",
                             Url = "mobil-uygulama-gelistirme"
                         },
                         new
                         {
                             Id = 3,
-                            CreatedDate = new DateTime(2023, 7, 25, 23, 13, 27, 430, DateTimeKind.Local).AddTicks(3869),
+                            CreatedDate = new DateTime(2023, 7, 28, 1, 46, 45, 978, DateTimeKind.Local).AddTicks(7195),
                             Description = "Oyun geliştirme, video oyunlarının tasarımı, programlaması ve oluşturulması sürecidir. Bu süreç, oyun kavramının belirlenmesi, hikaye yazımı, karakter tasarımı, dünya oluşturma, grafik ve ses tasarımı, oyun mekaniği ve kullanıcı arayüzü gibi aşamaları içerir. Oyun geliştirme ekipleri, oyun programcıları, sanatçılar, tasarımcılar ve ses mühendisleri gibi farklı disiplinlerden profesyonelleri içerir. Geliştiriciler, oyun motorları, programlama dilleri, grafik araçları ve geliştirme ortamları kullanarak oyunun yapısını oluştururlar. Oyun geliştirme, eğlence endüstrisinde önemli bir rol oynar ve oyunculara heyecan verici deneyimler sunmak için sürekli yenilikçilik ve yaratıcılık gerektirir.",
                             IsActive = true,
                             IsDeleted = false,
-                            ModifiedDate = new DateTime(2023, 7, 25, 23, 13, 27, 430, DateTimeKind.Local).AddTicks(3869),
+                            ModifiedDate = new DateTime(2023, 7, 28, 1, 46, 45, 978, DateTimeKind.Local).AddTicks(7195),
                             Name = "Oyun Geliştime",
                             Url = "oyun-gelistirme"
                         },
                         new
                         {
                             Id = 4,
-                            CreatedDate = new DateTime(2023, 7, 25, 23, 13, 27, 430, DateTimeKind.Local).AddTicks(3870),
+                            CreatedDate = new DateTime(2023, 7, 28, 1, 46, 45, 978, DateTimeKind.Local).AddTicks(7197),
                             Description = "Web, dünya genelinde bilgilere erişim sağlayan ve kullanıcıların çeşitli hizmetlere bağlanmasını mümkün kılan bir ağdır. Web, HTML, CSS ve JavaScript gibi teknolojilerle oluşturulan web siteleri ve web uygulamaları aracılığıyla çalışır. Web, kullanıcıların arama yapma, e-posta gönderme, sosyal ağlarda etkileşimde bulunma, alışveriş yapma ve daha birçok işlemi gerçekleştirebilecekleri bir platform sunar. Web geliştirme, web sitelerinin ve uygulamalarının tasarımını, kodlamasını, testini ve dağıtımını içerir. Bu süreçte kullanıcı deneyimi, güvenlik, performans ve uyumluluk önemlidir. Web, küresel bağlantıyı sağlayan ve bilgiye kolay erişimi temsil eden önemli bir iletişim ve etkileşim aracıdır.",
                             IsActive = true,
                             IsDeleted = false,
-                            ModifiedDate = new DateTime(2023, 7, 25, 23, 13, 27, 430, DateTimeKind.Local).AddTicks(3871),
+                            ModifiedDate = new DateTime(2023, 7, 28, 1, 46, 45, 978, DateTimeKind.Local).AddTicks(7197),
                             Name = "Web",
                             Url = "web"
                         },
                         new
                         {
                             Id = 5,
-                            CreatedDate = new DateTime(2023, 7, 25, 23, 13, 27, 430, DateTimeKind.Local).AddTicks(3872),
+                            CreatedDate = new DateTime(2023, 7, 28, 1, 46, 45, 978, DateTimeKind.Local).AddTicks(7199),
                             Description = "Veritabanı, yapılandırılmış verilerin depolandığı ve yönetildiği bir elektronik sistemdir. Veritabanları, bilgiyi organize etmek, erişmek, güncellemek ve analiz etmek için kullanılır. İşletmeler, kuruluşlar ve web uygulamaları gibi birçok alan veritabanlarını kullanır. Veritabanı yönetim sistemleri (DBMS), veritabanının oluşturulması, yapılandırılması, sorgulanması ve güncellenmesi için gereken araçları sağlar. Veritabanı tasarımı, veri bütünlüğü, performans optimizasyonu ve güvenlik gibi konular önemlidir. Veritabanları, büyük veri kümelerini işlemek, veri analizi yapmak ve karar verme süreçlerini desteklemek için önemli bir rol oynar. Veritabanları, verilerin etkili bir şekilde yönetilmesini ve bilgi tabanlı çözümler sunulmasını sağlar.",
                             IsActive = true,
                             IsDeleted = false,
-                            ModifiedDate = new DateTime(2023, 7, 25, 23, 13, 27, 430, DateTimeKind.Local).AddTicks(3872),
+                            ModifiedDate = new DateTime(2023, 7, 28, 1, 46, 45, 978, DateTimeKind.Local).AddTicks(7199),
                             Name = "Veritabanı",
                             Url = "veritabani"
                         },
                         new
                         {
                             Id = 6,
-                            CreatedDate = new DateTime(2023, 7, 25, 23, 13, 27, 430, DateTimeKind.Local).AddTicks(3873),
+                            CreatedDate = new DateTime(2023, 7, 28, 1, 46, 45, 978, DateTimeKind.Local).AddTicks(7200),
                             Description = "DevOps, yazılım geliştirme ve işletim süreçlerini birleştirerek, yazılım projelerinin daha hızlı, güvenilir ve sürekli bir şekilde dağıtılmasını sağlayan bir yaklaşımdır. Bu metodoloji, geliştirme (Development) ve işletim (Operations) ekipleri arasında işbirliği ve iletişimi teşvik eder. DevOps, otomasyon, sürekli entegrasyon ve sürekli dağıtım gibi pratikleri kullanarak, yazılımın yaşam döngüsünü hızlandırır ve kaliteyi artırır. Ayrıca, altyapı yönetimi, hata izleme ve performans analizi gibi operasyonel süreçlere odaklanır. DevOps, esneklik, hızlı yanıt verme ve müşteri memnuniyetini artırma gibi faydalar sağlayarak yazılım projelerinin başarısını destekler.",
                             IsActive = true,
                             IsDeleted = false,
-                            ModifiedDate = new DateTime(2023, 7, 25, 23, 13, 27, 430, DateTimeKind.Local).AddTicks(3874),
+                            ModifiedDate = new DateTime(2023, 7, 28, 1, 46, 45, 978, DateTimeKind.Local).AddTicks(7201),
                             Name = "DevOps",
                             Url = "devops"
                         },
                         new
                         {
                             Id = 7,
-                            CreatedDate = new DateTime(2023, 7, 25, 23, 13, 27, 430, DateTimeKind.Local).AddTicks(3875),
+                            CreatedDate = new DateTime(2023, 7, 28, 1, 46, 45, 978, DateTimeKind.Local).AddTicks(7202),
                             Description = "Bulut, internet üzerinde sunulan paylaşımlı bilgi işlem kaynaklarını ifade eder. Bulut hizmetleri, sunucular, depolama, veritabanları, ağ altyapısı ve uygulama hizmetleri gibi kaynaklara erişimi kolaylaştırır. Kullanıcılar, istedikleri zaman istedikleri yerden bu kaynaklara güvenli bir şekilde erişebilir ve ihtiyaçlarına göre ölçeklendirebilir. Bulut hizmetleri, esneklik, ölçeklenebilirlik, veri yedekleme, sürekli çalışma ve maliyet verimliliği gibi avantajlar sağlar. Bulut, işletmeler için altyapı maliyetlerini azaltırken, geliştiriciler için hızlı bir şekilde uygulama dağıtma imkanı sunar. Ayrıca, kullanıcılara mobil cihazlar ve web tarayıcıları aracılığıyla geniş bir hizmet yelpazesine erişme kolaylığı sağlar.",
                             IsActive = true,
                             IsDeleted = false,
-                            ModifiedDate = new DateTime(2023, 7, 25, 23, 13, 27, 430, DateTimeKind.Local).AddTicks(3875),
+                            ModifiedDate = new DateTime(2023, 7, 28, 1, 46, 45, 978, DateTimeKind.Local).AddTicks(7203),
                             Name = "Bulut",
                             Url = "bulut"
                         });
@@ -252,7 +252,6 @@ namespace EducationApp.Data.Migrations
                         .HasColumnType("INTEGER");
 
                     b.Property<string>("Url")
-                        .IsRequired()
                         .HasColumnType("TEXT");
 
                     b.HasKey("Id");
@@ -265,212 +264,212 @@ namespace EducationApp.Data.Migrations
                         new
                         {
                             Id = 1,
-                            About = "İlber Ortaylı, Türk tarihçi, akademisyen ve yazar. Türk Tarih Kurumu Şeref Üyesidir. Ortaylı, Uluslararası Osmanlı Etütleri Komitesi yönetim kurulu üyesi ve Avrupa İranoloji Cemiyeti ve Avusturya-Türk Bilimler Forumu üyesidir.",
-                            BirthOfYear = 1950,
-                            CreatedDate = new DateTime(2023, 7, 25, 23, 13, 27, 430, DateTimeKind.Local).AddTicks(6106),
-                            FirstName = "İlber",
+                            About = "Yazılım eğitimi, modern teknolojinin temelini oluşturan önemli bir süreçtir. Katılımcılara yazılım geliştirme süreçlerinde bilgi ve beceriler kazandırır. Programlama dillerinin temel yapılarını öğreterek öğrencilerin mantıklı çözümler üretmelerine yardımcı olur. Nesne yönelimli programlama (OOP), veritabanı yönetimi, web ve mobil uygulama geliştirme gibi konulara odaklanabilir. Algoritma ve veri yapıları öğreterek analitik düşünme yeteneğini güçlendirir. Yazılım mühendisliği prensiplerini aktarırken, test ve hata ayıklama tekniklerini de vurgular. Proje tabanlı çalışmalarla pratik deneyim sağlayarak öğrencilerin gerçek dünya projelerinde başarılı olmalarını hedefler. Sürekli güncellenen teknolojilere uyum sağlayarak sektörde rekabetçi bireyler yetiştirir.",
+                            BirthOfYear = 1990,
+                            CreatedDate = new DateTime(2023, 7, 28, 1, 46, 45, 979, DateTimeKind.Local).AddTicks(808),
+                            FirstName = "Dominic",
                             IsActive = true,
                             IsDeleted = false,
-                            LastName = "Ortaylı",
-                            ModifiedDate = new DateTime(2023, 7, 25, 23, 13, 27, 430, DateTimeKind.Local).AddTicks(6109),
-                            PhotoUrl = "ilber-ortayli.jpg",
-                            ProductId = 1,
-                            Url = "ilber-ortayli-1"
+                            LastName = "Harmon",
+                            ModifiedDate = new DateTime(2023, 7, 28, 1, 46, 45, 979, DateTimeKind.Local).AddTicks(812),
+                            PhotoUrl = "1.png",
+                            ProductId = 1
                         },
                         new
                         {
                             Id = 2,
-                            About = "Afşin Kum Kimdir? Afşin Kum, 1972 İzmir doğumlu. Boğaziçi Üniversitesinde bilgisayar mühendisliği, Bilgi Üniversitesinde sinema-televizyon öğrenimi gördü. 1997'den bu yana çeşitli kurumlarda yazılımcı ve yönetici olarak çalıştı.",
-                            BirthOfYear = 1960,
-                            CreatedDate = new DateTime(2023, 7, 25, 23, 13, 27, 430, DateTimeKind.Local).AddTicks(6113),
-                            FirstName = "Afşin",
+                            About = "Yazılım eğitimi, modern teknolojinin temelini oluşturan önemli bir süreçtir. Katılımcılara yazılım geliştirme süreçlerinde bilgi ve beceriler kazandırır. Programlama dillerinin temel yapılarını öğreterek öğrencilerin mantıklı çözümler üretmelerine yardımcı olur. Nesne yönelimli programlama (OOP), veritabanı yönetimi, web ve mobil uygulama geliştirme gibi konulara odaklanabilir. Algoritma ve veri yapıları öğreterek analitik düşünme yeteneğini güçlendirir. Yazılım mühendisliği prensiplerini aktarırken, test ve hata ayıklama tekniklerini de vurgular. Proje tabanlı çalışmalarla pratik deneyim sağlayarak öğrencilerin gerçek dünya projelerinde başarılı olmalarını hedefler. Sürekli güncellenen teknolojilere uyum sağlayarak sektörde rekabetçi bireyler yetiştirir.",
+                            BirthOfYear = 1990,
+                            CreatedDate = new DateTime(2023, 7, 28, 1, 46, 45, 979, DateTimeKind.Local).AddTicks(817),
+                            FirstName = "Justina",
                             IsActive = true,
                             IsDeleted = false,
-                            LastName = "Kum",
-                            ModifiedDate = new DateTime(2023, 7, 25, 23, 13, 27, 430, DateTimeKind.Local).AddTicks(6114),
-                            PhotoUrl = "afsin-kum.jpg",
-                            ProductId = 2,
-                            Url = "afsin-kum-15"
+                            LastName = "Burch",
+                            ModifiedDate = new DateTime(2023, 7, 28, 1, 46, 45, 979, DateTimeKind.Local).AddTicks(817),
+                            PhotoUrl = "1.png",
+                            ProductId = 2
                         },
                         new
                         {
                             Id = 3,
-                            About = "Herbert George Wells ya da daha çok tanındığı adla H. G. Wells, Dünyaların Savaşı, GörünmezAdam,Dr Moreau'nun Adası ve Zaman Makinesi adlı bilimkurgu romanlarıyla tanınan ama neredeyseedebiyatınherdalında birçok eser vermiş olan İngiliz yazardır. Sosyalist olduğunu açıkça söyleyenH.G. Wells'inçoğueserinde önemli ölçüde siyasi ve sosyal yorumlar bulunmaktadır. Jules Verne gibigelecektekiteknolojikgelişmeleri anlattığı kitaplarıyla bilimkurgu dalının öncülerinden hattayaratıcılarındansayılmaktadır.",
-                            BirthOfYear = 1866,
-                            CreatedDate = new DateTime(2023, 7, 25, 23, 13, 27, 430, DateTimeKind.Local).AddTicks(6116),
-                            FirstName = "Herbert George",
+                            About = "Yazılım eğitimi, modern teknolojinin temelini oluşturan önemli bir süreçtir. Katılımcılara yazılım geliştirme süreçlerinde bilgi ve beceriler kazandırır. Programlama dillerinin temel yapılarını öğreterek öğrencilerin mantıklı çözümler üretmelerine yardımcı olur. Nesne yönelimli programlama (OOP), veritabanı yönetimi, web ve mobil uygulama geliştirme gibi konulara odaklanabilir. Algoritma ve veri yapıları öğreterek analitik düşünme yeteneğini güçlendirir. Yazılım mühendisliği prensiplerini aktarırken, test ve hata ayıklama tekniklerini de vurgular. Proje tabanlı çalışmalarla pratik deneyim sağlayarak öğrencilerin gerçek dünya projelerinde başarılı olmalarını hedefler. Sürekli güncellenen teknolojilere uyum sağlayarak sektörde rekabetçi bireyler yetiştirir.",
+                            BirthOfYear = 1985,
+                            CreatedDate = new DateTime(2023, 7, 28, 1, 46, 45, 979, DateTimeKind.Local).AddTicks(820),
+                            FirstName = "Madison",
                             IsActive = true,
                             IsDeleted = false,
-                            LastName = "Wells",
-                            ModifiedDate = new DateTime(2023, 7, 25, 23, 13, 27, 430, DateTimeKind.Local).AddTicks(6116),
-                            PhotoUrl = "herbert-george-wells.jpg",
-                            ProductId = 3,
-                            Url = "herbert-george-wells-3"
+                            LastName = "Beard",
+                            ModifiedDate = new DateTime(2023, 7, 28, 1, 46, 45, 979, DateTimeKind.Local).AddTicks(821),
+                            PhotoUrl = "1.png",
+                            ProductId = 3
                         },
                         new
                         {
                             Id = 4,
-                            About = "Okula Essex'de gitti. Cambridge'de St. Johns College'e devam ederken Footlightstiyatro kulübünde görev aldı. Pek çok iş denedi. Hastanede hizmetlilik, inşaat işçiliği,kümes temizlikçiliği, bir Arap aile için korumalık yaptı. Daha sonra BBC'de Dr. Whodizisinde yapımcılık ve senaryo editörlüğü yaptı. Dr. Who'nun üç bölümünü yazdı. MontyPyton grubundan Graham Chapman ile birlikte çalıştı.\r\n\r\nBBC'de yayımlanan TheHitchhiker's Guide to the Galaxy (Otostopçunun Galaksi Rehberi) adlı radyo oyunu ile ünlüoldu. Oyun, kitap olarak da yayımlandı. Bu radyo oyunundan aynı adlı bir bilgisayar oyunuda üretti. Daha sonra Bureaucracy ve Starship Titanic adlı bilgisayar oyunları üzerinde deçalıştı. Starship Titanic sonradan bir kitap olarak da yayımlandı, ancak Adams'ın hem oyunhem de kitap üzerinde çalışacak zamanı olmadığından kitabı Terry Jones yazdı. İleriderecede bir Beatles hayranıydı.",
+                            About = "Yazılım eğitimi, modern teknolojinin temelini oluşturan önemli bir süreçtir. Katılımcılara yazılım geliştirme süreçlerinde bilgi ve beceriler kazandırır. Programlama dillerinin temel yapılarını öğreterek öğrencilerin mantıklı çözümler üretmelerine yardımcı olur. Nesne yönelimli programlama (OOP), veritabanı yönetimi, web ve mobil uygulama geliştirme gibi konulara odaklanabilir. Algoritma ve veri yapıları öğreterek analitik düşünme yeteneğini güçlendirir. Yazılım mühendisliği prensiplerini aktarırken, test ve hata ayıklama tekniklerini de vurgular. Proje tabanlı çalışmalarla pratik deneyim sağlayarak öğrencilerin gerçek dünya projelerinde başarılı olmalarını hedefler. Sürekli güncellenen teknolojilere uyum sağlayarak sektörde rekabetçi bireyler yetiştirir.",
                             BirthOfYear = 1982,
-                            CreatedDate = new DateTime(2023, 7, 25, 23, 13, 27, 430, DateTimeKind.Local).AddTicks(6118),
-                            FirstName = "Douglas",
+                            CreatedDate = new DateTime(2023, 7, 28, 1, 46, 45, 979, DateTimeKind.Local).AddTicks(823),
+                            FirstName = "Sara",
                             IsActive = true,
                             IsDeleted = false,
-                            LastName = "Adams",
-                            ModifiedDate = new DateTime(2023, 7, 25, 23, 13, 27, 430, DateTimeKind.Local).AddTicks(6118),
-                            PhotoUrl = "douglas-adams.jpg",
-                            ProductId = 4,
-                            Url = "douglas-adams-4"
+                            LastName = "Wade",
+                            ModifiedDate = new DateTime(2023, 7, 28, 1, 46, 45, 979, DateTimeKind.Local).AddTicks(823),
+                            PhotoUrl = "1.png",
+                            ProductId = 4
                         },
                         new
                         {
                             Id = 5,
-                            About = "Ray Douglas Bradbury korku ve bilimkurgu tarzlarında yazan Amerikalı bir yazardır.En çok bilinen kitapları 1950'de yazdığı kısa hikâyeler kitabı ve bir roman olan TheMartian Chronicles ve 1953'te yazdığı başyapıtı olan Fahrenheit 451'dir. Los Angeles'ta 91yaşında öldü.",
-                            BirthOfYear = 1920,
-                            CreatedDate = new DateTime(2023, 7, 25, 23, 13, 27, 430, DateTimeKind.Local).AddTicks(6149),
-                            FirstName = "Ray Douglas",
+                            About = "Yazılım eğitimi, modern teknolojinin temelini oluşturan önemli bir süreçtir. Katılımcılara yazılım geliştirme süreçlerinde bilgi ve beceriler kazandırır. Programlama dillerinin temel yapılarını öğreterek öğrencilerin mantıklı çözümler üretmelerine yardımcı olur. Nesne yönelimli programlama (OOP), veritabanı yönetimi, web ve mobil uygulama geliştirme gibi konulara odaklanabilir. Algoritma ve veri yapıları öğreterek analitik düşünme yeteneğini güçlendirir. Yazılım mühendisliği prensiplerini aktarırken, test ve hata ayıklama tekniklerini de vurgular. Proje tabanlı çalışmalarla pratik deneyim sağlayarak öğrencilerin gerçek dünya projelerinde başarılı olmalarını hedefler. Sürekli güncellenen teknolojilere uyum sağlayarak sektörde rekabetçi bireyler yetiştirir.",
+                            BirthOfYear = 1988,
+                            CreatedDate = new DateTime(2023, 7, 28, 1, 46, 45, 979, DateTimeKind.Local).AddTicks(825),
+                            FirstName = "Jacob",
                             IsActive = true,
                             IsDeleted = false,
-                            LastName = "Bradbury",
-                            ModifiedDate = new DateTime(2023, 7, 25, 23, 13, 27, 430, DateTimeKind.Local).AddTicks(6151),
-                            PhotoUrl = "ray-douglas-bradbury.jpg",
-                            ProductId = 5,
-                            Url = "ray-douglas-bradbury-5"
+                            LastName = "Hunt",
+                            ModifiedDate = new DateTime(2023, 7, 28, 1, 46, 45, 979, DateTimeKind.Local).AddTicks(826),
+                            PhotoUrl = "1.png",
+                            ProductId = 5
                         },
                         new
                         {
                             Id = 6,
-                            About = "Japon yazardır. Tsugaru Yarımadası’nın merkezi yakınlarında küçük bir kasaba olanKanagi’de doğdu. Asıl adı Şuuci Tsuşima'dır. Ailedeki siyasetçi olma geleneğine karşıçıkarak, yazar olmaya karar verdi. Yirmi yaşında Tokyo Üniversitesi Fransız EdebiyatıBölümü’ne kaydını yaptırdı. Hayatının büyük bölümünde esrarkeş, veremli, asabi, kavgacı vealkolik biri olarak birkaç kez intihar etmeye kalkıştı. Dazai, 1948’de metresiyle birliktesuya atlayarak intihar etti. Ölümünün üzerinden bunca sene geçmesine rağmen, Japonya’dahâlâ ilgi gören bir yazardır. Eserlerinin çoğunluğunda yalnızlığı ele alır. Yalnızlık önplanda iken insanın arayış içinde olması ve insanın varoluşunu, içe dönüklüğünü yanitemelde insanı ele alır.",
-                            BirthOfYear = 1909,
-                            CreatedDate = new DateTime(2023, 7, 25, 23, 13, 27, 430, DateTimeKind.Local).AddTicks(6152),
+                            About = "Yazılım eğitimi, modern teknolojinin temelini oluşturan önemli bir süreçtir. Katılımcılara yazılım geliştirme süreçlerinde bilgi ve beceriler kazandırır. Programlama dillerinin temel yapılarını öğreterek öğrencilerin mantıklı çözümler üretmelerine yardımcı olur. Nesne yönelimli programlama (OOP), veritabanı yönetimi, web ve mobil uygulama geliştirme gibi konulara odaklanabilir. Algoritma ve veri yapıları öğreterek analitik düşünme yeteneğini güçlendirir. Yazılım mühendisliği prensiplerini aktarırken, test ve hata ayıklama tekniklerini de vurgular. Proje tabanlı çalışmalarla pratik deneyim sağlayarak öğrencilerin gerçek dünya projelerinde başarılı olmalarını hedefler. Sürekli güncellenen teknolojilere uyum sağlayarak sektörde rekabetçi bireyler yetiştirir.",
+                            BirthOfYear = 1989,
+                            CreatedDate = new DateTime(2023, 7, 28, 1, 46, 45, 979, DateTimeKind.Local).AddTicks(828),
                             FirstName = "Osamu",
                             IsActive = true,
                             IsDeleted = false,
                             LastName = "Dazai",
-                            ModifiedDate = new DateTime(2023, 7, 25, 23, 13, 27, 430, DateTimeKind.Local).AddTicks(6153),
-                            PhotoUrl = "osamu-dazai.jpg",
-                            ProductId = 6,
-                            Url = "osamu-dazai-6"
+                            ModifiedDate = new DateTime(2023, 7, 28, 1, 46, 45, 979, DateTimeKind.Local).AddTicks(847),
+                            PhotoUrl = "1.png",
+                            ProductId = 6
                         },
                         new
                         {
                             Id = 7,
-                            About = "Eric Arthur Blair veya daha bilinen takma adıyla George Orwell 20. yüzyıl İngilizedebiyatının önde gelen kalemleri arasında yer alan İngiliz romancı, gazeteci veeleştirmen. En çok, dünyaca ünlü Bin Dokuz Yüz Seksen Dört adlı romanı ve bu romandayarattığı Big Brother kavramı ile tanınır. ",
-                            BirthOfYear = 1903,
-                            CreatedDate = new DateTime(2023, 7, 25, 23, 13, 27, 430, DateTimeKind.Local).AddTicks(6154),
-                            FirstName = "George",
+                            About = "Yazılım eğitimi, modern teknolojinin temelini oluşturan önemli bir süreçtir. Katılımcılara yazılım geliştirme süreçlerinde bilgi ve beceriler kazandırır. Programlama dillerinin temel yapılarını öğreterek öğrencilerin mantıklı çözümler üretmelerine yardımcı olur. Nesne yönelimli programlama (OOP), veritabanı yönetimi, web ve mobil uygulama geliştirme gibi konulara odaklanabilir. Algoritma ve veri yapıları öğreterek analitik düşünme yeteneğini güçlendirir. Yazılım mühendisliği prensiplerini aktarırken, test ve hata ayıklama tekniklerini de vurgular. Proje tabanlı çalışmalarla pratik deneyim sağlayarak öğrencilerin gerçek dünya projelerinde başarılı olmalarını hedefler. Sürekli güncellenen teknolojilere uyum sağlayarak sektörde rekabetçi bireyler yetiştirir.",
+                            BirthOfYear = 1983,
+                            CreatedDate = new DateTime(2023, 7, 28, 1, 46, 45, 979, DateTimeKind.Local).AddTicks(861),
+                            FirstName = "Zachery",
                             IsActive = true,
                             IsDeleted = false,
-                            LastName = "Orwell",
-                            ModifiedDate = new DateTime(2023, 7, 25, 23, 13, 27, 430, DateTimeKind.Local).AddTicks(6155),
-                            PhotoUrl = "george-orwell.png",
-                            ProductId = 7,
-                            Url = "george-orwell-7"
+                            LastName = "Salas",
+                            ModifiedDate = new DateTime(2023, 7, 28, 1, 46, 45, 979, DateTimeKind.Local).AddTicks(862),
+                            PhotoUrl = "1.png",
+                            ProductId = 7
                         },
                         new
                         {
                             Id = 8,
-                            About = "Matt Haig bir İngiliz yazar ve gazetecidir. Çocuklar ve yetişkinler için, genellikl spekülatif kurgu türünde hem kurgu hem de kurgu olmayan kitaplar yazmıştır. Haig, çocukla ve yetişkinler için hem kurgu hem de kurgu olmayan kitapların yazarıdır. Kurgusal olmayançalışması Reasons to Stay Alive , Sunday Times'ın en çok satanlar listesinde bir numaraydıve 46 hafta boyunca Birleşik Krallık'ta ilk 10'da yer aldı. En çok satan çocuk romanı 'Noe Baba ve Ben' şu anda filme uyarlanıyor, yapımcılığını StudioCanal ve Blueprint Picturesüstleniyor.",
+                            About = "Yazılım eğitimi, modern teknolojinin temelini oluşturan önemli bir süreçtir. Katılımcılara yazılım geliştirme süreçlerinde bilgi ve beceriler kazandırır. Programlama dillerinin temel yapılarını öğreterek öğrencilerin mantıklı çözümler üretmelerine yardımcı olur. Nesne yönelimli programlama (OOP), veritabanı yönetimi, web ve mobil uygulama geliştirme gibi konulara odaklanabilir. Algoritma ve veri yapıları öğreterek analitik düşünme yeteneğini güçlendirir. Yazılım mühendisliği prensiplerini aktarırken, test ve hata ayıklama tekniklerini de vurgular. Proje tabanlı çalışmalarla pratik deneyim sağlayarak öğrencilerin gerçek dünya projelerinde başarılı olmalarını hedefler. Sürekli güncellenen teknolojilere uyum sağlayarak sektörde rekabetçi bireyler yetiştirir.",
                             BirthOfYear = 1982,
-                            CreatedDate = new DateTime(2023, 7, 25, 23, 13, 27, 430, DateTimeKind.Local).AddTicks(6156),
+                            CreatedDate = new DateTime(2023, 7, 28, 1, 46, 45, 979, DateTimeKind.Local).AddTicks(864),
                             FirstName = "Matt",
                             IsActive = true,
                             IsDeleted = false,
                             LastName = "Haig",
-                            ModifiedDate = new DateTime(2023, 7, 25, 23, 13, 27, 430, DateTimeKind.Local).AddTicks(6156),
-                            PhotoUrl = "matt-haig.jpeg",
-                            ProductId = 8,
-                            Url = "matt-haig-8"
+                            ModifiedDate = new DateTime(2023, 7, 28, 1, 46, 45, 979, DateTimeKind.Local).AddTicks(864),
+                            PhotoUrl = "1.png",
+                            ProductId = 8
                         },
                         new
                         {
                             Id = 9,
-                            About = "Stephen William Hawking, İngiliz fizikçi, kozmolog, astronom, teorisyen ve yazar.Stephen Hawking, Einstein'dan bu yana dünyaya gelen en parlak teorik fizikçi olarak kabuledilmektedir. 12 onur derecesi almıştır. 1982'de CBE ile ödüllendirilmiş, bundan başkabirçok madalya ve ödül almıştır. ",
-                            BirthOfYear = 1942,
-                            CreatedDate = new DateTime(2023, 7, 25, 23, 13, 27, 430, DateTimeKind.Local).AddTicks(6158),
-                            FirstName = "Stephen William",
+                            About = "Yazılım eğitimi, modern teknolojinin temelini oluşturan önemli bir süreçtir. Katılımcılara yazılım geliştirme süreçlerinde bilgi ve beceriler kazandırır. Programlama dillerinin temel yapılarını öğreterek öğrencilerin mantıklı çözümler üretmelerine yardımcı olur. Nesne yönelimli programlama (OOP), veritabanı yönetimi, web ve mobil uygulama geliştirme gibi konulara odaklanabilir. Algoritma ve veri yapıları öğreterek analitik düşünme yeteneğini güçlendirir. Yazılım mühendisliği prensiplerini aktarırken, test ve hata ayıklama tekniklerini de vurgular. Proje tabanlı çalışmalarla pratik deneyim sağlayarak öğrencilerin gerçek dünya projelerinde başarılı olmalarını hedefler. Sürekli güncellenen teknolojilere uyum sağlayarak sektörde rekabetçi bireyler yetiştirir.",
+                            BirthOfYear = 1982,
+                            CreatedDate = new DateTime(2023, 7, 28, 1, 46, 45, 979, DateTimeKind.Local).AddTicks(866),
+                            FirstName = "William",
                             IsActive = true,
                             IsDeleted = false,
-                            LastName = "ArmHawkingan",
-                            ModifiedDate = new DateTime(2023, 7, 25, 23, 13, 27, 430, DateTimeKind.Local).AddTicks(6158),
-                            PhotoUrl = "stephen-william-hawking.jpg",
-                            ProductId = 9,
-                            Url = "stephen-william-hawking-9"
+                            LastName = "Hawkingan",
+                            ModifiedDate = new DateTime(2023, 7, 28, 1, 46, 45, 979, DateTimeKind.Local).AddTicks(867),
+                            PhotoUrl = "1.png",
+                            ProductId = 9
                         },
                         new
                         {
                             Id = 10,
-                            About = "Fyodor Mihayloviç Dostoyevski, Rus roman yazarıdır. Çocukluğunu sarhoş bir baba vehasta bir anne arasında geçiren Dostoyevski, annesinin ölümünden sonra Petersburg'dakiMühendis Okulu'na girdi. Babasının ölüm haberini de burada aldı. Okulu başarıylabitirdikten sonra istihkâm bölüğüne girdi.",
-                            BirthOfYear = 11821,
-                            CreatedDate = new DateTime(2023, 7, 25, 23, 13, 27, 430, DateTimeKind.Local).AddTicks(6160),
-                            FirstName = "Fyodor",
+                            About = "Yazılım eğitimi, modern teknolojinin temelini oluşturan önemli bir süreçtir. Katılımcılara yazılım geliştirme süreçlerinde bilgi ve beceriler kazandırır. Programlama dillerinin temel yapılarını öğreterek öğrencilerin mantıklı çözümler üretmelerine yardımcı olur. Nesne yönelimli programlama (OOP), veritabanı yönetimi, web ve mobil uygulama geliştirme gibi konulara odaklanabilir. Algoritma ve veri yapıları öğreterek analitik düşünme yeteneğini güçlendirir. Yazılım mühendisliği prensiplerini aktarırken, test ve hata ayıklama tekniklerini de vurgular. Proje tabanlı çalışmalarla pratik deneyim sağlayarak öğrencilerin gerçek dünya projelerinde başarılı olmalarını hedefler. Sürekli güncellenen teknolojilere uyum sağlayarak sektörde rekabetçi bireyler yetiştirir.",
+                            BirthOfYear = 1990,
+                            CreatedDate = new DateTime(2023, 7, 28, 1, 46, 45, 979, DateTimeKind.Local).AddTicks(869),
+                            FirstName = "Geraldine",
                             IsActive = true,
                             IsDeleted = false,
-                            LastName = "Dostoyevski",
-                            ModifiedDate = new DateTime(2023, 7, 25, 23, 13, 27, 430, DateTimeKind.Local).AddTicks(6160),
-                            PhotoUrl = "fyodor-dostoyevski.jpg",
-                            ProductId = 10,
-                            Url = "fyodor-dostoyevski-10"
+                            LastName = "Richmond",
+                            ModifiedDate = new DateTime(2023, 7, 28, 1, 46, 45, 979, DateTimeKind.Local).AddTicks(869),
+                            PhotoUrl = "1.png",
+                            ProductId = 10
                         },
                         new
                         {
                             Id = 11,
-                            About = "Manon Steffan Ros, Galli bir romancı, oyun yazarı, oyun yazarı, senarist vemüzisyendir. Tamamı Galce olan yirmiden fazla çocuk kitabı ve yetişkinler için üç romanınyazarıdır. Ödüllü romanı Blasu, The Seasoning başlığı altında İngilizce'ye çevrildi.",
+                            About = "Yazılım eğitimi, modern teknolojinin temelini oluşturan önemli bir süreçtir. Katılımcılara yazılım geliştirme süreçlerinde bilgi ve beceriler kazandırır. Programlama dillerinin temel yapılarını öğreterek öğrencilerin mantıklı çözümler üretmelerine yardımcı olur. Nesne yönelimli programlama (OOP), veritabanı yönetimi, web ve mobil uygulama geliştirme gibi konulara odaklanabilir. Algoritma ve veri yapıları öğreterek analitik düşünme yeteneğini güçlendirir. Yazılım mühendisliği prensiplerini aktarırken, test ve hata ayıklama tekniklerini de vurgular. Proje tabanlı çalışmalarla pratik deneyim sağlayarak öğrencilerin gerçek dünya projelerinde başarılı olmalarını hedefler. Sürekli güncellenen teknolojilere uyum sağlayarak sektörde rekabetçi bireyler yetiştirir.",
                             BirthOfYear = 1983,
-                            CreatedDate = new DateTime(2023, 7, 25, 23, 13, 27, 430, DateTimeKind.Local).AddTicks(6161),
-                            FirstName = "Manon Steffan",
+                            CreatedDate = new DateTime(2023, 7, 28, 1, 46, 45, 979, DateTimeKind.Local).AddTicks(871),
+                            FirstName = "Steffan",
                             IsActive = true,
                             IsDeleted = false,
                             LastName = "Ros",
-                            ModifiedDate = new DateTime(2023, 7, 25, 23, 13, 27, 430, DateTimeKind.Local).AddTicks(6162),
-                            PhotoUrl = "manon-steffan-ros.jpg",
-                            ProductId = 11,
-                            Url = "manon-steffan-ros-11"
+                            ModifiedDate = new DateTime(2023, 7, 28, 1, 46, 45, 979, DateTimeKind.Local).AddTicks(872),
+                            PhotoUrl = "1.png",
+                            ProductId = 11
                         },
                         new
                         {
                             Id = 12,
-                            About = "Mustafa Kemal Atatürk, Türk asker ve devlet adamıdır. Türk Kurtuluş Savaşı'nınbaşkomutanı, Türkiye Cumhuriyeti'nin kurucusu ve ilk cumhurbaşkanıdır.Atatürk; çağdaş,ilerici ve laik bir ulus devlet kurmak için siyasal, ekonomik ve kültürel alanlardasekülarist ve milliyetçi nitelikte yenilikler gerçekleştirdi. Yabancılara tanınan ekonomikayrıcalıklar kaldırıldı ve onlara ait üretim araçları ve demir yolları millîleştirildi.Tevhîd-i Tedrîsât Kanunu ile eğitim, Türk hükûmetinin denetimine girdi. Seküler ve bilimse eğitim esas alındı. Binlerce yeni okul yapıldı. İlköğretim ücretsiz ve zorunlu durumagetirildi. Yabancı okullar devlet denetimine alındı. Köylülerin sırtına yüklenen ağırvergiler azaltıldı. Erkeklerin serpuşlarında ve giysilerinde bazı değişiklikler yapıldı.Takvim, saat ve ölçülerde değişikliklere gidildi. Mecelle kaldırılarak yerine seküler TürkKanunu Medenisi yürürlüğe konuldu. Kadınların sivil ve siyasal hakları pek çok Batıülkesinden önce tanındı. Çok eşlilik yasaklandı. Kadınların tanıklığı ve miras hakkı,erkeklerinkiyle eşit duruma getirildi. Benzer olarak, dünyanın çoğu ülkesinden önce olarakTürkiye'de kadınlara ilkin yerel seçimlerde (1930), sonra genel seçimlerde (1934) seçme veseçilme hakkı tanındı. Ceza ve borçlar hukukunda seküler yasalar yürürlüğe konuldu. SanayiTeşvik Kanunu kabul edildi. Toprak reformu için çabalandı. Arap harfleri temelli Osmanlıalfabesinin yerine Latin harfleri temelli yeni Türk alfabesi kabul edildi. Halkı okuryazarkılmak için eğitim seferberliği başlatıldı. Üniversite Reformu gerçekleştirildi. BirinciBeş Yıllık Sanayi Planı yürürlüğe konuldu. Sınıf ve durum ayrımı gözeten lakap ve unvanlarkaldırıldı ve soyadları yürürlüğe konuldu. Bağdaşık ve birleşmiş bir ulus yaratılması içinTürkleştirme siyaseti yürütüldü.",
-                            BirthOfYear = 1881,
-                            CreatedDate = new DateTime(2023, 7, 25, 23, 13, 27, 430, DateTimeKind.Local).AddTicks(6163),
-                            FirstName = "Mustafa Kemal",
+                            About = "Yazılım eğitimi, modern teknolojinin temelini oluşturan önemli bir süreçtir. Katılımcılara yazılım geliştirme süreçlerinde bilgi ve beceriler kazandırır. Programlama dillerinin temel yapılarını öğreterek öğrencilerin mantıklı çözümler üretmelerine yardımcı olur. Nesne yönelimli programlama (OOP), veritabanı yönetimi, web ve mobil uygulama geliştirme gibi konulara odaklanabilir. Algoritma ve veri yapıları öğreterek analitik düşünme yeteneğini güçlendirir. Yazılım mühendisliği prensiplerini aktarırken, test ve hata ayıklama tekniklerini de vurgular. Proje tabanlı çalışmalarla pratik deneyim sağlayarak öğrencilerin gerçek dünya projelerinde başarılı olmalarını hedefler. Sürekli güncellenen teknolojilere uyum sağlayarak sektörde rekabetçi bireyler yetiştirir.",
+                            BirthOfYear = 1991,
+                            CreatedDate = new DateTime(2023, 7, 28, 1, 46, 45, 979, DateTimeKind.Local).AddTicks(873),
+                            FirstName = "Nichole",
                             IsActive = true,
                             IsDeleted = false,
-                            LastName = "Atatürk",
-                            ModifiedDate = new DateTime(2023, 7, 25, 23, 13, 27, 430, DateTimeKind.Local).AddTicks(6164),
-                            PhotoUrl = "mustafa-kemal-ataturk.png",
-                            ProductId = 12,
-                            Url = "mustafa-kemal-ataturk-12"
+                            LastName = "Talley",
+                            ModifiedDate = new DateTime(2023, 7, 28, 1, 46, 45, 979, DateTimeKind.Local).AddTicks(874),
+                            PhotoUrl = "1.png",
+                            ProductId = 12
                         },
                         new
                         {
                             Id = 13,
-                            About = "Yuval Noah Harari, İsrailli tarihçi ve yazardır. İsrailli bir kamu entelektüeli,tarihçi ve Kudüs İbrani Üniversitesi Tarih Bölümü'nde profesör. Popüler bilim en çok satankitapları Sapiens: İnsanlığın Kısa Tarihi, Homo Deus: Yarının Kısa Tarihi ve 21.Yüzyıl İçi 21 Ders kitabının yazarıdır.",
-                            BirthOfYear = 1976,
-                            CreatedDate = new DateTime(2023, 7, 25, 23, 13, 27, 430, DateTimeKind.Local).AddTicks(6165),
-                            FirstName = "Yuval Noah",
+                            About = "Yazılım eğitimi, modern teknolojinin temelini oluşturan önemli bir süreçtir. Katılımcılara yazılım geliştirme süreçlerinde bilgi ve beceriler kazandırır. Programlama dillerinin temel yapılarını öğreterek öğrencilerin mantıklı çözümler üretmelerine yardımcı olur. Nesne yönelimli programlama (OOP), veritabanı yönetimi, web ve mobil uygulama geliştirme gibi konulara odaklanabilir. Algoritma ve veri yapıları öğreterek analitik düşünme yeteneğini güçlendirir. Yazılım mühendisliği prensiplerini aktarırken, test ve hata ayıklama tekniklerini de vurgular. Proje tabanlı çalışmalarla pratik deneyim sağlayarak öğrencilerin gerçek dünya projelerinde başarılı olmalarını hedefler. Sürekli güncellenen teknolojilere uyum sağlayarak sektörde rekabetçi bireyler yetiştirir.",
+                            BirthOfYear = 1979,
+                            CreatedDate = new DateTime(2023, 7, 28, 1, 46, 45, 979, DateTimeKind.Local).AddTicks(876),
+                            FirstName = "Yetta",
                             IsActive = true,
                             IsDeleted = false,
-                            LastName = "Harari",
-                            ModifiedDate = new DateTime(2023, 7, 25, 23, 13, 27, 430, DateTimeKind.Local).AddTicks(6165),
-                            PhotoUrl = "yoval-nuah-harari.jpg",
-                            ProductId = 13,
-                            Url = "yoval-nuah-harari-13"
+                            LastName = "Sheppard",
+                            ModifiedDate = new DateTime(2023, 7, 28, 1, 46, 45, 979, DateTimeKind.Local).AddTicks(876),
+                            PhotoUrl = "1.png",
+                            ProductId = 13
                         },
                         new
                         {
                             Id = 14,
-                            About = "Rus yazar ve asker. Dünya tarihinin en iyi yazarlarından birisi olarakbilinmektedir. Tolstoy, zengin bir ailenin çocuğu olarak Rusya'nın Tula şehrindeki YasnayaPolyana adlı bir konakta doğdu. Çok küçük yaşlarında önce annesini, sonra babasınıkaybetti; yakınlarının elinde büyüdü. Çocukluğundan beri gerçekleri incelemeye karşı büyükbir ilgisi vardı. Fransızcasını ilerletmiş, Voltaire'i ve Jean-Jacques Rousseau'yu okumuş,bu iki yazarın kuvvetli etkisinde kalmıştı. Daha sonraları Yasnaya Polyana'ya dönenTolstoy, yoksul köylülerin arasına katıldı. İlk eseri olan 'Çocukluk'u bu sıralarda yazdı.",
-                            BirthOfYear = 1828,
-                            CreatedDate = new DateTime(2023, 7, 25, 23, 13, 27, 430, DateTimeKind.Local).AddTicks(6167),
-                            FirstName = "Lev Nikolayeviç",
+                            About = "Yazılım eğitimi, modern teknolojinin temelini oluşturan önemli bir süreçtir. Katılımcılara yazılım geliştirme süreçlerinde bilgi ve beceriler kazandırır. Programlama dillerinin temel yapılarını öğreterek öğrencilerin mantıklı çözümler üretmelerine yardımcı olur. Nesne yönelimli programlama (OOP), veritabanı yönetimi, web ve mobil uygulama geliştirme gibi konulara odaklanabilir. Algoritma ve veri yapıları öğreterek analitik düşünme yeteneğini güçlendirir. Yazılım mühendisliği prensiplerini aktarırken, test ve hata ayıklama tekniklerini de vurgular. Proje tabanlı çalışmalarla pratik deneyim sağlayarak öğrencilerin gerçek dünya projelerinde başarılı olmalarını hedefler. Sürekli güncellenen teknolojilere uyum sağlayarak sektörde rekabetçi bireyler yetiştirir.",
+                            BirthOfYear = 1978,
+                            CreatedDate = new DateTime(2023, 7, 28, 1, 46, 45, 979, DateTimeKind.Local).AddTicks(878),
+                            FirstName = "Elijah",
                             IsActive = true,
                             IsDeleted = false,
-                            LastName = "Tolstoy",
-                            ModifiedDate = new DateTime(2023, 7, 25, 23, 13, 27, 430, DateTimeKind.Local).AddTicks(6167),
-                            PhotoUrl = "lev-nikolayevic-tolstoy.jpg",
-                            ProductId = 14,
-                            Url = "lev-nikolayevic-tolstoy-14"
+                            LastName = "Farley",
+                            ModifiedDate = new DateTime(2023, 7, 28, 1, 46, 45, 979, DateTimeKind.Local).AddTicks(879),
+                            PhotoUrl = "1.png",
+                            ProductId = 14
+                        },
+                        new
+                        {
+                            Id = 15,
+                            About = "Yazılım eğitimi, modern teknolojinin temelini oluşturan önemli bir süreçtir. Katılımcılara yazılım geliştirme süreçlerinde bilgi ve beceriler kazandırır. Programlama dillerinin temel yapılarını öğreterek öğrencilerin mantıklı çözümler üretmelerine yardımcı olur. Nesne yönelimli programlama (OOP), veritabanı yönetimi, web ve mobil uygulama geliştirme gibi konulara odaklanabilir. Algoritma ve veri yapıları öğreterek analitik düşünme yeteneğini güçlendirir. Yazılım mühendisliği prensiplerini aktarırken, test ve hata ayıklama tekniklerini de vurgular. Proje tabanlı çalışmalarla pratik deneyim sağlayarak öğrencilerin gerçek dünya projelerinde başarılı olmalarını hedefler. Sürekli güncellenen teknolojilere uyum sağlayarak sektörde rekabetçi bireyler yetiştirir.",
+                            BirthOfYear = 1991,
+                            CreatedDate = new DateTime(2023, 7, 28, 1, 46, 45, 979, DateTimeKind.Local).AddTicks(881),
+                            FirstName = "Neil",
+                            IsActive = true,
+                            IsDeleted = false,
+                            LastName = "Wooten",
+                            ModifiedDate = new DateTime(2023, 7, 28, 1, 46, 45, 979, DateTimeKind.Local).AddTicks(881),
+                            PhotoUrl = "1.png",
+                            ProductId = 15
                         });
                 });
 
@@ -602,481 +601,481 @@ namespace EducationApp.Data.Migrations
                         new
                         {
                             Id = 1,
-                            CreatedDate = new DateTime(2023, 7, 25, 23, 13, 27, 432, DateTimeKind.Local).AddTicks(828),
+                            CreatedDate = new DateTime(2023, 7, 28, 1, 46, 45, 981, DateTimeKind.Local).AddTicks(7030),
                             Description = "test.",
                             ImageUrl = "1.jpg",
                             InstructorId = 1,
                             IsActive = true,
                             IsDeleted = false,
                             IsHome = true,
-                            ModifiedDate = new DateTime(2023, 7, 25, 23, 13, 27, 432, DateTimeKind.Local).AddTicks(834),
+                            ModifiedDate = new DateTime(2023, 7, 28, 1, 46, 45, 981, DateTimeKind.Local).AddTicks(7038),
                             Name = ".NET (.NET Core, MVC, Web API)",
                             Price = 100m,
-                            Time = new DateTime(2023, 7, 25, 23, 13, 27, 432, DateTimeKind.Local).AddTicks(839),
+                            Time = new DateTime(2023, 7, 28, 1, 46, 45, 981, DateTimeKind.Local).AddTicks(7046),
                             Url = ".net-core-mvc"
                         },
                         new
                         {
                             Id = 2,
-                            CreatedDate = new DateTime(2023, 7, 25, 23, 13, 27, 432, DateTimeKind.Local).AddTicks(841),
+                            CreatedDate = new DateTime(2023, 7, 28, 1, 46, 45, 981, DateTimeKind.Local).AddTicks(7049),
                             Description = "testtt.",
                             ImageUrl = "2.jpg",
                             InstructorId = 2,
                             IsActive = true,
                             IsDeleted = false,
                             IsHome = true,
-                            ModifiedDate = new DateTime(2023, 7, 25, 23, 13, 27, 432, DateTimeKind.Local).AddTicks(841),
+                            ModifiedDate = new DateTime(2023, 7, 28, 1, 46, 45, 981, DateTimeKind.Local).AddTicks(7049),
                             Name = "Java (Spring, Java SE, Java EE)",
                             Price = 100m,
-                            Time = new DateTime(2023, 7, 25, 23, 13, 27, 432, DateTimeKind.Local).AddTicks(843),
+                            Time = new DateTime(2023, 7, 28, 1, 46, 45, 981, DateTimeKind.Local).AddTicks(7052),
                             Url = "java"
                         },
                         new
                         {
                             Id = 3,
-                            CreatedDate = new DateTime(2023, 7, 25, 23, 13, 27, 432, DateTimeKind.Local).AddTicks(844),
+                            CreatedDate = new DateTime(2023, 7, 28, 1, 46, 45, 981, DateTimeKind.Local).AddTicks(7095),
                             Description = "test.",
                             ImageUrl = "3.png",
                             InstructorId = 3,
                             IsActive = true,
                             IsDeleted = false,
                             IsHome = true,
-                            ModifiedDate = new DateTime(2023, 7, 25, 23, 13, 27, 432, DateTimeKind.Local).AddTicks(844),
+                            ModifiedDate = new DateTime(2023, 7, 28, 1, 46, 45, 981, DateTimeKind.Local).AddTicks(7097),
                             Name = "Python",
                             Price = 100m,
-                            Time = new DateTime(2023, 7, 25, 23, 13, 27, 432, DateTimeKind.Local).AddTicks(845),
+                            Time = new DateTime(2023, 7, 28, 1, 46, 45, 981, DateTimeKind.Local).AddTicks(7099),
                             Url = "python"
                         },
                         new
                         {
                             Id = 4,
-                            CreatedDate = new DateTime(2023, 7, 25, 23, 13, 27, 432, DateTimeKind.Local).AddTicks(846),
+                            CreatedDate = new DateTime(2023, 7, 28, 1, 46, 45, 981, DateTimeKind.Local).AddTicks(7100),
                             Description = "test.",
                             ImageUrl = "4.jpeg",
                             InstructorId = 4,
                             IsActive = true,
                             IsDeleted = false,
                             IsHome = true,
-                            ModifiedDate = new DateTime(2023, 7, 25, 23, 13, 27, 432, DateTimeKind.Local).AddTicks(846),
+                            ModifiedDate = new DateTime(2023, 7, 28, 1, 46, 45, 981, DateTimeKind.Local).AddTicks(7101),
                             Name = "JavaScript",
                             Price = 100m,
-                            Time = new DateTime(2023, 7, 25, 23, 13, 27, 432, DateTimeKind.Local).AddTicks(848),
+                            Time = new DateTime(2023, 7, 28, 1, 46, 45, 981, DateTimeKind.Local).AddTicks(7103),
                             Url = "javascript"
                         },
                         new
                         {
                             Id = 5,
-                            CreatedDate = new DateTime(2023, 7, 25, 23, 13, 27, 432, DateTimeKind.Local).AddTicks(849),
+                            CreatedDate = new DateTime(2023, 7, 28, 1, 46, 45, 981, DateTimeKind.Local).AddTicks(7104),
                             Description = "test.",
                             ImageUrl = "5.jpg",
                             InstructorId = 5,
                             IsActive = true,
                             IsDeleted = false,
                             IsHome = true,
-                            ModifiedDate = new DateTime(2023, 7, 25, 23, 13, 27, 432, DateTimeKind.Local).AddTicks(849),
+                            ModifiedDate = new DateTime(2023, 7, 28, 1, 46, 45, 981, DateTimeKind.Local).AddTicks(7105),
                             Name = "C/C++",
                             Price = 100m,
-                            Time = new DateTime(2023, 7, 25, 23, 13, 27, 432, DateTimeKind.Local).AddTicks(850),
+                            Time = new DateTime(2023, 7, 28, 1, 46, 45, 981, DateTimeKind.Local).AddTicks(7107),
                             Url = "c/c++	"
                         },
                         new
                         {
                             Id = 6,
-                            CreatedDate = new DateTime(2023, 7, 25, 23, 13, 27, 432, DateTimeKind.Local).AddTicks(851),
+                            CreatedDate = new DateTime(2023, 7, 28, 1, 46, 45, 981, DateTimeKind.Local).AddTicks(7108),
                             Description = "testtt.",
                             ImageUrl = "6.png",
                             InstructorId = 6,
                             IsActive = true,
                             IsDeleted = false,
                             IsHome = true,
-                            ModifiedDate = new DateTime(2023, 7, 25, 23, 13, 27, 432, DateTimeKind.Local).AddTicks(851),
+                            ModifiedDate = new DateTime(2023, 7, 28, 1, 46, 45, 981, DateTimeKind.Local).AddTicks(7109),
                             Name = "iOS & Android",
                             Price = 100m,
-                            Time = new DateTime(2023, 7, 25, 23, 13, 27, 432, DateTimeKind.Local).AddTicks(852),
+                            Time = new DateTime(2023, 7, 28, 1, 46, 45, 981, DateTimeKind.Local).AddTicks(7110),
                             Url = "ios-android"
                         },
                         new
                         {
                             Id = 7,
-                            CreatedDate = new DateTime(2023, 7, 25, 23, 13, 27, 432, DateTimeKind.Local).AddTicks(853),
+                            CreatedDate = new DateTime(2023, 7, 28, 1, 46, 45, 981, DateTimeKind.Local).AddTicks(7111),
                             Description = "test.",
                             ImageUrl = "7.png",
                             InstructorId = 7,
                             IsActive = true,
                             IsDeleted = false,
                             IsHome = true,
-                            ModifiedDate = new DateTime(2023, 7, 25, 23, 13, 27, 432, DateTimeKind.Local).AddTicks(854),
+                            ModifiedDate = new DateTime(2023, 7, 28, 1, 46, 45, 981, DateTimeKind.Local).AddTicks(7112),
                             Name = "React Native",
                             Price = 100m,
-                            Time = new DateTime(2023, 7, 25, 23, 13, 27, 432, DateTimeKind.Local).AddTicks(855),
+                            Time = new DateTime(2023, 7, 28, 1, 46, 45, 981, DateTimeKind.Local).AddTicks(7114),
                             Url = "react-native"
                         },
                         new
                         {
                             Id = 8,
-                            CreatedDate = new DateTime(2023, 7, 25, 23, 13, 27, 432, DateTimeKind.Local).AddTicks(856),
+                            CreatedDate = new DateTime(2023, 7, 28, 1, 46, 45, 981, DateTimeKind.Local).AddTicks(7116),
                             Description = "test.",
                             ImageUrl = "8.png",
                             InstructorId = 8,
                             IsActive = true,
                             IsDeleted = false,
                             IsHome = true,
-                            ModifiedDate = new DateTime(2023, 7, 25, 23, 13, 27, 432, DateTimeKind.Local).AddTicks(856),
+                            ModifiedDate = new DateTime(2023, 7, 28, 1, 46, 45, 981, DateTimeKind.Local).AddTicks(7117),
                             Name = "Flutter",
                             Price = 100m,
-                            Time = new DateTime(2023, 7, 25, 23, 13, 27, 432, DateTimeKind.Local).AddTicks(857),
+                            Time = new DateTime(2023, 7, 28, 1, 46, 45, 981, DateTimeKind.Local).AddTicks(7119),
                             Url = "flutter"
                         },
                         new
                         {
                             Id = 9,
-                            CreatedDate = new DateTime(2023, 7, 25, 23, 13, 27, 432, DateTimeKind.Local).AddTicks(858),
+                            CreatedDate = new DateTime(2023, 7, 28, 1, 46, 45, 981, DateTimeKind.Local).AddTicks(7120),
                             Description = "test.",
                             ImageUrl = "9.jpg",
                             InstructorId = 9,
                             IsActive = true,
                             IsDeleted = false,
                             IsHome = true,
-                            ModifiedDate = new DateTime(2023, 7, 25, 23, 13, 27, 432, DateTimeKind.Local).AddTicks(858),
+                            ModifiedDate = new DateTime(2023, 7, 28, 1, 46, 45, 981, DateTimeKind.Local).AddTicks(7120),
                             Name = "Ionic",
                             Price = 100m,
-                            Time = new DateTime(2023, 7, 25, 23, 13, 27, 432, DateTimeKind.Local).AddTicks(860),
+                            Time = new DateTime(2023, 7, 28, 1, 46, 45, 981, DateTimeKind.Local).AddTicks(7122),
                             Url = "ionic"
                         },
                         new
                         {
                             Id = 10,
-                            CreatedDate = new DateTime(2023, 7, 25, 23, 13, 27, 432, DateTimeKind.Local).AddTicks(860),
+                            CreatedDate = new DateTime(2023, 7, 28, 1, 46, 45, 981, DateTimeKind.Local).AddTicks(7123),
                             Description = "test.",
                             ImageUrl = "10.jpeg",
                             InstructorId = 10,
                             IsActive = true,
                             IsDeleted = false,
                             IsHome = true,
-                            ModifiedDate = new DateTime(2023, 7, 25, 23, 13, 27, 432, DateTimeKind.Local).AddTicks(861),
+                            ModifiedDate = new DateTime(2023, 7, 28, 1, 46, 45, 981, DateTimeKind.Local).AddTicks(7124),
                             Name = "Unity",
                             Price = 100m,
-                            Time = new DateTime(2023, 7, 25, 23, 13, 27, 432, DateTimeKind.Local).AddTicks(862),
+                            Time = new DateTime(2023, 7, 28, 1, 46, 45, 981, DateTimeKind.Local).AddTicks(7126),
                             Url = "unity"
                         },
                         new
                         {
                             Id = 11,
-                            CreatedDate = new DateTime(2023, 7, 25, 23, 13, 27, 432, DateTimeKind.Local).AddTicks(863),
+                            CreatedDate = new DateTime(2023, 7, 28, 1, 46, 45, 981, DateTimeKind.Local).AddTicks(7127),
                             Description = "test.",
                             ImageUrl = "11.png",
                             InstructorId = 11,
                             IsActive = true,
                             IsDeleted = false,
                             IsHome = true,
-                            ModifiedDate = new DateTime(2023, 7, 25, 23, 13, 27, 432, DateTimeKind.Local).AddTicks(863),
+                            ModifiedDate = new DateTime(2023, 7, 28, 1, 46, 45, 981, DateTimeKind.Local).AddTicks(7127),
                             Name = "Unreal Engine",
                             Price = 100m,
-                            Time = new DateTime(2023, 7, 25, 23, 13, 27, 432, DateTimeKind.Local).AddTicks(864),
+                            Time = new DateTime(2023, 7, 28, 1, 46, 45, 981, DateTimeKind.Local).AddTicks(7129),
                             Url = "unreal-engine"
                         },
                         new
                         {
                             Id = 12,
-                            CreatedDate = new DateTime(2023, 7, 25, 23, 13, 27, 432, DateTimeKind.Local).AddTicks(865),
+                            CreatedDate = new DateTime(2023, 7, 28, 1, 46, 45, 981, DateTimeKind.Local).AddTicks(7130),
                             Description = "testtt.",
                             ImageUrl = "12.png",
                             InstructorId = 12,
                             IsActive = true,
                             IsDeleted = false,
                             IsHome = true,
-                            ModifiedDate = new DateTime(2023, 7, 25, 23, 13, 27, 432, DateTimeKind.Local).AddTicks(865),
+                            ModifiedDate = new DateTime(2023, 7, 28, 1, 46, 45, 981, DateTimeKind.Local).AddTicks(7131),
                             Name = "GameMaker Studio",
                             Price = 100m,
-                            Time = new DateTime(2023, 7, 25, 23, 13, 27, 432, DateTimeKind.Local).AddTicks(866),
+                            Time = new DateTime(2023, 7, 28, 1, 46, 45, 981, DateTimeKind.Local).AddTicks(7132),
                             Url = "gamemaker-studio"
                         },
                         new
                         {
                             Id = 13,
-                            CreatedDate = new DateTime(2023, 7, 25, 23, 13, 27, 432, DateTimeKind.Local).AddTicks(867),
+                            CreatedDate = new DateTime(2023, 7, 28, 1, 46, 45, 981, DateTimeKind.Local).AddTicks(7133),
                             Description = "test.",
                             ImageUrl = "13.jpeg",
                             InstructorId = 13,
                             IsActive = true,
                             IsDeleted = false,
                             IsHome = true,
-                            ModifiedDate = new DateTime(2023, 7, 25, 23, 13, 27, 432, DateTimeKind.Local).AddTicks(868),
+                            ModifiedDate = new DateTime(2023, 7, 28, 1, 46, 45, 981, DateTimeKind.Local).AddTicks(7134),
                             Name = "Buildbox",
                             Price = 100m,
-                            Time = new DateTime(2023, 7, 25, 23, 13, 27, 432, DateTimeKind.Local).AddTicks(869),
+                            Time = new DateTime(2023, 7, 28, 1, 46, 45, 981, DateTimeKind.Local).AddTicks(7136),
                             Url = "buildbox"
                         },
                         new
                         {
                             Id = 14,
-                            CreatedDate = new DateTime(2023, 7, 25, 23, 13, 27, 432, DateTimeKind.Local).AddTicks(870),
+                            CreatedDate = new DateTime(2023, 7, 28, 1, 46, 45, 981, DateTimeKind.Local).AddTicks(7137),
                             Description = "test.",
                             ImageUrl = "14.png",
                             InstructorId = 14,
                             IsActive = true,
                             IsDeleted = false,
                             IsHome = true,
-                            ModifiedDate = new DateTime(2023, 7, 25, 23, 13, 27, 432, DateTimeKind.Local).AddTicks(870),
+                            ModifiedDate = new DateTime(2023, 7, 28, 1, 46, 45, 981, DateTimeKind.Local).AddTicks(7137),
                             Name = "PHP",
                             Price = 100m,
-                            Time = new DateTime(2023, 7, 25, 23, 13, 27, 432, DateTimeKind.Local).AddTicks(871),
+                            Time = new DateTime(2023, 7, 28, 1, 46, 45, 981, DateTimeKind.Local).AddTicks(7139),
                             Url = "php"
                         },
                         new
                         {
                             Id = 15,
-                            CreatedDate = new DateTime(2023, 7, 25, 23, 13, 27, 432, DateTimeKind.Local).AddTicks(872),
+                            CreatedDate = new DateTime(2023, 7, 28, 1, 46, 45, 981, DateTimeKind.Local).AddTicks(7140),
                             Description = "test.",
                             ImageUrl = "15.jpeg",
                             InstructorId = 8,
                             IsActive = true,
                             IsDeleted = false,
                             IsHome = true,
-                            ModifiedDate = new DateTime(2023, 7, 25, 23, 13, 27, 432, DateTimeKind.Local).AddTicks(872),
+                            ModifiedDate = new DateTime(2023, 7, 28, 1, 46, 45, 981, DateTimeKind.Local).AddTicks(7140),
                             Name = "React",
                             Price = 100m,
-                            Time = new DateTime(2023, 7, 25, 23, 13, 27, 432, DateTimeKind.Local).AddTicks(873),
+                            Time = new DateTime(2023, 7, 28, 1, 46, 45, 981, DateTimeKind.Local).AddTicks(7142),
                             Url = "react"
                         },
                         new
                         {
                             Id = 16,
-                            CreatedDate = new DateTime(2023, 7, 25, 23, 13, 27, 432, DateTimeKind.Local).AddTicks(874),
+                            CreatedDate = new DateTime(2023, 7, 28, 1, 46, 45, 981, DateTimeKind.Local).AddTicks(7143),
                             Description = "test.",
                             ImageUrl = "16.png",
                             InstructorId = 9,
                             IsActive = true,
                             IsDeleted = false,
                             IsHome = true,
-                            ModifiedDate = new DateTime(2023, 7, 25, 23, 13, 27, 432, DateTimeKind.Local).AddTicks(875),
+                            ModifiedDate = new DateTime(2023, 7, 28, 1, 46, 45, 981, DateTimeKind.Local).AddTicks(7144),
                             Name = "Angular",
                             Price = 100m,
-                            Time = new DateTime(2023, 7, 25, 23, 13, 27, 432, DateTimeKind.Local).AddTicks(876),
+                            Time = new DateTime(2023, 7, 28, 1, 46, 45, 981, DateTimeKind.Local).AddTicks(7146),
                             Url = "angular"
                         },
                         new
                         {
                             Id = 17,
-                            CreatedDate = new DateTime(2023, 7, 25, 23, 13, 27, 432, DateTimeKind.Local).AddTicks(876),
+                            CreatedDate = new DateTime(2023, 7, 28, 1, 46, 45, 981, DateTimeKind.Local).AddTicks(7147),
                             Description = "test.",
                             ImageUrl = "17.png",
                             InstructorId = 10,
                             IsActive = true,
                             IsDeleted = false,
                             IsHome = true,
-                            ModifiedDate = new DateTime(2023, 7, 25, 23, 13, 27, 432, DateTimeKind.Local).AddTicks(877),
+                            ModifiedDate = new DateTime(2023, 7, 28, 1, 46, 45, 981, DateTimeKind.Local).AddTicks(7147),
                             Name = "Node.js",
                             Price = 100m,
-                            Time = new DateTime(2023, 7, 25, 23, 13, 27, 432, DateTimeKind.Local).AddTicks(880),
+                            Time = new DateTime(2023, 7, 28, 1, 46, 45, 981, DateTimeKind.Local).AddTicks(7149),
                             Url = "nodejs"
                         },
                         new
                         {
                             Id = 18,
-                            CreatedDate = new DateTime(2023, 7, 25, 23, 13, 27, 432, DateTimeKind.Local).AddTicks(881),
+                            CreatedDate = new DateTime(2023, 7, 28, 1, 46, 45, 981, DateTimeKind.Local).AddTicks(7150),
                             Description = "test.",
                             ImageUrl = "18.jpg",
                             InstructorId = 11,
                             IsActive = true,
                             IsDeleted = false,
                             IsHome = true,
-                            ModifiedDate = new DateTime(2023, 7, 25, 23, 13, 27, 432, DateTimeKind.Local).AddTicks(881),
+                            ModifiedDate = new DateTime(2023, 7, 28, 1, 46, 45, 981, DateTimeKind.Local).AddTicks(7151),
                             Name = "Microsoft SQL Server",
                             Price = 100m,
-                            Time = new DateTime(2023, 7, 25, 23, 13, 27, 432, DateTimeKind.Local).AddTicks(882),
+                            Time = new DateTime(2023, 7, 28, 1, 46, 45, 981, DateTimeKind.Local).AddTicks(7152),
                             Url = "microsoft-sql-server"
                         },
                         new
                         {
                             Id = 19,
-                            CreatedDate = new DateTime(2023, 7, 25, 23, 13, 27, 432, DateTimeKind.Local).AddTicks(884),
+                            CreatedDate = new DateTime(2023, 7, 28, 1, 46, 45, 981, DateTimeKind.Local).AddTicks(7155),
                             Description = "testtt.",
                             ImageUrl = "19.png",
                             InstructorId = 12,
                             IsActive = true,
                             IsDeleted = false,
                             IsHome = true,
-                            ModifiedDate = new DateTime(2023, 7, 25, 23, 13, 27, 432, DateTimeKind.Local).AddTicks(884),
+                            ModifiedDate = new DateTime(2023, 7, 28, 1, 46, 45, 981, DateTimeKind.Local).AddTicks(7155),
                             Name = "MySQL",
                             Price = 100m,
-                            Time = new DateTime(2023, 7, 25, 23, 13, 27, 432, DateTimeKind.Local).AddTicks(886),
+                            Time = new DateTime(2023, 7, 28, 1, 46, 45, 981, DateTimeKind.Local).AddTicks(7157),
                             Url = "mysql"
                         },
                         new
                         {
                             Id = 20,
-                            CreatedDate = new DateTime(2023, 7, 25, 23, 13, 27, 432, DateTimeKind.Local).AddTicks(886),
+                            CreatedDate = new DateTime(2023, 7, 28, 1, 46, 45, 981, DateTimeKind.Local).AddTicks(7158),
                             Description = "test.",
                             ImageUrl = "20.png",
                             InstructorId = 13,
                             IsActive = true,
                             IsDeleted = false,
                             IsHome = true,
-                            ModifiedDate = new DateTime(2023, 7, 25, 23, 13, 27, 432, DateTimeKind.Local).AddTicks(887),
+                            ModifiedDate = new DateTime(2023, 7, 28, 1, 46, 45, 981, DateTimeKind.Local).AddTicks(7159),
                             Name = "PostgreSQL",
                             Price = 100m,
-                            Time = new DateTime(2023, 7, 25, 23, 13, 27, 432, DateTimeKind.Local).AddTicks(888),
+                            Time = new DateTime(2023, 7, 28, 1, 46, 45, 981, DateTimeKind.Local).AddTicks(7160),
                             Url = "postgresql"
                         },
                         new
                         {
                             Id = 21,
-                            CreatedDate = new DateTime(2023, 7, 25, 23, 13, 27, 432, DateTimeKind.Local).AddTicks(889),
+                            CreatedDate = new DateTime(2023, 7, 28, 1, 46, 45, 981, DateTimeKind.Local).AddTicks(7162),
                             Description = "test.",
-                            ImageUrl = "21.jpg",
+                            ImageUrl = "21.png",
                             InstructorId = 11,
                             IsActive = true,
                             IsDeleted = false,
                             IsHome = true,
-                            ModifiedDate = new DateTime(2023, 7, 25, 23, 13, 27, 432, DateTimeKind.Local).AddTicks(889),
+                            ModifiedDate = new DateTime(2023, 7, 28, 1, 46, 45, 981, DateTimeKind.Local).AddTicks(7162),
                             Name = "SQLite",
                             Price = 100m,
-                            Time = new DateTime(2023, 7, 25, 23, 13, 27, 432, DateTimeKind.Local).AddTicks(890),
+                            Time = new DateTime(2023, 7, 28, 1, 46, 45, 981, DateTimeKind.Local).AddTicks(7164),
                             Url = "sqlite"
                         },
                         new
                         {
                             Id = 22,
-                            CreatedDate = new DateTime(2023, 7, 25, 23, 13, 27, 432, DateTimeKind.Local).AddTicks(891),
+                            CreatedDate = new DateTime(2023, 7, 28, 1, 46, 45, 981, DateTimeKind.Local).AddTicks(7165),
                             Description = "testtt.",
-                            ImageUrl = "12.jpg",
+                            ImageUrl = "22.png",
                             InstructorId = 12,
                             IsActive = true,
                             IsDeleted = false,
                             IsHome = true,
-                            ModifiedDate = new DateTime(2023, 7, 25, 23, 13, 27, 432, DateTimeKind.Local).AddTicks(891),
+                            ModifiedDate = new DateTime(2023, 7, 28, 1, 46, 45, 981, DateTimeKind.Local).AddTicks(7165),
                             Name = "Oracle",
                             Price = 100m,
-                            Time = new DateTime(2023, 7, 25, 23, 13, 27, 432, DateTimeKind.Local).AddTicks(893),
+                            Time = new DateTime(2023, 7, 28, 1, 46, 45, 981, DateTimeKind.Local).AddTicks(7167),
                             Url = "oracle"
                         },
                         new
                         {
                             Id = 23,
-                            CreatedDate = new DateTime(2023, 7, 25, 23, 13, 27, 432, DateTimeKind.Local).AddTicks(894),
+                            CreatedDate = new DateTime(2023, 7, 28, 1, 46, 45, 981, DateTimeKind.Local).AddTicks(7168),
                             Description = "test.",
-                            ImageUrl = "13.jpg",
+                            ImageUrl = "23.png",
                             InstructorId = 13,
                             IsActive = true,
                             IsDeleted = false,
                             IsHome = true,
-                            ModifiedDate = new DateTime(2023, 7, 25, 23, 13, 27, 432, DateTimeKind.Local).AddTicks(894),
+                            ModifiedDate = new DateTime(2023, 7, 28, 1, 46, 45, 981, DateTimeKind.Local).AddTicks(7169),
                             Name = "Docker",
                             Price = 100m,
-                            Time = new DateTime(2023, 7, 25, 23, 13, 27, 432, DateTimeKind.Local).AddTicks(896),
+                            Time = new DateTime(2023, 7, 28, 1, 46, 45, 981, DateTimeKind.Local).AddTicks(7170),
                             Url = "docker"
                         },
                         new
                         {
                             Id = 24,
-                            CreatedDate = new DateTime(2023, 7, 25, 23, 13, 27, 432, DateTimeKind.Local).AddTicks(896),
+                            CreatedDate = new DateTime(2023, 7, 28, 1, 46, 45, 981, DateTimeKind.Local).AddTicks(7172),
                             Description = "test.",
-                            ImageUrl = "14.jpg",
+                            ImageUrl = "24.png",
                             InstructorId = 14,
                             IsActive = true,
                             IsDeleted = false,
                             IsHome = true,
-                            ModifiedDate = new DateTime(2023, 7, 25, 23, 13, 27, 432, DateTimeKind.Local).AddTicks(897),
+                            ModifiedDate = new DateTime(2023, 7, 28, 1, 46, 45, 981, DateTimeKind.Local).AddTicks(7172),
                             Name = "Jenkins",
                             Price = 100m,
-                            Time = new DateTime(2023, 7, 25, 23, 13, 27, 432, DateTimeKind.Local).AddTicks(898),
+                            Time = new DateTime(2023, 7, 28, 1, 46, 45, 981, DateTimeKind.Local).AddTicks(7174),
                             Url = "jenkins"
                         },
                         new
                         {
                             Id = 25,
-                            CreatedDate = new DateTime(2023, 7, 25, 23, 13, 27, 432, DateTimeKind.Local).AddTicks(899),
+                            CreatedDate = new DateTime(2023, 7, 28, 1, 46, 45, 981, DateTimeKind.Local).AddTicks(7175),
                             Description = "test.",
-                            ImageUrl = "8.jpg",
+                            ImageUrl = "25.png",
                             InstructorId = 8,
                             IsActive = true,
                             IsDeleted = false,
                             IsHome = true,
-                            ModifiedDate = new DateTime(2023, 7, 25, 23, 13, 27, 432, DateTimeKind.Local).AddTicks(899),
+                            ModifiedDate = new DateTime(2023, 7, 28, 1, 46, 45, 981, DateTimeKind.Local).AddTicks(7175),
                             Name = "Ansible",
                             Price = 100m,
-                            Time = new DateTime(2023, 7, 25, 23, 13, 27, 432, DateTimeKind.Local).AddTicks(900),
+                            Time = new DateTime(2023, 7, 28, 1, 46, 45, 981, DateTimeKind.Local).AddTicks(7177),
                             Url = "ansible"
                         },
                         new
                         {
                             Id = 26,
-                            CreatedDate = new DateTime(2023, 7, 25, 23, 13, 27, 432, DateTimeKind.Local).AddTicks(901),
+                            CreatedDate = new DateTime(2023, 7, 28, 1, 46, 45, 981, DateTimeKind.Local).AddTicks(7178),
                             Description = "test.",
-                            ImageUrl = "9.jpg",
+                            ImageUrl = "26.jpeg",
                             InstructorId = 9,
                             IsActive = true,
                             IsDeleted = false,
                             IsHome = true,
-                            ModifiedDate = new DateTime(2023, 7, 25, 23, 13, 27, 432, DateTimeKind.Local).AddTicks(901),
+                            ModifiedDate = new DateTime(2023, 7, 28, 1, 46, 45, 981, DateTimeKind.Local).AddTicks(7179),
                             Name = "Sonarcube",
                             Price = 100m,
-                            Time = new DateTime(2023, 7, 25, 23, 13, 27, 432, DateTimeKind.Local).AddTicks(902),
+                            Time = new DateTime(2023, 7, 28, 1, 46, 45, 981, DateTimeKind.Local).AddTicks(7180),
                             Url = "sonarcube"
                         },
                         new
                         {
                             Id = 27,
-                            CreatedDate = new DateTime(2023, 7, 25, 23, 13, 27, 432, DateTimeKind.Local).AddTicks(903),
+                            CreatedDate = new DateTime(2023, 7, 28, 1, 46, 45, 981, DateTimeKind.Local).AddTicks(7182),
                             Description = "test.",
-                            ImageUrl = "10.jpg",
+                            ImageUrl = "27.png",
                             InstructorId = 10,
                             IsActive = true,
                             IsDeleted = false,
                             IsHome = true,
-                            ModifiedDate = new DateTime(2023, 7, 25, 23, 13, 27, 432, DateTimeKind.Local).AddTicks(903),
+                            ModifiedDate = new DateTime(2023, 7, 28, 1, 46, 45, 981, DateTimeKind.Local).AddTicks(7182),
                             Name = "AWS",
                             Price = 100m,
-                            Time = new DateTime(2023, 7, 25, 23, 13, 27, 432, DateTimeKind.Local).AddTicks(905),
+                            Time = new DateTime(2023, 7, 28, 1, 46, 45, 981, DateTimeKind.Local).AddTicks(7184),
                             Url = "aws"
                         },
                         new
                         {
                             Id = 28,
-                            CreatedDate = new DateTime(2023, 7, 25, 23, 13, 27, 432, DateTimeKind.Local).AddTicks(905),
+                            CreatedDate = new DateTime(2023, 7, 28, 1, 46, 45, 981, DateTimeKind.Local).AddTicks(7185),
                             Description = "test.",
-                            ImageUrl = "11.jpg",
+                            ImageUrl = "28.png",
                             InstructorId = 11,
                             IsActive = true,
                             IsDeleted = false,
                             IsHome = true,
-                            ModifiedDate = new DateTime(2023, 7, 25, 23, 13, 27, 432, DateTimeKind.Local).AddTicks(906),
+                            ModifiedDate = new DateTime(2023, 7, 28, 1, 46, 45, 981, DateTimeKind.Local).AddTicks(7186),
                             Name = "Azure",
                             Price = 100m,
-                            Time = new DateTime(2023, 7, 25, 23, 13, 27, 432, DateTimeKind.Local).AddTicks(907),
+                            Time = new DateTime(2023, 7, 28, 1, 46, 45, 981, DateTimeKind.Local).AddTicks(7187),
                             Url = "azure"
                         },
                         new
                         {
                             Id = 29,
-                            CreatedDate = new DateTime(2023, 7, 25, 23, 13, 27, 432, DateTimeKind.Local).AddTicks(908),
+                            CreatedDate = new DateTime(2023, 7, 28, 1, 46, 45, 981, DateTimeKind.Local).AddTicks(7188),
                             Description = "testtt.",
-                            ImageUrl = "12.jpg",
+                            ImageUrl = "29.png",
                             InstructorId = 12,
                             IsActive = true,
                             IsDeleted = false,
                             IsHome = true,
-                            ModifiedDate = new DateTime(2023, 7, 25, 23, 13, 27, 432, DateTimeKind.Local).AddTicks(908),
+                            ModifiedDate = new DateTime(2023, 7, 28, 1, 46, 45, 981, DateTimeKind.Local).AddTicks(7189),
                             Name = "Serverless",
                             Price = 100m,
-                            Time = new DateTime(2023, 7, 25, 23, 13, 27, 432, DateTimeKind.Local).AddTicks(909),
+                            Time = new DateTime(2023, 7, 28, 1, 46, 45, 981, DateTimeKind.Local).AddTicks(7191),
                             Url = "serverless"
                         },
                         new
                         {
                             Id = 30,
-                            CreatedDate = new DateTime(2023, 7, 25, 23, 13, 27, 432, DateTimeKind.Local).AddTicks(910),
+                            CreatedDate = new DateTime(2023, 7, 28, 1, 46, 45, 981, DateTimeKind.Local).AddTicks(7192),
                             Description = "testtt.",
-                            ImageUrl = "12.jpg",
+                            ImageUrl = "30.png",
                             InstructorId = 12,
                             IsActive = true,
                             IsDeleted = false,
                             IsHome = true,
-                            ModifiedDate = new DateTime(2023, 7, 25, 23, 13, 27, 432, DateTimeKind.Local).AddTicks(910),
+                            ModifiedDate = new DateTime(2023, 7, 28, 1, 46, 45, 981, DateTimeKind.Local).AddTicks(7192),
                             Name = "Cloud Storage",
                             Price = 100m,
-                            Time = new DateTime(2023, 7, 25, 23, 13, 27, 432, DateTimeKind.Local).AddTicks(911),
+                            Time = new DateTime(2023, 7, 28, 1, 46, 45, 981, DateTimeKind.Local).AddTicks(7199),
                             Url = "cloudstorage"
                         });
                 });
@@ -1274,14 +1273,14 @@ namespace EducationApp.Data.Migrations
                     b.HasData(
                         new
                         {
-                            Id = "438d632c-265d-41c4-bd37-ece51e7e74b0",
+                            Id = "9836982d-6c1c-4e33-8a90-03f70b029031",
                             Description = "Yöneticilerin rolü bu.",
                             Name = "Admin",
                             NormalizedName = "ADMIN"
                         },
                         new
                         {
-                            Id = "e261eac6-77f6-497b-b103-0fdb82369377",
+                            Id = "0fb7a860-63ec-478a-bc1d-ac9857a16ce6",
                             Description = "Diğer tüm kullanıcıların rolü bu.",
                             Name = "User",
                             NormalizedName = "USER"
@@ -1375,11 +1374,11 @@ namespace EducationApp.Data.Migrations
                     b.HasData(
                         new
                         {
-                            Id = "1a47a145-39ca-40a7-8240-03c389b2b454",
+                            Id = "300b6f1f-4e38-4bec-87b2-f3debcc2b62f",
                             AccessFailedCount = 0,
                             Address = "Kemalpaşa Mh. Zühtübey Sk. No:12 D:3 Üsküdar",
                             City = "İstanbul",
-                            ConcurrencyStamp = "acb773b0-767e-4c2d-80db-f052bfa74256",
+                            ConcurrencyStamp = "7203d510-8ba0-4711-8c49-00e31b0bf02f",
                             DateOfBirth = new DateTime(1985, 7, 12, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Email = "denizfoca@gmail.com",
                             EmailConfirmed = true,
@@ -1390,7 +1389,7 @@ namespace EducationApp.Data.Migrations
                             Name = " ",
                             NormalizedEmail = "DENIZFOCA@GMAIL.COM",
                             NormalizedUserName = "ADMIN",
-                            PasswordHash = "AQAAAAIAAYagAAAAEEPSJJa1ns4YvqwIzAoJRDMZxP59Nk5qj4FvcG12vItMDqf+ziQazEoEieTqO+OcIw==",
+                            PasswordHash = "AQAAAAIAAYagAAAAEJAbJc6ptm2SU01S7v9TFKWNaaT6/HaBukgWctd/KvT4reVumQP9lSeMQUWiFSsP3Q==",
                             PhoneNumberConfirmed = false,
                             SecurityStamp = "",
                             TwoFactorEnabled = false,
@@ -1398,11 +1397,11 @@ namespace EducationApp.Data.Migrations
                         },
                         new
                         {
-                            Id = "c9070744-681b-4a3c-874f-ca48b061fb44",
+                            Id = "20aacc70-f2b6-4393-a1c0-0e4b350ab564",
                             AccessFailedCount = 0,
                             Address = "Barbaros Bulvarı Feda İş Hanı K:5 D:23 Beşiktaş",
                             City = "İstanbul",
-                            ConcurrencyStamp = "c92a7969-8e3c-4378-8c69-fddb54287cfc",
+                            ConcurrencyStamp = "6d950686-5468-4ec1-bc69-13a4c39bf9bf",
                             DateOfBirth = new DateTime(1983, 9, 10, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Email = "muratkendirli@gmail.com",
                             EmailConfirmed = true,
@@ -1413,7 +1412,7 @@ namespace EducationApp.Data.Migrations
                             Name = " ",
                             NormalizedEmail = "MURATKENDIRLI@GMAIL.COM",
                             NormalizedUserName = "USER",
-                            PasswordHash = "AQAAAAIAAYagAAAAEKoNjjm9q5ljzq8WBJnKpDZ1IJDvIDyCPhSYC4/7sesg85pwqAOPffEf8wyUO/Fp7g==",
+                            PasswordHash = "AQAAAAIAAYagAAAAEGiqbk/yV0JHYuW+KS9Ft4dZ0iP6mGx2ehb8rKSKYeuqevB2mTPi+YHOufr3WEo0Cw==",
                             PhoneNumberConfirmed = false,
                             SecurityStamp = "",
                             TwoFactorEnabled = false,
@@ -1506,13 +1505,13 @@ namespace EducationApp.Data.Migrations
                     b.HasData(
                         new
                         {
-                            UserId = "1a47a145-39ca-40a7-8240-03c389b2b454",
-                            RoleId = "438d632c-265d-41c4-bd37-ece51e7e74b0"
+                            UserId = "300b6f1f-4e38-4bec-87b2-f3debcc2b62f",
+                            RoleId = "9836982d-6c1c-4e33-8a90-03f70b029031"
                         },
                         new
                         {
-                            UserId = "c9070744-681b-4a3c-874f-ca48b061fb44",
-                            RoleId = "e261eac6-77f6-497b-b103-0fdb82369377"
+                            UserId = "20aacc70-f2b6-4393-a1c0-0e4b350ab564",
+                            RoleId = "0fb7a860-63ec-478a-bc1d-ac9857a16ce6"
                         });
                 });
 

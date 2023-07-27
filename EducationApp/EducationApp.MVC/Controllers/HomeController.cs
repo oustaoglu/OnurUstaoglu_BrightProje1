@@ -10,12 +10,10 @@ namespace EducationApp.MVC.Controllers
     public class HomeController : Controller
     {
         private readonly IProductService _productManager;
-        private readonly IInstructorService _instructorManager;
 
-        public HomeController(ICategoryService categoryManager, IProductService productManager, IInstructorService instructorManager)
+        public HomeController(ICategoryService categoryManager, IProductService productManager)
         {
             _productManager = productManager;
-            _instructorManager = instructorManager;
         }
 
         public async Task<IActionResult> Index()
@@ -32,18 +30,6 @@ namespace EducationApp.MVC.Controllers
                 InstructorUrl = p.Instructor.Url,
             }).ToList();
             return View(productViewModelList);
-        }
-        public async Task<IActionResult> Privacy()
-        {
-            List<Instructor> instructorList = await _instructorManager.GetInstructorsWithFullDataAsync(true);
-            List<InstructorViewModel> instructorViewModelList = instructorList.Select(p => new InstructorViewModel
-            {
-                Id = p.Id,
-                Name = p.FirstName,
-                Url = p.Url,
-                ImageUrl = p.PhotoUrl
-            }).ToList();
-            return View(instructorViewModelList);
         }
     }
 }

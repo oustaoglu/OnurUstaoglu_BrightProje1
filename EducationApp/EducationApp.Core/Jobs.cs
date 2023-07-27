@@ -7,22 +7,12 @@ using System.Threading.Tasks;
 using EducationApp.Core.Models;
 using Microsoft.AspNetCore.Http;
 
-
 namespace EducationApp.Core
 {
     public static class Jobs
     {
         public static string GetUrl(string text)
         {
-            #region Açıklamalar
-            /*
-             * Bu metot kendisine gönderilen url bilgisinin içindeki;
-             * 1) Latin alfabesine çevrilirken sorun yaratma ihtimali bulunan ı, İ gibi harfleri dönüştürecek.
-             * Diğer Türkçe karakterlerin yerine latin alfabesindeki karşılık gelen küçük harflerini koyacak ö->o, ş->s gibi
-             * Boşlukların yerine - işareti koyaacak
-             * Nokta(.), slash(/), noktalı virgül(;) gibi karakterleri de yok edecek.
-             */
-            #endregion
             #region Sorunlu Türkçe Karakterler Küçük Harfe Dönüştürülüyor
             text = text.Replace("I", "i");
             text = text.Replace("İ", "i");

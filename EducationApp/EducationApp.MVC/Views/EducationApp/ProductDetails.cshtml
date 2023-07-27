@@ -10,7 +10,7 @@
 					<div class="row">
 						<div class="col-lg-6 col-xl-5">
 							<div class="product-slider-box product-box-for">
-								<img class="w-100" src="/images/onur/@Model.ImageUrl" />
+								<img class="w-100" src="/images/products/@Model.ImageUrl" />
 							</div>
 						</div>
 						<div class="col-lg-6 col-xl-7">
@@ -33,17 +33,14 @@
 							</div>
 							<div>
 								<h3 class="bg-warning p-2 fs-6 text-white fw-bold display-6 mt-3">@Model.InstructorName</h3>
-								<img class="float-end me-1" src="https://picsum.photos/100/100" />
+								
 								<p class="fs-6">@Html.Raw(Model.InstructorAbout)</p>
-
 							</div>
-
-
 							<div class="button-list mt-5 mb-5">
 
 								<button type="button" class="btn btn-outline-dark font-17">Sepete Ekle</button>
 							</div>
-
+							<img class="float-end me-1" src="/images/instructors/1.png" />
 						</div>
 					</div>
 				</div>
