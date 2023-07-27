@@ -46,7 +46,7 @@ namespace EducationApp.MVC.Areas.Admin.Controllers
         [HttpGet]
         public IActionResult Create()
         {
-            List<int> years = Jobs.GetYears();
+            List<int> years = Jobs.GetYears(0, 2005);
             InstructorAddViewModel instructorAddViewModel = new InstructorAddViewModel
             {
                 Years = years.Select(y => new SelectListItem
@@ -79,7 +79,7 @@ namespace EducationApp.MVC.Areas.Admin.Controllers
                 _notyf.Success("Yazar kaydı başarıyla tamamlanmıştır.");
                 return RedirectToAction("Index");
             }
-            List<int> years = Jobs.GetYears();
+            List<int> years = Jobs.GetYears(0, 2005);
             instructorAddViewModel.Years = years.Select(y => new SelectListItem
             {
                 Text = y.ToString(),
@@ -98,7 +98,7 @@ namespace EducationApp.MVC.Areas.Admin.Controllers
             {
                 return NotFound();
             }
-            var years = Jobs.GetYears();
+            var years = Jobs.GetYears(0, 2005);
             InstructorEditViewModel instructorEditViewModel = new InstructorEditViewModel
             {
                 Id = instructor.Id,
@@ -139,7 +139,7 @@ namespace EducationApp.MVC.Areas.Admin.Controllers
                 _notyf.Success("Yazar bilgisi başarıyla güncellenmiştir.", 2);
                 return RedirectToAction("Index");
             }
-            List<int> years = Jobs.GetYears();
+            List<int> years = Jobs.GetYears(0, 2005);
             instructorEditViewModel.Years = years.Select(y => new SelectListItem
             {
                 Text = y.ToString(),

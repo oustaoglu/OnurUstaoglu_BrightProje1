@@ -9,6 +9,10 @@ C:\Users\onrus\OneDrive\Belgeler\OnurUstaoglu_BrightProje1\EducationApp\Educatio
 C:\Users\onrus\OneDrive\Belgeler\OnurUstaoglu_BrightProje1\EducationApp\EducationApp.MVC\bin\Debug\net7.0\AspNetCoreHero.ToastNotification.Views.dll
 C:\Users\onrus\OneDrive\Belgeler\OnurUstaoglu_BrightProje1\EducationApp\EducationApp.MVC\bin\Debug\net7.0\AspNetCoreHero.ToastNotification.dll
 C:\Users\onrus\OneDrive\Belgeler\OnurUstaoglu_BrightProje1\EducationApp\EducationApp.MVC\bin\Debug\net7.0\Humanizer.dll
+C:\Users\onrus\OneDrive\Belgeler\OnurUstaoglu_BrightProje1\EducationApp\EducationApp.MVC\bin\Debug\net7.0\Iyzipay.dll
+C:\Users\onrus\OneDrive\Belgeler\OnurUstaoglu_BrightProje1\EducationApp\EducationApp.MVC\bin\Debug\net7.0\Microsoft.AspNetCore.Cryptography.Internal.dll
+C:\Users\onrus\OneDrive\Belgeler\OnurUstaoglu_BrightProje1\EducationApp\EducationApp.MVC\bin\Debug\net7.0\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
+C:\Users\onrus\OneDrive\Belgeler\OnurUstaoglu_BrightProje1\EducationApp\EducationApp.MVC\bin\Debug\net7.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
 C:\Users\onrus\OneDrive\Belgeler\OnurUstaoglu_BrightProje1\EducationApp\EducationApp.MVC\bin\Debug\net7.0\Microsoft.Data.Sqlite.dll
 C:\Users\onrus\OneDrive\Belgeler\OnurUstaoglu_BrightProje1\EducationApp\EducationApp.MVC\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.dll
 C:\Users\onrus\OneDrive\Belgeler\OnurUstaoglu_BrightProje1\EducationApp\EducationApp.MVC\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.Abstractions.dll
@@ -16,6 +20,9 @@ C:\Users\onrus\OneDrive\Belgeler\OnurUstaoglu_BrightProje1\EducationApp\Educatio
 C:\Users\onrus\OneDrive\Belgeler\OnurUstaoglu_BrightProje1\EducationApp\EducationApp.MVC\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.Relational.dll
 C:\Users\onrus\OneDrive\Belgeler\OnurUstaoglu_BrightProje1\EducationApp\EducationApp.MVC\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.Sqlite.dll
 C:\Users\onrus\OneDrive\Belgeler\OnurUstaoglu_BrightProje1\EducationApp\EducationApp.MVC\bin\Debug\net7.0\Microsoft.Extensions.DependencyModel.dll
+C:\Users\onrus\OneDrive\Belgeler\OnurUstaoglu_BrightProje1\EducationApp\EducationApp.MVC\bin\Debug\net7.0\Microsoft.Extensions.Identity.Core.dll
+C:\Users\onrus\OneDrive\Belgeler\OnurUstaoglu_BrightProje1\EducationApp\EducationApp.MVC\bin\Debug\net7.0\Microsoft.Extensions.Identity.Stores.dll
+C:\Users\onrus\OneDrive\Belgeler\OnurUstaoglu_BrightProje1\EducationApp\EducationApp.MVC\bin\Debug\net7.0\Microsoft.Extensions.Options.dll
 C:\Users\onrus\OneDrive\Belgeler\OnurUstaoglu_BrightProje1\EducationApp\EducationApp.MVC\bin\Debug\net7.0\Mono.TextTemplating.dll
 C:\Users\onrus\OneDrive\Belgeler\OnurUstaoglu_BrightProje1\EducationApp\EducationApp.MVC\bin\Debug\net7.0\Newtonsoft.Json.dll
 C:\Users\onrus\OneDrive\Belgeler\OnurUstaoglu_BrightProje1\EducationApp\EducationApp.MVC\bin\Debug\net7.0\SQLitePCLRaw.batteries_v2.dll
@@ -69,6 +76,7 @@ C:\Users\onrus\OneDrive\Belgeler\OnurUstaoglu_BrightProje1\EducationApp\Educatio
 C:\Users\onrus\OneDrive\Belgeler\OnurUstaoglu_BrightProje1\EducationApp\EducationApp.MVC\obj\Debug\net7.0\staticwebassets.pack.json
 C:\Users\onrus\OneDrive\Belgeler\OnurUstaoglu_BrightProje1\EducationApp\EducationApp.MVC\obj\Debug\net7.0\staticwebassets.build.json
 C:\Users\onrus\OneDrive\Belgeler\OnurUstaoglu_BrightProje1\EducationApp\EducationApp.MVC\obj\Debug\net7.0\staticwebassets.development.json
+C:\Users\onrus\OneDrive\Belgeler\OnurUstaoglu_BrightProje1\EducationApp\EducationApp.MVC\obj\Debug\net7.0\scopedcss\Areas\Admin\Views\Shared\_Layout.cshtml.rz.scp.css
 C:\Users\onrus\OneDrive\Belgeler\OnurUstaoglu_BrightProje1\EducationApp\EducationApp.MVC\obj\Debug\net7.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
 C:\Users\onrus\OneDrive\Belgeler\OnurUstaoglu_BrightProje1\EducationApp\EducationApp.MVC\obj\Debug\net7.0\scopedcss\bundle\EducationApp.MVC.styles.css
 C:\Users\onrus\OneDrive\Belgeler\OnurUstaoglu_BrightProje1\EducationApp\EducationApp.MVC\obj\Debug\net7.0\scopedcss\projectbundle\EducationApp.MVC.bundle.scp.css

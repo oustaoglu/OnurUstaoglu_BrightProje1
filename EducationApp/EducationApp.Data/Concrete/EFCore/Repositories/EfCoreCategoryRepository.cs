@@ -12,10 +12,17 @@ namespace EducationApp.Data.Concrete.EFCore.Repositories
 {
 	public class EfCoreCategoryRepository : EfCoreGenericRepository<Category>, ICategoryRepository
 	{
-        EducationAppContext _context = new EducationAppContext();
-        public async Task<List<Category>> GetAllCategoriesAsync(bool isDeleted, bool? isActive = null)
+		public EfCoreCategoryRepository(EducationAppContext _context) : base(_context)
+		{
+
+		}
+		private EducationAppContext Context
+		{
+			get { return _dbContext as EducationAppContext; }
+		}
+		public async Task<List<Category>> GetAllCategoriesAsync(bool isDeleted, bool? isActive = null)
         {
-            var result = _context
+            var result = Context
                 .Categories
                 .Where(c => c.IsDeleted == isDeleted)
                 .AsQueryable();

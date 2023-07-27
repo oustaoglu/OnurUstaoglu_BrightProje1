@@ -15,9 +15,14 @@ namespace EducationApp.Business.Abstract
 		void Update(Product product);
 		void Delete(Product product);
 
-		Task<List<Product>> GetHomePageProductsAsync();
+		Task<List<Product>> GetProductsWithFullDataAsync(bool? isHome = null, bool? isActive = null);
 		Task<List<Product>> GetAllActiveProductsAsync(string categoryUrl = null, string instructorUrl = null);
-        Task<Product> GetProductsByUrlAsync(string url);
-        Task<List<Product>> GetProductsWithFullDataAsync(bool? isHome = null, bool? isActive = null);
-    }
+		Task<Product> GetProductByUrlAsync(string productUrl);
+		Task<Product> GetProductByIdAsync(int id);
+		Task<List<Product>> GetAllProductsWithInstructor(bool isDeleted);
+		Task CreateProductAsync(Product product, List<int> SelectedCategoryIds);
+		Task UpdateInstructorOfProducts();
+		Task CheckProductsCategories();
+		void UpdateProduct(Product product);
+	}
 }

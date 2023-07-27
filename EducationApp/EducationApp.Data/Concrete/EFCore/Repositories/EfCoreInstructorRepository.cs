@@ -12,20 +12,28 @@ namespace EducationApp.Data.Concrete.EFCore.Repositories
 {
     public class EfCoreInstructorRepository : EfCoreGenericRepository<Instructor>, IInstructorRepository
     {
-        EducationAppContext _context = new EducationAppContext();
+		public EfCoreInstructorRepository(EducationAppContext _context) : base(_context)
+		{
 
-        public async Task CreateWithUrl(Instructor instructor)
+		}
+
+		private EducationAppContext Context
+		{
+			get { return _dbContext as EducationAppContext; }
+		}
+
+		public async Task CreateWithUrl(Instructor instructor)
         {
-            await _context.Instructors.AddAsync(instructor);
-            await _context.SaveChangesAsync();
+            await Context.Instructors.AddAsync(instructor);
+            await Context.SaveChangesAsync();
             instructor.Url = instructor.Url + "-" + instructor.Id;
-            await _context.SaveChangesAsync();
+            await Context.SaveChangesAsync();
         }
 
         public async Task<List<Instructor>> GetAllActiveInstructorsAsync(string categoryUrl, string productUrl)
         {
 
-            var result = _context
+            var result = Context
                 .Instructors
                 .Where(p => p.IsActive && !p.IsDeleted)
                 .Include(p => p.Products)
@@ -41,7 +49,7 @@ namespace EducationApp.Data.Concrete.EFCore.Repositories
 
         public async Task<List<Instructor>> GetAllInstructorsAsync(bool isDeleted, bool? isActive)
         {
-            var result = _context
+            var result = Context
                 .Instructors
                 .Where(i => i.IsDeleted == isDeleted)
                 .AsQueryable();
@@ -54,18 +62,9 @@ namespace EducationApp.Data.Concrete.EFCore.Repositories
             return await result.ToListAsync();
         }
 
-        public async Task<List<Instructor>> GetHomePageInstructorsAsync()
-        {
-            var result = await _context
-                .Instructors
-                .Where(b => b.IsActive && !b.IsDeleted)
-                .ToListAsync();
-            return result;
-        }
-
         public async Task<Instructor> GetInstructorsByUrlAsync(string url)
         {
-            var result = await _context
+            var result = await Context
                 .Instructors
                 .Where(b => b.IsActive && !b.IsDeleted && b.Url == url)
                 .FirstOrDefaultAsync();
@@ -74,7 +73,7 @@ namespace EducationApp.Data.Concrete.EFCore.Repositories
 
         public async Task<List<Instructor>> GetInstructorsWithFullDataAsync(bool? isActive)
         {
-            var result = _context
+            var result = Context
                 .Instructors
                 .Where(b => !b.IsDeleted)
                 .AsQueryable();

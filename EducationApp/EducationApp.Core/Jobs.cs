@@ -5,6 +5,8 @@ using System.Text;
 using System.Text.Json;
 using System.Threading.Tasks;
 using EducationApp.Core.Models;
+using Microsoft.AspNetCore.Http;
+
 
 namespace EducationApp.Core
 {
@@ -73,30 +75,43 @@ namespace EducationApp.Core
             #endregion
             return text;
         }
-        public static string CutText(string text, int length)
-        {
-            return text.Substring(0, text.Length < length ? text.Length : 30);
-        }
-        public static List<int> GetYears()
-        {
-            int year = DateTime.Now.Year;
-            int maxYear = year - 18;
-            int minYear = 0;
-            List<int> years = new List<int>();
-            for (int i = minYear; i <= maxYear; i++)
-            {
-                years.Add(i);
-            }
-            return years;
-        }
-        public static List<CityType> GetCities()
-        {
-            using (StreamReader sr = new StreamReader(Path.Combine(Directory.GetCurrentDirectory(), "wwwroot/json/cities.json")))
-            {
-                string jsonResult = sr.ReadToEnd();
-                List<CityType> cities = JsonSerializer.Deserialize<List<CityType>>(jsonResult);
-                return cities;
-            }
-        }
-    }
+		public static string CutText(string text, int length)
+		{
+			return text.Substring(0, text.Length < length ? text.Length : 30);
+		}
+		public static List<int> GetYears(int startYear, int endYear)
+		{
+			List<int> years = new List<int>();
+			for (int i = startYear; i <= endYear; i++)
+			{
+				years.Add(i);
+			}
+			return years;
+		}
+		public static List<CityType> GetCities()
+		{
+			using (StreamReader sr = new StreamReader(Path.Combine(Directory.GetCurrentDirectory(), "wwwroot/json/cities.json")))
+			{
+				string jsonResult = sr.ReadToEnd();
+				List<CityType> cities = JsonSerializer.Deserialize<List<CityType>>(jsonResult);
+				return cities;
+			}
+		}
+		public static string UploadImage(IFormFile imageFile, string url, string dir)
+		{
+			var extension = Path.GetExtension(imageFile.FileName);
+
+			var randomName = $"{url}-{Guid.NewGuid()}{extension}";
+
+			var path = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot", "images", dir, randomName);
+
+			using (FileStream stream = new FileStream(path, FileMode.Create))
+			{
+				imageFile.CopyTo(stream);
+			}
+
+			return randomName;
+
+		}
+	}
 }

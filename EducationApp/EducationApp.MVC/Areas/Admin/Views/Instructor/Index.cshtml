@@ -5,7 +5,7 @@
     </div>
     <div class="col-md-6 d-flex align-items-center justify-content-end">
         <a asp-area="Admin"
-           asp-controller="instructor"
+           asp-controller="Instructor"
            asp-action="Create"
            class="btn btn-primary">Yeni Yazar</a>
     </div>
@@ -41,7 +41,7 @@
                         <td>
                             <form class="form-check"
                                   asp-area="Admin"
-                                  asp-controller="instructor"
+                                  asp-controller="Instructor"
                                   asp-action="UpdateIsActive"
                                   asp-route-id="@instructor.Id"
                                   id="form-instructor-is-active-@instructor.Id">
@@ -59,7 +59,7 @@
                             <!-- KALICI OLARAK SİLME BUTONU -->
                             <a class="btn btn-danger btn-sm"
                                asp-area="Admin"
-                               asp-controller="instructor"
+                               asp-controller="Instructor"
                                asp-action="Delete"
                                asp-route-id="@instructor.Id">
                                 <i class="fa-solid fa-trash"></i>
@@ -71,7 +71,7 @@
                             <!-- GÜNCELLEME BUTONU -->
                             <a class="btn btn-info btn-sm"
                                asp-area="Admin"
-                               asp-controller="instructor"
+                               asp-controller="Instructor"
                                asp-action="Edit"
                                asp-route-id="@instructor.Id">
                                 <i class="fa-solid fa-pen-to-square"></i>

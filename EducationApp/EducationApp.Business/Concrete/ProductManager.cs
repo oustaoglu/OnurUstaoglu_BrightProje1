@@ -18,14 +18,31 @@ namespace EducationApp.Business.Concrete
 			_productRepository = productRepository;
 		}
 
+		public async Task CheckProductsCategories()
+		{
+			await _productRepository.CheckProductsCategories();
+		}
+
 		public async Task CreateAsync(Product product)
 		{
-			await _productRepository.CreateAsync(product);
+            await _productRepository.CreateAsync(product);
+
+		}
+
+		public async Task CreateProductAsync(Product product, List<int> SelectedCategoryIds)
+		{
+			await _productRepository.CreateProductAsync(product, SelectedCategoryIds);
 		}
 
 		public void Delete(Product product)
 		{
 			_productRepository.Delete(product);
+		}
+
+		public async Task<List<Product>> GetAllActiveProductsAsync(string categoryUrl = null, string instructorUrl = null)
+		{
+			var result = await _productRepository.GetAllActiveProductsAsync(categoryUrl, instructorUrl);
+			return result;
 		}
 
 		public async Task<List<Product>> GetAllAsync()
@@ -34,37 +51,48 @@ namespace EducationApp.Business.Concrete
 			return result;
 		}
 
+		public async Task<List<Product>> GetAllProductsWithInstructor(bool isDeleted)
+		{
+			var result = await _productRepository.GetAllProductsWithInstructor(isDeleted);
+			return result;
+		}
+
 		public async Task<Product> GetByIdAsync(int id)
 		{
 			var result = await _productRepository.GetByIdAsync(id);
 			return result;
 		}
+
+		public async Task<Product> GetProductByIdAsync(int id)
+		{
+			return await _productRepository.GetProductByIdAsync(id);
+		}
+
+		public async Task<Product> GetProductByUrlAsync(string productUrl)
+		{
+			var result = await _productRepository.GetProductByUrlAsync(productUrl);
+			return result;
+		}
+
+		public async Task<List<Product>> GetProductsWithFullDataAsync(bool? isHome = null, bool? isActive = null)
+		{
+			var result = await _productRepository.GetProductsWithFullDataAsync(isHome, isActive);
+			return result;
+		}
+
 		public void Update(Product product)
 		{
-			_productRepository.Update(product);
+            _productRepository.Update(product);
 		}
 
-		public async Task<List<Product>> GetHomePageProductsAsync()
+		public async Task UpdateInstructorOfProducts()
 		{
-			var result = await _productRepository.GetHomePageProductsAsync();
-			return result;
+			await _productRepository.UpdateInstructorOfProducts();
 		}
 
-		public async Task<List<Product>> GetAllActiveProductsAsync(string categoryUrl = null, string instructorUrl = null)
+		public void UpdateProduct(Product product)
 		{
-			var result = await _productRepository.GetAllActiveProductsAsync(categoryUrl, instructorUrl);
-			return result;
+			_productRepository.UpdateProduct(product);
 		}
-		public async Task<Product> GetProductsByUrlAsync(string productUrl)
-		{
-			var result = await _productRepository.GetProductsByUrlAsync(productUrl);
-			return result;
-		}
-
-        public async Task<List<Product>> GetProductsWithFullDataAsync(bool? isHome = null, bool? isActive = null)
-        {
-            var result = await _productRepository.GetProductsWithFullDataAsync(isHome, isActive);
-            return result;
-        }
-    }
+	}
 }

@@ -15,7 +15,79 @@ namespace EducationApp.Data.Migrations
         protected override void BuildModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
-            modelBuilder.HasAnnotation("ProductVersion", "7.0.8");
+            modelBuilder.HasAnnotation("ProductVersion", "7.0.9");
+
+            modelBuilder.Entity("EducationApp.Entity.Concrete.Cart", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("INTEGER");
+
+                    b.Property<DateTime>("CreatedDate")
+                        .HasColumnType("TEXT");
+
+                    b.Property<bool>("IsActive")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<bool>("IsDeleted")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<DateTime>("ModifiedDate")
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("UserId")
+                        .HasColumnType("TEXT");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("UserId");
+
+                    b.ToTable("Carts");
+
+                    b.HasData(
+                        new
+                        {
+                            Id = 1,
+                            CreatedDate = new DateTime(2023, 7, 25, 23, 13, 27, 429, DateTimeKind.Local).AddTicks(7440),
+                            IsActive = true,
+                            IsDeleted = false,
+                            ModifiedDate = new DateTime(2023, 7, 25, 23, 13, 27, 429, DateTimeKind.Local).AddTicks(7457),
+                            UserId = "1a47a145-39ca-40a7-8240-03c389b2b454"
+                        },
+                        new
+                        {
+                            Id = 2,
+                            CreatedDate = new DateTime(2023, 7, 25, 23, 13, 27, 429, DateTimeKind.Local).AddTicks(7461),
+                            IsActive = true,
+                            IsDeleted = false,
+                            ModifiedDate = new DateTime(2023, 7, 25, 23, 13, 27, 429, DateTimeKind.Local).AddTicks(7462),
+                            UserId = "c9070744-681b-4a3c-874f-ca48b061fb44"
+                        });
+                });
+
+            modelBuilder.Entity("EducationApp.Entity.Concrete.CartItem", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("INTEGER");
+
+                    b.Property<int>("CartId")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<int>("ProductId")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<int>("Quantity")
+                        .HasColumnType("INTEGER");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("CartId");
+
+                    b.HasIndex("ProductId");
+
+                    b.ToTable("CartItems");
+                });
 
             modelBuilder.Entity("EducationApp.Entity.Concrete.Category", b =>
                 {
@@ -57,77 +129,77 @@ namespace EducationApp.Data.Migrations
                         new
                         {
                             Id = 1,
-                            CreatedDate = new DateTime(2023, 7, 20, 19, 35, 30, 694, DateTimeKind.Local).AddTicks(1871),
+                            CreatedDate = new DateTime(2023, 7, 25, 23, 13, 27, 430, DateTimeKind.Local).AddTicks(3857),
                             Description = "Yazılım geliştirme, bilgisayar programlarının tasarımı, oluşturulması ve sürdürülmesi sürecidir. Bu süreç, kullanıcı ihtiyaçlarını karşılamak, işlevsellik sağlamak ve teknolojik çözümler üretmek için kodlama, test etme ve dağıtma adımlarını içerir. Yazılım geliştirme, bilgisayar, mobil cihazlar, web uygulamaları, oyunlar ve daha fazlası gibi çeşitli alanlarda kullanılır. Bu süreçte programlama dilleri, veritabanları, algoritmalar ve yazılım tasarım prensipleri gibi araçlar kullanılır. Yazılım geliştirme, hızlı teknolojik ilerlemelerle birlikte sürekli evrilen ve iyileşen bir disiplindir ve kullanıcıların ihtiyaçlarını karşılamak için yenilikçi ve güvenilir çözümler sunmayı hedefler.",
                             IsActive = true,
                             IsDeleted = false,
-                            ModifiedDate = new DateTime(2023, 7, 20, 19, 35, 30, 694, DateTimeKind.Local).AddTicks(1882),
+                            ModifiedDate = new DateTime(2023, 7, 25, 23, 13, 27, 430, DateTimeKind.Local).AddTicks(3863),
                             Name = "Yazılım Geliştime",
                             Url = "yazilim-gelistirme"
                         },
                         new
                         {
                             Id = 2,
-                            CreatedDate = new DateTime(2023, 7, 20, 19, 35, 30, 694, DateTimeKind.Local).AddTicks(1886),
+                            CreatedDate = new DateTime(2023, 7, 25, 23, 13, 27, 430, DateTimeKind.Local).AddTicks(3866),
                             Description = "Mobil uygulama geliştirme, mobil platformlarda çalışabilen kullanışlı ve etkileşimli yazılım uygulamalarının tasarımı, oluşturulması ve dağıtılması sürecidir. Bu süreç, kullanıcı ihtiyaçlarını karşılamak, sorunlara çözüm sunmak ve kullanıcı deneyimini geliştirmek için programlama, arayüz tasarımı, test etme ve dağıtma adımlarını içerir. Mobil uygulama geliştiricileri, Android veya iOS gibi belirli platformlar için uygun programlama dilleri ve geliştirme araçları kullanır. Bu süreç, hızlı teknolojik değişimlerle birlikte sürekli gelişir ve kullanıcıların günlük yaşamlarını kolaylaştıran, eğlence sunan ve işlevsellik sağlayan yenilikçi uygulamaların ortaya çıkmasını sağlar. Mobil uygulama geliştirme, geniş bir kullanıcı tabanına erişmek ve büyüyen mobil pazarlardan yararlanmak isteyen işletmeler ve geliştiriciler için önemli bir stratejidir.",
                             IsActive = true,
                             IsDeleted = false,
-                            ModifiedDate = new DateTime(2023, 7, 20, 19, 35, 30, 694, DateTimeKind.Local).AddTicks(1886),
+                            ModifiedDate = new DateTime(2023, 7, 25, 23, 13, 27, 430, DateTimeKind.Local).AddTicks(3867),
                             Name = "Mobil Uygulama Geliştirme",
                             Url = "mobil-uygulama-gelistirme"
                         },
                         new
                         {
                             Id = 3,
-                            CreatedDate = new DateTime(2023, 7, 20, 19, 35, 30, 694, DateTimeKind.Local).AddTicks(1888),
+                            CreatedDate = new DateTime(2023, 7, 25, 23, 13, 27, 430, DateTimeKind.Local).AddTicks(3869),
                             Description = "Oyun geliştirme, video oyunlarının tasarımı, programlaması ve oluşturulması sürecidir. Bu süreç, oyun kavramının belirlenmesi, hikaye yazımı, karakter tasarımı, dünya oluşturma, grafik ve ses tasarımı, oyun mekaniği ve kullanıcı arayüzü gibi aşamaları içerir. Oyun geliştirme ekipleri, oyun programcıları, sanatçılar, tasarımcılar ve ses mühendisleri gibi farklı disiplinlerden profesyonelleri içerir. Geliştiriciler, oyun motorları, programlama dilleri, grafik araçları ve geliştirme ortamları kullanarak oyunun yapısını oluştururlar. Oyun geliştirme, eğlence endüstrisinde önemli bir rol oynar ve oyunculara heyecan verici deneyimler sunmak için sürekli yenilikçilik ve yaratıcılık gerektirir.",
                             IsActive = true,
                             IsDeleted = false,
-                            ModifiedDate = new DateTime(2023, 7, 20, 19, 35, 30, 694, DateTimeKind.Local).AddTicks(1888),
+                            ModifiedDate = new DateTime(2023, 7, 25, 23, 13, 27, 430, DateTimeKind.Local).AddTicks(3869),
                             Name = "Oyun Geliştime",
                             Url = "oyun-gelistirme"
                         },
                         new
                         {
                             Id = 4,
-                            CreatedDate = new DateTime(2023, 7, 20, 19, 35, 30, 694, DateTimeKind.Local).AddTicks(1889),
+                            CreatedDate = new DateTime(2023, 7, 25, 23, 13, 27, 430, DateTimeKind.Local).AddTicks(3870),
                             Description = "Web, dünya genelinde bilgilere erişim sağlayan ve kullanıcıların çeşitli hizmetlere bağlanmasını mümkün kılan bir ağdır. Web, HTML, CSS ve JavaScript gibi teknolojilerle oluşturulan web siteleri ve web uygulamaları aracılığıyla çalışır. Web, kullanıcıların arama yapma, e-posta gönderme, sosyal ağlarda etkileşimde bulunma, alışveriş yapma ve daha birçok işlemi gerçekleştirebilecekleri bir platform sunar. Web geliştirme, web sitelerinin ve uygulamalarının tasarımını, kodlamasını, testini ve dağıtımını içerir. Bu süreçte kullanıcı deneyimi, güvenlik, performans ve uyumluluk önemlidir. Web, küresel bağlantıyı sağlayan ve bilgiye kolay erişimi temsil eden önemli bir iletişim ve etkileşim aracıdır.",
                             IsActive = true,
                             IsDeleted = false,
-                            ModifiedDate = new DateTime(2023, 7, 20, 19, 35, 30, 694, DateTimeKind.Local).AddTicks(1889),
+                            ModifiedDate = new DateTime(2023, 7, 25, 23, 13, 27, 430, DateTimeKind.Local).AddTicks(3871),
                             Name = "Web",
                             Url = "web"
                         },
                         new
                         {
                             Id = 5,
-                            CreatedDate = new DateTime(2023, 7, 20, 19, 35, 30, 694, DateTimeKind.Local).AddTicks(1890),
+                            CreatedDate = new DateTime(2023, 7, 25, 23, 13, 27, 430, DateTimeKind.Local).AddTicks(3872),
                             Description = "Veritabanı, yapılandırılmış verilerin depolandığı ve yönetildiği bir elektronik sistemdir. Veritabanları, bilgiyi organize etmek, erişmek, güncellemek ve analiz etmek için kullanılır. İşletmeler, kuruluşlar ve web uygulamaları gibi birçok alan veritabanlarını kullanır. Veritabanı yönetim sistemleri (DBMS), veritabanının oluşturulması, yapılandırılması, sorgulanması ve güncellenmesi için gereken araçları sağlar. Veritabanı tasarımı, veri bütünlüğü, performans optimizasyonu ve güvenlik gibi konular önemlidir. Veritabanları, büyük veri kümelerini işlemek, veri analizi yapmak ve karar verme süreçlerini desteklemek için önemli bir rol oynar. Veritabanları, verilerin etkili bir şekilde yönetilmesini ve bilgi tabanlı çözümler sunulmasını sağlar.",
                             IsActive = true,
                             IsDeleted = false,
-                            ModifiedDate = new DateTime(2023, 7, 20, 19, 35, 30, 694, DateTimeKind.Local).AddTicks(1891),
+                            ModifiedDate = new DateTime(2023, 7, 25, 23, 13, 27, 430, DateTimeKind.Local).AddTicks(3872),
                             Name = "Veritabanı",
                             Url = "veritabani"
                         },
                         new
                         {
                             Id = 6,
-                            CreatedDate = new DateTime(2023, 7, 20, 19, 35, 30, 694, DateTimeKind.Local).AddTicks(1892),
+                            CreatedDate = new DateTime(2023, 7, 25, 23, 13, 27, 430, DateTimeKind.Local).AddTicks(3873),
                             Description = "DevOps, yazılım geliştirme ve işletim süreçlerini birleştirerek, yazılım projelerinin daha hızlı, güvenilir ve sürekli bir şekilde dağıtılmasını sağlayan bir yaklaşımdır. Bu metodoloji, geliştirme (Development) ve işletim (Operations) ekipleri arasında işbirliği ve iletişimi teşvik eder. DevOps, otomasyon, sürekli entegrasyon ve sürekli dağıtım gibi pratikleri kullanarak, yazılımın yaşam döngüsünü hızlandırır ve kaliteyi artırır. Ayrıca, altyapı yönetimi, hata izleme ve performans analizi gibi operasyonel süreçlere odaklanır. DevOps, esneklik, hızlı yanıt verme ve müşteri memnuniyetini artırma gibi faydalar sağlayarak yazılım projelerinin başarısını destekler.",
                             IsActive = true,
                             IsDeleted = false,
-                            ModifiedDate = new DateTime(2023, 7, 20, 19, 35, 30, 694, DateTimeKind.Local).AddTicks(1892),
+                            ModifiedDate = new DateTime(2023, 7, 25, 23, 13, 27, 430, DateTimeKind.Local).AddTicks(3874),
                             Name = "DevOps",
                             Url = "devops"
                         },
                         new
                         {
                             Id = 7,
-                            CreatedDate = new DateTime(2023, 7, 20, 19, 35, 30, 694, DateTimeKind.Local).AddTicks(1893),
+                            CreatedDate = new DateTime(2023, 7, 25, 23, 13, 27, 430, DateTimeKind.Local).AddTicks(3875),
                             Description = "Bulut, internet üzerinde sunulan paylaşımlı bilgi işlem kaynaklarını ifade eder. Bulut hizmetleri, sunucular, depolama, veritabanları, ağ altyapısı ve uygulama hizmetleri gibi kaynaklara erişimi kolaylaştırır. Kullanıcılar, istedikleri zaman istedikleri yerden bu kaynaklara güvenli bir şekilde erişebilir ve ihtiyaçlarına göre ölçeklendirebilir. Bulut hizmetleri, esneklik, ölçeklenebilirlik, veri yedekleme, sürekli çalışma ve maliyet verimliliği gibi avantajlar sağlar. Bulut, işletmeler için altyapı maliyetlerini azaltırken, geliştiriciler için hızlı bir şekilde uygulama dağıtma imkanı sunar. Ayrıca, kullanıcılara mobil cihazlar ve web tarayıcıları aracılığıyla geniş bir hizmet yelpazesine erişme kolaylığı sağlar.",
                             IsActive = true,
                             IsDeleted = false,
-                            ModifiedDate = new DateTime(2023, 7, 20, 19, 35, 30, 694, DateTimeKind.Local).AddTicks(1893),
+                            ModifiedDate = new DateTime(2023, 7, 25, 23, 13, 27, 430, DateTimeKind.Local).AddTicks(3875),
                             Name = "Bulut",
                             Url = "bulut"
                         });
@@ -195,12 +267,12 @@ namespace EducationApp.Data.Migrations
                             Id = 1,
                             About = "İlber Ortaylı, Türk tarihçi, akademisyen ve yazar. Türk Tarih Kurumu Şeref Üyesidir. Ortaylı, Uluslararası Osmanlı Etütleri Komitesi yönetim kurulu üyesi ve Avrupa İranoloji Cemiyeti ve Avusturya-Türk Bilimler Forumu üyesidir.",
                             BirthOfYear = 1950,
-                            CreatedDate = new DateTime(2023, 7, 20, 19, 35, 30, 694, DateTimeKind.Local).AddTicks(3664),
+                            CreatedDate = new DateTime(2023, 7, 25, 23, 13, 27, 430, DateTimeKind.Local).AddTicks(6106),
                             FirstName = "İlber",
                             IsActive = true,
                             IsDeleted = false,
                             LastName = "Ortaylı",
-                            ModifiedDate = new DateTime(2023, 7, 20, 19, 35, 30, 694, DateTimeKind.Local).AddTicks(3666),
+                            ModifiedDate = new DateTime(2023, 7, 25, 23, 13, 27, 430, DateTimeKind.Local).AddTicks(6109),
                             PhotoUrl = "ilber-ortayli.jpg",
                             ProductId = 1,
                             Url = "ilber-ortayli-1"
@@ -210,12 +282,12 @@ namespace EducationApp.Data.Migrations
                             Id = 2,
                             About = "Afşin Kum Kimdir? Afşin Kum, 1972 İzmir doğumlu. Boğaziçi Üniversitesinde bilgisayar mühendisliği, Bilgi Üniversitesinde sinema-televizyon öğrenimi gördü. 1997'den bu yana çeşitli kurumlarda yazılımcı ve yönetici olarak çalıştı.",
                             BirthOfYear = 1960,
-                            CreatedDate = new DateTime(2023, 7, 20, 19, 35, 30, 694, DateTimeKind.Local).AddTicks(3671),
+                            CreatedDate = new DateTime(2023, 7, 25, 23, 13, 27, 430, DateTimeKind.Local).AddTicks(6113),
                             FirstName = "Afşin",
                             IsActive = true,
                             IsDeleted = false,
                             LastName = "Kum",
-                            ModifiedDate = new DateTime(2023, 7, 20, 19, 35, 30, 694, DateTimeKind.Local).AddTicks(3672),
+                            ModifiedDate = new DateTime(2023, 7, 25, 23, 13, 27, 430, DateTimeKind.Local).AddTicks(6114),
                             PhotoUrl = "afsin-kum.jpg",
                             ProductId = 2,
                             Url = "afsin-kum-15"
@@ -225,12 +297,12 @@ namespace EducationApp.Data.Migrations
                             Id = 3,
                             About = "Herbert George Wells ya da daha çok tanındığı adla H. G. Wells, Dünyaların Savaşı, GörünmezAdam,Dr Moreau'nun Adası ve Zaman Makinesi adlı bilimkurgu romanlarıyla tanınan ama neredeyseedebiyatınherdalında birçok eser vermiş olan İngiliz yazardır. Sosyalist olduğunu açıkça söyleyenH.G. Wells'inçoğueserinde önemli ölçüde siyasi ve sosyal yorumlar bulunmaktadır. Jules Verne gibigelecektekiteknolojikgelişmeleri anlattığı kitaplarıyla bilimkurgu dalının öncülerinden hattayaratıcılarındansayılmaktadır.",
                             BirthOfYear = 1866,
-                            CreatedDate = new DateTime(2023, 7, 20, 19, 35, 30, 694, DateTimeKind.Local).AddTicks(3674),
+                            CreatedDate = new DateTime(2023, 7, 25, 23, 13, 27, 430, DateTimeKind.Local).AddTicks(6116),
                             FirstName = "Herbert George",
                             IsActive = true,
                             IsDeleted = false,
                             LastName = "Wells",
-                            ModifiedDate = new DateTime(2023, 7, 20, 19, 35, 30, 694, DateTimeKind.Local).AddTicks(3674),
+                            ModifiedDate = new DateTime(2023, 7, 25, 23, 13, 27, 430, DateTimeKind.Local).AddTicks(6116),
                             PhotoUrl = "herbert-george-wells.jpg",
                             ProductId = 3,
                             Url = "herbert-george-wells-3"
@@ -240,12 +312,12 @@ namespace EducationApp.Data.Migrations
                             Id = 4,
                             About = "Okula Essex'de gitti. Cambridge'de St. Johns College'e devam ederken Footlightstiyatro kulübünde görev aldı. Pek çok iş denedi. Hastanede hizmetlilik, inşaat işçiliği,kümes temizlikçiliği, bir Arap aile için korumalık yaptı. Daha sonra BBC'de Dr. Whodizisinde yapımcılık ve senaryo editörlüğü yaptı. Dr. Who'nun üç bölümünü yazdı. MontyPyton grubundan Graham Chapman ile birlikte çalıştı.\r\n\r\nBBC'de yayımlanan TheHitchhiker's Guide to the Galaxy (Otostopçunun Galaksi Rehberi) adlı radyo oyunu ile ünlüoldu. Oyun, kitap olarak da yayımlandı. Bu radyo oyunundan aynı adlı bir bilgisayar oyunuda üretti. Daha sonra Bureaucracy ve Starship Titanic adlı bilgisayar oyunları üzerinde deçalıştı. Starship Titanic sonradan bir kitap olarak da yayımlandı, ancak Adams'ın hem oyunhem de kitap üzerinde çalışacak zamanı olmadığından kitabı Terry Jones yazdı. İleriderecede bir Beatles hayranıydı.",
                             BirthOfYear = 1982,
-                            CreatedDate = new DateTime(2023, 7, 20, 19, 35, 30, 694, DateTimeKind.Local).AddTicks(3676),
+                            CreatedDate = new DateTime(2023, 7, 25, 23, 13, 27, 430, DateTimeKind.Local).AddTicks(6118),
                             FirstName = "Douglas",
                             IsActive = true,
                             IsDeleted = false,
                             LastName = "Adams",
-                            ModifiedDate = new DateTime(2023, 7, 20, 19, 35, 30, 694, DateTimeKind.Local).AddTicks(3676),
+                            ModifiedDate = new DateTime(2023, 7, 25, 23, 13, 27, 430, DateTimeKind.Local).AddTicks(6118),
                             PhotoUrl = "douglas-adams.jpg",
                             ProductId = 4,
                             Url = "douglas-adams-4"
@@ -255,12 +327,12 @@ namespace EducationApp.Data.Migrations
                             Id = 5,
                             About = "Ray Douglas Bradbury korku ve bilimkurgu tarzlarında yazan Amerikalı bir yazardır.En çok bilinen kitapları 1950'de yazdığı kısa hikâyeler kitabı ve bir roman olan TheMartian Chronicles ve 1953'te yazdığı başyapıtı olan Fahrenheit 451'dir. Los Angeles'ta 91yaşında öldü.",
                             BirthOfYear = 1920,
-                            CreatedDate = new DateTime(2023, 7, 20, 19, 35, 30, 694, DateTimeKind.Local).AddTicks(3677),
+                            CreatedDate = new DateTime(2023, 7, 25, 23, 13, 27, 430, DateTimeKind.Local).AddTicks(6149),
                             FirstName = "Ray Douglas",
                             IsActive = true,
                             IsDeleted = false,
                             LastName = "Bradbury",
-                            ModifiedDate = new DateTime(2023, 7, 20, 19, 35, 30, 694, DateTimeKind.Local).AddTicks(3678),
+                            ModifiedDate = new DateTime(2023, 7, 25, 23, 13, 27, 430, DateTimeKind.Local).AddTicks(6151),
                             PhotoUrl = "ray-douglas-bradbury.jpg",
                             ProductId = 5,
                             Url = "ray-douglas-bradbury-5"
@@ -270,12 +342,12 @@ namespace EducationApp.Data.Migrations
                             Id = 6,
                             About = "Japon yazardır. Tsugaru Yarımadası’nın merkezi yakınlarında küçük bir kasaba olanKanagi’de doğdu. Asıl adı Şuuci Tsuşima'dır. Ailedeki siyasetçi olma geleneğine karşıçıkarak, yazar olmaya karar verdi. Yirmi yaşında Tokyo Üniversitesi Fransız EdebiyatıBölümü’ne kaydını yaptırdı. Hayatının büyük bölümünde esrarkeş, veremli, asabi, kavgacı vealkolik biri olarak birkaç kez intihar etmeye kalkıştı. Dazai, 1948’de metresiyle birliktesuya atlayarak intihar etti. Ölümünün üzerinden bunca sene geçmesine rağmen, Japonya’dahâlâ ilgi gören bir yazardır. Eserlerinin çoğunluğunda yalnızlığı ele alır. Yalnızlık önplanda iken insanın arayış içinde olması ve insanın varoluşunu, içe dönüklüğünü yanitemelde insanı ele alır.",
                             BirthOfYear = 1909,
-                            CreatedDate = new DateTime(2023, 7, 20, 19, 35, 30, 694, DateTimeKind.Local).AddTicks(3679),
+                            CreatedDate = new DateTime(2023, 7, 25, 23, 13, 27, 430, DateTimeKind.Local).AddTicks(6152),
                             FirstName = "Osamu",
                             IsActive = true,
                             IsDeleted = false,
                             LastName = "Dazai",
-                            ModifiedDate = new DateTime(2023, 7, 20, 19, 35, 30, 694, DateTimeKind.Local).AddTicks(3679),
+                            ModifiedDate = new DateTime(2023, 7, 25, 23, 13, 27, 430, DateTimeKind.Local).AddTicks(6153),
                             PhotoUrl = "osamu-dazai.jpg",
                             ProductId = 6,
                             Url = "osamu-dazai-6"
@@ -285,12 +357,12 @@ namespace EducationApp.Data.Migrations
                             Id = 7,
                             About = "Eric Arthur Blair veya daha bilinen takma adıyla George Orwell 20. yüzyıl İngilizedebiyatının önde gelen kalemleri arasında yer alan İngiliz romancı, gazeteci veeleştirmen. En çok, dünyaca ünlü Bin Dokuz Yüz Seksen Dört adlı romanı ve bu romandayarattığı Big Brother kavramı ile tanınır. ",
                             BirthOfYear = 1903,
-                            CreatedDate = new DateTime(2023, 7, 20, 19, 35, 30, 694, DateTimeKind.Local).AddTicks(3681),
+                            CreatedDate = new DateTime(2023, 7, 25, 23, 13, 27, 430, DateTimeKind.Local).AddTicks(6154),
                             FirstName = "George",
                             IsActive = true,
                             IsDeleted = false,
                             LastName = "Orwell",
-                            ModifiedDate = new DateTime(2023, 7, 20, 19, 35, 30, 694, DateTimeKind.Local).AddTicks(3681),
+                            ModifiedDate = new DateTime(2023, 7, 25, 23, 13, 27, 430, DateTimeKind.Local).AddTicks(6155),
                             PhotoUrl = "george-orwell.png",
                             ProductId = 7,
                             Url = "george-orwell-7"
@@ -300,12 +372,12 @@ namespace EducationApp.Data.Migrations
                             Id = 8,
                             About = "Matt Haig bir İngiliz yazar ve gazetecidir. Çocuklar ve yetişkinler için, genellikl spekülatif kurgu türünde hem kurgu hem de kurgu olmayan kitaplar yazmıştır. Haig, çocukla ve yetişkinler için hem kurgu hem de kurgu olmayan kitapların yazarıdır. Kurgusal olmayançalışması Reasons to Stay Alive , Sunday Times'ın en çok satanlar listesinde bir numaraydıve 46 hafta boyunca Birleşik Krallık'ta ilk 10'da yer aldı. En çok satan çocuk romanı 'Noe Baba ve Ben' şu anda filme uyarlanıyor, yapımcılığını StudioCanal ve Blueprint Picturesüstleniyor.",
                             BirthOfYear = 1982,
-                            CreatedDate = new DateTime(2023, 7, 20, 19, 35, 30, 694, DateTimeKind.Local).AddTicks(3682),
+                            CreatedDate = new DateTime(2023, 7, 25, 23, 13, 27, 430, DateTimeKind.Local).AddTicks(6156),
                             FirstName = "Matt",
                             IsActive = true,
                             IsDeleted = false,
                             LastName = "Haig",
-                            ModifiedDate = new DateTime(2023, 7, 20, 19, 35, 30, 694, DateTimeKind.Local).AddTicks(3683),
+                            ModifiedDate = new DateTime(2023, 7, 25, 23, 13, 27, 430, DateTimeKind.Local).AddTicks(6156),
                             PhotoUrl = "matt-haig.jpeg",
                             ProductId = 8,
                             Url = "matt-haig-8"
@@ -315,12 +387,12 @@ namespace EducationApp.Data.Migrations
                             Id = 9,
                             About = "Stephen William Hawking, İngiliz fizikçi, kozmolog, astronom, teorisyen ve yazar.Stephen Hawking, Einstein'dan bu yana dünyaya gelen en parlak teorik fizikçi olarak kabuledilmektedir. 12 onur derecesi almıştır. 1982'de CBE ile ödüllendirilmiş, bundan başkabirçok madalya ve ödül almıştır. ",
                             BirthOfYear = 1942,
-                            CreatedDate = new DateTime(2023, 7, 20, 19, 35, 30, 694, DateTimeKind.Local).AddTicks(3684),
+                            CreatedDate = new DateTime(2023, 7, 25, 23, 13, 27, 430, DateTimeKind.Local).AddTicks(6158),
                             FirstName = "Stephen William",
                             IsActive = true,
                             IsDeleted = false,
                             LastName = "ArmHawkingan",
-                            ModifiedDate = new DateTime(2023, 7, 20, 19, 35, 30, 694, DateTimeKind.Local).AddTicks(3684),
+                            ModifiedDate = new DateTime(2023, 7, 25, 23, 13, 27, 430, DateTimeKind.Local).AddTicks(6158),
                             PhotoUrl = "stephen-william-hawking.jpg",
                             ProductId = 9,
                             Url = "stephen-william-hawking-9"
@@ -330,12 +402,12 @@ namespace EducationApp.Data.Migrations
                             Id = 10,
                             About = "Fyodor Mihayloviç Dostoyevski, Rus roman yazarıdır. Çocukluğunu sarhoş bir baba vehasta bir anne arasında geçiren Dostoyevski, annesinin ölümünden sonra Petersburg'dakiMühendis Okulu'na girdi. Babasının ölüm haberini de burada aldı. Okulu başarıylabitirdikten sonra istihkâm bölüğüne girdi.",
                             BirthOfYear = 11821,
-                            CreatedDate = new DateTime(2023, 7, 20, 19, 35, 30, 694, DateTimeKind.Local).AddTicks(3685),
+                            CreatedDate = new DateTime(2023, 7, 25, 23, 13, 27, 430, DateTimeKind.Local).AddTicks(6160),
                             FirstName = "Fyodor",
                             IsActive = true,
                             IsDeleted = false,
                             LastName = "Dostoyevski",
-                            ModifiedDate = new DateTime(2023, 7, 20, 19, 35, 30, 694, DateTimeKind.Local).AddTicks(3686),
+                            ModifiedDate = new DateTime(2023, 7, 25, 23, 13, 27, 430, DateTimeKind.Local).AddTicks(6160),
                             PhotoUrl = "fyodor-dostoyevski.jpg",
                             ProductId = 10,
                             Url = "fyodor-dostoyevski-10"
@@ -345,12 +417,12 @@ namespace EducationApp.Data.Migrations
                             Id = 11,
                             About = "Manon Steffan Ros, Galli bir romancı, oyun yazarı, oyun yazarı, senarist vemüzisyendir. Tamamı Galce olan yirmiden fazla çocuk kitabı ve yetişkinler için üç romanınyazarıdır. Ödüllü romanı Blasu, The Seasoning başlığı altında İngilizce'ye çevrildi.",
                             BirthOfYear = 1983,
-                            CreatedDate = new DateTime(2023, 7, 20, 19, 35, 30, 694, DateTimeKind.Local).AddTicks(3687),
+                            CreatedDate = new DateTime(2023, 7, 25, 23, 13, 27, 430, DateTimeKind.Local).AddTicks(6161),
                             FirstName = "Manon Steffan",
                             IsActive = true,
                             IsDeleted = false,
                             LastName = "Ros",
-                            ModifiedDate = new DateTime(2023, 7, 20, 19, 35, 30, 694, DateTimeKind.Local).AddTicks(3687),
+                            ModifiedDate = new DateTime(2023, 7, 25, 23, 13, 27, 430, DateTimeKind.Local).AddTicks(6162),
                             PhotoUrl = "manon-steffan-ros.jpg",
                             ProductId = 11,
                             Url = "manon-steffan-ros-11"
@@ -360,12 +432,12 @@ namespace EducationApp.Data.Migrations
                             Id = 12,
                             About = "Mustafa Kemal Atatürk, Türk asker ve devlet adamıdır. Türk Kurtuluş Savaşı'nınbaşkomutanı, Türkiye Cumhuriyeti'nin kurucusu ve ilk cumhurbaşkanıdır.Atatürk; çağdaş,ilerici ve laik bir ulus devlet kurmak için siyasal, ekonomik ve kültürel alanlardasekülarist ve milliyetçi nitelikte yenilikler gerçekleştirdi. Yabancılara tanınan ekonomikayrıcalıklar kaldırıldı ve onlara ait üretim araçları ve demir yolları millîleştirildi.Tevhîd-i Tedrîsât Kanunu ile eğitim, Türk hükûmetinin denetimine girdi. Seküler ve bilimse eğitim esas alındı. Binlerce yeni okul yapıldı. İlköğretim ücretsiz ve zorunlu durumagetirildi. Yabancı okullar devlet denetimine alındı. Köylülerin sırtına yüklenen ağırvergiler azaltıldı. Erkeklerin serpuşlarında ve giysilerinde bazı değişiklikler yapıldı.Takvim, saat ve ölçülerde değişikliklere gidildi. Mecelle kaldırılarak yerine seküler TürkKanunu Medenisi yürürlüğe konuldu. Kadınların sivil ve siyasal hakları pek çok Batıülkesinden önce tanındı. Çok eşlilik yasaklandı. Kadınların tanıklığı ve miras hakkı,erkeklerinkiyle eşit duruma getirildi. Benzer olarak, dünyanın çoğu ülkesinden önce olarakTürkiye'de kadınlara ilkin yerel seçimlerde (1930), sonra genel seçimlerde (1934) seçme veseçilme hakkı tanındı. Ceza ve borçlar hukukunda seküler yasalar yürürlüğe konuldu. SanayiTeşvik Kanunu kabul edildi. Toprak reformu için çabalandı. Arap harfleri temelli Osmanlıalfabesinin yerine Latin harfleri temelli yeni Türk alfabesi kabul edildi. Halkı okuryazarkılmak için eğitim seferberliği başlatıldı. Üniversite Reformu gerçekleştirildi. BirinciBeş Yıllık Sanayi Planı yürürlüğe konuldu. Sınıf ve durum ayrımı gözeten lakap ve unvanlarkaldırıldı ve soyadları yürürlüğe konuldu. Bağdaşık ve birleşmiş bir ulus yaratılması içinTürkleştirme siyaseti yürütüldü.",
                             BirthOfYear = 1881,
-                            CreatedDate = new DateTime(2023, 7, 20, 19, 35, 30, 694, DateTimeKind.Local).AddTicks(3688),
+                            CreatedDate = new DateTime(2023, 7, 25, 23, 13, 27, 430, DateTimeKind.Local).AddTicks(6163),
                             FirstName = "Mustafa Kemal",
                             IsActive = true,
                             IsDeleted = false,
                             LastName = "Atatürk",
-                            ModifiedDate = new DateTime(2023, 7, 20, 19, 35, 30, 694, DateTimeKind.Local).AddTicks(3689),
+                            ModifiedDate = new DateTime(2023, 7, 25, 23, 13, 27, 430, DateTimeKind.Local).AddTicks(6164),
                             PhotoUrl = "mustafa-kemal-ataturk.png",
                             ProductId = 12,
                             Url = "mustafa-kemal-ataturk-12"
@@ -375,12 +447,12 @@ namespace EducationApp.Data.Migrations
                             Id = 13,
                             About = "Yuval Noah Harari, İsrailli tarihçi ve yazardır. İsrailli bir kamu entelektüeli,tarihçi ve Kudüs İbrani Üniversitesi Tarih Bölümü'nde profesör. Popüler bilim en çok satankitapları Sapiens: İnsanlığın Kısa Tarihi, Homo Deus: Yarının Kısa Tarihi ve 21.Yüzyıl İçi 21 Ders kitabının yazarıdır.",
                             BirthOfYear = 1976,
-                            CreatedDate = new DateTime(2023, 7, 20, 19, 35, 30, 694, DateTimeKind.Local).AddTicks(3690),
+                            CreatedDate = new DateTime(2023, 7, 25, 23, 13, 27, 430, DateTimeKind.Local).AddTicks(6165),
                             FirstName = "Yuval Noah",
                             IsActive = true,
                             IsDeleted = false,
                             LastName = "Harari",
-                            ModifiedDate = new DateTime(2023, 7, 20, 19, 35, 30, 694, DateTimeKind.Local).AddTicks(3690),
+                            ModifiedDate = new DateTime(2023, 7, 25, 23, 13, 27, 430, DateTimeKind.Local).AddTicks(6165),
                             PhotoUrl = "yoval-nuah-harari.jpg",
                             ProductId = 13,
                             Url = "yoval-nuah-harari-13"
@@ -390,16 +462,86 @@ namespace EducationApp.Data.Migrations
                             Id = 14,
                             About = "Rus yazar ve asker. Dünya tarihinin en iyi yazarlarından birisi olarakbilinmektedir. Tolstoy, zengin bir ailenin çocuğu olarak Rusya'nın Tula şehrindeki YasnayaPolyana adlı bir konakta doğdu. Çok küçük yaşlarında önce annesini, sonra babasınıkaybetti; yakınlarının elinde büyüdü. Çocukluğundan beri gerçekleri incelemeye karşı büyükbir ilgisi vardı. Fransızcasını ilerletmiş, Voltaire'i ve Jean-Jacques Rousseau'yu okumuş,bu iki yazarın kuvvetli etkisinde kalmıştı. Daha sonraları Yasnaya Polyana'ya dönenTolstoy, yoksul köylülerin arasına katıldı. İlk eseri olan 'Çocukluk'u bu sıralarda yazdı.",
                             BirthOfYear = 1828,
-                            CreatedDate = new DateTime(2023, 7, 20, 19, 35, 30, 694, DateTimeKind.Local).AddTicks(3692),
+                            CreatedDate = new DateTime(2023, 7, 25, 23, 13, 27, 430, DateTimeKind.Local).AddTicks(6167),
                             FirstName = "Lev Nikolayeviç",
                             IsActive = true,
                             IsDeleted = false,
                             LastName = "Tolstoy",
-                            ModifiedDate = new DateTime(2023, 7, 20, 19, 35, 30, 694, DateTimeKind.Local).AddTicks(3692),
+                            ModifiedDate = new DateTime(2023, 7, 25, 23, 13, 27, 430, DateTimeKind.Local).AddTicks(6167),
                             PhotoUrl = "lev-nikolayevic-tolstoy.jpg",
                             ProductId = 14,
                             Url = "lev-nikolayevic-tolstoy-14"
                         });
+                });
+
+            modelBuilder.Entity("EducationApp.Entity.Concrete.Order", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("INTEGER");
+
+                    b.Property<string>("Address")
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("City")
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("Email")
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("FirstName")
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("LastName")
+                        .HasColumnType("TEXT");
+
+                    b.Property<DateTime>("OrderDate")
+                        .HasColumnType("TEXT");
+
+                    b.Property<int>("OrderStatus")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<int>("OrderType")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<string>("PhoneNumber")
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("UserId")
+                        .HasColumnType("TEXT");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("UserId");
+
+                    b.ToTable("Orders");
+                });
+
+            modelBuilder.Entity("EducationApp.Entity.Concrete.OrderItem", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("INTEGER");
+
+                    b.Property<int>("OrderId")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<decimal?>("Price")
+                        .HasColumnType("TEXT");
+
+                    b.Property<int>("ProductId")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<int>("Quantity")
+                        .HasColumnType("INTEGER");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("OrderId");
+
+                    b.HasIndex("ProductId");
+
+                    b.ToTable("OrderItems");
                 });
 
             modelBuilder.Entity("EducationApp.Entity.Concrete.Product", b =>
@@ -460,481 +602,481 @@ namespace EducationApp.Data.Migrations
                         new
                         {
                             Id = 1,
-                            CreatedDate = new DateTime(2023, 7, 20, 19, 35, 30, 695, DateTimeKind.Local).AddTicks(7514),
+                            CreatedDate = new DateTime(2023, 7, 25, 23, 13, 27, 432, DateTimeKind.Local).AddTicks(828),
                             Description = "test.",
                             ImageUrl = "1.jpg",
                             InstructorId = 1,
                             IsActive = true,
                             IsDeleted = false,
                             IsHome = true,
-                            ModifiedDate = new DateTime(2023, 7, 20, 19, 35, 30, 695, DateTimeKind.Local).AddTicks(7521),
+                            ModifiedDate = new DateTime(2023, 7, 25, 23, 13, 27, 432, DateTimeKind.Local).AddTicks(834),
                             Name = ".NET (.NET Core, MVC, Web API)",
                             Price = 100m,
-                            Time = new DateTime(2023, 7, 20, 19, 35, 30, 695, DateTimeKind.Local).AddTicks(7526),
+                            Time = new DateTime(2023, 7, 25, 23, 13, 27, 432, DateTimeKind.Local).AddTicks(839),
                             Url = ".net-core-mvc"
                         },
                         new
                         {
                             Id = 2,
-                            CreatedDate = new DateTime(2023, 7, 20, 19, 35, 30, 695, DateTimeKind.Local).AddTicks(7528),
+                            CreatedDate = new DateTime(2023, 7, 25, 23, 13, 27, 432, DateTimeKind.Local).AddTicks(841),
                             Description = "testtt.",
                             ImageUrl = "2.jpg",
                             InstructorId = 2,
                             IsActive = true,
                             IsDeleted = false,
                             IsHome = true,
-                            ModifiedDate = new DateTime(2023, 7, 20, 19, 35, 30, 695, DateTimeKind.Local).AddTicks(7528),
+                            ModifiedDate = new DateTime(2023, 7, 25, 23, 13, 27, 432, DateTimeKind.Local).AddTicks(841),
                             Name = "Java (Spring, Java SE, Java EE)",
                             Price = 100m,
-                            Time = new DateTime(2023, 7, 20, 19, 35, 30, 695, DateTimeKind.Local).AddTicks(7529),
+                            Time = new DateTime(2023, 7, 25, 23, 13, 27, 432, DateTimeKind.Local).AddTicks(843),
                             Url = "java"
                         },
                         new
                         {
                             Id = 3,
-                            CreatedDate = new DateTime(2023, 7, 20, 19, 35, 30, 695, DateTimeKind.Local).AddTicks(7530),
+                            CreatedDate = new DateTime(2023, 7, 25, 23, 13, 27, 432, DateTimeKind.Local).AddTicks(844),
                             Description = "test.",
-                            ImageUrl = "3.jpg",
+                            ImageUrl = "3.png",
                             InstructorId = 3,
                             IsActive = true,
                             IsDeleted = false,
                             IsHome = true,
-                            ModifiedDate = new DateTime(2023, 7, 20, 19, 35, 30, 695, DateTimeKind.Local).AddTicks(7531),
+                            ModifiedDate = new DateTime(2023, 7, 25, 23, 13, 27, 432, DateTimeKind.Local).AddTicks(844),
                             Name = "Python",
                             Price = 100m,
-                            Time = new DateTime(2023, 7, 20, 19, 35, 30, 695, DateTimeKind.Local).AddTicks(7532),
+                            Time = new DateTime(2023, 7, 25, 23, 13, 27, 432, DateTimeKind.Local).AddTicks(845),
                             Url = "python"
                         },
                         new
                         {
                             Id = 4,
-                            CreatedDate = new DateTime(2023, 7, 20, 19, 35, 30, 695, DateTimeKind.Local).AddTicks(7532),
+                            CreatedDate = new DateTime(2023, 7, 25, 23, 13, 27, 432, DateTimeKind.Local).AddTicks(846),
                             Description = "test.",
-                            ImageUrl = "4.jpg",
+                            ImageUrl = "4.jpeg",
                             InstructorId = 4,
                             IsActive = true,
                             IsDeleted = false,
                             IsHome = true,
-                            ModifiedDate = new DateTime(2023, 7, 20, 19, 35, 30, 695, DateTimeKind.Local).AddTicks(7533),
+                            ModifiedDate = new DateTime(2023, 7, 25, 23, 13, 27, 432, DateTimeKind.Local).AddTicks(846),
                             Name = "JavaScript",
                             Price = 100m,
-                            Time = new DateTime(2023, 7, 20, 19, 35, 30, 695, DateTimeKind.Local).AddTicks(7534),
+                            Time = new DateTime(2023, 7, 25, 23, 13, 27, 432, DateTimeKind.Local).AddTicks(848),
                             Url = "javascript"
                         },
                         new
                         {
                             Id = 5,
-                            CreatedDate = new DateTime(2023, 7, 20, 19, 35, 30, 695, DateTimeKind.Local).AddTicks(7535),
+                            CreatedDate = new DateTime(2023, 7, 25, 23, 13, 27, 432, DateTimeKind.Local).AddTicks(849),
                             Description = "test.",
                             ImageUrl = "5.jpg",
                             InstructorId = 5,
                             IsActive = true,
                             IsDeleted = false,
                             IsHome = true,
-                            ModifiedDate = new DateTime(2023, 7, 20, 19, 35, 30, 695, DateTimeKind.Local).AddTicks(7535),
+                            ModifiedDate = new DateTime(2023, 7, 25, 23, 13, 27, 432, DateTimeKind.Local).AddTicks(849),
                             Name = "C/C++",
                             Price = 100m,
-                            Time = new DateTime(2023, 7, 20, 19, 35, 30, 695, DateTimeKind.Local).AddTicks(7536),
+                            Time = new DateTime(2023, 7, 25, 23, 13, 27, 432, DateTimeKind.Local).AddTicks(850),
                             Url = "c/c++	"
                         },
                         new
                         {
                             Id = 6,
-                            CreatedDate = new DateTime(2023, 7, 20, 19, 35, 30, 695, DateTimeKind.Local).AddTicks(7537),
+                            CreatedDate = new DateTime(2023, 7, 25, 23, 13, 27, 432, DateTimeKind.Local).AddTicks(851),
                             Description = "testtt.",
-                            ImageUrl = "6.jpg",
+                            ImageUrl = "6.png",
                             InstructorId = 6,
                             IsActive = true,
                             IsDeleted = false,
                             IsHome = true,
-                            ModifiedDate = new DateTime(2023, 7, 20, 19, 35, 30, 695, DateTimeKind.Local).AddTicks(7537),
+                            ModifiedDate = new DateTime(2023, 7, 25, 23, 13, 27, 432, DateTimeKind.Local).AddTicks(851),
                             Name = "iOS & Android",
                             Price = 100m,
-                            Time = new DateTime(2023, 7, 20, 19, 35, 30, 695, DateTimeKind.Local).AddTicks(7538),
+                            Time = new DateTime(2023, 7, 25, 23, 13, 27, 432, DateTimeKind.Local).AddTicks(852),
                             Url = "ios-android"
                         },
                         new
                         {
                             Id = 7,
-                            CreatedDate = new DateTime(2023, 7, 20, 19, 35, 30, 695, DateTimeKind.Local).AddTicks(7539),
+                            CreatedDate = new DateTime(2023, 7, 25, 23, 13, 27, 432, DateTimeKind.Local).AddTicks(853),
                             Description = "test.",
-                            ImageUrl = "7.jpg",
+                            ImageUrl = "7.png",
                             InstructorId = 7,
                             IsActive = true,
                             IsDeleted = false,
                             IsHome = true,
-                            ModifiedDate = new DateTime(2023, 7, 20, 19, 35, 30, 695, DateTimeKind.Local).AddTicks(7539),
+                            ModifiedDate = new DateTime(2023, 7, 25, 23, 13, 27, 432, DateTimeKind.Local).AddTicks(854),
                             Name = "React Native",
                             Price = 100m,
-                            Time = new DateTime(2023, 7, 20, 19, 35, 30, 695, DateTimeKind.Local).AddTicks(7540),
+                            Time = new DateTime(2023, 7, 25, 23, 13, 27, 432, DateTimeKind.Local).AddTicks(855),
                             Url = "react-native"
                         },
                         new
                         {
                             Id = 8,
-                            CreatedDate = new DateTime(2023, 7, 20, 19, 35, 30, 695, DateTimeKind.Local).AddTicks(7541),
+                            CreatedDate = new DateTime(2023, 7, 25, 23, 13, 27, 432, DateTimeKind.Local).AddTicks(856),
                             Description = "test.",
-                            ImageUrl = "8.jpg",
+                            ImageUrl = "8.png",
                             InstructorId = 8,
                             IsActive = true,
                             IsDeleted = false,
                             IsHome = true,
-                            ModifiedDate = new DateTime(2023, 7, 20, 19, 35, 30, 695, DateTimeKind.Local).AddTicks(7541),
+                            ModifiedDate = new DateTime(2023, 7, 25, 23, 13, 27, 432, DateTimeKind.Local).AddTicks(856),
                             Name = "Flutter",
                             Price = 100m,
-                            Time = new DateTime(2023, 7, 20, 19, 35, 30, 695, DateTimeKind.Local).AddTicks(7542),
+                            Time = new DateTime(2023, 7, 25, 23, 13, 27, 432, DateTimeKind.Local).AddTicks(857),
                             Url = "flutter"
                         },
                         new
                         {
                             Id = 9,
-                            CreatedDate = new DateTime(2023, 7, 20, 19, 35, 30, 695, DateTimeKind.Local).AddTicks(7543),
+                            CreatedDate = new DateTime(2023, 7, 25, 23, 13, 27, 432, DateTimeKind.Local).AddTicks(858),
                             Description = "test.",
                             ImageUrl = "9.jpg",
                             InstructorId = 9,
                             IsActive = true,
                             IsDeleted = false,
                             IsHome = true,
-                            ModifiedDate = new DateTime(2023, 7, 20, 19, 35, 30, 695, DateTimeKind.Local).AddTicks(7543),
+                            ModifiedDate = new DateTime(2023, 7, 25, 23, 13, 27, 432, DateTimeKind.Local).AddTicks(858),
                             Name = "Ionic",
                             Price = 100m,
-                            Time = new DateTime(2023, 7, 20, 19, 35, 30, 695, DateTimeKind.Local).AddTicks(7545),
+                            Time = new DateTime(2023, 7, 25, 23, 13, 27, 432, DateTimeKind.Local).AddTicks(860),
                             Url = "ionic"
                         },
                         new
                         {
                             Id = 10,
-                            CreatedDate = new DateTime(2023, 7, 20, 19, 35, 30, 695, DateTimeKind.Local).AddTicks(7545),
+                            CreatedDate = new DateTime(2023, 7, 25, 23, 13, 27, 432, DateTimeKind.Local).AddTicks(860),
                             Description = "test.",
-                            ImageUrl = "10.jpg",
+                            ImageUrl = "10.jpeg",
                             InstructorId = 10,
                             IsActive = true,
                             IsDeleted = false,
                             IsHome = true,
-                            ModifiedDate = new DateTime(2023, 7, 20, 19, 35, 30, 695, DateTimeKind.Local).AddTicks(7546),
+                            ModifiedDate = new DateTime(2023, 7, 25, 23, 13, 27, 432, DateTimeKind.Local).AddTicks(861),
                             Name = "Unity",
                             Price = 100m,
-                            Time = new DateTime(2023, 7, 20, 19, 35, 30, 695, DateTimeKind.Local).AddTicks(7547),
+                            Time = new DateTime(2023, 7, 25, 23, 13, 27, 432, DateTimeKind.Local).AddTicks(862),
                             Url = "unity"
                         },
                         new
                         {
                             Id = 11,
-                            CreatedDate = new DateTime(2023, 7, 20, 19, 35, 30, 695, DateTimeKind.Local).AddTicks(7547),
+                            CreatedDate = new DateTime(2023, 7, 25, 23, 13, 27, 432, DateTimeKind.Local).AddTicks(863),
                             Description = "test.",
-                            ImageUrl = "11.jpg",
+                            ImageUrl = "11.png",
                             InstructorId = 11,
                             IsActive = true,
                             IsDeleted = false,
                             IsHome = true,
-                            ModifiedDate = new DateTime(2023, 7, 20, 19, 35, 30, 695, DateTimeKind.Local).AddTicks(7548),
+                            ModifiedDate = new DateTime(2023, 7, 25, 23, 13, 27, 432, DateTimeKind.Local).AddTicks(863),
                             Name = "Unreal Engine",
                             Price = 100m,
-                            Time = new DateTime(2023, 7, 20, 19, 35, 30, 695, DateTimeKind.Local).AddTicks(7550),
+                            Time = new DateTime(2023, 7, 25, 23, 13, 27, 432, DateTimeKind.Local).AddTicks(864),
                             Url = "unreal-engine"
                         },
                         new
                         {
                             Id = 12,
-                            CreatedDate = new DateTime(2023, 7, 20, 19, 35, 30, 695, DateTimeKind.Local).AddTicks(7551),
+                            CreatedDate = new DateTime(2023, 7, 25, 23, 13, 27, 432, DateTimeKind.Local).AddTicks(865),
                             Description = "testtt.",
-                            ImageUrl = "12.jpg",
+                            ImageUrl = "12.png",
                             InstructorId = 12,
                             IsActive = true,
                             IsDeleted = false,
                             IsHome = true,
-                            ModifiedDate = new DateTime(2023, 7, 20, 19, 35, 30, 695, DateTimeKind.Local).AddTicks(7551),
+                            ModifiedDate = new DateTime(2023, 7, 25, 23, 13, 27, 432, DateTimeKind.Local).AddTicks(865),
                             Name = "GameMaker Studio",
                             Price = 100m,
-                            Time = new DateTime(2023, 7, 20, 19, 35, 30, 695, DateTimeKind.Local).AddTicks(7552),
+                            Time = new DateTime(2023, 7, 25, 23, 13, 27, 432, DateTimeKind.Local).AddTicks(866),
                             Url = "gamemaker-studio"
                         },
                         new
                         {
                             Id = 13,
-                            CreatedDate = new DateTime(2023, 7, 20, 19, 35, 30, 695, DateTimeKind.Local).AddTicks(7553),
+                            CreatedDate = new DateTime(2023, 7, 25, 23, 13, 27, 432, DateTimeKind.Local).AddTicks(867),
                             Description = "test.",
-                            ImageUrl = "13.jpg",
+                            ImageUrl = "13.jpeg",
                             InstructorId = 13,
                             IsActive = true,
                             IsDeleted = false,
                             IsHome = true,
-                            ModifiedDate = new DateTime(2023, 7, 20, 19, 35, 30, 695, DateTimeKind.Local).AddTicks(7553),
+                            ModifiedDate = new DateTime(2023, 7, 25, 23, 13, 27, 432, DateTimeKind.Local).AddTicks(868),
                             Name = "Buildbox",
                             Price = 100m,
-                            Time = new DateTime(2023, 7, 20, 19, 35, 30, 695, DateTimeKind.Local).AddTicks(7554),
+                            Time = new DateTime(2023, 7, 25, 23, 13, 27, 432, DateTimeKind.Local).AddTicks(869),
                             Url = "buildbox"
                         },
                         new
                         {
                             Id = 14,
-                            CreatedDate = new DateTime(2023, 7, 20, 19, 35, 30, 695, DateTimeKind.Local).AddTicks(7555),
+                            CreatedDate = new DateTime(2023, 7, 25, 23, 13, 27, 432, DateTimeKind.Local).AddTicks(870),
                             Description = "test.",
-                            ImageUrl = "14.jpg",
+                            ImageUrl = "14.png",
                             InstructorId = 14,
                             IsActive = true,
                             IsDeleted = false,
                             IsHome = true,
-                            ModifiedDate = new DateTime(2023, 7, 20, 19, 35, 30, 695, DateTimeKind.Local).AddTicks(7555),
+                            ModifiedDate = new DateTime(2023, 7, 25, 23, 13, 27, 432, DateTimeKind.Local).AddTicks(870),
                             Name = "PHP",
                             Price = 100m,
-                            Time = new DateTime(2023, 7, 20, 19, 35, 30, 695, DateTimeKind.Local).AddTicks(7557),
+                            Time = new DateTime(2023, 7, 25, 23, 13, 27, 432, DateTimeKind.Local).AddTicks(871),
                             Url = "php"
                         },
                         new
                         {
                             Id = 15,
-                            CreatedDate = new DateTime(2023, 7, 20, 19, 35, 30, 695, DateTimeKind.Local).AddTicks(7584),
+                            CreatedDate = new DateTime(2023, 7, 25, 23, 13, 27, 432, DateTimeKind.Local).AddTicks(872),
                             Description = "test.",
-                            ImageUrl = "8.jpg",
+                            ImageUrl = "15.jpeg",
                             InstructorId = 8,
                             IsActive = true,
                             IsDeleted = false,
                             IsHome = true,
-                            ModifiedDate = new DateTime(2023, 7, 20, 19, 35, 30, 695, DateTimeKind.Local).AddTicks(7585),
+                            ModifiedDate = new DateTime(2023, 7, 25, 23, 13, 27, 432, DateTimeKind.Local).AddTicks(872),
                             Name = "React",
                             Price = 100m,
-                            Time = new DateTime(2023, 7, 20, 19, 35, 30, 695, DateTimeKind.Local).AddTicks(7586),
+                            Time = new DateTime(2023, 7, 25, 23, 13, 27, 432, DateTimeKind.Local).AddTicks(873),
                             Url = "react"
                         },
                         new
                         {
                             Id = 16,
-                            CreatedDate = new DateTime(2023, 7, 20, 19, 35, 30, 695, DateTimeKind.Local).AddTicks(7587),
+                            CreatedDate = new DateTime(2023, 7, 25, 23, 13, 27, 432, DateTimeKind.Local).AddTicks(874),
                             Description = "test.",
-                            ImageUrl = "9.jpg",
+                            ImageUrl = "16.png",
                             InstructorId = 9,
                             IsActive = true,
                             IsDeleted = false,
                             IsHome = true,
-                            ModifiedDate = new DateTime(2023, 7, 20, 19, 35, 30, 695, DateTimeKind.Local).AddTicks(7587),
+                            ModifiedDate = new DateTime(2023, 7, 25, 23, 13, 27, 432, DateTimeKind.Local).AddTicks(875),
                             Name = "Angular",
                             Price = 100m,
-                            Time = new DateTime(2023, 7, 20, 19, 35, 30, 695, DateTimeKind.Local).AddTicks(7589),
+                            Time = new DateTime(2023, 7, 25, 23, 13, 27, 432, DateTimeKind.Local).AddTicks(876),
                             Url = "angular"
                         },
                         new
                         {
                             Id = 17,
-                            CreatedDate = new DateTime(2023, 7, 20, 19, 35, 30, 695, DateTimeKind.Local).AddTicks(7589),
+                            CreatedDate = new DateTime(2023, 7, 25, 23, 13, 27, 432, DateTimeKind.Local).AddTicks(876),
                             Description = "test.",
-                            ImageUrl = "10.jpg",
+                            ImageUrl = "17.png",
                             InstructorId = 10,
                             IsActive = true,
                             IsDeleted = false,
                             IsHome = true,
-                            ModifiedDate = new DateTime(2023, 7, 20, 19, 35, 30, 695, DateTimeKind.Local).AddTicks(7590),
+                            ModifiedDate = new DateTime(2023, 7, 25, 23, 13, 27, 432, DateTimeKind.Local).AddTicks(877),
                             Name = "Node.js",
                             Price = 100m,
-                            Time = new DateTime(2023, 7, 20, 19, 35, 30, 695, DateTimeKind.Local).AddTicks(7591),
+                            Time = new DateTime(2023, 7, 25, 23, 13, 27, 432, DateTimeKind.Local).AddTicks(880),
                             Url = "nodejs"
                         },
                         new
                         {
                             Id = 18,
-                            CreatedDate = new DateTime(2023, 7, 20, 19, 35, 30, 695, DateTimeKind.Local).AddTicks(7592),
+                            CreatedDate = new DateTime(2023, 7, 25, 23, 13, 27, 432, DateTimeKind.Local).AddTicks(881),
                             Description = "test.",
-                            ImageUrl = "11.jpg",
+                            ImageUrl = "18.jpg",
                             InstructorId = 11,
                             IsActive = true,
                             IsDeleted = false,
                             IsHome = true,
-                            ModifiedDate = new DateTime(2023, 7, 20, 19, 35, 30, 695, DateTimeKind.Local).AddTicks(7592),
+                            ModifiedDate = new DateTime(2023, 7, 25, 23, 13, 27, 432, DateTimeKind.Local).AddTicks(881),
                             Name = "Microsoft SQL Server",
                             Price = 100m,
-                            Time = new DateTime(2023, 7, 20, 19, 35, 30, 695, DateTimeKind.Local).AddTicks(7593),
+                            Time = new DateTime(2023, 7, 25, 23, 13, 27, 432, DateTimeKind.Local).AddTicks(882),
                             Url = "microsoft-sql-server"
                         },
                         new
                         {
                             Id = 19,
-                            CreatedDate = new DateTime(2023, 7, 20, 19, 35, 30, 695, DateTimeKind.Local).AddTicks(7594),
+                            CreatedDate = new DateTime(2023, 7, 25, 23, 13, 27, 432, DateTimeKind.Local).AddTicks(884),
                             Description = "testtt.",
-                            ImageUrl = "12.jpg",
+                            ImageUrl = "19.png",
                             InstructorId = 12,
                             IsActive = true,
                             IsDeleted = false,
                             IsHome = true,
-                            ModifiedDate = new DateTime(2023, 7, 20, 19, 35, 30, 695, DateTimeKind.Local).AddTicks(7594),
+                            ModifiedDate = new DateTime(2023, 7, 25, 23, 13, 27, 432, DateTimeKind.Local).AddTicks(884),
                             Name = "MySQL",
                             Price = 100m,
-                            Time = new DateTime(2023, 7, 20, 19, 35, 30, 695, DateTimeKind.Local).AddTicks(7595),
+                            Time = new DateTime(2023, 7, 25, 23, 13, 27, 432, DateTimeKind.Local).AddTicks(886),
                             Url = "mysql"
                         },
                         new
                         {
                             Id = 20,
-                            CreatedDate = new DateTime(2023, 7, 20, 19, 35, 30, 695, DateTimeKind.Local).AddTicks(7596),
+                            CreatedDate = new DateTime(2023, 7, 25, 23, 13, 27, 432, DateTimeKind.Local).AddTicks(886),
                             Description = "test.",
-                            ImageUrl = "13.jpg",
+                            ImageUrl = "20.png",
                             InstructorId = 13,
                             IsActive = true,
                             IsDeleted = false,
                             IsHome = true,
-                            ModifiedDate = new DateTime(2023, 7, 20, 19, 35, 30, 695, DateTimeKind.Local).AddTicks(7596),
+                            ModifiedDate = new DateTime(2023, 7, 25, 23, 13, 27, 432, DateTimeKind.Local).AddTicks(887),
                             Name = "PostgreSQL",
                             Price = 100m,
-                            Time = new DateTime(2023, 7, 20, 19, 35, 30, 695, DateTimeKind.Local).AddTicks(7597),
+                            Time = new DateTime(2023, 7, 25, 23, 13, 27, 432, DateTimeKind.Local).AddTicks(888),
                             Url = "postgresql"
                         },
                         new
                         {
                             Id = 21,
-                            CreatedDate = new DateTime(2023, 7, 20, 19, 35, 30, 695, DateTimeKind.Local).AddTicks(7598),
+                            CreatedDate = new DateTime(2023, 7, 25, 23, 13, 27, 432, DateTimeKind.Local).AddTicks(889),
                             Description = "test.",
-                            ImageUrl = "11.jpg",
+                            ImageUrl = "21.jpg",
                             InstructorId = 11,
                             IsActive = true,
                             IsDeleted = false,
                             IsHome = true,
-                            ModifiedDate = new DateTime(2023, 7, 20, 19, 35, 30, 695, DateTimeKind.Local).AddTicks(7598),
+                            ModifiedDate = new DateTime(2023, 7, 25, 23, 13, 27, 432, DateTimeKind.Local).AddTicks(889),
                             Name = "SQLite",
                             Price = 100m,
-                            Time = new DateTime(2023, 7, 20, 19, 35, 30, 695, DateTimeKind.Local).AddTicks(7600),
+                            Time = new DateTime(2023, 7, 25, 23, 13, 27, 432, DateTimeKind.Local).AddTicks(890),
                             Url = "sqlite"
                         },
                         new
                         {
                             Id = 22,
-                            CreatedDate = new DateTime(2023, 7, 20, 19, 35, 30, 695, DateTimeKind.Local).AddTicks(7600),
+                            CreatedDate = new DateTime(2023, 7, 25, 23, 13, 27, 432, DateTimeKind.Local).AddTicks(891),
                             Description = "testtt.",
                             ImageUrl = "12.jpg",
                             InstructorId = 12,
                             IsActive = true,
                             IsDeleted = false,
                             IsHome = true,
-                            ModifiedDate = new DateTime(2023, 7, 20, 19, 35, 30, 695, DateTimeKind.Local).AddTicks(7601),
+                            ModifiedDate = new DateTime(2023, 7, 25, 23, 13, 27, 432, DateTimeKind.Local).AddTicks(891),
                             Name = "Oracle",
                             Price = 100m,
-                            Time = new DateTime(2023, 7, 20, 19, 35, 30, 695, DateTimeKind.Local).AddTicks(7603),
+                            Time = new DateTime(2023, 7, 25, 23, 13, 27, 432, DateTimeKind.Local).AddTicks(893),
                             Url = "oracle"
                         },
                         new
                         {
                             Id = 23,
-                            CreatedDate = new DateTime(2023, 7, 20, 19, 35, 30, 695, DateTimeKind.Local).AddTicks(7604),
+                            CreatedDate = new DateTime(2023, 7, 25, 23, 13, 27, 432, DateTimeKind.Local).AddTicks(894),
                             Description = "test.",
                             ImageUrl = "13.jpg",
                             InstructorId = 13,
                             IsActive = true,
                             IsDeleted = false,
                             IsHome = true,
-                            ModifiedDate = new DateTime(2023, 7, 20, 19, 35, 30, 695, DateTimeKind.Local).AddTicks(7604),
+                            ModifiedDate = new DateTime(2023, 7, 25, 23, 13, 27, 432, DateTimeKind.Local).AddTicks(894),
                             Name = "Docker",
                             Price = 100m,
-                            Time = new DateTime(2023, 7, 20, 19, 35, 30, 695, DateTimeKind.Local).AddTicks(7605),
+                            Time = new DateTime(2023, 7, 25, 23, 13, 27, 432, DateTimeKind.Local).AddTicks(896),
                             Url = "docker"
                         },
                         new
                         {
                             Id = 24,
-                            CreatedDate = new DateTime(2023, 7, 20, 19, 35, 30, 695, DateTimeKind.Local).AddTicks(7606),
+                            CreatedDate = new DateTime(2023, 7, 25, 23, 13, 27, 432, DateTimeKind.Local).AddTicks(896),
                             Description = "test.",
                             ImageUrl = "14.jpg",
                             InstructorId = 14,
                             IsActive = true,
                             IsDeleted = false,
                             IsHome = true,
-                            ModifiedDate = new DateTime(2023, 7, 20, 19, 35, 30, 695, DateTimeKind.Local).AddTicks(7606),
+                            ModifiedDate = new DateTime(2023, 7, 25, 23, 13, 27, 432, DateTimeKind.Local).AddTicks(897),
                             Name = "Jenkins",
                             Price = 100m,
-                            Time = new DateTime(2023, 7, 20, 19, 35, 30, 695, DateTimeKind.Local).AddTicks(7607),
+                            Time = new DateTime(2023, 7, 25, 23, 13, 27, 432, DateTimeKind.Local).AddTicks(898),
                             Url = "jenkins"
                         },
                         new
                         {
                             Id = 25,
-                            CreatedDate = new DateTime(2023, 7, 20, 19, 35, 30, 695, DateTimeKind.Local).AddTicks(7608),
+                            CreatedDate = new DateTime(2023, 7, 25, 23, 13, 27, 432, DateTimeKind.Local).AddTicks(899),
                             Description = "test.",
                             ImageUrl = "8.jpg",
                             InstructorId = 8,
                             IsActive = true,
                             IsDeleted = false,
                             IsHome = true,
-                            ModifiedDate = new DateTime(2023, 7, 20, 19, 35, 30, 695, DateTimeKind.Local).AddTicks(7608),
+                            ModifiedDate = new DateTime(2023, 7, 25, 23, 13, 27, 432, DateTimeKind.Local).AddTicks(899),
                             Name = "Ansible",
                             Price = 100m,
-                            Time = new DateTime(2023, 7, 20, 19, 35, 30, 695, DateTimeKind.Local).AddTicks(7609),
+                            Time = new DateTime(2023, 7, 25, 23, 13, 27, 432, DateTimeKind.Local).AddTicks(900),
                             Url = "ansible"
                         },
                         new
                         {
                             Id = 26,
-                            CreatedDate = new DateTime(2023, 7, 20, 19, 35, 30, 695, DateTimeKind.Local).AddTicks(7610),
+                            CreatedDate = new DateTime(2023, 7, 25, 23, 13, 27, 432, DateTimeKind.Local).AddTicks(901),
                             Description = "test.",
                             ImageUrl = "9.jpg",
                             InstructorId = 9,
                             IsActive = true,
                             IsDeleted = false,
                             IsHome = true,
-                            ModifiedDate = new DateTime(2023, 7, 20, 19, 35, 30, 695, DateTimeKind.Local).AddTicks(7611),
+                            ModifiedDate = new DateTime(2023, 7, 25, 23, 13, 27, 432, DateTimeKind.Local).AddTicks(901),
                             Name = "Sonarcube",
                             Price = 100m,
-                            Time = new DateTime(2023, 7, 20, 19, 35, 30, 695, DateTimeKind.Local).AddTicks(7612),
+                            Time = new DateTime(2023, 7, 25, 23, 13, 27, 432, DateTimeKind.Local).AddTicks(902),
                             Url = "sonarcube"
                         },
                         new
                         {
                             Id = 27,
-                            CreatedDate = new DateTime(2023, 7, 20, 19, 35, 30, 695, DateTimeKind.Local).AddTicks(7612),
+                            CreatedDate = new DateTime(2023, 7, 25, 23, 13, 27, 432, DateTimeKind.Local).AddTicks(903),
                             Description = "test.",
                             ImageUrl = "10.jpg",
                             InstructorId = 10,
                             IsActive = true,
                             IsDeleted = false,
                             IsHome = true,
-                            ModifiedDate = new DateTime(2023, 7, 20, 19, 35, 30, 695, DateTimeKind.Local).AddTicks(7613),
+                            ModifiedDate = new DateTime(2023, 7, 25, 23, 13, 27, 432, DateTimeKind.Local).AddTicks(903),
                             Name = "AWS",
                             Price = 100m,
-                            Time = new DateTime(2023, 7, 20, 19, 35, 30, 695, DateTimeKind.Local).AddTicks(7614),
+                            Time = new DateTime(2023, 7, 25, 23, 13, 27, 432, DateTimeKind.Local).AddTicks(905),
                             Url = "aws"
                         },
                         new
                         {
                             Id = 28,
-                            CreatedDate = new DateTime(2023, 7, 20, 19, 35, 30, 695, DateTimeKind.Local).AddTicks(7614),
+                            CreatedDate = new DateTime(2023, 7, 25, 23, 13, 27, 432, DateTimeKind.Local).AddTicks(905),
                             Description = "test.",
                             ImageUrl = "11.jpg",
                             InstructorId = 11,
                             IsActive = true,
                             IsDeleted = false,
                             IsHome = true,
-                            ModifiedDate = new DateTime(2023, 7, 20, 19, 35, 30, 695, DateTimeKind.Local).AddTicks(7615),
+                            ModifiedDate = new DateTime(2023, 7, 25, 23, 13, 27, 432, DateTimeKind.Local).AddTicks(906),
                             Name = "Azure",
                             Price = 100m,
-                            Time = new DateTime(2023, 7, 20, 19, 35, 30, 695, DateTimeKind.Local).AddTicks(7616),
+                            Time = new DateTime(2023, 7, 25, 23, 13, 27, 432, DateTimeKind.Local).AddTicks(907),
                             Url = "azure"
                         },
                         new
                         {
                             Id = 29,
-                            CreatedDate = new DateTime(2023, 7, 20, 19, 35, 30, 695, DateTimeKind.Local).AddTicks(7616),
+                            CreatedDate = new DateTime(2023, 7, 25, 23, 13, 27, 432, DateTimeKind.Local).AddTicks(908),
                             Description = "testtt.",
                             ImageUrl = "12.jpg",
                             InstructorId = 12,
                             IsActive = true,
                             IsDeleted = false,
                             IsHome = true,
-                            ModifiedDate = new DateTime(2023, 7, 20, 19, 35, 30, 695, DateTimeKind.Local).AddTicks(7617),
+                            ModifiedDate = new DateTime(2023, 7, 25, 23, 13, 27, 432, DateTimeKind.Local).AddTicks(908),
                             Name = "Serverless",
                             Price = 100m,
-                            Time = new DateTime(2023, 7, 20, 19, 35, 30, 695, DateTimeKind.Local).AddTicks(7618),
+                            Time = new DateTime(2023, 7, 25, 23, 13, 27, 432, DateTimeKind.Local).AddTicks(909),
                             Url = "serverless"
                         },
                         new
                         {
                             Id = 30,
-                            CreatedDate = new DateTime(2023, 7, 20, 19, 35, 30, 695, DateTimeKind.Local).AddTicks(7619),
+                            CreatedDate = new DateTime(2023, 7, 25, 23, 13, 27, 432, DateTimeKind.Local).AddTicks(910),
                             Description = "testtt.",
                             ImageUrl = "12.jpg",
                             InstructorId = 12,
                             IsActive = true,
                             IsDeleted = false,
                             IsHome = true,
-                            ModifiedDate = new DateTime(2023, 7, 20, 19, 35, 30, 695, DateTimeKind.Local).AddTicks(7619),
+                            ModifiedDate = new DateTime(2023, 7, 25, 23, 13, 27, 432, DateTimeKind.Local).AddTicks(910),
                             Name = "Cloud Storage",
                             Price = 100m,
-                            Time = new DateTime(2023, 7, 20, 19, 35, 30, 695, DateTimeKind.Local).AddTicks(7620),
+                            Time = new DateTime(2023, 7, 25, 23, 13, 27, 432, DateTimeKind.Local).AddTicks(911),
                             Url = "cloudstorage"
                         });
                 });
@@ -1101,11 +1243,359 @@ namespace EducationApp.Data.Migrations
                         });
                 });
 
+            modelBuilder.Entity("EducationApp.Entity.Concrete.Role", b =>
+                {
+                    b.Property<string>("Id")
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("ConcurrencyStamp")
+                        .IsConcurrencyToken()
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("Description")
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("Name")
+                        .HasMaxLength(256)
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("NormalizedName")
+                        .HasMaxLength(256)
+                        .HasColumnType("TEXT");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("NormalizedName")
+                        .IsUnique()
+                        .HasDatabaseName("RoleNameIndex");
+
+                    b.ToTable("AspNetRoles", (string)null);
+
+                    b.HasData(
+                        new
+                        {
+                            Id = "438d632c-265d-41c4-bd37-ece51e7e74b0",
+                            Description = "Yöneticilerin rolü bu.",
+                            Name = "Admin",
+                            NormalizedName = "ADMIN"
+                        },
+                        new
+                        {
+                            Id = "e261eac6-77f6-497b-b103-0fdb82369377",
+                            Description = "Diğer tüm kullanıcıların rolü bu.",
+                            Name = "User",
+                            NormalizedName = "USER"
+                        });
+                });
+
+            modelBuilder.Entity("EducationApp.Entity.Concrete.User", b =>
+                {
+                    b.Property<string>("Id")
+                        .HasColumnType("TEXT");
+
+                    b.Property<int>("AccessFailedCount")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<string>("Address")
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("City")
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("ConcurrencyStamp")
+                        .IsConcurrencyToken()
+                        .HasColumnType("TEXT");
+
+                    b.Property<DateTime?>("DateOfBirth")
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("Email")
+                        .HasMaxLength(256)
+                        .HasColumnType("TEXT");
+
+                    b.Property<bool>("EmailConfirmed")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<string>("FirstName")
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("Gender")
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("LastName")
+                        .HasColumnType("TEXT");
+
+                    b.Property<bool>("LockoutEnabled")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<DateTimeOffset?>("LockoutEnd")
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("Name")
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("NormalizedEmail")
+                        .HasMaxLength(256)
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("NormalizedUserName")
+                        .HasMaxLength(256)
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("PasswordHash")
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("PhoneNumber")
+                        .HasColumnType("TEXT");
+
+                    b.Property<bool>("PhoneNumberConfirmed")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<string>("SecurityStamp")
+                        .HasColumnType("TEXT");
+
+                    b.Property<bool>("TwoFactorEnabled")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<string>("UserName")
+                        .HasMaxLength(256)
+                        .HasColumnType("TEXT");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("NormalizedEmail")
+                        .HasDatabaseName("EmailIndex");
+
+                    b.HasIndex("NormalizedUserName")
+                        .IsUnique()
+                        .HasDatabaseName("UserNameIndex");
+
+                    b.ToTable("AspNetUsers", (string)null);
+
+                    b.HasData(
+                        new
+                        {
+                            Id = "1a47a145-39ca-40a7-8240-03c389b2b454",
+                            AccessFailedCount = 0,
+                            Address = "Kemalpaşa Mh. Zühtübey Sk. No:12 D:3 Üsküdar",
+                            City = "İstanbul",
+                            ConcurrencyStamp = "acb773b0-767e-4c2d-80db-f052bfa74256",
+                            DateOfBirth = new DateTime(1985, 7, 12, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            Email = "denizfoca@gmail.com",
+                            EmailConfirmed = true,
+                            FirstName = "Deniz",
+                            Gender = "Kadın",
+                            LastName = "Foça",
+                            LockoutEnabled = true,
+                            Name = " ",
+                            NormalizedEmail = "DENIZFOCA@GMAIL.COM",
+                            NormalizedUserName = "ADMIN",
+                            PasswordHash = "AQAAAAIAAYagAAAAEEPSJJa1ns4YvqwIzAoJRDMZxP59Nk5qj4FvcG12vItMDqf+ziQazEoEieTqO+OcIw==",
+                            PhoneNumberConfirmed = false,
+                            SecurityStamp = "",
+                            TwoFactorEnabled = false,
+                            UserName = "admin"
+                        },
+                        new
+                        {
+                            Id = "c9070744-681b-4a3c-874f-ca48b061fb44",
+                            AccessFailedCount = 0,
+                            Address = "Barbaros Bulvarı Feda İş Hanı K:5 D:23 Beşiktaş",
+                            City = "İstanbul",
+                            ConcurrencyStamp = "c92a7969-8e3c-4378-8c69-fddb54287cfc",
+                            DateOfBirth = new DateTime(1983, 9, 10, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            Email = "muratkendirli@gmail.com",
+                            EmailConfirmed = true,
+                            FirstName = "Murat",
+                            Gender = "Erkek",
+                            LastName = "Kendirli",
+                            LockoutEnabled = true,
+                            Name = " ",
+                            NormalizedEmail = "MURATKENDIRLI@GMAIL.COM",
+                            NormalizedUserName = "USER",
+                            PasswordHash = "AQAAAAIAAYagAAAAEKoNjjm9q5ljzq8WBJnKpDZ1IJDvIDyCPhSYC4/7sesg85pwqAOPffEf8wyUO/Fp7g==",
+                            PhoneNumberConfirmed = false,
+                            SecurityStamp = "",
+                            TwoFactorEnabled = false,
+                            UserName = "user"
+                        });
+                });
+
+            modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRoleClaim<string>", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("INTEGER");
+
+                    b.Property<string>("ClaimType")
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("ClaimValue")
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("RoleId")
+                        .IsRequired()
+                        .HasColumnType("TEXT");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("RoleId");
+
+                    b.ToTable("AspNetRoleClaims", (string)null);
+                });
+
+            modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityUserClaim<string>", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("INTEGER");
+
+                    b.Property<string>("ClaimType")
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("ClaimValue")
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("UserId")
+                        .IsRequired()
+                        .HasColumnType("TEXT");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("UserId");
+
+                    b.ToTable("AspNetUserClaims", (string)null);
+                });
+
+            modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityUserLogin<string>", b =>
+                {
+                    b.Property<string>("LoginProvider")
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("ProviderKey")
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("ProviderDisplayName")
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("UserId")
+                        .IsRequired()
+                        .HasColumnType("TEXT");
+
+                    b.HasKey("LoginProvider", "ProviderKey");
+
+                    b.HasIndex("UserId");
+
+                    b.ToTable("AspNetUserLogins", (string)null);
+                });
+
+            modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityUserRole<string>", b =>
+                {
+                    b.Property<string>("UserId")
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("RoleId")
+                        .HasColumnType("TEXT");
+
+                    b.HasKey("UserId", "RoleId");
+
+                    b.HasIndex("RoleId");
+
+                    b.ToTable("AspNetUserRoles", (string)null);
+
+                    b.HasData(
+                        new
+                        {
+                            UserId = "1a47a145-39ca-40a7-8240-03c389b2b454",
+                            RoleId = "438d632c-265d-41c4-bd37-ece51e7e74b0"
+                        },
+                        new
+                        {
+                            UserId = "c9070744-681b-4a3c-874f-ca48b061fb44",
+                            RoleId = "e261eac6-77f6-497b-b103-0fdb82369377"
+                        });
+                });
+
+            modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityUserToken<string>", b =>
+                {
+                    b.Property<string>("UserId")
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("LoginProvider")
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("Name")
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("Value")
+                        .HasColumnType("TEXT");
+
+                    b.HasKey("UserId", "LoginProvider", "Name");
+
+                    b.ToTable("AspNetUserTokens", (string)null);
+                });
+
+            modelBuilder.Entity("EducationApp.Entity.Concrete.Cart", b =>
+                {
+                    b.HasOne("EducationApp.Entity.Concrete.User", "User")
+                        .WithMany()
+                        .HasForeignKey("UserId");
+
+                    b.Navigation("User");
+                });
+
+            modelBuilder.Entity("EducationApp.Entity.Concrete.CartItem", b =>
+                {
+                    b.HasOne("EducationApp.Entity.Concrete.Cart", "Cart")
+                        .WithMany("CartItems")
+                        .HasForeignKey("CartId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("EducationApp.Entity.Concrete.Product", "Product")
+                        .WithMany()
+                        .HasForeignKey("ProductId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Cart");
+
+                    b.Navigation("Product");
+                });
+
             modelBuilder.Entity("EducationApp.Entity.Concrete.Instructor", b =>
                 {
                     b.HasOne("EducationApp.Entity.Concrete.Product", "Product")
                         .WithMany()
                         .HasForeignKey("ProductId1");
+
+                    b.Navigation("Product");
+                });
+
+            modelBuilder.Entity("EducationApp.Entity.Concrete.Order", b =>
+                {
+                    b.HasOne("EducationApp.Entity.Concrete.User", "User")
+                        .WithMany()
+                        .HasForeignKey("UserId");
+
+                    b.Navigation("User");
+                });
+
+            modelBuilder.Entity("EducationApp.Entity.Concrete.OrderItem", b =>
+                {
+                    b.HasOne("EducationApp.Entity.Concrete.Order", "Order")
+                        .WithMany("OrderItems")
+                        .HasForeignKey("OrderId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("EducationApp.Entity.Concrete.Product", "Product")
+                        .WithMany()
+                        .HasForeignKey("ProductId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Order");
 
                     b.Navigation("Product");
                 });
@@ -1140,6 +1630,62 @@ namespace EducationApp.Data.Migrations
                     b.Navigation("Product");
                 });
 
+            modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRoleClaim<string>", b =>
+                {
+                    b.HasOne("EducationApp.Entity.Concrete.Role", null)
+                        .WithMany()
+                        .HasForeignKey("RoleId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+                });
+
+            modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityUserClaim<string>", b =>
+                {
+                    b.HasOne("EducationApp.Entity.Concrete.User", null)
+                        .WithMany()
+                        .HasForeignKey("UserId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+                });
+
+            modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityUserLogin<string>", b =>
+                {
+                    b.HasOne("EducationApp.Entity.Concrete.User", null)
+                        .WithMany()
+                        .HasForeignKey("UserId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+                });
+
+            modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityUserRole<string>", b =>
+                {
+                    b.HasOne("EducationApp.Entity.Concrete.Role", null)
+                        .WithMany()
+                        .HasForeignKey("RoleId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("EducationApp.Entity.Concrete.User", null)
+                        .WithMany()
+                        .HasForeignKey("UserId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+                });
+
+            modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityUserToken<string>", b =>
+                {
+                    b.HasOne("EducationApp.Entity.Concrete.User", null)
+                        .WithMany()
+                        .HasForeignKey("UserId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+                });
+
+            modelBuilder.Entity("EducationApp.Entity.Concrete.Cart", b =>
+                {
+                    b.Navigation("CartItems");
+                });
+
             modelBuilder.Entity("EducationApp.Entity.Concrete.Category", b =>
                 {
                     b.Navigation("ProductCategories");
@@ -1148,6 +1694,11 @@ namespace EducationApp.Data.Migrations
             modelBuilder.Entity("EducationApp.Entity.Concrete.Instructor", b =>
                 {
                     b.Navigation("Products");
+                });
+
+            modelBuilder.Entity("EducationApp.Entity.Concrete.Order", b =>
+                {
+                    b.Navigation("OrderItems");
                 });
 
             modelBuilder.Entity("EducationApp.Entity.Concrete.Product", b =>

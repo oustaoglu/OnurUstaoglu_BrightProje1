@@ -34,7 +34,7 @@ namespace EducationApp.MVC.Controllers
         }
         public async Task<IActionResult> ProductDetails(string url)
         {
-            Product product = await _productManager.GetProductsByUrlAsync(url);
+            Product product = await _productManager.GetProductByUrlAsync(url);
             ProductDetailsViewModel productDetailsViewModel = new ProductDetailsViewModel
             {
                 Id = product.Id,

@@ -11,33 +11,38 @@ namespace EducationApp.Data.Concrete.EFCore.Repositories
 {
 	public class EfCoreGenericRepository<TEntity> : IGenericRepository<TEntity> where TEntity : class
 	{
-		EducationAppContext _context = new EducationAppContext();
+		protected readonly DbContext _dbContext;
+
+		public EfCoreGenericRepository(DbContext dbContext)
+		{
+			_dbContext = dbContext;
+		}
 		public async Task CreateAsync(TEntity entity)
 		{
-			await _context.Set<TEntity>().AddAsync(entity);
-			await _context.SaveChangesAsync();
+			await _dbContext.Set<TEntity>().AddAsync(entity);
+			await _dbContext.SaveChangesAsync();
 		}
 
 		public void Delete(TEntity entity)
 		{
-			_context.Set<TEntity>().Remove(entity);
-			_context.SaveChanges();
+			_dbContext.Set<TEntity>().Remove(entity);
+			_dbContext.SaveChanges();
 		}
 
 		public async Task<List<TEntity>> GetAllAsync()
 		{
-			return await _context.Set<TEntity>().ToListAsync();
+			return await _dbContext.Set<TEntity>().ToListAsync();
 		}
 
 		public async Task<TEntity> GetByIdAsync(int id)
 		{
-			return await _context.Set<TEntity>().FindAsync(id);
+			return await _dbContext.Set<TEntity>().FindAsync(id);
 		}
 
 		public void Update(TEntity entity)
 		{
-			_context.Set<TEntity>().Update(entity);
-			_context.SaveChanges();
+			_dbContext.Set<TEntity>().Update(entity);
+			_dbContext.SaveChanges();
 		}
 	}
 }

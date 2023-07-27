@@ -9,9 +9,14 @@ namespace EducationApp.Data.Abstract
 {
 	public interface IProductRepository : IGenericRepository<Product>
 	{
-		Task<List<Product>> GetHomePageProductsAsync();
+		Task<List<Product>> GetProductsWithFullDataAsync(bool? isHome = null, bool? isActive = null);
 		Task<List<Product>> GetAllActiveProductsAsync(string categoryUrl = null, string instructorUrl = null);
-        Task<Product> GetProductsByUrlAsync(string productUrl);
-        Task<List<Product>> GetProductsWithFullDataAsync(bool? isHome, bool? isActive);
-    }
+		Task<Product> GetProductByUrlAsync(string productUrl);
+		Task<Product> GetProductByIdAsync(int id);
+		Task<List<Product>> GetAllProductsWithInstructor(bool isDeleted);
+		Task CreateProductAsync(Product product, List<int> SelectedCategoryIds);
+		Task UpdateInstructorOfProducts();
+		Task CheckProductsCategories();
+		void UpdateProduct(Product product);
+	}
 }
