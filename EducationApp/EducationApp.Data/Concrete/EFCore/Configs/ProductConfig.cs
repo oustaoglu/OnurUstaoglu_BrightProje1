@@ -45,11 +45,11 @@ namespace EducationApp.Data.Concrete.EFCore.Configs
 				{
 					Id = 1,
 					Name = ".NET (.NET Core, MVC, Web API)",
-					Description = "test.",
+					Description = "Yazılım dersi, bilgisayar bilimlerinin önemli bir alanıdır ve öğrencilere temel bilgisayar programlama, algoritma oluşturma, veri yapıları, yazılım mühendisliği ve uygulama geliştirme konularında bilgi sağlar. Bu ders, öğrencilere problem çözme becerileri kazandırarak mantıksal düşünce ve analitik yeteneklerini geliştirir. Yazılım dersi aynı zamanda modern teknoloji dünyasında önemli bir role sahip olan yazılım süreçlerini, proje yönetimini ve test etme yöntemlerini de kapsar. Öğrenciler, çeşitli programlama dilleri ve yazılım araçlarını kullanarak uygulamalar geliştirerek pratik deneyim elde eder. Bu ders, gelecekteki teknoloji liderleri ve yazılım geliştiricileri için temel bir adımdır.",
 					Url = ".net-core-mvc",
 					ImageUrl = "1.jpg",
 					Price = 100,
-					Time = DateTime.Now,
+					Time = 200,
 					IsHome = true,
 					InstructorId = 1
 				},
@@ -57,11 +57,11 @@ namespace EducationApp.Data.Concrete.EFCore.Configs
 				{
 					Id = 2,
 					Name = "Java (Spring, Java SE, Java EE)",
-					Description = "testtt.",
+					Description = "Yazılım dersi, bilgisayar bilimlerinin önemli bir alanıdır ve öğrencilere temel bilgisayar programlama, algoritma oluşturma, veri yapıları, yazılım mühendisliği ve uygulama geliştirme konularında bilgi sağlar. Bu ders, öğrencilere problem çözme becerileri kazandırarak mantıksal düşünce ve analitik yeteneklerini geliştirir. Yazılım dersi aynı zamanda modern teknoloji dünyasında önemli bir role sahip olan yazılım süreçlerini, proje yönetimini ve test etme yöntemlerini de kapsar. Öğrenciler, çeşitli programlama dilleri ve yazılım araçlarını kullanarak uygulamalar geliştirerek pratik deneyim elde eder. Bu ders, gelecekteki teknoloji liderleri ve yazılım geliştiricileri için temel bir adımdır.",
 					Url = "java",
 					ImageUrl = "2.jpg",
 					Price = 100,
-					Time = DateTime.Now,
+					Time = 200,
 					IsHome = true,
 					InstructorId = 2
 				},
@@ -69,11 +69,11 @@ namespace EducationApp.Data.Concrete.EFCore.Configs
 				{
 					Id = 3,
 					Name = "Python",
-					Description = "test.",
+					Description = "Yazılım dersi, bilgisayar bilimlerinin önemli bir alanıdır ve öğrencilere temel bilgisayar programlama, algoritma oluşturma, veri yapıları, yazılım mühendisliği ve uygulama geliştirme konularında bilgi sağlar. Bu ders, öğrencilere problem çözme becerileri kazandırarak mantıksal düşünce ve analitik yeteneklerini geliştirir. Yazılım dersi aynı zamanda modern teknoloji dünyasında önemli bir role sahip olan yazılım süreçlerini, proje yönetimini ve test etme yöntemlerini de kapsar. Öğrenciler, çeşitli programlama dilleri ve yazılım araçlarını kullanarak uygulamalar geliştirerek pratik deneyim elde eder. Bu ders, gelecekteki teknoloji liderleri ve yazılım geliştiricileri için temel bir adımdır.",
 					Url = "python",
 					ImageUrl = "3.png",
 					Price = 100,
-					Time = DateTime.Now,
+					Time = 200,
 					IsHome = true,
 					InstructorId = 3
 				},
@@ -81,11 +81,11 @@ namespace EducationApp.Data.Concrete.EFCore.Configs
 				{
 					Id = 4,
 					Name = "JavaScript",
-					Description = "test.",
+					Description = "Yazılım dersi, bilgisayar bilimlerinin önemli bir alanıdır ve öğrencilere temel bilgisayar programlama, algoritma oluşturma, veri yapıları, yazılım mühendisliği ve uygulama geliştirme konularında bilgi sağlar. Bu ders, öğrencilere problem çözme becerileri kazandırarak mantıksal düşünce ve analitik yeteneklerini geliştirir. Yazılım dersi aynı zamanda modern teknoloji dünyasında önemli bir role sahip olan yazılım süreçlerini, proje yönetimini ve test etme yöntemlerini de kapsar. Öğrenciler, çeşitli programlama dilleri ve yazılım araçlarını kullanarak uygulamalar geliştirerek pratik deneyim elde eder. Bu ders, gelecekteki teknoloji liderleri ve yazılım geliştiricileri için temel bir adımdır.",
 					Url = "javascript",
 					ImageUrl = "4.jpeg",
 					Price = 100,
-					Time = DateTime.Now,
+					Time = 200,
 					IsHome = true,
 					InstructorId = 4
 				},
@@ -93,11 +93,11 @@ namespace EducationApp.Data.Concrete.EFCore.Configs
 				{
 					Id = 5,
 					Name = "C/C++",
-					Description = "test.",
+					Description = "Yazılım dersi, bilgisayar bilimlerinin önemli bir alanıdır ve öğrencilere temel bilgisayar programlama, algoritma oluşturma, veri yapıları, yazılım mühendisliği ve uygulama geliştirme konularında bilgi sağlar. Bu ders, öğrencilere problem çözme becerileri kazandırarak mantıksal düşünce ve analitik yeteneklerini geliştirir. Yazılım dersi aynı zamanda modern teknoloji dünyasında önemli bir role sahip olan yazılım süreçlerini, proje yönetimini ve test etme yöntemlerini de kapsar. Öğrenciler, çeşitli programlama dilleri ve yazılım araçlarını kullanarak uygulamalar geliştirerek pratik deneyim elde eder. Bu ders, gelecekteki teknoloji liderleri ve yazılım geliştiricileri için temel bir adımdır.",
 					Url = "c/c++	",
 					ImageUrl = "5.jpg",
 					Price = 100,
-					Time = DateTime.Now,
+					Time = 200,
 					IsHome = true,
 					InstructorId = 5
 				},
@@ -105,11 +105,11 @@ namespace EducationApp.Data.Concrete.EFCore.Configs
 				{
 					Id = 6,
 					Name = "iOS & Android",
-					Description = "testtt.",
+					Description = "Yazılım dersi, bilgisayar bilimlerinin önemli bir alanıdır ve öğrencilere temel bilgisayar programlama, algoritma oluşturma, veri yapıları, yazılım mühendisliği ve uygulama geliştirme konularında bilgi sağlar. Bu ders, öğrencilere problem çözme becerileri kazandırarak mantıksal düşünce ve analitik yeteneklerini geliştirir. Yazılım dersi aynı zamanda modern teknoloji dünyasında önemli bir role sahip olan yazılım süreçlerini, proje yönetimini ve test etme yöntemlerini de kapsar. Öğrenciler, çeşitli programlama dilleri ve yazılım araçlarını kullanarak uygulamalar geliştirerek pratik deneyim elde eder. Bu ders, gelecekteki teknoloji liderleri ve yazılım geliştiricileri için temel bir adımdır.",
 					Url = "ios-android",
 					ImageUrl = "6.png",
 					Price = 100,
-					Time = DateTime.Now,
+					Time = 200,
 					IsHome = true,
 					InstructorId = 6
 				},
@@ -117,11 +117,11 @@ namespace EducationApp.Data.Concrete.EFCore.Configs
 				{
 					Id = 7,
 					Name = "React Native",
-					Description = "test.",
+					Description = "Yazılım dersi, bilgisayar bilimlerinin önemli bir alanıdır ve öğrencilere temel bilgisayar programlama, algoritma oluşturma, veri yapıları, yazılım mühendisliği ve uygulama geliştirme konularında bilgi sağlar. Bu ders, öğrencilere problem çözme becerileri kazandırarak mantıksal düşünce ve analitik yeteneklerini geliştirir. Yazılım dersi aynı zamanda modern teknoloji dünyasında önemli bir role sahip olan yazılım süreçlerini, proje yönetimini ve test etme yöntemlerini de kapsar. Öğrenciler, çeşitli programlama dilleri ve yazılım araçlarını kullanarak uygulamalar geliştirerek pratik deneyim elde eder. Bu ders, gelecekteki teknoloji liderleri ve yazılım geliştiricileri için temel bir adımdır.",
 					Url = "react-native",
 					ImageUrl = "7.png",
 					Price = 100,
-					Time = DateTime.Now,
+					Time = 200,
 					IsHome = true,
 					InstructorId = 7
 				},
@@ -129,11 +129,11 @@ namespace EducationApp.Data.Concrete.EFCore.Configs
 				{
 					Id = 8,
 					Name = "Flutter",
-					Description = "test.",
+					Description = "Yazılım dersi, bilgisayar bilimlerinin önemli bir alanıdır ve öğrencilere temel bilgisayar programlama, algoritma oluşturma, veri yapıları, yazılım mühendisliği ve uygulama geliştirme konularında bilgi sağlar. Bu ders, öğrencilere problem çözme becerileri kazandırarak mantıksal düşünce ve analitik yeteneklerini geliştirir. Yazılım dersi aynı zamanda modern teknoloji dünyasında önemli bir role sahip olan yazılım süreçlerini, proje yönetimini ve test etme yöntemlerini de kapsar. Öğrenciler, çeşitli programlama dilleri ve yazılım araçlarını kullanarak uygulamalar geliştirerek pratik deneyim elde eder. Bu ders, gelecekteki teknoloji liderleri ve yazılım geliştiricileri için temel bir adımdır.",
 					Url = "flutter",
 					ImageUrl = "8.png",
 					Price = 100,
-					Time = DateTime.Now,
+					Time = 200,
 					IsHome = true,
 					InstructorId = 8
 				},
@@ -141,11 +141,11 @@ namespace EducationApp.Data.Concrete.EFCore.Configs
 				{
 					Id = 9,
 					Name = "Ionic",
-					Description = "test.",
+					Description = "Yazılım dersi, bilgisayar bilimlerinin önemli bir alanıdır ve öğrencilere temel bilgisayar programlama, algoritma oluşturma, veri yapıları, yazılım mühendisliği ve uygulama geliştirme konularında bilgi sağlar. Bu ders, öğrencilere problem çözme becerileri kazandırarak mantıksal düşünce ve analitik yeteneklerini geliştirir. Yazılım dersi aynı zamanda modern teknoloji dünyasında önemli bir role sahip olan yazılım süreçlerini, proje yönetimini ve test etme yöntemlerini de kapsar. Öğrenciler, çeşitli programlama dilleri ve yazılım araçlarını kullanarak uygulamalar geliştirerek pratik deneyim elde eder. Bu ders, gelecekteki teknoloji liderleri ve yazılım geliştiricileri için temel bir adımdır.",
 					Url = "ionic",
 					ImageUrl = "9.jpg",
 					Price = 100,
-					Time = DateTime.Now,
+					Time = 200,
 					IsHome = true,
 					InstructorId = 9
 				},
@@ -153,11 +153,11 @@ namespace EducationApp.Data.Concrete.EFCore.Configs
 				{
 					Id = 10,
 					Name = "Unity",
-					Description = "test.",
+					Description = "Yazılım dersi, bilgisayar bilimlerinin önemli bir alanıdır ve öğrencilere temel bilgisayar programlama, algoritma oluşturma, veri yapıları, yazılım mühendisliği ve uygulama geliştirme konularında bilgi sağlar. Bu ders, öğrencilere problem çözme becerileri kazandırarak mantıksal düşünce ve analitik yeteneklerini geliştirir. Yazılım dersi aynı zamanda modern teknoloji dünyasında önemli bir role sahip olan yazılım süreçlerini, proje yönetimini ve test etme yöntemlerini de kapsar. Öğrenciler, çeşitli programlama dilleri ve yazılım araçlarını kullanarak uygulamalar geliştirerek pratik deneyim elde eder. Bu ders, gelecekteki teknoloji liderleri ve yazılım geliştiricileri için temel bir adımdır.",
 					Url = "unity",
 					ImageUrl = "10.jpeg",
 					Price = 100,
-					Time = DateTime.Now,
+					Time = 200,
 					IsHome = true,
 					InstructorId = 10
 				},
@@ -165,11 +165,11 @@ namespace EducationApp.Data.Concrete.EFCore.Configs
 				{
 					Id = 11,
 					Name = "Unreal Engine",
-					Description = "test.",
+					Description = "Yazılım dersi, bilgisayar bilimlerinin önemli bir alanıdır ve öğrencilere temel bilgisayar programlama, algoritma oluşturma, veri yapıları, yazılım mühendisliği ve uygulama geliştirme konularında bilgi sağlar. Bu ders, öğrencilere problem çözme becerileri kazandırarak mantıksal düşünce ve analitik yeteneklerini geliştirir. Yazılım dersi aynı zamanda modern teknoloji dünyasında önemli bir role sahip olan yazılım süreçlerini, proje yönetimini ve test etme yöntemlerini de kapsar. Öğrenciler, çeşitli programlama dilleri ve yazılım araçlarını kullanarak uygulamalar geliştirerek pratik deneyim elde eder. Bu ders, gelecekteki teknoloji liderleri ve yazılım geliştiricileri için temel bir adımdır.",
 					Url = "unreal-engine",
 					ImageUrl = "11.png",
 					Price = 100,
-					Time = DateTime.Now,
+					Time = 200,
 					IsHome = true,
 					InstructorId = 11
 				},
@@ -177,11 +177,11 @@ namespace EducationApp.Data.Concrete.EFCore.Configs
 				{
 					Id = 12,
 					Name = "GameMaker Studio",
-					Description = "testtt.",
+					Description = "Yazılım dersi, bilgisayar bilimlerinin önemli bir alanıdır ve öğrencilere temel bilgisayar programlama, algoritma oluşturma, veri yapıları, yazılım mühendisliği ve uygulama geliştirme konularında bilgi sağlar. Bu ders, öğrencilere problem çözme becerileri kazandırarak mantıksal düşünce ve analitik yeteneklerini geliştirir. Yazılım dersi aynı zamanda modern teknoloji dünyasında önemli bir role sahip olan yazılım süreçlerini, proje yönetimini ve test etme yöntemlerini de kapsar. Öğrenciler, çeşitli programlama dilleri ve yazılım araçlarını kullanarak uygulamalar geliştirerek pratik deneyim elde eder. Bu ders, gelecekteki teknoloji liderleri ve yazılım geliştiricileri için temel bir adımdır.",
 					Url = "gamemaker-studio",
 					ImageUrl = "12.png",
 					Price = 100,
-					Time = DateTime.Now,
+					Time = 200,
 					IsHome = true,
 					InstructorId = 12
 				},
@@ -189,11 +189,11 @@ namespace EducationApp.Data.Concrete.EFCore.Configs
 				{
 					Id = 13,
 					Name = "Buildbox",
-					Description = "test.",
+					Description = "Yazılım dersi, bilgisayar bilimlerinin önemli bir alanıdır ve öğrencilere temel bilgisayar programlama, algoritma oluşturma, veri yapıları, yazılım mühendisliği ve uygulama geliştirme konularında bilgi sağlar. Bu ders, öğrencilere problem çözme becerileri kazandırarak mantıksal düşünce ve analitik yeteneklerini geliştirir. Yazılım dersi aynı zamanda modern teknoloji dünyasında önemli bir role sahip olan yazılım süreçlerini, proje yönetimini ve test etme yöntemlerini de kapsar. Öğrenciler, çeşitli programlama dilleri ve yazılım araçlarını kullanarak uygulamalar geliştirerek pratik deneyim elde eder. Bu ders, gelecekteki teknoloji liderleri ve yazılım geliştiricileri için temel bir adımdır.",
 					Url = "buildbox",
 					ImageUrl = "13.jpeg",
 					Price = 100,
-					Time = DateTime.Now,
+					Time = 200,
 					IsHome = true,
 					InstructorId = 13
 				},
@@ -201,11 +201,11 @@ namespace EducationApp.Data.Concrete.EFCore.Configs
 				{
 					Id = 14,
 					Name = "PHP",
-					Description = "test.",
+					Description = "Yazılım dersi, bilgisayar bilimlerinin önemli bir alanıdır ve öğrencilere temel bilgisayar programlama, algoritma oluşturma, veri yapıları, yazılım mühendisliği ve uygulama geliştirme konularında bilgi sağlar. Bu ders, öğrencilere problem çözme becerileri kazandırarak mantıksal düşünce ve analitik yeteneklerini geliştirir. Yazılım dersi aynı zamanda modern teknoloji dünyasında önemli bir role sahip olan yazılım süreçlerini, proje yönetimini ve test etme yöntemlerini de kapsar. Öğrenciler, çeşitli programlama dilleri ve yazılım araçlarını kullanarak uygulamalar geliştirerek pratik deneyim elde eder. Bu ders, gelecekteki teknoloji liderleri ve yazılım geliştiricileri için temel bir adımdır.",
 					Url = "php",
 					ImageUrl = "14.png",
 					Price = 100,
-					Time = DateTime.Now,
+					Time = 200,
 					IsHome = true,
 					InstructorId = 14
 				},
@@ -213,11 +213,11 @@ namespace EducationApp.Data.Concrete.EFCore.Configs
                 {
                     Id = 15,
                     Name = "React",
-                    Description = "test.",
+                    Description = "Yazılım dersi, bilgisayar bilimlerinin önemli bir alanıdır ve öğrencilere temel bilgisayar programlama, algoritma oluşturma, veri yapıları, yazılım mühendisliği ve uygulama geliştirme konularında bilgi sağlar. Bu ders, öğrencilere problem çözme becerileri kazandırarak mantıksal düşünce ve analitik yeteneklerini geliştirir. Yazılım dersi aynı zamanda modern teknoloji dünyasında önemli bir role sahip olan yazılım süreçlerini, proje yönetimini ve test etme yöntemlerini de kapsar. Öğrenciler, çeşitli programlama dilleri ve yazılım araçlarını kullanarak uygulamalar geliştirerek pratik deneyim elde eder. Bu ders, gelecekteki teknoloji liderleri ve yazılım geliştiricileri için temel bir adımdır.",
                     Url = "react",
                     ImageUrl = "15.jpeg",
                     Price = 100,
-                    Time = DateTime.Now,
+                    Time = 200,
                     IsHome = true,
                     InstructorId = 8
                 },
@@ -225,11 +225,11 @@ namespace EducationApp.Data.Concrete.EFCore.Configs
                 {
                     Id = 16,
                     Name = "Angular",
-                    Description = "test.",
+                    Description = "Yazılım dersi, bilgisayar bilimlerinin önemli bir alanıdır ve öğrencilere temel bilgisayar programlama, algoritma oluşturma, veri yapıları, yazılım mühendisliği ve uygulama geliştirme konularında bilgi sağlar. Bu ders, öğrencilere problem çözme becerileri kazandırarak mantıksal düşünce ve analitik yeteneklerini geliştirir. Yazılım dersi aynı zamanda modern teknoloji dünyasında önemli bir role sahip olan yazılım süreçlerini, proje yönetimini ve test etme yöntemlerini de kapsar. Öğrenciler, çeşitli programlama dilleri ve yazılım araçlarını kullanarak uygulamalar geliştirerek pratik deneyim elde eder. Bu ders, gelecekteki teknoloji liderleri ve yazılım geliştiricileri için temel bir adımdır.",
                     Url = "angular",
                     ImageUrl = "16.png",
                     Price = 100,
-                    Time = DateTime.Now,
+                    Time = 200,
                     IsHome = true,
                     InstructorId = 9
                 },
@@ -237,11 +237,11 @@ namespace EducationApp.Data.Concrete.EFCore.Configs
                 {
                     Id = 17,
                     Name = "Node.js",
-                    Description = "test.",
+                    Description = "Yazılım dersi, bilgisayar bilimlerinin önemli bir alanıdır ve öğrencilere temel bilgisayar programlama, algoritma oluşturma, veri yapıları, yazılım mühendisliği ve uygulama geliştirme konularında bilgi sağlar. Bu ders, öğrencilere problem çözme becerileri kazandırarak mantıksal düşünce ve analitik yeteneklerini geliştirir. Yazılım dersi aynı zamanda modern teknoloji dünyasında önemli bir role sahip olan yazılım süreçlerini, proje yönetimini ve test etme yöntemlerini de kapsar. Öğrenciler, çeşitli programlama dilleri ve yazılım araçlarını kullanarak uygulamalar geliştirerek pratik deneyim elde eder. Bu ders, gelecekteki teknoloji liderleri ve yazılım geliştiricileri için temel bir adımdır.",
                     Url = "nodejs",
                     ImageUrl = "17.png",
                     Price = 100,
-                    Time = DateTime.Now,
+                    Time = 200,
                     IsHome = true,
                     InstructorId = 10
                 },
@@ -249,11 +249,11 @@ namespace EducationApp.Data.Concrete.EFCore.Configs
                 {
                     Id = 18,
                     Name = "Microsoft SQL Server",
-                    Description = "test.",
+                    Description = "Yazılım dersi, bilgisayar bilimlerinin önemli bir alanıdır ve öğrencilere temel bilgisayar programlama, algoritma oluşturma, veri yapıları, yazılım mühendisliği ve uygulama geliştirme konularında bilgi sağlar. Bu ders, öğrencilere problem çözme becerileri kazandırarak mantıksal düşünce ve analitik yeteneklerini geliştirir. Yazılım dersi aynı zamanda modern teknoloji dünyasında önemli bir role sahip olan yazılım süreçlerini, proje yönetimini ve test etme yöntemlerini de kapsar. Öğrenciler, çeşitli programlama dilleri ve yazılım araçlarını kullanarak uygulamalar geliştirerek pratik deneyim elde eder. Bu ders, gelecekteki teknoloji liderleri ve yazılım geliştiricileri için temel bir adımdır.",
                     Url = "microsoft-sql-server",
                     ImageUrl = "18.jpg",
                     Price = 100,
-                    Time = DateTime.Now,
+                    Time = 200,
                     IsHome = true,
                     InstructorId = 11
                 },
@@ -261,11 +261,11 @@ namespace EducationApp.Data.Concrete.EFCore.Configs
                 {
                     Id = 19,
                     Name = "MySQL",
-                    Description = "testtt.",
+                    Description = "Yazılım dersi, bilgisayar bilimlerinin önemli bir alanıdır ve öğrencilere temel bilgisayar programlama, algoritma oluşturma, veri yapıları, yazılım mühendisliği ve uygulama geliştirme konularında bilgi sağlar. Bu ders, öğrencilere problem çözme becerileri kazandırarak mantıksal düşünce ve analitik yeteneklerini geliştirir. Yazılım dersi aynı zamanda modern teknoloji dünyasında önemli bir role sahip olan yazılım süreçlerini, proje yönetimini ve test etme yöntemlerini de kapsar. Öğrenciler, çeşitli programlama dilleri ve yazılım araçlarını kullanarak uygulamalar geliştirerek pratik deneyim elde eder. Bu ders, gelecekteki teknoloji liderleri ve yazılım geliştiricileri için temel bir adımdır.",
                     Url = "mysql",
                     ImageUrl = "19.png",
                     Price = 100,
-                    Time = DateTime.Now,
+                    Time = 200,
                     IsHome = true,
                     InstructorId = 12
                 },
@@ -273,11 +273,11 @@ namespace EducationApp.Data.Concrete.EFCore.Configs
                 {
                     Id = 20,
                     Name = "PostgreSQL",
-                    Description = "test.",
+                    Description = "Yazılım dersi, bilgisayar bilimlerinin önemli bir alanıdır ve öğrencilere temel bilgisayar programlama, algoritma oluşturma, veri yapıları, yazılım mühendisliği ve uygulama geliştirme konularında bilgi sağlar. Bu ders, öğrencilere problem çözme becerileri kazandırarak mantıksal düşünce ve analitik yeteneklerini geliştirir. Yazılım dersi aynı zamanda modern teknoloji dünyasında önemli bir role sahip olan yazılım süreçlerini, proje yönetimini ve test etme yöntemlerini de kapsar. Öğrenciler, çeşitli programlama dilleri ve yazılım araçlarını kullanarak uygulamalar geliştirerek pratik deneyim elde eder. Bu ders, gelecekteki teknoloji liderleri ve yazılım geliştiricileri için temel bir adımdır.",
                     Url = "postgresql",
                     ImageUrl = "20.png",
                     Price = 100,
-                    Time = DateTime.Now,
+                    Time = 200,
                     IsHome = true,
                     InstructorId = 13
                 },
@@ -285,11 +285,11 @@ namespace EducationApp.Data.Concrete.EFCore.Configs
                 {
                     Id = 21,
                     Name = "SQLite",
-                    Description = "test.",
+                    Description = "Yazılım dersi, bilgisayar bilimlerinin önemli bir alanıdır ve öğrencilere temel bilgisayar programlama, algoritma oluşturma, veri yapıları, yazılım mühendisliği ve uygulama geliştirme konularında bilgi sağlar. Bu ders, öğrencilere problem çözme becerileri kazandırarak mantıksal düşünce ve analitik yeteneklerini geliştirir. Yazılım dersi aynı zamanda modern teknoloji dünyasında önemli bir role sahip olan yazılım süreçlerini, proje yönetimini ve test etme yöntemlerini de kapsar. Öğrenciler, çeşitli programlama dilleri ve yazılım araçlarını kullanarak uygulamalar geliştirerek pratik deneyim elde eder. Bu ders, gelecekteki teknoloji liderleri ve yazılım geliştiricileri için temel bir adımdır.",
                     Url = "sqlite",
                     ImageUrl = "21.png",
                     Price = 100,
-                    Time = DateTime.Now,
+                    Time = 200,
                     IsHome = true,
                     InstructorId = 11
                 },
@@ -297,11 +297,11 @@ namespace EducationApp.Data.Concrete.EFCore.Configs
                 {
                     Id = 22,
                     Name = "Oracle",
-                    Description = "testtt.",
+                    Description = "Yazılım dersi, bilgisayar bilimlerinin önemli bir alanıdır ve öğrencilere temel bilgisayar programlama, algoritma oluşturma, veri yapıları, yazılım mühendisliği ve uygulama geliştirme konularında bilgi sağlar. Bu ders, öğrencilere problem çözme becerileri kazandırarak mantıksal düşünce ve analitik yeteneklerini geliştirir. Yazılım dersi aynı zamanda modern teknoloji dünyasında önemli bir role sahip olan yazılım süreçlerini, proje yönetimini ve test etme yöntemlerini de kapsar. Öğrenciler, çeşitli programlama dilleri ve yazılım araçlarını kullanarak uygulamalar geliştirerek pratik deneyim elde eder. Bu ders, gelecekteki teknoloji liderleri ve yazılım geliştiricileri için temel bir adımdır.",
                     Url = "oracle",
                     ImageUrl = "22.png",
                     Price = 100,
-                    Time = DateTime.Now,
+                    Time = 200,
                     IsHome = true,
                     InstructorId = 12
                 },
@@ -309,11 +309,11 @@ namespace EducationApp.Data.Concrete.EFCore.Configs
                 {
                     Id = 23,
                     Name = "Docker",
-                    Description = "test.",
+                    Description = "Yazılım dersi, bilgisayar bilimlerinin önemli bir alanıdır ve öğrencilere temel bilgisayar programlama, algoritma oluşturma, veri yapıları, yazılım mühendisliği ve uygulama geliştirme konularında bilgi sağlar. Bu ders, öğrencilere problem çözme becerileri kazandırarak mantıksal düşünce ve analitik yeteneklerini geliştirir. Yazılım dersi aynı zamanda modern teknoloji dünyasında önemli bir role sahip olan yazılım süreçlerini, proje yönetimini ve test etme yöntemlerini de kapsar. Öğrenciler, çeşitli programlama dilleri ve yazılım araçlarını kullanarak uygulamalar geliştirerek pratik deneyim elde eder. Bu ders, gelecekteki teknoloji liderleri ve yazılım geliştiricileri için temel bir adımdır.",
                     Url = "docker",
                     ImageUrl = "23.png",
                     Price = 100,
-                    Time = DateTime.Now,
+                    Time = 200,
                     IsHome = true,
                     InstructorId = 13
                 },
@@ -321,11 +321,11 @@ namespace EducationApp.Data.Concrete.EFCore.Configs
                 {
                     Id = 24,
                     Name = "Jenkins",
-                    Description = "test.",
+                    Description = "Yazılım dersi, bilgisayar bilimlerinin önemli bir alanıdır ve öğrencilere temel bilgisayar programlama, algoritma oluşturma, veri yapıları, yazılım mühendisliği ve uygulama geliştirme konularında bilgi sağlar. Bu ders, öğrencilere problem çözme becerileri kazandırarak mantıksal düşünce ve analitik yeteneklerini geliştirir. Yazılım dersi aynı zamanda modern teknoloji dünyasında önemli bir role sahip olan yazılım süreçlerini, proje yönetimini ve test etme yöntemlerini de kapsar. Öğrenciler, çeşitli programlama dilleri ve yazılım araçlarını kullanarak uygulamalar geliştirerek pratik deneyim elde eder. Bu ders, gelecekteki teknoloji liderleri ve yazılım geliştiricileri için temel bir adımdır.",
                     Url = "jenkins",
                     ImageUrl = "24.png",
                     Price = 100,
-                    Time = DateTime.Now,
+                    Time = 200,
                     IsHome = true,
                     InstructorId = 14
                 },
@@ -333,11 +333,11 @@ namespace EducationApp.Data.Concrete.EFCore.Configs
                 {
                     Id = 25,
                     Name = "Ansible",
-                    Description = "test.",
+                    Description = "Yazılım dersi, bilgisayar bilimlerinin önemli bir alanıdır ve öğrencilere temel bilgisayar programlama, algoritma oluşturma, veri yapıları, yazılım mühendisliği ve uygulama geliştirme konularında bilgi sağlar. Bu ders, öğrencilere problem çözme becerileri kazandırarak mantıksal düşünce ve analitik yeteneklerini geliştirir. Yazılım dersi aynı zamanda modern teknoloji dünyasında önemli bir role sahip olan yazılım süreçlerini, proje yönetimini ve test etme yöntemlerini de kapsar. Öğrenciler, çeşitli programlama dilleri ve yazılım araçlarını kullanarak uygulamalar geliştirerek pratik deneyim elde eder. Bu ders, gelecekteki teknoloji liderleri ve yazılım geliştiricileri için temel bir adımdır.",
                     Url = "ansible",
                     ImageUrl = "25.png",
                     Price = 100,
-                    Time = DateTime.Now,
+                    Time = 200,
                     IsHome = true,
                     InstructorId = 8
                 },
@@ -345,11 +345,11 @@ namespace EducationApp.Data.Concrete.EFCore.Configs
                 {
                     Id = 26,
                     Name = "Sonarcube",
-                    Description = "test.",
+                    Description = "Yazılım dersi, bilgisayar bilimlerinin önemli bir alanıdır ve öğrencilere temel bilgisayar programlama, algoritma oluşturma, veri yapıları, yazılım mühendisliği ve uygulama geliştirme konularında bilgi sağlar. Bu ders, öğrencilere problem çözme becerileri kazandırarak mantıksal düşünce ve analitik yeteneklerini geliştirir. Yazılım dersi aynı zamanda modern teknoloji dünyasında önemli bir role sahip olan yazılım süreçlerini, proje yönetimini ve test etme yöntemlerini de kapsar. Öğrenciler, çeşitli programlama dilleri ve yazılım araçlarını kullanarak uygulamalar geliştirerek pratik deneyim elde eder. Bu ders, gelecekteki teknoloji liderleri ve yazılım geliştiricileri için temel bir adımdır.",
                     Url = "sonarcube",
                     ImageUrl = "26.jpeg",
                     Price = 100,
-                    Time = DateTime.Now,
+                    Time = 200,
                     IsHome = true,
                     InstructorId = 9
                 },
@@ -357,11 +357,11 @@ namespace EducationApp.Data.Concrete.EFCore.Configs
                 {
                     Id = 27,
                     Name = "AWS",
-                    Description = "test.",
+                    Description = "Yazılım dersi, bilgisayar bilimlerinin önemli bir alanıdır ve öğrencilere temel bilgisayar programlama, algoritma oluşturma, veri yapıları, yazılım mühendisliği ve uygulama geliştirme konularında bilgi sağlar. Bu ders, öğrencilere problem çözme becerileri kazandırarak mantıksal düşünce ve analitik yeteneklerini geliştirir. Yazılım dersi aynı zamanda modern teknoloji dünyasında önemli bir role sahip olan yazılım süreçlerini, proje yönetimini ve test etme yöntemlerini de kapsar. Öğrenciler, çeşitli programlama dilleri ve yazılım araçlarını kullanarak uygulamalar geliştirerek pratik deneyim elde eder. Bu ders, gelecekteki teknoloji liderleri ve yazılım geliştiricileri için temel bir adımdır.",
                     Url = "aws",
                     ImageUrl = "27.png",
                     Price = 100,
-                    Time = DateTime.Now,
+                    Time = 200,
                     IsHome = true,
                     InstructorId = 10
                 },
@@ -369,11 +369,11 @@ namespace EducationApp.Data.Concrete.EFCore.Configs
                 {
                     Id = 28,
                     Name = "Azure",
-                    Description = "test.",
+                    Description = "Yazılım dersi, bilgisayar bilimlerinin önemli bir alanıdır ve öğrencilere temel bilgisayar programlama, algoritma oluşturma, veri yapıları, yazılım mühendisliği ve uygulama geliştirme konularında bilgi sağlar. Bu ders, öğrencilere problem çözme becerileri kazandırarak mantıksal düşünce ve analitik yeteneklerini geliştirir. Yazılım dersi aynı zamanda modern teknoloji dünyasında önemli bir role sahip olan yazılım süreçlerini, proje yönetimini ve test etme yöntemlerini de kapsar. Öğrenciler, çeşitli programlama dilleri ve yazılım araçlarını kullanarak uygulamalar geliştirerek pratik deneyim elde eder. Bu ders, gelecekteki teknoloji liderleri ve yazılım geliştiricileri için temel bir adımdır.",
                     Url = "azure",
                     ImageUrl = "28.png",
                     Price = 100,
-                    Time = DateTime.Now,
+                    Time = 200,
                     IsHome = true,
                     InstructorId = 11
                 },
@@ -381,11 +381,11 @@ namespace EducationApp.Data.Concrete.EFCore.Configs
                 {
                     Id = 29,
                     Name = "Serverless",
-                    Description = "testtt.",
+                    Description = "Yazılım dersi, bilgisayar bilimlerinin önemli bir alanıdır ve öğrencilere temel bilgisayar programlama, algoritma oluşturma, veri yapıları, yazılım mühendisliği ve uygulama geliştirme konularında bilgi sağlar. Bu ders, öğrencilere problem çözme becerileri kazandırarak mantıksal düşünce ve analitik yeteneklerini geliştirir. Yazılım dersi aynı zamanda modern teknoloji dünyasında önemli bir role sahip olan yazılım süreçlerini, proje yönetimini ve test etme yöntemlerini de kapsar. Öğrenciler, çeşitli programlama dilleri ve yazılım araçlarını kullanarak uygulamalar geliştirerek pratik deneyim elde eder. Bu ders, gelecekteki teknoloji liderleri ve yazılım geliştiricileri için temel bir adımdır.",
                     Url = "serverless",
                     ImageUrl = "29.png",
                     Price = 100,
-                    Time = DateTime.Now,
+                    Time = 200,
                     IsHome = true,
                     InstructorId = 12
                 },
@@ -393,11 +393,11 @@ namespace EducationApp.Data.Concrete.EFCore.Configs
                 {
                     Id = 30,
                     Name = "Cloud Storage",
-                    Description = "testtt.",
+                    Description = "Yazılım dersi, bilgisayar bilimlerinin önemli bir alanıdır ve öğrencilere temel bilgisayar programlama, algoritma oluşturma, veri yapıları, yazılım mühendisliği ve uygulama geliştirme konularında bilgi sağlar. Bu ders, öğrencilere problem çözme becerileri kazandırarak mantıksal düşünce ve analitik yeteneklerini geliştirir. Yazılım dersi aynı zamanda modern teknoloji dünyasında önemli bir role sahip olan yazılım süreçlerini, proje yönetimini ve test etme yöntemlerini de kapsar. Öğrenciler, çeşitli programlama dilleri ve yazılım araçlarını kullanarak uygulamalar geliştirerek pratik deneyim elde eder. Bu ders, gelecekteki teknoloji liderleri ve yazılım geliştiricileri için temel bir adımdır.",
                     Url = "cloudstorage",
                     ImageUrl = "30.png",
                     Price = 100,
-                    Time = DateTime.Now,
+                    Time = 200,
                     IsHome = true,
                     InstructorId = 12
                 });

@@ -8,17 +8,17 @@
 			<div class="card m-b-30">
 				<div class="card-body">
 					<div class="row">
-						<div class="col-lg-6 col-xl-5">
+						<div class="col-lg-5 col-xl-4">
 							<div class="product-slider-box product-box-for">
-								<img class="w-100" src="/images/products/@Model.ImageUrl" />
+								<img style="width:348px" "height:250px" src="/images/products/@Model.ImageUrl" />
 							</div>
 						</div>
-						<div class="col-lg-6 col-xl-7">
+						<div class="col-lg-4 col-xl-6">
 							<p><span class="badge badge-light font-16">Pupular</span></p>
 							<h3 class="display-6 fs-4 fw-normal text-danger">@Model.Name</h3>
 							<a asp-area=""
 							   asp-controller="Home"
-							   asp-action="AuthorDetails"
+							   asp-action="IntructorDetails"
 							   asp-route-url="@Model.InstructorUrl">
 							</a>
 							<p>
@@ -32,15 +32,26 @@
 								<h5 class="fs-3 text-primary">@($"{Model.Price:C2}")</h5>
 							</div>
 							<div>
-								<h3 class="bg-warning p-2 fs-6 text-white fw-bold display-6 mt-3">@Model.InstructorName</h3>
+								<h3 class="bg-warning p-2 fs-6 text-white fw-bold display-6 mt-3">Eğitim Süresi: 200 Saat</h3>
 								
-								<p class="fs-6">@Html.Raw(Model.InstructorAbout)</p>
+								<p class="fs-6">@Html.Raw(Model.Description)</p>
 							</div>
-							<div class="button-list mt-5 mb-5">
+							<div class="button-list mt-5 mb-5 d-flex justify-content-center">
 
-								<button type="button" class="btn btn-outline-dark font-17">Sepete Ekle</button>
+								<form asp-area=""
+									  asp-controller="Cart"
+									  asp-action="AddToCart"
+									  method="post">
+									<input type="hidden" asp-for="Id" />
+									<button type="submit" class="btn btn-outline-dark">Sepete Ekle</button>
+									<input class="form-control d-inline" style="width:60px;" type="number" name="quantity" min="1" max="9" value="1" />
+								</form>
 							</div>
-							<img class="float-end me-1" src="/images/instructors/1.png" />
+						</div>
+						<div class="col-lg-3 col-xl-2">
+							<img class="img-thumbnail mt-5" src="/images/instructors/1.png" />
+							<h3 class="bg-warning p-2 fs-6 text-white fw-bold display-6 mt-3">@Model.InstructorName</h3>
+							<p class="fs-6"> <b>Eğitmen Hakkında: </b>@Html.Raw(Model.InstructorAbout)</p>
 						</div>
 					</div>
 				</div>

@@ -42,7 +42,7 @@ namespace EducationApp.Data.Concrete.EFCore.Configs
 					LastName = "Harmon",
 					BirthOfYear = 1990,
 					PhotoUrl = "1.png",
-					About = "Yazılım eğitimi, modern teknolojinin temelini oluşturan önemli bir süreçtir. Katılımcılara yazılım geliştirme süreçlerinde bilgi ve beceriler kazandırır. Programlama dillerinin temel yapılarını öğreterek öğrencilerin mantıklı çözümler üretmelerine yardımcı olur. Nesne yönelimli programlama (OOP), veritabanı yönetimi, web ve mobil uygulama geliştirme gibi konulara odaklanabilir. Algoritma ve veri yapıları öğreterek analitik düşünme yeteneğini güçlendirir. Yazılım mühendisliği prensiplerini aktarırken, test ve hata ayıklama tekniklerini de vurgular. Proje tabanlı çalışmalarla pratik deneyim sağlayarak öğrencilerin gerçek dünya projelerinde başarılı olmalarını hedefler. Sürekli güncellenen teknolojilere uyum sağlayarak sektörde rekabetçi bireyler yetiştirir.",
+					About = "Yazılım eğitimi, modern teknolojinin temelini oluşturan önemli bir süreçtir. Katılımcılara yazılım geliştirme süreçlerinde bilgi ve beceriler kazandırır.",
 					ProductId = 1,
 				},
 				new Instructor
@@ -52,7 +52,7 @@ namespace EducationApp.Data.Concrete.EFCore.Configs
 					LastName = "Burch",
 					BirthOfYear = 1990,
 					PhotoUrl = "1.png",
-					About = "Yazılım eğitimi, modern teknolojinin temelini oluşturan önemli bir süreçtir. Katılımcılara yazılım geliştirme süreçlerinde bilgi ve beceriler kazandırır. Programlama dillerinin temel yapılarını öğreterek öğrencilerin mantıklı çözümler üretmelerine yardımcı olur. Nesne yönelimli programlama (OOP), veritabanı yönetimi, web ve mobil uygulama geliştirme gibi konulara odaklanabilir. Algoritma ve veri yapıları öğreterek analitik düşünme yeteneğini güçlendirir. Yazılım mühendisliği prensiplerini aktarırken, test ve hata ayıklama tekniklerini de vurgular. Proje tabanlı çalışmalarla pratik deneyim sağlayarak öğrencilerin gerçek dünya projelerinde başarılı olmalarını hedefler. Sürekli güncellenen teknolojilere uyum sağlayarak sektörde rekabetçi bireyler yetiştirir.",
+					About = "Yazılım eğitimi, modern teknolojinin temelini oluşturan önemli bir süreçtir. Katılımcılara yazılım geliştirme süreçlerinde bilgi ve beceriler kazandırır.",
                     ProductId = 2,
 
                 },
@@ -63,7 +63,7 @@ namespace EducationApp.Data.Concrete.EFCore.Configs
 					  LastName = "Beard",
 					  BirthOfYear = 1985,
 					  PhotoUrl = "1.png",
-					  About = "Yazılım eğitimi, modern teknolojinin temelini oluşturan önemli bir süreçtir. Katılımcılara yazılım geliştirme süreçlerinde bilgi ve beceriler kazandırır. Programlama dillerinin temel yapılarını öğreterek öğrencilerin mantıklı çözümler üretmelerine yardımcı olur. Nesne yönelimli programlama (OOP), veritabanı yönetimi, web ve mobil uygulama geliştirme gibi konulara odaklanabilir. Algoritma ve veri yapıları öğreterek analitik düşünme yeteneğini güçlendirir. Yazılım mühendisliği prensiplerini aktarırken, test ve hata ayıklama tekniklerini de vurgular. Proje tabanlı çalışmalarla pratik deneyim sağlayarak öğrencilerin gerçek dünya projelerinde başarılı olmalarını hedefler. Sürekli güncellenen teknolojilere uyum sağlayarak sektörde rekabetçi bireyler yetiştirir.",
+					  About = "Yazılım eğitimi, modern teknolojinin temelini oluşturan önemli bir süreçtir. Katılımcılara yazılım geliştirme süreçlerinde bilgi ve beceriler kazandırır.",
 					  ProductId = 3,
 				 },
 				new Instructor
@@ -73,8 +73,8 @@ namespace EducationApp.Data.Concrete.EFCore.Configs
 					LastName = "Wade",
 					BirthOfYear = 1982,
 					PhotoUrl = "1.png",
-					About = "Yazılım eğitimi, modern teknolojinin temelini oluşturan önemli bir süreçtir. Katılımcılara yazılım geliştirme süreçlerinde bilgi ve beceriler kazandırır. Programlama dillerinin temel yapılarını öğreterek öğrencilerin mantıklı çözümler üretmelerine yardımcı olur. Nesne yönelimli programlama (OOP), veritabanı yönetimi, web ve mobil uygulama geliştirme gibi konulara odaklanabilir. Algoritma ve veri yapıları öğreterek analitik düşünme yeteneğini güçlendirir. Yazılım mühendisliği prensiplerini aktarırken, test ve hata ayıklama tekniklerini de vurgular. Proje tabanlı çalışmalarla pratik deneyim sağlayarak öğrencilerin gerçek dünya projelerinde başarılı olmalarını hedefler. Sürekli güncellenen teknolojilere uyum sağlayarak sektörde rekabetçi bireyler yetiştirir.",
-					ProductId = 4,
+                    About = "Yazılım eğitimi, modern teknolojinin temelini oluşturan önemli bir süreçtir. Katılımcılara yazılım geliştirme süreçlerinde bilgi ve beceriler kazandırır.",
+                    ProductId = 4,
 				},
 				new Instructor
 				{
@@ -83,8 +83,8 @@ namespace EducationApp.Data.Concrete.EFCore.Configs
 					LastName = "Hunt",
 					BirthOfYear = 1988,
 					PhotoUrl = "1.png",
-					About = "Yazılım eğitimi, modern teknolojinin temelini oluşturan önemli bir süreçtir. Katılımcılara yazılım geliştirme süreçlerinde bilgi ve beceriler kazandırır. Programlama dillerinin temel yapılarını öğreterek öğrencilerin mantıklı çözümler üretmelerine yardımcı olur. Nesne yönelimli programlama (OOP), veritabanı yönetimi, web ve mobil uygulama geliştirme gibi konulara odaklanabilir. Algoritma ve veri yapıları öğreterek analitik düşünme yeteneğini güçlendirir. Yazılım mühendisliği prensiplerini aktarırken, test ve hata ayıklama tekniklerini de vurgular. Proje tabanlı çalışmalarla pratik deneyim sağlayarak öğrencilerin gerçek dünya projelerinde başarılı olmalarını hedefler. Sürekli güncellenen teknolojilere uyum sağlayarak sektörde rekabetçi bireyler yetiştirir.",
-					ProductId = 5,
+                    About = "Yazılım eğitimi, modern teknolojinin temelini oluşturan önemli bir süreçtir. Katılımcılara yazılım geliştirme süreçlerinde bilgi ve beceriler kazandırır.",
+                    ProductId = 5,
 				},
 				new Instructor
 				{
@@ -93,8 +93,8 @@ namespace EducationApp.Data.Concrete.EFCore.Configs
 					LastName = "Dazai",
 					BirthOfYear = 1989,
 					PhotoUrl = "1.png",
-					About = "Yazılım eğitimi, modern teknolojinin temelini oluşturan önemli bir süreçtir. Katılımcılara yazılım geliştirme süreçlerinde bilgi ve beceriler kazandırır. Programlama dillerinin temel yapılarını öğreterek öğrencilerin mantıklı çözümler üretmelerine yardımcı olur. Nesne yönelimli programlama (OOP), veritabanı yönetimi, web ve mobil uygulama geliştirme gibi konulara odaklanabilir. Algoritma ve veri yapıları öğreterek analitik düşünme yeteneğini güçlendirir. Yazılım mühendisliği prensiplerini aktarırken, test ve hata ayıklama tekniklerini de vurgular. Proje tabanlı çalışmalarla pratik deneyim sağlayarak öğrencilerin gerçek dünya projelerinde başarılı olmalarını hedefler. Sürekli güncellenen teknolojilere uyum sağlayarak sektörde rekabetçi bireyler yetiştirir.",
-					ProductId = 6,
+                    About = "Yazılım eğitimi, modern teknolojinin temelini oluşturan önemli bir süreçtir. Katılımcılara yazılım geliştirme süreçlerinde bilgi ve beceriler kazandırır.",
+                    ProductId = 6,
 				},
 				new Instructor
 				{
@@ -103,8 +103,8 @@ namespace EducationApp.Data.Concrete.EFCore.Configs
 					LastName = "Salas",
 					BirthOfYear = 1983,
 					PhotoUrl = "1.png",
-					About = "Yazılım eğitimi, modern teknolojinin temelini oluşturan önemli bir süreçtir. Katılımcılara yazılım geliştirme süreçlerinde bilgi ve beceriler kazandırır. Programlama dillerinin temel yapılarını öğreterek öğrencilerin mantıklı çözümler üretmelerine yardımcı olur. Nesne yönelimli programlama (OOP), veritabanı yönetimi, web ve mobil uygulama geliştirme gibi konulara odaklanabilir. Algoritma ve veri yapıları öğreterek analitik düşünme yeteneğini güçlendirir. Yazılım mühendisliği prensiplerini aktarırken, test ve hata ayıklama tekniklerini de vurgular. Proje tabanlı çalışmalarla pratik deneyim sağlayarak öğrencilerin gerçek dünya projelerinde başarılı olmalarını hedefler. Sürekli güncellenen teknolojilere uyum sağlayarak sektörde rekabetçi bireyler yetiştirir.",
-					ProductId = 7,
+                    About = "Yazılım eğitimi, modern teknolojinin temelini oluşturan önemli bir süreçtir. Katılımcılara yazılım geliştirme süreçlerinde bilgi ve beceriler kazandırır.",
+                    ProductId = 7,
 				},
 				new Instructor
 				{
@@ -113,8 +113,8 @@ namespace EducationApp.Data.Concrete.EFCore.Configs
 					LastName = "Haig",
 					BirthOfYear = 1982,
 					PhotoUrl = "1.png",
-					About = "Yazılım eğitimi, modern teknolojinin temelini oluşturan önemli bir süreçtir. Katılımcılara yazılım geliştirme süreçlerinde bilgi ve beceriler kazandırır. Programlama dillerinin temel yapılarını öğreterek öğrencilerin mantıklı çözümler üretmelerine yardımcı olur. Nesne yönelimli programlama (OOP), veritabanı yönetimi, web ve mobil uygulama geliştirme gibi konulara odaklanabilir. Algoritma ve veri yapıları öğreterek analitik düşünme yeteneğini güçlendirir. Yazılım mühendisliği prensiplerini aktarırken, test ve hata ayıklama tekniklerini de vurgular. Proje tabanlı çalışmalarla pratik deneyim sağlayarak öğrencilerin gerçek dünya projelerinde başarılı olmalarını hedefler. Sürekli güncellenen teknolojilere uyum sağlayarak sektörde rekabetçi bireyler yetiştirir.",
-					ProductId = 8,
+                    About = "Yazılım eğitimi, modern teknolojinin temelini oluşturan önemli bir süreçtir. Katılımcılara yazılım geliştirme süreçlerinde bilgi ve beceriler kazandırır.",
+                    ProductId = 8,
 				},
 				new Instructor
 				{
@@ -123,8 +123,8 @@ namespace EducationApp.Data.Concrete.EFCore.Configs
 					LastName = "Hawkingan",
 					BirthOfYear = 1982,
 					PhotoUrl = "1.png",
-					About = "Yazılım eğitimi, modern teknolojinin temelini oluşturan önemli bir süreçtir. Katılımcılara yazılım geliştirme süreçlerinde bilgi ve beceriler kazandırır. Programlama dillerinin temel yapılarını öğreterek öğrencilerin mantıklı çözümler üretmelerine yardımcı olur. Nesne yönelimli programlama (OOP), veritabanı yönetimi, web ve mobil uygulama geliştirme gibi konulara odaklanabilir. Algoritma ve veri yapıları öğreterek analitik düşünme yeteneğini güçlendirir. Yazılım mühendisliği prensiplerini aktarırken, test ve hata ayıklama tekniklerini de vurgular. Proje tabanlı çalışmalarla pratik deneyim sağlayarak öğrencilerin gerçek dünya projelerinde başarılı olmalarını hedefler. Sürekli güncellenen teknolojilere uyum sağlayarak sektörde rekabetçi bireyler yetiştirir.",
-					ProductId = 9,
+                    About = "Yazılım eğitimi, modern teknolojinin temelini oluşturan önemli bir süreçtir. Katılımcılara yazılım geliştirme süreçlerinde bilgi ve beceriler kazandırır.",
+                    ProductId = 9,
 				},
 				new Instructor
 				{
@@ -133,8 +133,8 @@ namespace EducationApp.Data.Concrete.EFCore.Configs
 					LastName = "Richmond",
 					BirthOfYear = 1990,
                     PhotoUrl = "1.png",
-                    About = "Yazılım eğitimi, modern teknolojinin temelini oluşturan önemli bir süreçtir. Katılımcılara yazılım geliştirme süreçlerinde bilgi ve beceriler kazandırır. Programlama dillerinin temel yapılarını öğreterek öğrencilerin mantıklı çözümler üretmelerine yardımcı olur. Nesne yönelimli programlama (OOP), veritabanı yönetimi, web ve mobil uygulama geliştirme gibi konulara odaklanabilir. Algoritma ve veri yapıları öğreterek analitik düşünme yeteneğini güçlendirir. Yazılım mühendisliği prensiplerini aktarırken, test ve hata ayıklama tekniklerini de vurgular. Proje tabanlı çalışmalarla pratik deneyim sağlayarak öğrencilerin gerçek dünya projelerinde başarılı olmalarını hedefler. Sürekli güncellenen teknolojilere uyum sağlayarak sektörde rekabetçi bireyler yetiştirir.",
-					ProductId = 10,
+                    About = "Yazılım eğitimi, modern teknolojinin temelini oluşturan önemli bir süreçtir. Katılımcılara yazılım geliştirme süreçlerinde bilgi ve beceriler kazandırır.",
+                    ProductId = 10,
 				},
 				new Instructor
 				{
@@ -143,8 +143,8 @@ namespace EducationApp.Data.Concrete.EFCore.Configs
 					LastName = "Ros",
 					BirthOfYear = 1983,
                     PhotoUrl = "1.png",
-                    About = "Yazılım eğitimi, modern teknolojinin temelini oluşturan önemli bir süreçtir. Katılımcılara yazılım geliştirme süreçlerinde bilgi ve beceriler kazandırır. Programlama dillerinin temel yapılarını öğreterek öğrencilerin mantıklı çözümler üretmelerine yardımcı olur. Nesne yönelimli programlama (OOP), veritabanı yönetimi, web ve mobil uygulama geliştirme gibi konulara odaklanabilir. Algoritma ve veri yapıları öğreterek analitik düşünme yeteneğini güçlendirir. Yazılım mühendisliği prensiplerini aktarırken, test ve hata ayıklama tekniklerini de vurgular. Proje tabanlı çalışmalarla pratik deneyim sağlayarak öğrencilerin gerçek dünya projelerinde başarılı olmalarını hedefler. Sürekli güncellenen teknolojilere uyum sağlayarak sektörde rekabetçi bireyler yetiştirir.",
-					ProductId = 11,
+                    About = "Yazılım eğitimi, modern teknolojinin temelini oluşturan önemli bir süreçtir. Katılımcılara yazılım geliştirme süreçlerinde bilgi ve beceriler kazandırır.",
+                    ProductId = 11,
 				},
 				new Instructor
 				{
@@ -153,8 +153,8 @@ namespace EducationApp.Data.Concrete.EFCore.Configs
 					LastName = "Talley",
 					BirthOfYear = 1991,
                     PhotoUrl = "1.png",
-                    About = "Yazılım eğitimi, modern teknolojinin temelini oluşturan önemli bir süreçtir. Katılımcılara yazılım geliştirme süreçlerinde bilgi ve beceriler kazandırır. Programlama dillerinin temel yapılarını öğreterek öğrencilerin mantıklı çözümler üretmelerine yardımcı olur. Nesne yönelimli programlama (OOP), veritabanı yönetimi, web ve mobil uygulama geliştirme gibi konulara odaklanabilir. Algoritma ve veri yapıları öğreterek analitik düşünme yeteneğini güçlendirir. Yazılım mühendisliği prensiplerini aktarırken, test ve hata ayıklama tekniklerini de vurgular. Proje tabanlı çalışmalarla pratik deneyim sağlayarak öğrencilerin gerçek dünya projelerinde başarılı olmalarını hedefler. Sürekli güncellenen teknolojilere uyum sağlayarak sektörde rekabetçi bireyler yetiştirir.",
-					ProductId = 12,
+                    About = "Yazılım eğitimi, modern teknolojinin temelini oluşturan önemli bir süreçtir. Katılımcılara yazılım geliştirme süreçlerinde bilgi ve beceriler kazandırır.",
+                    ProductId = 12,
 				},
 				new Instructor
 				{
@@ -163,8 +163,8 @@ namespace EducationApp.Data.Concrete.EFCore.Configs
 					LastName = "Sheppard",
 					BirthOfYear = 1979,
                     PhotoUrl = "1.png",
-                    About = "Yazılım eğitimi, modern teknolojinin temelini oluşturan önemli bir süreçtir. Katılımcılara yazılım geliştirme süreçlerinde bilgi ve beceriler kazandırır. Programlama dillerinin temel yapılarını öğreterek öğrencilerin mantıklı çözümler üretmelerine yardımcı olur. Nesne yönelimli programlama (OOP), veritabanı yönetimi, web ve mobil uygulama geliştirme gibi konulara odaklanabilir. Algoritma ve veri yapıları öğreterek analitik düşünme yeteneğini güçlendirir. Yazılım mühendisliği prensiplerini aktarırken, test ve hata ayıklama tekniklerini de vurgular. Proje tabanlı çalışmalarla pratik deneyim sağlayarak öğrencilerin gerçek dünya projelerinde başarılı olmalarını hedefler. Sürekli güncellenen teknolojilere uyum sağlayarak sektörde rekabetçi bireyler yetiştirir.",
-					ProductId = 13,
+                    About = "Yazılım eğitimi, modern teknolojinin temelini oluşturan önemli bir süreçtir. Katılımcılara yazılım geliştirme süreçlerinde bilgi ve beceriler kazandırır.",
+                    ProductId = 13,
 				},
 				new Instructor
 				{
@@ -173,8 +173,8 @@ namespace EducationApp.Data.Concrete.EFCore.Configs
 					LastName = "Farley",
 					BirthOfYear = 1978,
                     PhotoUrl = "1.png",
-                    About = "Yazılım eğitimi, modern teknolojinin temelini oluşturan önemli bir süreçtir. Katılımcılara yazılım geliştirme süreçlerinde bilgi ve beceriler kazandırır. Programlama dillerinin temel yapılarını öğreterek öğrencilerin mantıklı çözümler üretmelerine yardımcı olur. Nesne yönelimli programlama (OOP), veritabanı yönetimi, web ve mobil uygulama geliştirme gibi konulara odaklanabilir. Algoritma ve veri yapıları öğreterek analitik düşünme yeteneğini güçlendirir. Yazılım mühendisliği prensiplerini aktarırken, test ve hata ayıklama tekniklerini de vurgular. Proje tabanlı çalışmalarla pratik deneyim sağlayarak öğrencilerin gerçek dünya projelerinde başarılı olmalarını hedefler. Sürekli güncellenen teknolojilere uyum sağlayarak sektörde rekabetçi bireyler yetiştirir.",
-					ProductId = 14,
+                    About = "Yazılım eğitimi, modern teknolojinin temelini oluşturan önemli bir süreçtir. Katılımcılara yazılım geliştirme süreçlerinde bilgi ve beceriler kazandırır.",
+                    ProductId = 14,
 				},
 				new Instructor
 				{
@@ -183,8 +183,8 @@ namespace EducationApp.Data.Concrete.EFCore.Configs
 					LastName = "Wooten",
 					BirthOfYear = 1991,
                     PhotoUrl = "1.png",
-                    About = "Yazılım eğitimi, modern teknolojinin temelini oluşturan önemli bir süreçtir. Katılımcılara yazılım geliştirme süreçlerinde bilgi ve beceriler kazandırır. Programlama dillerinin temel yapılarını öğreterek öğrencilerin mantıklı çözümler üretmelerine yardımcı olur. Nesne yönelimli programlama (OOP), veritabanı yönetimi, web ve mobil uygulama geliştirme gibi konulara odaklanabilir. Algoritma ve veri yapıları öğreterek analitik düşünme yeteneğini güçlendirir. Yazılım mühendisliği prensiplerini aktarırken, test ve hata ayıklama tekniklerini de vurgular. Proje tabanlı çalışmalarla pratik deneyim sağlayarak öğrencilerin gerçek dünya projelerinde başarılı olmalarını hedefler. Sürekli güncellenen teknolojilere uyum sağlayarak sektörde rekabetçi bireyler yetiştirir.",
-					ProductId = 15,
+                    About = "Yazılım eğitimi, modern teknolojinin temelini oluşturan önemli bir süreçtir. Katılımcılara yazılım geliştirme süreçlerinde bilgi ve beceriler kazandırır.",
+                    ProductId = 15,
 				});
         }
 	}

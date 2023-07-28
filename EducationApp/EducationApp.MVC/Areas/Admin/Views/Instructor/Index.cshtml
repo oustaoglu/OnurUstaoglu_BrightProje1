@@ -14,13 +14,12 @@
 
 <div class="card mb-4">
     <div class="card-body">
-        <table id="data-table">
+        <table id="data-table" class="table-striped w-100">
             <thead>
                 <tr>
                     <th>Id</th>
                     <th>Fotoğraf</th>
                     <th>Ad Soyad</th>
-                    <th>Yaş</th>
                     <th>Oluşturulma Tarihi</th>
                     <th>Son Değiştirilme Tarihi</th>
                     <th>Aktif mi?</th>
@@ -33,7 +32,7 @@
                     <tr>
                         <td>@instructor.Id</td>
                         <td>
-                            <img src="~/images/instructors/@instructor.PhotoUrl" width="50">
+                            <img src="~/images/instructors/@instructor.PhotoUrl" width="75">
                         </td>
                         <td>@instructor.Name</td>
                         <td>@instructor.CreatedDate.ToShortDateString()</td>
