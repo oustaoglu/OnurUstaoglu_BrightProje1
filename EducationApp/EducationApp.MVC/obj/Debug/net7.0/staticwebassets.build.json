@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "VM3xtrAjg8mEE/lW+Q4NPlqTcDTUQZvBsqjxkq0tPmo=",
+  "Hash": "HRoLiFlywFLhmFX/uKpZcJwOCeeyJEo7rM04Ph46itM=",
   "Source": "EducationApp.MVC",
   "BasePath": "_content/EducationApp.MVC",
   "Mode": "Default",
@@ -695,6 +695,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\images\\products\\9.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\onrus\\OneDrive\\Belgeler\\OnurUstaoglu_BrightProje1\\EducationApp\\EducationApp.MVC\\wwwroot\\images\\products\\sadsda-a12f5274-c77b-4bfa-995e-85495a5a83ac.JPG",
+      "SourceId": "EducationApp.MVC",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\onrus\\OneDrive\\Belgeler\\OnurUstaoglu_BrightProje1\\EducationApp\\EducationApp.MVC\\wwwroot\\",
+      "BasePath": "_content/EducationApp.MVC",
+      "RelativePath": "images/products/sadsda-a12f5274-c77b-4bfa-995e-85495a5a83ac.JPG",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\products\\sadsda-a12f5274-c77b-4bfa-995e-85495a5a83ac.JPG"
     },
     {
       "Identity": "C:\\Users\\onrus\\OneDrive\\Belgeler\\OnurUstaoglu_BrightProje1\\EducationApp\\EducationApp.MVC\\wwwroot\\js\\scripts.js",

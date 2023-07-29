@@ -16,9 +16,9 @@ namespace EducationApp.Data.Concrete.EfCore.Extensions
             #region Rol Bilgileri
             List<Role> roles = new List<Role>
             {
-                new Role { Name="Admin", Description="Yöneticilerin rolü bu.", NormalizedName="ADMIN"},
-                new Role { Name="User", Description="Diğer tüm kullanıcıların rolü bu.", NormalizedName="USER"}
-            };
+				new Role { Name="Admin", Description="Yöneticilerin rolü bu.", NormalizedName="ADMIN"},
+				new Role { Name="User", Description="Diğer tüm kullanıcıların rolü bu.", NormalizedName="USER"},
+			};
             modelBuilder.Entity<Role>().HasData(roles);
             #endregion
             #region Kullanıcı Bilgileri
@@ -26,15 +26,15 @@ namespace EducationApp.Data.Concrete.EfCore.Extensions
             {
                 new User
                 {
-                    FirstName="Deniz",
-                    LastName="Foça",
+                    FirstName="Onur",
+                    LastName="Ustaoğlu",
                     UserName="admin",
                     NormalizedUserName="ADMIN",
-                    Email="denizfoca@gmail.com",
-                    NormalizedEmail="DENIZFOCA@GMAIL.COM",
-                    Gender="Kadın",
-                    DateOfBirth= new DateTime(1985,7,12),
-                    Address="Kemalpaşa Mh. Zühtübey Sk. No:12 D:3 Üsküdar",
+                    Email="onrustaoglu@gmail.com",
+                    NormalizedEmail="ONRUSTAOGLU@GMAIL.COM",
+                    Gender="ERKEK",
+                    DateOfBirth= new DateTime(1995,3,2),
+                    Address="Göztepe Mh. 2366 Sk. No:7 D:56 Bağcılar",
                     City="İstanbul",
                     EmailConfirmed=true,
                     SecurityStamp="",
@@ -42,15 +42,15 @@ namespace EducationApp.Data.Concrete.EfCore.Extensions
                 },
                 new User
                 {
-                    FirstName="Murat",
-                    LastName="Kendirli",
+                    FirstName="Serkan",
+                    LastName="Selek",
                     UserName="user",
                     NormalizedUserName="USER",
-                    Email="muratkendirli@gmail.com",
-                    NormalizedEmail="MURATKENDIRLI@GMAIL.COM",
-                    Gender="Erkek",
-                    DateOfBirth= new DateTime(1983,9,10),
-                    Address="Barbaros Bulvarı Feda İş Hanı K:5 D:23 Beşiktaş",
+                    Email="serkanselek34@gmail.com",
+                    NormalizedEmail="SERKANSELEK34@GMAIL.COM",
+                    Gender="ERKEK",
+                    DateOfBirth= new DateTime(1995,3,30),
+                    Address="Ferit Sidal Sk No:13/19 Yenibosna",
                     City="İstanbul",
                     EmailConfirmed=true,
                     SecurityStamp="",

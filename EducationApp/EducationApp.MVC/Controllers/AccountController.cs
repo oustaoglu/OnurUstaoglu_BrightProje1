@@ -54,11 +54,11 @@ namespace EducationApp.MVC.Controllers
                     return View(model);
                 }
                 #region Onaylı mı Kontrolü
-                //if (!await _userManager.IsEmailConfirmedAsync(user))
-                //{
-                //    _notify.Warning("Hesabınız onaylı değil. Lütfen mailinizdeki yönergeleri takip ederek hesabınızı onaylayınız.");
-                //    return View(model);
-                //}
+                if (!await _userManager.IsEmailConfirmedAsync(user))
+                {
+                    _notify.Warning("Hesabınız onaylı değil. Lütfen mailinizdeki yönergeleri takip ederek hesabınızı onaylayınız.");
+                    return View(model);
+                }
                 #endregion
                 var result = await _signInManager.PasswordSignInAsync(user, model.Password, model.IsPersistent, true);
                 if (result.Succeeded)
@@ -114,23 +114,22 @@ namespace EducationApp.MVC.Controllers
                 if (result.Succeeded)
                 {
                     #region Onay Maili Gönderme
-                    //var code = await _userManager.GenerateEmailConfirmationTokenAsync(user);
+                    var code = await _userManager.GenerateEmailConfirmationTokenAsync(user);
 
-                    //var url = Url.Action("ConfirmEmail", "Account", new
-                    //{
-                    //    userId = user.Id,
-                    //    token = code
-                    //});
-                    //var email = model.Email;
-                    //var subject = "BooksApp Onay Maili";
-                    //var body = $"<h1>BooksApp Onay İşlemi</h1>" +
-                    //    $"<p>" +
-                    //    $"Lütfen üyeliğiniz onaylamak için <a href='http://localhost:5200{url}'>tıklayınız</a>." +
-                    //    $"</p>";
-                    //await _smtpEmailSender.SendEmailAsync(email, subject, body);
+                    var url = Url.Action("ConfirmEmail", "Account", new
+                    {
+                        userId = user.Id,
+                        token = code
+                    });
+                    var email = model.Email;
+                    var subject = "EducationApp Onay Maili";
+                    var body = $"<h1>EducationApp Onay İşlemi</h1>" +
+                        $"<p>" +
+                        $"Lütfen üyeliğiniz onaylamak için <a href='http://localhost:5200{url}'>tıklayınız</a>." +
+                        $"</p>";
+                    await _smtpEmailSender.SendEmailAsync(email, subject, body);
                     #endregion
                     await _userManager.AddToRoleAsync(user, "User");
-                    //Kayıt olan kullanıcıya bir cart oluşturmamız gerek.
                     await _cartManager.InitializeCart(user.Id);
 
                     _notify.Success("Kayıt işlemi başarıyla tamamlandı.Giriş yapabilirsiniz.");
@@ -159,7 +158,6 @@ namespace EducationApp.MVC.Controllers
                 }
             }
             _notify.Error("Bir sorun oluştu, lütfen admine başvurunuz.");
-            //return RedirectToAction("Index", "Home");
             return Redirect("~/");
         }
         [HttpGet]
@@ -191,8 +189,8 @@ namespace EducationApp.MVC.Controllers
                 token = code
             });
 
-            var subject = "BooksApp Şifre Sıfırlama";
-            var body = $"<h1>BooksApp Şifre Sıfırlama İşlemi</h1>" +
+            var subject = "EducationApp Şifre Sıfırlama";
+            var body = $"<h1>EducationApp Şifre Sıfırlama İşlemi</h1>" +
                 $"<p>" +
                 $"Lütfen şifrenizi değiştirmek için <a href='http://localhost:5200{url}'>tıklayınız</a>." +
                 $"</p>";
@@ -330,7 +328,6 @@ namespace EducationApp.MVC.Controllers
                 if (result.Succeeded)
                 {
                     _notify.Success("Profiliniz başarıyla güncellenmiştir.");
-                    //await _signInManager.SignOutAsync();
                     await _signInManager.RefreshSignInAsync(user);
                     return RedirectToAction("Index", "Home");
                 }
@@ -354,8 +351,6 @@ namespace EducationApp.MVC.Controllers
             };
             model.GenderSelectList = genderSelectList;
             return View(model);
-
-
         }
     }
 }

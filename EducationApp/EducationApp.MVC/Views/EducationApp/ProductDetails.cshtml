@@ -29,7 +29,10 @@
 								<i class="feather icon-star"></i>
 							</p>
 							<div>
-								<h5 class="fs-3 text-primary">@($"{Model.Price:C2}")</h5>
+								<h4>
+									<span class="text-muted text-decoration-line-through">@($"{2000:C0}")</span>
+									@($"{Model.Price:C0}")
+								</h4>
 							</div>
 							<div>
 								<h3 class="bg-warning p-2 fs-6 text-white fw-bold display-6 mt-3">Eğitim Süresi: 200 Saat</h3>
@@ -43,8 +46,8 @@
 									  asp-action="AddToCart"
 									  method="post">
 									<input type="hidden" asp-for="Id" />
-									<button type="submit" class="btn btn-outline-dark">Sepete Ekle</button>
-									<input class="form-control d-inline" style="width:60px;" type="number" name="quantity" min="1" max="9" value="1" />
+									<button type="submit" class="btn btn-outline-success">Sepete Ekle</button>
+									<input class="form-control d-inline p-1" style="width:60px;" type="number" name="quantity" min="1" max="9" value="1" />
 								</form>
 							</div>
 						</div>

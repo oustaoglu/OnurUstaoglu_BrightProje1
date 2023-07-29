@@ -34,7 +34,7 @@ builder.Services.Configure<IdentityOptions>(options =>
 
 	options.User.RequireUniqueEmail = true;
 
-	options.SignIn.RequireConfirmedEmail = false;
+	options.SignIn.RequireConfirmedEmail = true;
 	options.SignIn.RequireConfirmedPhoneNumber = false;
 });
 
@@ -43,7 +43,7 @@ builder.Services.ConfigureApplicationCookie(options =>
 	options.LoginPath = "/account/login";
 	options.LogoutPath = "/account/logout";
 	options.AccessDeniedPath = "/account/accessdenied";
-	options.ExpireTimeSpan = TimeSpan.FromDays(30);
+	options.ExpireTimeSpan = TimeSpan.FromMinutes(30);
 	options.SlidingExpiration = true;
 	options.Cookie = new CookieBuilder
 	{
@@ -103,6 +103,12 @@ app.UseAuthorization();
 
 
 app.MapControllerRoute(
+	name: "productdetails",
+	pattern: "egitimdetay/{url}",
+	defaults: new { controller = "EducationApp", action = "ProductDetails" }
+	);
+
+app.MapControllerRoute(
     name: "productscategory",
     pattern: "kategoriler/{categoryurl?}",
     defaults: new { controller = "EducationApp", action = "ProductList" }
@@ -111,7 +117,7 @@ app.MapControllerRoute(
 app.MapControllerRoute(
     name: "products",
     pattern: "egitimler/{producturl?}",
-    defaults: new { controller = "EducationApp", action = "InstructorList" }
+    defaults: new { controller = "EducationApp", action = "ProductList" }
     );
 
 app.MapAreaControllerRoute(
@@ -125,3 +131,4 @@ app.MapControllerRoute(
     pattern: "{controller=Home}/{action=Index}/{id?}");
 
 app.Run();
+
