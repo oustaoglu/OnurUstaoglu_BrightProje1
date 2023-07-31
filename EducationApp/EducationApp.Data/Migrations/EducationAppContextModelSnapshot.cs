@@ -48,20 +48,20 @@ namespace EducationApp.Data.Migrations
                         new
                         {
                             Id = 1,
-                            CreatedDate = new DateTime(2023, 7, 30, 1, 5, 26, 400, DateTimeKind.Local).AddTicks(6651),
+                            CreatedDate = new DateTime(2023, 7, 31, 18, 52, 14, 333, DateTimeKind.Local).AddTicks(8714),
                             IsActive = true,
                             IsDeleted = false,
-                            ModifiedDate = new DateTime(2023, 7, 30, 1, 5, 26, 400, DateTimeKind.Local).AddTicks(6673),
-                            UserId = "851b1556-e5a2-472c-8259-8c2d9f1a1596"
+                            ModifiedDate = new DateTime(2023, 7, 31, 18, 52, 14, 333, DateTimeKind.Local).AddTicks(8733),
+                            UserId = "8a4a0eef-83b7-47c8-9b12-b2e7ebbff429"
                         },
                         new
                         {
                             Id = 2,
-                            CreatedDate = new DateTime(2023, 7, 30, 1, 5, 26, 400, DateTimeKind.Local).AddTicks(6676),
+                            CreatedDate = new DateTime(2023, 7, 31, 18, 52, 14, 333, DateTimeKind.Local).AddTicks(8741),
                             IsActive = true,
                             IsDeleted = false,
-                            ModifiedDate = new DateTime(2023, 7, 30, 1, 5, 26, 400, DateTimeKind.Local).AddTicks(6677),
-                            UserId = "6fb96065-6aed-4524-bf63-2ca5e50a1168"
+                            ModifiedDate = new DateTime(2023, 7, 31, 18, 52, 14, 333, DateTimeKind.Local).AddTicks(8742),
+                            UserId = "933bf8c3-7eed-4314-bd55-e25635b8cccd"
                         });
                 });
 
@@ -129,77 +129,77 @@ namespace EducationApp.Data.Migrations
                         new
                         {
                             Id = 1,
-                            CreatedDate = new DateTime(2023, 7, 30, 1, 5, 26, 401, DateTimeKind.Local).AddTicks(1305),
+                            CreatedDate = new DateTime(2023, 7, 31, 18, 52, 14, 334, DateTimeKind.Local).AddTicks(4477),
                             Description = "Yazılım geliştirme, bilgisayar programlarının tasarımı, oluşturulması ve sürdürülmesi sürecidir. Bu süreç, kullanıcı ihtiyaçlarını karşılamak, işlevsellik sağlamak ve teknolojik çözümler üretmek için kodlama, test etme ve dağıtma adımlarını içerir.",
                             IsActive = true,
                             IsDeleted = false,
-                            ModifiedDate = new DateTime(2023, 7, 30, 1, 5, 26, 401, DateTimeKind.Local).AddTicks(1309),
+                            ModifiedDate = new DateTime(2023, 7, 31, 18, 52, 14, 334, DateTimeKind.Local).AddTicks(4487),
                             Name = "Yazılım Geliştime",
                             Url = "yazilim-gelistirme"
                         },
                         new
                         {
                             Id = 2,
-                            CreatedDate = new DateTime(2023, 7, 30, 1, 5, 26, 401, DateTimeKind.Local).AddTicks(1312),
+                            CreatedDate = new DateTime(2023, 7, 31, 18, 52, 14, 334, DateTimeKind.Local).AddTicks(4490),
                             Description = "Mobil uygulama geliştirme, mobil platformlarda çalışabilen kullanışlı ve etkileşimli yazılım uygulamalarının tasarımı, oluşturulması ve dağıtılması sürecidir. Bu süreç, kullanıcı ihtiyaçlarını karşılamak, sorunlara çözüm sunmak ve kullanıcı deneyimini geliştirmek için programlama, arayüz tasarımı, test etme ve dağıtma adımlarını içerir.",
                             IsActive = true,
                             IsDeleted = false,
-                            ModifiedDate = new DateTime(2023, 7, 30, 1, 5, 26, 401, DateTimeKind.Local).AddTicks(1313),
+                            ModifiedDate = new DateTime(2023, 7, 31, 18, 52, 14, 334, DateTimeKind.Local).AddTicks(4490),
                             Name = "Mobil Uygulama Geliştirme",
                             Url = "mobil-uygulama-gelistirme"
                         },
                         new
                         {
                             Id = 3,
-                            CreatedDate = new DateTime(2023, 7, 30, 1, 5, 26, 401, DateTimeKind.Local).AddTicks(1314),
+                            CreatedDate = new DateTime(2023, 7, 31, 18, 52, 14, 334, DateTimeKind.Local).AddTicks(4493),
                             Description = "Oyun geliştirme, video oyunlarının tasarımı, programlaması ve oluşturulması sürecidir. Bu süreç, oyun kavramının belirlenmesi, hikaye yazımı, karakter tasarımı, dünya oluşturma, grafik ve ses tasarımı, oyun mekaniği ve kullanıcı arayüzü gibi aşamaları içerir.",
                             IsActive = true,
                             IsDeleted = false,
-                            ModifiedDate = new DateTime(2023, 7, 30, 1, 5, 26, 401, DateTimeKind.Local).AddTicks(1314),
+                            ModifiedDate = new DateTime(2023, 7, 31, 18, 52, 14, 334, DateTimeKind.Local).AddTicks(4493),
                             Name = "Oyun Geliştime",
                             Url = "oyun-gelistirme"
                         },
                         new
                         {
                             Id = 4,
-                            CreatedDate = new DateTime(2023, 7, 30, 1, 5, 26, 401, DateTimeKind.Local).AddTicks(1315),
+                            CreatedDate = new DateTime(2023, 7, 31, 18, 52, 14, 334, DateTimeKind.Local).AddTicks(4494),
                             Description = "Web, dünya genelinde bilgilere erişim sağlayan ve kullanıcıların çeşitli hizmetlere bağlanmasını mümkün kılan bir ağdır. Web, HTML, CSS ve JavaScript gibi teknolojilerle oluşturulan web siteleri ve web uygulamaları aracılığıyla çalışır.",
                             IsActive = true,
                             IsDeleted = false,
-                            ModifiedDate = new DateTime(2023, 7, 30, 1, 5, 26, 401, DateTimeKind.Local).AddTicks(1315),
+                            ModifiedDate = new DateTime(2023, 7, 31, 18, 52, 14, 334, DateTimeKind.Local).AddTicks(4495),
                             Name = "Web",
                             Url = "web"
                         },
                         new
                         {
                             Id = 5,
-                            CreatedDate = new DateTime(2023, 7, 30, 1, 5, 26, 401, DateTimeKind.Local).AddTicks(1316),
+                            CreatedDate = new DateTime(2023, 7, 31, 18, 52, 14, 334, DateTimeKind.Local).AddTicks(4496),
                             Description = "Veritabanı, yapılandırılmış verilerin depolandığı ve yönetildiği bir elektronik sistemdir. Veritabanları, bilgiyi organize etmek, erişmek, güncellemek ve analiz etmek için kullanılır. İşletmeler, kuruluşlar ve web uygulamaları gibi birçok alan veritabanlarını kullanır.",
                             IsActive = true,
                             IsDeleted = false,
-                            ModifiedDate = new DateTime(2023, 7, 30, 1, 5, 26, 401, DateTimeKind.Local).AddTicks(1317),
+                            ModifiedDate = new DateTime(2023, 7, 31, 18, 52, 14, 334, DateTimeKind.Local).AddTicks(4496),
                             Name = "Veritabanı",
                             Url = "veritabani"
                         },
                         new
                         {
                             Id = 6,
-                            CreatedDate = new DateTime(2023, 7, 30, 1, 5, 26, 401, DateTimeKind.Local).AddTicks(1317),
+                            CreatedDate = new DateTime(2023, 7, 31, 18, 52, 14, 334, DateTimeKind.Local).AddTicks(4497),
                             Description = "DevOps, yazılım geliştirme ve işletim süreçlerini birleştirerek, yazılım projelerinin daha hızlı, güvenilir ve sürekli bir şekilde dağıtılmasını sağlayan bir yaklaşımdır. Bu metodoloji, geliştirme (Development) ve işletim (Operations) ekipleri arasında işbirliği ve iletişimi teşvik eder.",
                             IsActive = true,
                             IsDeleted = false,
-                            ModifiedDate = new DateTime(2023, 7, 30, 1, 5, 26, 401, DateTimeKind.Local).AddTicks(1318),
+                            ModifiedDate = new DateTime(2023, 7, 31, 18, 52, 14, 334, DateTimeKind.Local).AddTicks(4497),
                             Name = "DevOps",
                             Url = "devops"
                         },
                         new
                         {
                             Id = 7,
-                            CreatedDate = new DateTime(2023, 7, 30, 1, 5, 26, 401, DateTimeKind.Local).AddTicks(1318),
+                            CreatedDate = new DateTime(2023, 7, 31, 18, 52, 14, 334, DateTimeKind.Local).AddTicks(4498),
                             Description = "Bulut, internet üzerinde sunulan paylaşımlı bilgi işlem kaynaklarını ifade eder. Bulut hizmetleri, sunucular, depolama, veritabanları, ağ altyapısı ve uygulama hizmetleri gibi kaynaklara erişimi kolaylaştırır. Kullanıcılar, istedikleri zaman istedikleri yerden bu kaynaklara güvenli bir şekilde erişebilir ve ihtiyaçlarına göre ölçeklendirebilir.",
                             IsActive = true,
                             IsDeleted = false,
-                            ModifiedDate = new DateTime(2023, 7, 30, 1, 5, 26, 401, DateTimeKind.Local).AddTicks(1319),
+                            ModifiedDate = new DateTime(2023, 7, 31, 18, 52, 14, 334, DateTimeKind.Local).AddTicks(4499),
                             Name = "Bulut",
                             Url = "bulut"
                         });
@@ -266,12 +266,12 @@ namespace EducationApp.Data.Migrations
                             Id = 1,
                             About = "Yazılım eğitimi, modern teknolojinin temelini oluşturan önemli bir süreçtir. Katılımcılara yazılım geliştirme süreçlerinde bilgi ve beceriler kazandırır.",
                             BirthOfYear = 1990,
-                            CreatedDate = new DateTime(2023, 7, 30, 1, 5, 26, 401, DateTimeKind.Local).AddTicks(3114),
+                            CreatedDate = new DateTime(2023, 7, 31, 18, 52, 14, 334, DateTimeKind.Local).AddTicks(6935),
                             FirstName = "Dominic",
                             IsActive = true,
                             IsDeleted = false,
                             LastName = "Harmon",
-                            ModifiedDate = new DateTime(2023, 7, 30, 1, 5, 26, 401, DateTimeKind.Local).AddTicks(3116),
+                            ModifiedDate = new DateTime(2023, 7, 31, 18, 52, 14, 334, DateTimeKind.Local).AddTicks(6940),
                             PhotoUrl = "1.png",
                             ProductId = 1
                         },
@@ -280,12 +280,12 @@ namespace EducationApp.Data.Migrations
                             Id = 2,
                             About = "Yazılım eğitimi, modern teknolojinin temelini oluşturan önemli bir süreçtir. Katılımcılara yazılım geliştirme süreçlerinde bilgi ve beceriler kazandırır.",
                             BirthOfYear = 1990,
-                            CreatedDate = new DateTime(2023, 7, 30, 1, 5, 26, 401, DateTimeKind.Local).AddTicks(3119),
+                            CreatedDate = new DateTime(2023, 7, 31, 18, 52, 14, 334, DateTimeKind.Local).AddTicks(6944),
                             FirstName = "Justina",
                             IsActive = true,
                             IsDeleted = false,
                             LastName = "Burch",
-                            ModifiedDate = new DateTime(2023, 7, 30, 1, 5, 26, 401, DateTimeKind.Local).AddTicks(3119),
+                            ModifiedDate = new DateTime(2023, 7, 31, 18, 52, 14, 334, DateTimeKind.Local).AddTicks(6944),
                             PhotoUrl = "1.png",
                             ProductId = 2
                         },
@@ -294,12 +294,12 @@ namespace EducationApp.Data.Migrations
                             Id = 3,
                             About = "Yazılım eğitimi, modern teknolojinin temelini oluşturan önemli bir süreçtir. Katılımcılara yazılım geliştirme süreçlerinde bilgi ve beceriler kazandırır.",
                             BirthOfYear = 1985,
-                            CreatedDate = new DateTime(2023, 7, 30, 1, 5, 26, 401, DateTimeKind.Local).AddTicks(3121),
+                            CreatedDate = new DateTime(2023, 7, 31, 18, 52, 14, 334, DateTimeKind.Local).AddTicks(6946),
                             FirstName = "Madison",
                             IsActive = true,
                             IsDeleted = false,
                             LastName = "Beard",
-                            ModifiedDate = new DateTime(2023, 7, 30, 1, 5, 26, 401, DateTimeKind.Local).AddTicks(3121),
+                            ModifiedDate = new DateTime(2023, 7, 31, 18, 52, 14, 334, DateTimeKind.Local).AddTicks(6947),
                             PhotoUrl = "1.png",
                             ProductId = 3
                         },
@@ -308,12 +308,12 @@ namespace EducationApp.Data.Migrations
                             Id = 4,
                             About = "Yazılım eğitimi, modern teknolojinin temelini oluşturan önemli bir süreçtir. Katılımcılara yazılım geliştirme süreçlerinde bilgi ve beceriler kazandırır.",
                             BirthOfYear = 1982,
-                            CreatedDate = new DateTime(2023, 7, 30, 1, 5, 26, 401, DateTimeKind.Local).AddTicks(3123),
+                            CreatedDate = new DateTime(2023, 7, 31, 18, 52, 14, 334, DateTimeKind.Local).AddTicks(6948),
                             FirstName = "Sara",
                             IsActive = true,
                             IsDeleted = false,
                             LastName = "Wade",
-                            ModifiedDate = new DateTime(2023, 7, 30, 1, 5, 26, 401, DateTimeKind.Local).AddTicks(3123),
+                            ModifiedDate = new DateTime(2023, 7, 31, 18, 52, 14, 334, DateTimeKind.Local).AddTicks(6948),
                             PhotoUrl = "1.png",
                             ProductId = 4
                         },
@@ -322,12 +322,12 @@ namespace EducationApp.Data.Migrations
                             Id = 5,
                             About = "Yazılım eğitimi, modern teknolojinin temelini oluşturan önemli bir süreçtir. Katılımcılara yazılım geliştirme süreçlerinde bilgi ve beceriler kazandırır.",
                             BirthOfYear = 1988,
-                            CreatedDate = new DateTime(2023, 7, 30, 1, 5, 26, 401, DateTimeKind.Local).AddTicks(3124),
+                            CreatedDate = new DateTime(2023, 7, 31, 18, 52, 14, 334, DateTimeKind.Local).AddTicks(6950),
                             FirstName = "Jacob",
                             IsActive = true,
                             IsDeleted = false,
                             LastName = "Hunt",
-                            ModifiedDate = new DateTime(2023, 7, 30, 1, 5, 26, 401, DateTimeKind.Local).AddTicks(3124),
+                            ModifiedDate = new DateTime(2023, 7, 31, 18, 52, 14, 334, DateTimeKind.Local).AddTicks(6950),
                             PhotoUrl = "1.png",
                             ProductId = 5
                         },
@@ -336,12 +336,12 @@ namespace EducationApp.Data.Migrations
                             Id = 6,
                             About = "Yazılım eğitimi, modern teknolojinin temelini oluşturan önemli bir süreçtir. Katılımcılara yazılım geliştirme süreçlerinde bilgi ve beceriler kazandırır.",
                             BirthOfYear = 1989,
-                            CreatedDate = new DateTime(2023, 7, 30, 1, 5, 26, 401, DateTimeKind.Local).AddTicks(3125),
+                            CreatedDate = new DateTime(2023, 7, 31, 18, 52, 14, 334, DateTimeKind.Local).AddTicks(6951),
                             FirstName = "Osamu",
                             IsActive = true,
                             IsDeleted = false,
                             LastName = "Dazai",
-                            ModifiedDate = new DateTime(2023, 7, 30, 1, 5, 26, 401, DateTimeKind.Local).AddTicks(3126),
+                            ModifiedDate = new DateTime(2023, 7, 31, 18, 52, 14, 334, DateTimeKind.Local).AddTicks(6952),
                             PhotoUrl = "1.png",
                             ProductId = 6
                         },
@@ -350,12 +350,12 @@ namespace EducationApp.Data.Migrations
                             Id = 7,
                             About = "Yazılım eğitimi, modern teknolojinin temelini oluşturan önemli bir süreçtir. Katılımcılara yazılım geliştirme süreçlerinde bilgi ve beceriler kazandırır.",
                             BirthOfYear = 1983,
-                            CreatedDate = new DateTime(2023, 7, 30, 1, 5, 26, 401, DateTimeKind.Local).AddTicks(3127),
+                            CreatedDate = new DateTime(2023, 7, 31, 18, 52, 14, 334, DateTimeKind.Local).AddTicks(6953),
                             FirstName = "Zachery",
                             IsActive = true,
                             IsDeleted = false,
                             LastName = "Salas",
-                            ModifiedDate = new DateTime(2023, 7, 30, 1, 5, 26, 401, DateTimeKind.Local).AddTicks(3127),
+                            ModifiedDate = new DateTime(2023, 7, 31, 18, 52, 14, 334, DateTimeKind.Local).AddTicks(6953),
                             PhotoUrl = "1.png",
                             ProductId = 7
                         },
@@ -364,12 +364,12 @@ namespace EducationApp.Data.Migrations
                             Id = 8,
                             About = "Yazılım eğitimi, modern teknolojinin temelini oluşturan önemli bir süreçtir. Katılımcılara yazılım geliştirme süreçlerinde bilgi ve beceriler kazandırır.",
                             BirthOfYear = 1982,
-                            CreatedDate = new DateTime(2023, 7, 30, 1, 5, 26, 401, DateTimeKind.Local).AddTicks(3128),
+                            CreatedDate = new DateTime(2023, 7, 31, 18, 52, 14, 334, DateTimeKind.Local).AddTicks(6955),
                             FirstName = "Matt",
                             IsActive = true,
                             IsDeleted = false,
                             LastName = "Haig",
-                            ModifiedDate = new DateTime(2023, 7, 30, 1, 5, 26, 401, DateTimeKind.Local).AddTicks(3128),
+                            ModifiedDate = new DateTime(2023, 7, 31, 18, 52, 14, 334, DateTimeKind.Local).AddTicks(6955),
                             PhotoUrl = "1.png",
                             ProductId = 8
                         },
@@ -378,12 +378,12 @@ namespace EducationApp.Data.Migrations
                             Id = 9,
                             About = "Yazılım eğitimi, modern teknolojinin temelini oluşturan önemli bir süreçtir. Katılımcılara yazılım geliştirme süreçlerinde bilgi ve beceriler kazandırır.",
                             BirthOfYear = 1982,
-                            CreatedDate = new DateTime(2023, 7, 30, 1, 5, 26, 401, DateTimeKind.Local).AddTicks(3129),
+                            CreatedDate = new DateTime(2023, 7, 31, 18, 52, 14, 334, DateTimeKind.Local).AddTicks(6956),
                             FirstName = "William",
                             IsActive = true,
                             IsDeleted = false,
                             LastName = "Hawkingan",
-                            ModifiedDate = new DateTime(2023, 7, 30, 1, 5, 26, 401, DateTimeKind.Local).AddTicks(3130),
+                            ModifiedDate = new DateTime(2023, 7, 31, 18, 52, 14, 334, DateTimeKind.Local).AddTicks(6957),
                             PhotoUrl = "1.png",
                             ProductId = 9
                         },
@@ -392,12 +392,12 @@ namespace EducationApp.Data.Migrations
                             Id = 10,
                             About = "Yazılım eğitimi, modern teknolojinin temelini oluşturan önemli bir süreçtir. Katılımcılara yazılım geliştirme süreçlerinde bilgi ve beceriler kazandırır.",
                             BirthOfYear = 1990,
-                            CreatedDate = new DateTime(2023, 7, 30, 1, 5, 26, 401, DateTimeKind.Local).AddTicks(3131),
+                            CreatedDate = new DateTime(2023, 7, 31, 18, 52, 14, 334, DateTimeKind.Local).AddTicks(6958),
                             FirstName = "Geraldine",
                             IsActive = true,
                             IsDeleted = false,
                             LastName = "Richmond",
-                            ModifiedDate = new DateTime(2023, 7, 30, 1, 5, 26, 401, DateTimeKind.Local).AddTicks(3131),
+                            ModifiedDate = new DateTime(2023, 7, 31, 18, 52, 14, 334, DateTimeKind.Local).AddTicks(6958),
                             PhotoUrl = "1.png",
                             ProductId = 10
                         },
@@ -406,12 +406,12 @@ namespace EducationApp.Data.Migrations
                             Id = 11,
                             About = "Yazılım eğitimi, modern teknolojinin temelini oluşturan önemli bir süreçtir. Katılımcılara yazılım geliştirme süreçlerinde bilgi ve beceriler kazandırır.",
                             BirthOfYear = 1983,
-                            CreatedDate = new DateTime(2023, 7, 30, 1, 5, 26, 401, DateTimeKind.Local).AddTicks(3132),
+                            CreatedDate = new DateTime(2023, 7, 31, 18, 52, 14, 334, DateTimeKind.Local).AddTicks(6960),
                             FirstName = "Steffan",
                             IsActive = true,
                             IsDeleted = false,
                             LastName = "Ros",
-                            ModifiedDate = new DateTime(2023, 7, 30, 1, 5, 26, 401, DateTimeKind.Local).AddTicks(3133),
+                            ModifiedDate = new DateTime(2023, 7, 31, 18, 52, 14, 334, DateTimeKind.Local).AddTicks(6960),
                             PhotoUrl = "1.png",
                             ProductId = 11
                         },
@@ -420,12 +420,12 @@ namespace EducationApp.Data.Migrations
                             Id = 12,
                             About = "Yazılım eğitimi, modern teknolojinin temelini oluşturan önemli bir süreçtir. Katılımcılara yazılım geliştirme süreçlerinde bilgi ve beceriler kazandırır.",
                             BirthOfYear = 1991,
-                            CreatedDate = new DateTime(2023, 7, 30, 1, 5, 26, 401, DateTimeKind.Local).AddTicks(3134),
+                            CreatedDate = new DateTime(2023, 7, 31, 18, 52, 14, 334, DateTimeKind.Local).AddTicks(6961),
                             FirstName = "Nichole",
                             IsActive = true,
                             IsDeleted = false,
                             LastName = "Talley",
-                            ModifiedDate = new DateTime(2023, 7, 30, 1, 5, 26, 401, DateTimeKind.Local).AddTicks(3134),
+                            ModifiedDate = new DateTime(2023, 7, 31, 18, 52, 14, 334, DateTimeKind.Local).AddTicks(6961),
                             PhotoUrl = "1.png",
                             ProductId = 12
                         },
@@ -434,12 +434,12 @@ namespace EducationApp.Data.Migrations
                             Id = 13,
                             About = "Yazılım eğitimi, modern teknolojinin temelini oluşturan önemli bir süreçtir. Katılımcılara yazılım geliştirme süreçlerinde bilgi ve beceriler kazandırır.",
                             BirthOfYear = 1979,
-                            CreatedDate = new DateTime(2023, 7, 30, 1, 5, 26, 401, DateTimeKind.Local).AddTicks(3135),
+                            CreatedDate = new DateTime(2023, 7, 31, 18, 52, 14, 334, DateTimeKind.Local).AddTicks(6963),
                             FirstName = "Yetta",
                             IsActive = true,
                             IsDeleted = false,
                             LastName = "Sheppard",
-                            ModifiedDate = new DateTime(2023, 7, 30, 1, 5, 26, 401, DateTimeKind.Local).AddTicks(3135),
+                            ModifiedDate = new DateTime(2023, 7, 31, 18, 52, 14, 334, DateTimeKind.Local).AddTicks(6963),
                             PhotoUrl = "1.png",
                             ProductId = 13
                         },
@@ -448,12 +448,12 @@ namespace EducationApp.Data.Migrations
                             Id = 14,
                             About = "Yazılım eğitimi, modern teknolojinin temelini oluşturan önemli bir süreçtir. Katılımcılara yazılım geliştirme süreçlerinde bilgi ve beceriler kazandırır.",
                             BirthOfYear = 1978,
-                            CreatedDate = new DateTime(2023, 7, 30, 1, 5, 26, 401, DateTimeKind.Local).AddTicks(3136),
+                            CreatedDate = new DateTime(2023, 7, 31, 18, 52, 14, 334, DateTimeKind.Local).AddTicks(6964),
                             FirstName = "Elijah",
                             IsActive = true,
                             IsDeleted = false,
                             LastName = "Farley",
-                            ModifiedDate = new DateTime(2023, 7, 30, 1, 5, 26, 401, DateTimeKind.Local).AddTicks(3137),
+                            ModifiedDate = new DateTime(2023, 7, 31, 18, 52, 14, 334, DateTimeKind.Local).AddTicks(6965),
                             PhotoUrl = "1.png",
                             ProductId = 14
                         },
@@ -462,12 +462,12 @@ namespace EducationApp.Data.Migrations
                             Id = 15,
                             About = "Yazılım eğitimi, modern teknolojinin temelini oluşturan önemli bir süreçtir. Katılımcılara yazılım geliştirme süreçlerinde bilgi ve beceriler kazandırır.",
                             BirthOfYear = 1991,
-                            CreatedDate = new DateTime(2023, 7, 30, 1, 5, 26, 401, DateTimeKind.Local).AddTicks(3138),
+                            CreatedDate = new DateTime(2023, 7, 31, 18, 52, 14, 334, DateTimeKind.Local).AddTicks(6993),
                             FirstName = "Neil",
                             IsActive = true,
                             IsDeleted = false,
                             LastName = "Wooten",
-                            ModifiedDate = new DateTime(2023, 7, 30, 1, 5, 26, 401, DateTimeKind.Local).AddTicks(3138),
+                            ModifiedDate = new DateTime(2023, 7, 31, 18, 52, 14, 334, DateTimeKind.Local).AddTicks(6994),
                             PhotoUrl = "1.png",
                             ProductId = 15
                         });
@@ -601,14 +601,14 @@ namespace EducationApp.Data.Migrations
                         new
                         {
                             Id = 1,
-                            CreatedDate = new DateTime(2023, 7, 30, 1, 5, 26, 402, DateTimeKind.Local).AddTicks(4895),
+                            CreatedDate = new DateTime(2023, 7, 31, 18, 52, 14, 336, DateTimeKind.Local).AddTicks(2043),
                             Description = "Yazılım dersi, bilgisayar bilimlerinin önemli bir alanıdır ve öğrencilere temel bilgisayar programlama, algoritma oluşturma, veri yapıları, yazılım mühendisliği ve uygulama geliştirme konularında bilgi sağlar. Bu ders, öğrencilere problem çözme becerileri kazandırarak mantıksal düşünce ve analitik yeteneklerini geliştirir. Yazılım dersi aynı zamanda modern teknoloji dünyasında önemli bir role sahip olan yazılım süreçlerini, proje yönetimini ve test etme yöntemlerini de kapsar. Öğrenciler, çeşitli programlama dilleri ve yazılım araçlarını kullanarak uygulamalar geliştirerek pratik deneyim elde eder. Bu ders, gelecekteki teknoloji liderleri ve yazılım geliştiricileri için temel bir adımdır.",
                             ImageUrl = "1.jpg",
                             InstructorId = 1,
                             IsActive = true,
                             IsDeleted = false,
                             IsHome = true,
-                            ModifiedDate = new DateTime(2023, 7, 30, 1, 5, 26, 402, DateTimeKind.Local).AddTicks(4902),
+                            ModifiedDate = new DateTime(2023, 7, 31, 18, 52, 14, 336, DateTimeKind.Local).AddTicks(2048),
                             Name = ".NET (.NET Core, MVC, Web API)",
                             Price = 900m,
                             Time = 200,
@@ -617,14 +617,14 @@ namespace EducationApp.Data.Migrations
                         new
                         {
                             Id = 2,
-                            CreatedDate = new DateTime(2023, 7, 30, 1, 5, 26, 402, DateTimeKind.Local).AddTicks(4907),
+                            CreatedDate = new DateTime(2023, 7, 31, 18, 52, 14, 336, DateTimeKind.Local).AddTicks(2055),
                             Description = "Yazılım dersi, bilgisayar bilimlerinin önemli bir alanıdır ve öğrencilere temel bilgisayar programlama, algoritma oluşturma, veri yapıları, yazılım mühendisliği ve uygulama geliştirme konularında bilgi sağlar. Bu ders, öğrencilere problem çözme becerileri kazandırarak mantıksal düşünce ve analitik yeteneklerini geliştirir. Yazılım dersi aynı zamanda modern teknoloji dünyasında önemli bir role sahip olan yazılım süreçlerini, proje yönetimini ve test etme yöntemlerini de kapsar. Öğrenciler, çeşitli programlama dilleri ve yazılım araçlarını kullanarak uygulamalar geliştirerek pratik deneyim elde eder. Bu ders, gelecekteki teknoloji liderleri ve yazılım geliştiricileri için temel bir adımdır.",
                             ImageUrl = "2.jpg",
                             InstructorId = 2,
                             IsActive = true,
                             IsDeleted = false,
                             IsHome = true,
-                            ModifiedDate = new DateTime(2023, 7, 30, 1, 5, 26, 402, DateTimeKind.Local).AddTicks(4908),
+                            ModifiedDate = new DateTime(2023, 7, 31, 18, 52, 14, 336, DateTimeKind.Local).AddTicks(2055),
                             Name = "Java (Spring, Java SE, Java EE)",
                             Price = 900m,
                             Time = 200,
@@ -633,14 +633,14 @@ namespace EducationApp.Data.Migrations
                         new
                         {
                             Id = 3,
-                            CreatedDate = new DateTime(2023, 7, 30, 1, 5, 26, 402, DateTimeKind.Local).AddTicks(4910),
+                            CreatedDate = new DateTime(2023, 7, 31, 18, 52, 14, 336, DateTimeKind.Local).AddTicks(2058),
                             Description = "Yazılım dersi, bilgisayar bilimlerinin önemli bir alanıdır ve öğrencilere temel bilgisayar programlama, algoritma oluşturma, veri yapıları, yazılım mühendisliği ve uygulama geliştirme konularında bilgi sağlar. Bu ders, öğrencilere problem çözme becerileri kazandırarak mantıksal düşünce ve analitik yeteneklerini geliştirir. Yazılım dersi aynı zamanda modern teknoloji dünyasında önemli bir role sahip olan yazılım süreçlerini, proje yönetimini ve test etme yöntemlerini de kapsar. Öğrenciler, çeşitli programlama dilleri ve yazılım araçlarını kullanarak uygulamalar geliştirerek pratik deneyim elde eder. Bu ders, gelecekteki teknoloji liderleri ve yazılım geliştiricileri için temel bir adımdır.",
                             ImageUrl = "3.png",
                             InstructorId = 3,
                             IsActive = true,
                             IsDeleted = false,
                             IsHome = true,
-                            ModifiedDate = new DateTime(2023, 7, 30, 1, 5, 26, 402, DateTimeKind.Local).AddTicks(4910),
+                            ModifiedDate = new DateTime(2023, 7, 31, 18, 52, 14, 336, DateTimeKind.Local).AddTicks(2058),
                             Name = "Python",
                             Price = 900m,
                             Time = 200,
@@ -649,14 +649,14 @@ namespace EducationApp.Data.Migrations
                         new
                         {
                             Id = 4,
-                            CreatedDate = new DateTime(2023, 7, 30, 1, 5, 26, 402, DateTimeKind.Local).AddTicks(4911),
+                            CreatedDate = new DateTime(2023, 7, 31, 18, 52, 14, 336, DateTimeKind.Local).AddTicks(2060),
                             Description = "Yazılım dersi, bilgisayar bilimlerinin önemli bir alanıdır ve öğrencilere temel bilgisayar programlama, algoritma oluşturma, veri yapıları, yazılım mühendisliği ve uygulama geliştirme konularında bilgi sağlar. Bu ders, öğrencilere problem çözme becerileri kazandırarak mantıksal düşünce ve analitik yeteneklerini geliştirir. Yazılım dersi aynı zamanda modern teknoloji dünyasında önemli bir role sahip olan yazılım süreçlerini, proje yönetimini ve test etme yöntemlerini de kapsar. Öğrenciler, çeşitli programlama dilleri ve yazılım araçlarını kullanarak uygulamalar geliştirerek pratik deneyim elde eder. Bu ders, gelecekteki teknoloji liderleri ve yazılım geliştiricileri için temel bir adımdır.",
                             ImageUrl = "4.jpeg",
                             InstructorId = 4,
                             IsActive = true,
                             IsDeleted = false,
                             IsHome = true,
-                            ModifiedDate = new DateTime(2023, 7, 30, 1, 5, 26, 402, DateTimeKind.Local).AddTicks(4912),
+                            ModifiedDate = new DateTime(2023, 7, 31, 18, 52, 14, 336, DateTimeKind.Local).AddTicks(2060),
                             Name = "JavaScript",
                             Price = 900m,
                             Time = 200,
@@ -665,14 +665,14 @@ namespace EducationApp.Data.Migrations
                         new
                         {
                             Id = 5,
-                            CreatedDate = new DateTime(2023, 7, 30, 1, 5, 26, 402, DateTimeKind.Local).AddTicks(4913),
+                            CreatedDate = new DateTime(2023, 7, 31, 18, 52, 14, 336, DateTimeKind.Local).AddTicks(2062),
                             Description = "Yazılım dersi, bilgisayar bilimlerinin önemli bir alanıdır ve öğrencilere temel bilgisayar programlama, algoritma oluşturma, veri yapıları, yazılım mühendisliği ve uygulama geliştirme konularında bilgi sağlar. Bu ders, öğrencilere problem çözme becerileri kazandırarak mantıksal düşünce ve analitik yeteneklerini geliştirir. Yazılım dersi aynı zamanda modern teknoloji dünyasında önemli bir role sahip olan yazılım süreçlerini, proje yönetimini ve test etme yöntemlerini de kapsar. Öğrenciler, çeşitli programlama dilleri ve yazılım araçlarını kullanarak uygulamalar geliştirerek pratik deneyim elde eder. Bu ders, gelecekteki teknoloji liderleri ve yazılım geliştiricileri için temel bir adımdır.",
                             ImageUrl = "5.jpg",
                             InstructorId = 5,
                             IsActive = true,
                             IsDeleted = false,
                             IsHome = true,
-                            ModifiedDate = new DateTime(2023, 7, 30, 1, 5, 26, 402, DateTimeKind.Local).AddTicks(4913),
+                            ModifiedDate = new DateTime(2023, 7, 31, 18, 52, 14, 336, DateTimeKind.Local).AddTicks(2063),
                             Name = "C/C++",
                             Price = 900m,
                             Time = 200,
@@ -681,14 +681,14 @@ namespace EducationApp.Data.Migrations
                         new
                         {
                             Id = 6,
-                            CreatedDate = new DateTime(2023, 7, 30, 1, 5, 26, 402, DateTimeKind.Local).AddTicks(4915),
+                            CreatedDate = new DateTime(2023, 7, 31, 18, 52, 14, 336, DateTimeKind.Local).AddTicks(2065),
                             Description = "Yazılım dersi, bilgisayar bilimlerinin önemli bir alanıdır ve öğrencilere temel bilgisayar programlama, algoritma oluşturma, veri yapıları, yazılım mühendisliği ve uygulama geliştirme konularında bilgi sağlar. Bu ders, öğrencilere problem çözme becerileri kazandırarak mantıksal düşünce ve analitik yeteneklerini geliştirir. Yazılım dersi aynı zamanda modern teknoloji dünyasında önemli bir role sahip olan yazılım süreçlerini, proje yönetimini ve test etme yöntemlerini de kapsar. Öğrenciler, çeşitli programlama dilleri ve yazılım araçlarını kullanarak uygulamalar geliştirerek pratik deneyim elde eder. Bu ders, gelecekteki teknoloji liderleri ve yazılım geliştiricileri için temel bir adımdır.",
                             ImageUrl = "6.png",
                             InstructorId = 6,
                             IsActive = true,
                             IsDeleted = false,
                             IsHome = true,
-                            ModifiedDate = new DateTime(2023, 7, 30, 1, 5, 26, 402, DateTimeKind.Local).AddTicks(4915),
+                            ModifiedDate = new DateTime(2023, 7, 31, 18, 52, 14, 336, DateTimeKind.Local).AddTicks(2065),
                             Name = "iOS & Android",
                             Price = 900m,
                             Time = 200,
@@ -697,14 +697,14 @@ namespace EducationApp.Data.Migrations
                         new
                         {
                             Id = 7,
-                            CreatedDate = new DateTime(2023, 7, 30, 1, 5, 26, 402, DateTimeKind.Local).AddTicks(4916),
+                            CreatedDate = new DateTime(2023, 7, 31, 18, 52, 14, 336, DateTimeKind.Local).AddTicks(2067),
                             Description = "Yazılım dersi, bilgisayar bilimlerinin önemli bir alanıdır ve öğrencilere temel bilgisayar programlama, algoritma oluşturma, veri yapıları, yazılım mühendisliği ve uygulama geliştirme konularında bilgi sağlar. Bu ders, öğrencilere problem çözme becerileri kazandırarak mantıksal düşünce ve analitik yeteneklerini geliştirir. Yazılım dersi aynı zamanda modern teknoloji dünyasında önemli bir role sahip olan yazılım süreçlerini, proje yönetimini ve test etme yöntemlerini de kapsar. Öğrenciler, çeşitli programlama dilleri ve yazılım araçlarını kullanarak uygulamalar geliştirerek pratik deneyim elde eder. Bu ders, gelecekteki teknoloji liderleri ve yazılım geliştiricileri için temel bir adımdır.",
                             ImageUrl = "7.png",
                             InstructorId = 7,
                             IsActive = true,
                             IsDeleted = false,
                             IsHome = true,
-                            ModifiedDate = new DateTime(2023, 7, 30, 1, 5, 26, 402, DateTimeKind.Local).AddTicks(4917),
+                            ModifiedDate = new DateTime(2023, 7, 31, 18, 52, 14, 336, DateTimeKind.Local).AddTicks(2067),
                             Name = "React Native",
                             Price = 900m,
                             Time = 200,
@@ -713,14 +713,14 @@ namespace EducationApp.Data.Migrations
                         new
                         {
                             Id = 8,
-                            CreatedDate = new DateTime(2023, 7, 30, 1, 5, 26, 402, DateTimeKind.Local).AddTicks(4918),
+                            CreatedDate = new DateTime(2023, 7, 31, 18, 52, 14, 336, DateTimeKind.Local).AddTicks(2069),
                             Description = "Yazılım dersi, bilgisayar bilimlerinin önemli bir alanıdır ve öğrencilere temel bilgisayar programlama, algoritma oluşturma, veri yapıları, yazılım mühendisliği ve uygulama geliştirme konularında bilgi sağlar. Bu ders, öğrencilere problem çözme becerileri kazandırarak mantıksal düşünce ve analitik yeteneklerini geliştirir. Yazılım dersi aynı zamanda modern teknoloji dünyasında önemli bir role sahip olan yazılım süreçlerini, proje yönetimini ve test etme yöntemlerini de kapsar. Öğrenciler, çeşitli programlama dilleri ve yazılım araçlarını kullanarak uygulamalar geliştirerek pratik deneyim elde eder. Bu ders, gelecekteki teknoloji liderleri ve yazılım geliştiricileri için temel bir adımdır.",
                             ImageUrl = "8.png",
                             InstructorId = 8,
                             IsActive = true,
                             IsDeleted = false,
                             IsHome = true,
-                            ModifiedDate = new DateTime(2023, 7, 30, 1, 5, 26, 402, DateTimeKind.Local).AddTicks(4918),
+                            ModifiedDate = new DateTime(2023, 7, 31, 18, 52, 14, 336, DateTimeKind.Local).AddTicks(2069),
                             Name = "Flutter",
                             Price = 900m,
                             Time = 200,
@@ -729,14 +729,14 @@ namespace EducationApp.Data.Migrations
                         new
                         {
                             Id = 9,
-                            CreatedDate = new DateTime(2023, 7, 30, 1, 5, 26, 402, DateTimeKind.Local).AddTicks(4920),
+                            CreatedDate = new DateTime(2023, 7, 31, 18, 52, 14, 336, DateTimeKind.Local).AddTicks(2071),
                             Description = "Yazılım dersi, bilgisayar bilimlerinin önemli bir alanıdır ve öğrencilere temel bilgisayar programlama, algoritma oluşturma, veri yapıları, yazılım mühendisliği ve uygulama geliştirme konularında bilgi sağlar. Bu ders, öğrencilere problem çözme becerileri kazandırarak mantıksal düşünce ve analitik yeteneklerini geliştirir. Yazılım dersi aynı zamanda modern teknoloji dünyasında önemli bir role sahip olan yazılım süreçlerini, proje yönetimini ve test etme yöntemlerini de kapsar. Öğrenciler, çeşitli programlama dilleri ve yazılım araçlarını kullanarak uygulamalar geliştirerek pratik deneyim elde eder. Bu ders, gelecekteki teknoloji liderleri ve yazılım geliştiricileri için temel bir adımdır.",
                             ImageUrl = "9.jpg",
                             InstructorId = 9,
                             IsActive = true,
                             IsDeleted = false,
                             IsHome = true,
-                            ModifiedDate = new DateTime(2023, 7, 30, 1, 5, 26, 402, DateTimeKind.Local).AddTicks(4920),
+                            ModifiedDate = new DateTime(2023, 7, 31, 18, 52, 14, 336, DateTimeKind.Local).AddTicks(2071),
                             Name = "Ionic",
                             Price = 900m,
                             Time = 200,
@@ -745,14 +745,14 @@ namespace EducationApp.Data.Migrations
                         new
                         {
                             Id = 10,
-                            CreatedDate = new DateTime(2023, 7, 30, 1, 5, 26, 402, DateTimeKind.Local).AddTicks(4922),
+                            CreatedDate = new DateTime(2023, 7, 31, 18, 52, 14, 336, DateTimeKind.Local).AddTicks(2073),
                             Description = "Yazılım dersi, bilgisayar bilimlerinin önemli bir alanıdır ve öğrencilere temel bilgisayar programlama, algoritma oluşturma, veri yapıları, yazılım mühendisliği ve uygulama geliştirme konularında bilgi sağlar. Bu ders, öğrencilere problem çözme becerileri kazandırarak mantıksal düşünce ve analitik yeteneklerini geliştirir. Yazılım dersi aynı zamanda modern teknoloji dünyasında önemli bir role sahip olan yazılım süreçlerini, proje yönetimini ve test etme yöntemlerini de kapsar. Öğrenciler, çeşitli programlama dilleri ve yazılım araçlarını kullanarak uygulamalar geliştirerek pratik deneyim elde eder. Bu ders, gelecekteki teknoloji liderleri ve yazılım geliştiricileri için temel bir adımdır.",
                             ImageUrl = "10.jpeg",
                             InstructorId = 10,
                             IsActive = true,
                             IsDeleted = false,
                             IsHome = true,
-                            ModifiedDate = new DateTime(2023, 7, 30, 1, 5, 26, 402, DateTimeKind.Local).AddTicks(4922),
+                            ModifiedDate = new DateTime(2023, 7, 31, 18, 52, 14, 336, DateTimeKind.Local).AddTicks(2073),
                             Name = "Unity",
                             Price = 900m,
                             Time = 200,
@@ -761,14 +761,14 @@ namespace EducationApp.Data.Migrations
                         new
                         {
                             Id = 11,
-                            CreatedDate = new DateTime(2023, 7, 30, 1, 5, 26, 402, DateTimeKind.Local).AddTicks(4923),
+                            CreatedDate = new DateTime(2023, 7, 31, 18, 52, 14, 336, DateTimeKind.Local).AddTicks(2075),
                             Description = "Yazılım dersi, bilgisayar bilimlerinin önemli bir alanıdır ve öğrencilere temel bilgisayar programlama, algoritma oluşturma, veri yapıları, yazılım mühendisliği ve uygulama geliştirme konularında bilgi sağlar. Bu ders, öğrencilere problem çözme becerileri kazandırarak mantıksal düşünce ve analitik yeteneklerini geliştirir. Yazılım dersi aynı zamanda modern teknoloji dünyasında önemli bir role sahip olan yazılım süreçlerini, proje yönetimini ve test etme yöntemlerini de kapsar. Öğrenciler, çeşitli programlama dilleri ve yazılım araçlarını kullanarak uygulamalar geliştirerek pratik deneyim elde eder. Bu ders, gelecekteki teknoloji liderleri ve yazılım geliştiricileri için temel bir adımdır.",
                             ImageUrl = "11.png",
                             InstructorId = 11,
                             IsActive = true,
                             IsDeleted = false,
                             IsHome = true,
-                            ModifiedDate = new DateTime(2023, 7, 30, 1, 5, 26, 402, DateTimeKind.Local).AddTicks(4924),
+                            ModifiedDate = new DateTime(2023, 7, 31, 18, 52, 14, 336, DateTimeKind.Local).AddTicks(2076),
                             Name = "Unreal Engine",
                             Price = 900m,
                             Time = 200,
@@ -777,14 +777,14 @@ namespace EducationApp.Data.Migrations
                         new
                         {
                             Id = 12,
-                            CreatedDate = new DateTime(2023, 7, 30, 1, 5, 26, 402, DateTimeKind.Local).AddTicks(4925),
+                            CreatedDate = new DateTime(2023, 7, 31, 18, 52, 14, 336, DateTimeKind.Local).AddTicks(2077),
                             Description = "Yazılım dersi, bilgisayar bilimlerinin önemli bir alanıdır ve öğrencilere temel bilgisayar programlama, algoritma oluşturma, veri yapıları, yazılım mühendisliği ve uygulama geliştirme konularında bilgi sağlar. Bu ders, öğrencilere problem çözme becerileri kazandırarak mantıksal düşünce ve analitik yeteneklerini geliştirir. Yazılım dersi aynı zamanda modern teknoloji dünyasında önemli bir role sahip olan yazılım süreçlerini, proje yönetimini ve test etme yöntemlerini de kapsar. Öğrenciler, çeşitli programlama dilleri ve yazılım araçlarını kullanarak uygulamalar geliştirerek pratik deneyim elde eder. Bu ders, gelecekteki teknoloji liderleri ve yazılım geliştiricileri için temel bir adımdır.",
                             ImageUrl = "12.png",
                             InstructorId = 12,
                             IsActive = true,
                             IsDeleted = false,
                             IsHome = true,
-                            ModifiedDate = new DateTime(2023, 7, 30, 1, 5, 26, 402, DateTimeKind.Local).AddTicks(4925),
+                            ModifiedDate = new DateTime(2023, 7, 31, 18, 52, 14, 336, DateTimeKind.Local).AddTicks(2078),
                             Name = "GameMaker Studio",
                             Price = 900m,
                             Time = 200,
@@ -793,14 +793,14 @@ namespace EducationApp.Data.Migrations
                         new
                         {
                             Id = 13,
-                            CreatedDate = new DateTime(2023, 7, 30, 1, 5, 26, 402, DateTimeKind.Local).AddTicks(4927),
+                            CreatedDate = new DateTime(2023, 7, 31, 18, 52, 14, 336, DateTimeKind.Local).AddTicks(2079),
                             Description = "Yazılım dersi, bilgisayar bilimlerinin önemli bir alanıdır ve öğrencilere temel bilgisayar programlama, algoritma oluşturma, veri yapıları, yazılım mühendisliği ve uygulama geliştirme konularında bilgi sağlar. Bu ders, öğrencilere problem çözme becerileri kazandırarak mantıksal düşünce ve analitik yeteneklerini geliştirir. Yazılım dersi aynı zamanda modern teknoloji dünyasında önemli bir role sahip olan yazılım süreçlerini, proje yönetimini ve test etme yöntemlerini de kapsar. Öğrenciler, çeşitli programlama dilleri ve yazılım araçlarını kullanarak uygulamalar geliştirerek pratik deneyim elde eder. Bu ders, gelecekteki teknoloji liderleri ve yazılım geliştiricileri için temel bir adımdır.",
                             ImageUrl = "13.jpeg",
                             InstructorId = 13,
                             IsActive = true,
                             IsDeleted = false,
                             IsHome = true,
-                            ModifiedDate = new DateTime(2023, 7, 30, 1, 5, 26, 402, DateTimeKind.Local).AddTicks(4927),
+                            ModifiedDate = new DateTime(2023, 7, 31, 18, 52, 14, 336, DateTimeKind.Local).AddTicks(2080),
                             Name = "Buildbox",
                             Price = 900m,
                             Time = 200,
@@ -809,14 +809,14 @@ namespace EducationApp.Data.Migrations
                         new
                         {
                             Id = 14,
-                            CreatedDate = new DateTime(2023, 7, 30, 1, 5, 26, 402, DateTimeKind.Local).AddTicks(4928),
+                            CreatedDate = new DateTime(2023, 7, 31, 18, 52, 14, 336, DateTimeKind.Local).AddTicks(2081),
                             Description = "Yazılım dersi, bilgisayar bilimlerinin önemli bir alanıdır ve öğrencilere temel bilgisayar programlama, algoritma oluşturma, veri yapıları, yazılım mühendisliği ve uygulama geliştirme konularında bilgi sağlar. Bu ders, öğrencilere problem çözme becerileri kazandırarak mantıksal düşünce ve analitik yeteneklerini geliştirir. Yazılım dersi aynı zamanda modern teknoloji dünyasında önemli bir role sahip olan yazılım süreçlerini, proje yönetimini ve test etme yöntemlerini de kapsar. Öğrenciler, çeşitli programlama dilleri ve yazılım araçlarını kullanarak uygulamalar geliştirerek pratik deneyim elde eder. Bu ders, gelecekteki teknoloji liderleri ve yazılım geliştiricileri için temel bir adımdır.",
                             ImageUrl = "14.png",
                             InstructorId = 14,
                             IsActive = true,
                             IsDeleted = false,
                             IsHome = true,
-                            ModifiedDate = new DateTime(2023, 7, 30, 1, 5, 26, 402, DateTimeKind.Local).AddTicks(4928),
+                            ModifiedDate = new DateTime(2023, 7, 31, 18, 52, 14, 336, DateTimeKind.Local).AddTicks(2082),
                             Name = "PHP",
                             Price = 900m,
                             Time = 200,
@@ -825,14 +825,14 @@ namespace EducationApp.Data.Migrations
                         new
                         {
                             Id = 15,
-                            CreatedDate = new DateTime(2023, 7, 30, 1, 5, 26, 402, DateTimeKind.Local).AddTicks(4930),
+                            CreatedDate = new DateTime(2023, 7, 31, 18, 52, 14, 336, DateTimeKind.Local).AddTicks(2083),
                             Description = "Yazılım dersi, bilgisayar bilimlerinin önemli bir alanıdır ve öğrencilere temel bilgisayar programlama, algoritma oluşturma, veri yapıları, yazılım mühendisliği ve uygulama geliştirme konularında bilgi sağlar. Bu ders, öğrencilere problem çözme becerileri kazandırarak mantıksal düşünce ve analitik yeteneklerini geliştirir. Yazılım dersi aynı zamanda modern teknoloji dünyasında önemli bir role sahip olan yazılım süreçlerini, proje yönetimini ve test etme yöntemlerini de kapsar. Öğrenciler, çeşitli programlama dilleri ve yazılım araçlarını kullanarak uygulamalar geliştirerek pratik deneyim elde eder. Bu ders, gelecekteki teknoloji liderleri ve yazılım geliştiricileri için temel bir adımdır.",
                             ImageUrl = "15.jpeg",
                             InstructorId = 8,
                             IsActive = true,
                             IsDeleted = false,
                             IsHome = true,
-                            ModifiedDate = new DateTime(2023, 7, 30, 1, 5, 26, 402, DateTimeKind.Local).AddTicks(4930),
+                            ModifiedDate = new DateTime(2023, 7, 31, 18, 52, 14, 336, DateTimeKind.Local).AddTicks(2084),
                             Name = "React",
                             Price = 900m,
                             Time = 200,
@@ -841,14 +841,14 @@ namespace EducationApp.Data.Migrations
                         new
                         {
                             Id = 16,
-                            CreatedDate = new DateTime(2023, 7, 30, 1, 5, 26, 402, DateTimeKind.Local).AddTicks(4931),
+                            CreatedDate = new DateTime(2023, 7, 31, 18, 52, 14, 336, DateTimeKind.Local).AddTicks(2086),
                             Description = "Yazılım dersi, bilgisayar bilimlerinin önemli bir alanıdır ve öğrencilere temel bilgisayar programlama, algoritma oluşturma, veri yapıları, yazılım mühendisliği ve uygulama geliştirme konularında bilgi sağlar. Bu ders, öğrencilere problem çözme becerileri kazandırarak mantıksal düşünce ve analitik yeteneklerini geliştirir. Yazılım dersi aynı zamanda modern teknoloji dünyasında önemli bir role sahip olan yazılım süreçlerini, proje yönetimini ve test etme yöntemlerini de kapsar. Öğrenciler, çeşitli programlama dilleri ve yazılım araçlarını kullanarak uygulamalar geliştirerek pratik deneyim elde eder. Bu ders, gelecekteki teknoloji liderleri ve yazılım geliştiricileri için temel bir adımdır.",
                             ImageUrl = "16.png",
                             InstructorId = 9,
                             IsActive = true,
                             IsDeleted = false,
                             IsHome = true,
-                            ModifiedDate = new DateTime(2023, 7, 30, 1, 5, 26, 402, DateTimeKind.Local).AddTicks(4932),
+                            ModifiedDate = new DateTime(2023, 7, 31, 18, 52, 14, 336, DateTimeKind.Local).AddTicks(2086),
                             Name = "Angular",
                             Price = 900m,
                             Time = 200,
@@ -857,14 +857,14 @@ namespace EducationApp.Data.Migrations
                         new
                         {
                             Id = 17,
-                            CreatedDate = new DateTime(2023, 7, 30, 1, 5, 26, 402, DateTimeKind.Local).AddTicks(4933),
+                            CreatedDate = new DateTime(2023, 7, 31, 18, 52, 14, 336, DateTimeKind.Local).AddTicks(2088),
                             Description = "Yazılım dersi, bilgisayar bilimlerinin önemli bir alanıdır ve öğrencilere temel bilgisayar programlama, algoritma oluşturma, veri yapıları, yazılım mühendisliği ve uygulama geliştirme konularında bilgi sağlar. Bu ders, öğrencilere problem çözme becerileri kazandırarak mantıksal düşünce ve analitik yeteneklerini geliştirir. Yazılım dersi aynı zamanda modern teknoloji dünyasında önemli bir role sahip olan yazılım süreçlerini, proje yönetimini ve test etme yöntemlerini de kapsar. Öğrenciler, çeşitli programlama dilleri ve yazılım araçlarını kullanarak uygulamalar geliştirerek pratik deneyim elde eder. Bu ders, gelecekteki teknoloji liderleri ve yazılım geliştiricileri için temel bir adımdır.",
                             ImageUrl = "17.png",
                             InstructorId = 10,
                             IsActive = true,
                             IsDeleted = false,
                             IsHome = true,
-                            ModifiedDate = new DateTime(2023, 7, 30, 1, 5, 26, 402, DateTimeKind.Local).AddTicks(4933),
+                            ModifiedDate = new DateTime(2023, 7, 31, 18, 52, 14, 336, DateTimeKind.Local).AddTicks(2088),
                             Name = "Node.js",
                             Price = 900m,
                             Time = 200,
@@ -873,14 +873,14 @@ namespace EducationApp.Data.Migrations
                         new
                         {
                             Id = 18,
-                            CreatedDate = new DateTime(2023, 7, 30, 1, 5, 26, 402, DateTimeKind.Local).AddTicks(4935),
+                            CreatedDate = new DateTime(2023, 7, 31, 18, 52, 14, 336, DateTimeKind.Local).AddTicks(2090),
                             Description = "Yazılım dersi, bilgisayar bilimlerinin önemli bir alanıdır ve öğrencilere temel bilgisayar programlama, algoritma oluşturma, veri yapıları, yazılım mühendisliği ve uygulama geliştirme konularında bilgi sağlar. Bu ders, öğrencilere problem çözme becerileri kazandırarak mantıksal düşünce ve analitik yeteneklerini geliştirir. Yazılım dersi aynı zamanda modern teknoloji dünyasında önemli bir role sahip olan yazılım süreçlerini, proje yönetimini ve test etme yöntemlerini de kapsar. Öğrenciler, çeşitli programlama dilleri ve yazılım araçlarını kullanarak uygulamalar geliştirerek pratik deneyim elde eder. Bu ders, gelecekteki teknoloji liderleri ve yazılım geliştiricileri için temel bir adımdır.",
                             ImageUrl = "18.jpg",
                             InstructorId = 11,
                             IsActive = true,
                             IsDeleted = false,
                             IsHome = true,
-                            ModifiedDate = new DateTime(2023, 7, 30, 1, 5, 26, 402, DateTimeKind.Local).AddTicks(4935),
+                            ModifiedDate = new DateTime(2023, 7, 31, 18, 52, 14, 336, DateTimeKind.Local).AddTicks(2090),
                             Name = "Microsoft SQL Server",
                             Price = 900m,
                             Time = 200,
@@ -889,14 +889,14 @@ namespace EducationApp.Data.Migrations
                         new
                         {
                             Id = 19,
-                            CreatedDate = new DateTime(2023, 7, 30, 1, 5, 26, 402, DateTimeKind.Local).AddTicks(4936),
+                            CreatedDate = new DateTime(2023, 7, 31, 18, 52, 14, 336, DateTimeKind.Local).AddTicks(2092),
                             Description = "Yazılım dersi, bilgisayar bilimlerinin önemli bir alanıdır ve öğrencilere temel bilgisayar programlama, algoritma oluşturma, veri yapıları, yazılım mühendisliği ve uygulama geliştirme konularında bilgi sağlar. Bu ders, öğrencilere problem çözme becerileri kazandırarak mantıksal düşünce ve analitik yeteneklerini geliştirir. Yazılım dersi aynı zamanda modern teknoloji dünyasında önemli bir role sahip olan yazılım süreçlerini, proje yönetimini ve test etme yöntemlerini de kapsar. Öğrenciler, çeşitli programlama dilleri ve yazılım araçlarını kullanarak uygulamalar geliştirerek pratik deneyim elde eder. Bu ders, gelecekteki teknoloji liderleri ve yazılım geliştiricileri için temel bir adımdır.",
                             ImageUrl = "19.png",
                             InstructorId = 12,
                             IsActive = true,
                             IsDeleted = false,
                             IsHome = true,
-                            ModifiedDate = new DateTime(2023, 7, 30, 1, 5, 26, 402, DateTimeKind.Local).AddTicks(4936),
+                            ModifiedDate = new DateTime(2023, 7, 31, 18, 52, 14, 336, DateTimeKind.Local).AddTicks(2092),
                             Name = "MySQL",
                             Price = 900m,
                             Time = 200,
@@ -905,14 +905,14 @@ namespace EducationApp.Data.Migrations
                         new
                         {
                             Id = 20,
-                            CreatedDate = new DateTime(2023, 7, 30, 1, 5, 26, 402, DateTimeKind.Local).AddTicks(4938),
+                            CreatedDate = new DateTime(2023, 7, 31, 18, 52, 14, 336, DateTimeKind.Local).AddTicks(2094),
                             Description = "Yazılım dersi, bilgisayar bilimlerinin önemli bir alanıdır ve öğrencilere temel bilgisayar programlama, algoritma oluşturma, veri yapıları, yazılım mühendisliği ve uygulama geliştirme konularında bilgi sağlar. Bu ders, öğrencilere problem çözme becerileri kazandırarak mantıksal düşünce ve analitik yeteneklerini geliştirir. Yazılım dersi aynı zamanda modern teknoloji dünyasında önemli bir role sahip olan yazılım süreçlerini, proje yönetimini ve test etme yöntemlerini de kapsar. Öğrenciler, çeşitli programlama dilleri ve yazılım araçlarını kullanarak uygulamalar geliştirerek pratik deneyim elde eder. Bu ders, gelecekteki teknoloji liderleri ve yazılım geliştiricileri için temel bir adımdır.",
                             ImageUrl = "20.png",
                             InstructorId = 13,
                             IsActive = true,
                             IsDeleted = false,
                             IsHome = true,
-                            ModifiedDate = new DateTime(2023, 7, 30, 1, 5, 26, 402, DateTimeKind.Local).AddTicks(4938),
+                            ModifiedDate = new DateTime(2023, 7, 31, 18, 52, 14, 336, DateTimeKind.Local).AddTicks(2094),
                             Name = "PostgreSQL",
                             Price = 900m,
                             Time = 200,
@@ -921,14 +921,14 @@ namespace EducationApp.Data.Migrations
                         new
                         {
                             Id = 21,
-                            CreatedDate = new DateTime(2023, 7, 30, 1, 5, 26, 402, DateTimeKind.Local).AddTicks(4939),
+                            CreatedDate = new DateTime(2023, 7, 31, 18, 52, 14, 336, DateTimeKind.Local).AddTicks(2096),
                             Description = "Yazılım dersi, bilgisayar bilimlerinin önemli bir alanıdır ve öğrencilere temel bilgisayar programlama, algoritma oluşturma, veri yapıları, yazılım mühendisliği ve uygulama geliştirme konularında bilgi sağlar. Bu ders, öğrencilere problem çözme becerileri kazandırarak mantıksal düşünce ve analitik yeteneklerini geliştirir. Yazılım dersi aynı zamanda modern teknoloji dünyasında önemli bir role sahip olan yazılım süreçlerini, proje yönetimini ve test etme yöntemlerini de kapsar. Öğrenciler, çeşitli programlama dilleri ve yazılım araçlarını kullanarak uygulamalar geliştirerek pratik deneyim elde eder. Bu ders, gelecekteki teknoloji liderleri ve yazılım geliştiricileri için temel bir adımdır.",
                             ImageUrl = "21.png",
                             InstructorId = 11,
                             IsActive = true,
                             IsDeleted = false,
                             IsHome = true,
-                            ModifiedDate = new DateTime(2023, 7, 30, 1, 5, 26, 402, DateTimeKind.Local).AddTicks(4940),
+                            ModifiedDate = new DateTime(2023, 7, 31, 18, 52, 14, 336, DateTimeKind.Local).AddTicks(2096),
                             Name = "SQLite",
                             Price = 900m,
                             Time = 200,
@@ -937,14 +937,14 @@ namespace EducationApp.Data.Migrations
                         new
                         {
                             Id = 22,
-                            CreatedDate = new DateTime(2023, 7, 30, 1, 5, 26, 402, DateTimeKind.Local).AddTicks(4941),
+                            CreatedDate = new DateTime(2023, 7, 31, 18, 52, 14, 336, DateTimeKind.Local).AddTicks(2097),
                             Description = "Yazılım dersi, bilgisayar bilimlerinin önemli bir alanıdır ve öğrencilere temel bilgisayar programlama, algoritma oluşturma, veri yapıları, yazılım mühendisliği ve uygulama geliştirme konularında bilgi sağlar. Bu ders, öğrencilere problem çözme becerileri kazandırarak mantıksal düşünce ve analitik yeteneklerini geliştirir. Yazılım dersi aynı zamanda modern teknoloji dünyasında önemli bir role sahip olan yazılım süreçlerini, proje yönetimini ve test etme yöntemlerini de kapsar. Öğrenciler, çeşitli programlama dilleri ve yazılım araçlarını kullanarak uygulamalar geliştirerek pratik deneyim elde eder. Bu ders, gelecekteki teknoloji liderleri ve yazılım geliştiricileri için temel bir adımdır.",
                             ImageUrl = "22.png",
                             InstructorId = 12,
                             IsActive = true,
                             IsDeleted = false,
                             IsHome = true,
-                            ModifiedDate = new DateTime(2023, 7, 30, 1, 5, 26, 402, DateTimeKind.Local).AddTicks(4941),
+                            ModifiedDate = new DateTime(2023, 7, 31, 18, 52, 14, 336, DateTimeKind.Local).AddTicks(2098),
                             Name = "Oracle",
                             Price = 900m,
                             Time = 200,
@@ -953,14 +953,14 @@ namespace EducationApp.Data.Migrations
                         new
                         {
                             Id = 23,
-                            CreatedDate = new DateTime(2023, 7, 30, 1, 5, 26, 402, DateTimeKind.Local).AddTicks(4942),
+                            CreatedDate = new DateTime(2023, 7, 31, 18, 52, 14, 336, DateTimeKind.Local).AddTicks(2099),
                             Description = "Yazılım dersi, bilgisayar bilimlerinin önemli bir alanıdır ve öğrencilere temel bilgisayar programlama, algoritma oluşturma, veri yapıları, yazılım mühendisliği ve uygulama geliştirme konularında bilgi sağlar. Bu ders, öğrencilere problem çözme becerileri kazandırarak mantıksal düşünce ve analitik yeteneklerini geliştirir. Yazılım dersi aynı zamanda modern teknoloji dünyasında önemli bir role sahip olan yazılım süreçlerini, proje yönetimini ve test etme yöntemlerini de kapsar. Öğrenciler, çeşitli programlama dilleri ve yazılım araçlarını kullanarak uygulamalar geliştirerek pratik deneyim elde eder. Bu ders, gelecekteki teknoloji liderleri ve yazılım geliştiricileri için temel bir adımdır.",
                             ImageUrl = "23.png",
                             InstructorId = 13,
                             IsActive = true,
                             IsDeleted = false,
                             IsHome = true,
-                            ModifiedDate = new DateTime(2023, 7, 30, 1, 5, 26, 402, DateTimeKind.Local).AddTicks(4943),
+                            ModifiedDate = new DateTime(2023, 7, 31, 18, 52, 14, 336, DateTimeKind.Local).AddTicks(2100),
                             Name = "Docker",
                             Price = 900m,
                             Time = 200,
@@ -969,14 +969,14 @@ namespace EducationApp.Data.Migrations
                         new
                         {
                             Id = 24,
-                            CreatedDate = new DateTime(2023, 7, 30, 1, 5, 26, 402, DateTimeKind.Local).AddTicks(4944),
+                            CreatedDate = new DateTime(2023, 7, 31, 18, 52, 14, 336, DateTimeKind.Local).AddTicks(2101),
                             Description = "Yazılım dersi, bilgisayar bilimlerinin önemli bir alanıdır ve öğrencilere temel bilgisayar programlama, algoritma oluşturma, veri yapıları, yazılım mühendisliği ve uygulama geliştirme konularında bilgi sağlar. Bu ders, öğrencilere problem çözme becerileri kazandırarak mantıksal düşünce ve analitik yeteneklerini geliştirir. Yazılım dersi aynı zamanda modern teknoloji dünyasında önemli bir role sahip olan yazılım süreçlerini, proje yönetimini ve test etme yöntemlerini de kapsar. Öğrenciler, çeşitli programlama dilleri ve yazılım araçlarını kullanarak uygulamalar geliştirerek pratik deneyim elde eder. Bu ders, gelecekteki teknoloji liderleri ve yazılım geliştiricileri için temel bir adımdır.",
                             ImageUrl = "24.png",
                             InstructorId = 14,
                             IsActive = true,
                             IsDeleted = false,
                             IsHome = true,
-                            ModifiedDate = new DateTime(2023, 7, 30, 1, 5, 26, 402, DateTimeKind.Local).AddTicks(4944),
+                            ModifiedDate = new DateTime(2023, 7, 31, 18, 52, 14, 336, DateTimeKind.Local).AddTicks(2102),
                             Name = "Jenkins",
                             Price = 900m,
                             Time = 200,
@@ -985,14 +985,14 @@ namespace EducationApp.Data.Migrations
                         new
                         {
                             Id = 25,
-                            CreatedDate = new DateTime(2023, 7, 30, 1, 5, 26, 402, DateTimeKind.Local).AddTicks(4946),
+                            CreatedDate = new DateTime(2023, 7, 31, 18, 52, 14, 336, DateTimeKind.Local).AddTicks(2104),
                             Description = "Yazılım dersi, bilgisayar bilimlerinin önemli bir alanıdır ve öğrencilere temel bilgisayar programlama, algoritma oluşturma, veri yapıları, yazılım mühendisliği ve uygulama geliştirme konularında bilgi sağlar. Bu ders, öğrencilere problem çözme becerileri kazandırarak mantıksal düşünce ve analitik yeteneklerini geliştirir. Yazılım dersi aynı zamanda modern teknoloji dünyasında önemli bir role sahip olan yazılım süreçlerini, proje yönetimini ve test etme yöntemlerini de kapsar. Öğrenciler, çeşitli programlama dilleri ve yazılım araçlarını kullanarak uygulamalar geliştirerek pratik deneyim elde eder. Bu ders, gelecekteki teknoloji liderleri ve yazılım geliştiricileri için temel bir adımdır.",
                             ImageUrl = "25.png",
                             InstructorId = 8,
                             IsActive = true,
                             IsDeleted = false,
                             IsHome = true,
-                            ModifiedDate = new DateTime(2023, 7, 30, 1, 5, 26, 402, DateTimeKind.Local).AddTicks(4946),
+                            ModifiedDate = new DateTime(2023, 7, 31, 18, 52, 14, 336, DateTimeKind.Local).AddTicks(2104),
                             Name = "Ansible",
                             Price = 900m,
                             Time = 200,
@@ -1001,14 +1001,14 @@ namespace EducationApp.Data.Migrations
                         new
                         {
                             Id = 26,
-                            CreatedDate = new DateTime(2023, 7, 30, 1, 5, 26, 402, DateTimeKind.Local).AddTicks(4947),
+                            CreatedDate = new DateTime(2023, 7, 31, 18, 52, 14, 336, DateTimeKind.Local).AddTicks(2106),
                             Description = "Yazılım dersi, bilgisayar bilimlerinin önemli bir alanıdır ve öğrencilere temel bilgisayar programlama, algoritma oluşturma, veri yapıları, yazılım mühendisliği ve uygulama geliştirme konularında bilgi sağlar. Bu ders, öğrencilere problem çözme becerileri kazandırarak mantıksal düşünce ve analitik yeteneklerini geliştirir. Yazılım dersi aynı zamanda modern teknoloji dünyasında önemli bir role sahip olan yazılım süreçlerini, proje yönetimini ve test etme yöntemlerini de kapsar. Öğrenciler, çeşitli programlama dilleri ve yazılım araçlarını kullanarak uygulamalar geliştirerek pratik deneyim elde eder. Bu ders, gelecekteki teknoloji liderleri ve yazılım geliştiricileri için temel bir adımdır.",
                             ImageUrl = "26.jpeg",
                             InstructorId = 9,
                             IsActive = true,
                             IsDeleted = false,
                             IsHome = true,
-                            ModifiedDate = new DateTime(2023, 7, 30, 1, 5, 26, 402, DateTimeKind.Local).AddTicks(4947),
+                            ModifiedDate = new DateTime(2023, 7, 31, 18, 52, 14, 336, DateTimeKind.Local).AddTicks(2106),
                             Name = "Sonarcube",
                             Price = 900m,
                             Time = 200,
@@ -1017,14 +1017,14 @@ namespace EducationApp.Data.Migrations
                         new
                         {
                             Id = 27,
-                            CreatedDate = new DateTime(2023, 7, 30, 1, 5, 26, 402, DateTimeKind.Local).AddTicks(4949),
+                            CreatedDate = new DateTime(2023, 7, 31, 18, 52, 14, 336, DateTimeKind.Local).AddTicks(2108),
                             Description = "Yazılım dersi, bilgisayar bilimlerinin önemli bir alanıdır ve öğrencilere temel bilgisayar programlama, algoritma oluşturma, veri yapıları, yazılım mühendisliği ve uygulama geliştirme konularında bilgi sağlar. Bu ders, öğrencilere problem çözme becerileri kazandırarak mantıksal düşünce ve analitik yeteneklerini geliştirir. Yazılım dersi aynı zamanda modern teknoloji dünyasında önemli bir role sahip olan yazılım süreçlerini, proje yönetimini ve test etme yöntemlerini de kapsar. Öğrenciler, çeşitli programlama dilleri ve yazılım araçlarını kullanarak uygulamalar geliştirerek pratik deneyim elde eder. Bu ders, gelecekteki teknoloji liderleri ve yazılım geliştiricileri için temel bir adımdır.",
                             ImageUrl = "27.png",
                             InstructorId = 10,
                             IsActive = true,
                             IsDeleted = false,
                             IsHome = true,
-                            ModifiedDate = new DateTime(2023, 7, 30, 1, 5, 26, 402, DateTimeKind.Local).AddTicks(4949),
+                            ModifiedDate = new DateTime(2023, 7, 31, 18, 52, 14, 336, DateTimeKind.Local).AddTicks(2108),
                             Name = "AWS",
                             Price = 900m,
                             Time = 200,
@@ -1033,14 +1033,14 @@ namespace EducationApp.Data.Migrations
                         new
                         {
                             Id = 28,
-                            CreatedDate = new DateTime(2023, 7, 30, 1, 5, 26, 402, DateTimeKind.Local).AddTicks(4950),
+                            CreatedDate = new DateTime(2023, 7, 31, 18, 52, 14, 336, DateTimeKind.Local).AddTicks(2110),
                             Description = "Yazılım dersi, bilgisayar bilimlerinin önemli bir alanıdır ve öğrencilere temel bilgisayar programlama, algoritma oluşturma, veri yapıları, yazılım mühendisliği ve uygulama geliştirme konularında bilgi sağlar. Bu ders, öğrencilere problem çözme becerileri kazandırarak mantıksal düşünce ve analitik yeteneklerini geliştirir. Yazılım dersi aynı zamanda modern teknoloji dünyasında önemli bir role sahip olan yazılım süreçlerini, proje yönetimini ve test etme yöntemlerini de kapsar. Öğrenciler, çeşitli programlama dilleri ve yazılım araçlarını kullanarak uygulamalar geliştirerek pratik deneyim elde eder. Bu ders, gelecekteki teknoloji liderleri ve yazılım geliştiricileri için temel bir adımdır.",
                             ImageUrl = "28.png",
                             InstructorId = 11,
                             IsActive = true,
                             IsDeleted = false,
                             IsHome = true,
-                            ModifiedDate = new DateTime(2023, 7, 30, 1, 5, 26, 402, DateTimeKind.Local).AddTicks(4951),
+                            ModifiedDate = new DateTime(2023, 7, 31, 18, 52, 14, 336, DateTimeKind.Local).AddTicks(2110),
                             Name = "Azure",
                             Price = 900m,
                             Time = 200,
@@ -1049,14 +1049,14 @@ namespace EducationApp.Data.Migrations
                         new
                         {
                             Id = 29,
-                            CreatedDate = new DateTime(2023, 7, 30, 1, 5, 26, 402, DateTimeKind.Local).AddTicks(4952),
+                            CreatedDate = new DateTime(2023, 7, 31, 18, 52, 14, 336, DateTimeKind.Local).AddTicks(2111),
                             Description = "Yazılım dersi, bilgisayar bilimlerinin önemli bir alanıdır ve öğrencilere temel bilgisayar programlama, algoritma oluşturma, veri yapıları, yazılım mühendisliği ve uygulama geliştirme konularında bilgi sağlar. Bu ders, öğrencilere problem çözme becerileri kazandırarak mantıksal düşünce ve analitik yeteneklerini geliştirir. Yazılım dersi aynı zamanda modern teknoloji dünyasında önemli bir role sahip olan yazılım süreçlerini, proje yönetimini ve test etme yöntemlerini de kapsar. Öğrenciler, çeşitli programlama dilleri ve yazılım araçlarını kullanarak uygulamalar geliştirerek pratik deneyim elde eder. Bu ders, gelecekteki teknoloji liderleri ve yazılım geliştiricileri için temel bir adımdır.",
                             ImageUrl = "29.png",
                             InstructorId = 12,
                             IsActive = true,
                             IsDeleted = false,
                             IsHome = true,
-                            ModifiedDate = new DateTime(2023, 7, 30, 1, 5, 26, 402, DateTimeKind.Local).AddTicks(4952),
+                            ModifiedDate = new DateTime(2023, 7, 31, 18, 52, 14, 336, DateTimeKind.Local).AddTicks(2112),
                             Name = "Serverless",
                             Price = 900m,
                             Time = 200,
@@ -1065,14 +1065,14 @@ namespace EducationApp.Data.Migrations
                         new
                         {
                             Id = 30,
-                            CreatedDate = new DateTime(2023, 7, 30, 1, 5, 26, 402, DateTimeKind.Local).AddTicks(4954),
+                            CreatedDate = new DateTime(2023, 7, 31, 18, 52, 14, 336, DateTimeKind.Local).AddTicks(2113),
                             Description = "Yazılım dersi, bilgisayar bilimlerinin önemli bir alanıdır ve öğrencilere temel bilgisayar programlama, algoritma oluşturma, veri yapıları, yazılım mühendisliği ve uygulama geliştirme konularında bilgi sağlar. Bu ders, öğrencilere problem çözme becerileri kazandırarak mantıksal düşünce ve analitik yeteneklerini geliştirir. Yazılım dersi aynı zamanda modern teknoloji dünyasında önemli bir role sahip olan yazılım süreçlerini, proje yönetimini ve test etme yöntemlerini de kapsar. Öğrenciler, çeşitli programlama dilleri ve yazılım araçlarını kullanarak uygulamalar geliştirerek pratik deneyim elde eder. Bu ders, gelecekteki teknoloji liderleri ve yazılım geliştiricileri için temel bir adımdır.",
                             ImageUrl = "30.png",
                             InstructorId = 12,
                             IsActive = true,
                             IsDeleted = false,
                             IsHome = true,
-                            ModifiedDate = new DateTime(2023, 7, 30, 1, 5, 26, 402, DateTimeKind.Local).AddTicks(4954),
+                            ModifiedDate = new DateTime(2023, 7, 31, 18, 52, 14, 336, DateTimeKind.Local).AddTicks(2114),
                             Name = "Cloud Storage",
                             Price = 900m,
                             Time = 200,
@@ -1273,17 +1273,38 @@ namespace EducationApp.Data.Migrations
                     b.HasData(
                         new
                         {
-                            Id = "594d2536-8cfb-4008-b21e-68d136e51325",
+                            Id = "50a6c984-a78f-4f18-8070-b8f0312c2d3c",
                             Description = "Yöneticilerin rolü bu.",
                             Name = "Admin",
                             NormalizedName = "ADMIN"
                         },
                         new
                         {
-                            Id = "32e514ef-9cc0-4ac4-a39a-d9fd9fe159bf",
+                            Id = "62b3cf5a-2f6f-4d23-a1e0-793884517926",
                             Description = "Diğer tüm kullanıcıların rolü bu.",
                             Name = "User",
                             NormalizedName = "USER"
+                        },
+                        new
+                        {
+                            Id = "df9b2c03-1d13-4429-a46d-8f8348017e92",
+                            Description = "Diğer tüm kullanıcıların rolü bu.",
+                            Name = "Editor",
+                            NormalizedName = "EDITOR"
+                        },
+                        new
+                        {
+                            Id = "6330efbd-2599-4dab-bb9d-5a71825362f5",
+                            Description = "Diğer tüm kullanıcıların rolü bu.",
+                            Name = "Normal",
+                            NormalizedName = "NORMAL"
+                        },
+                        new
+                        {
+                            Id = "47f06573-1fab-4683-b475-7dc8e2c56965",
+                            Description = "Diğer tüm kullanıcıların rolü bu.",
+                            Name = "Strict",
+                            NormalizedName = "STRICT"
                         });
                 });
 
@@ -1374,11 +1395,11 @@ namespace EducationApp.Data.Migrations
                     b.HasData(
                         new
                         {
-                            Id = "851b1556-e5a2-472c-8259-8c2d9f1a1596",
+                            Id = "8a4a0eef-83b7-47c8-9b12-b2e7ebbff429",
                             AccessFailedCount = 0,
                             Address = "Göztepe Mh. 2366 Sk. No:7 D:56 Bağcılar",
                             City = "İstanbul",
-                            ConcurrencyStamp = "87eea941-e538-4af4-95f6-1fb957d9c63f",
+                            ConcurrencyStamp = "21e8507b-337d-4922-9ddc-db4156bff062",
                             DateOfBirth = new DateTime(1995, 3, 2, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Email = "onrustaoglu@gmail.com",
                             EmailConfirmed = true,
@@ -1389,7 +1410,7 @@ namespace EducationApp.Data.Migrations
                             Name = " ",
                             NormalizedEmail = "ONRUSTAOGLU@GMAIL.COM",
                             NormalizedUserName = "ADMIN",
-                            PasswordHash = "AQAAAAIAAYagAAAAEFvENYUWPQmjk7eeHcu+5FC6AJgnmr1sia2Yxm9gjojYWfadMFK5XToJ5xTyn4suzg==",
+                            PasswordHash = "AQAAAAIAAYagAAAAEK12IqM40c9tgRMBvLSG1Qy1wBb/wTYTQFDqoZ8zu6aFWkEADiO+SgHhgGe8iq8A5w==",
                             PhoneNumberConfirmed = false,
                             SecurityStamp = "",
                             TwoFactorEnabled = false,
@@ -1397,11 +1418,11 @@ namespace EducationApp.Data.Migrations
                         },
                         new
                         {
-                            Id = "6fb96065-6aed-4524-bf63-2ca5e50a1168",
+                            Id = "933bf8c3-7eed-4314-bd55-e25635b8cccd",
                             AccessFailedCount = 0,
                             Address = "Ferit Sidal Sk No:13/19 Yenibosna",
                             City = "İstanbul",
-                            ConcurrencyStamp = "0b37961b-36fc-429f-83ec-9e8ddd721014",
+                            ConcurrencyStamp = "cde2bf2b-0f66-497d-a4b7-63fd2474408d",
                             DateOfBirth = new DateTime(1995, 3, 30, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Email = "serkanselek34@gmail.com",
                             EmailConfirmed = true,
@@ -1412,7 +1433,7 @@ namespace EducationApp.Data.Migrations
                             Name = " ",
                             NormalizedEmail = "SERKANSELEK34@GMAIL.COM",
                             NormalizedUserName = "USER",
-                            PasswordHash = "AQAAAAIAAYagAAAAEFMTd5FYJ7pgYvkF8qlf9oNJFUDR+yyWdyJtEsyd3duJuOrKasDL7qsauugXk1Wphg==",
+                            PasswordHash = "AQAAAAIAAYagAAAAEKh1Mqv88Rv+hRgWgocEP6orN+B4CyMfV/VFagNwGPUC0dOkUkkhKskTjReRSrqe9w==",
                             PhoneNumberConfirmed = false,
                             SecurityStamp = "",
                             TwoFactorEnabled = false,
@@ -1505,13 +1526,13 @@ namespace EducationApp.Data.Migrations
                     b.HasData(
                         new
                         {
-                            UserId = "851b1556-e5a2-472c-8259-8c2d9f1a1596",
-                            RoleId = "594d2536-8cfb-4008-b21e-68d136e51325"
+                            UserId = "8a4a0eef-83b7-47c8-9b12-b2e7ebbff429",
+                            RoleId = "50a6c984-a78f-4f18-8070-b8f0312c2d3c"
                         },
                         new
                         {
-                            UserId = "6fb96065-6aed-4524-bf63-2ca5e50a1168",
-                            RoleId = "32e514ef-9cc0-4ac4-a39a-d9fd9fe159bf"
+                            UserId = "933bf8c3-7eed-4314-bd55-e25635b8cccd",
+                            RoleId = "62b3cf5a-2f6f-4d23-a1e0-793884517926"
                         });
                 });
 

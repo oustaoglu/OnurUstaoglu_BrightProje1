@@ -9,7 +9,7 @@ namespace EducationApp.MVC.Areas.Admin.Models
     {
         [DisplayName("Ad")]
         [Required(ErrorMessage = "{0} alanı boş bırakılamalıdır.")]
-        [MinLength(2, ErrorMessage = "{0} alanı en az {1} karakter uzunluğunda olmalıdır.")]
+        [MinLength(5, ErrorMessage = "{0} alanı en az {1} karakter uzunluğunda olmalıdır.")]
         [MaxLength(50, ErrorMessage = "{0} alanı en fazla {1} karakter uzunluğunda olmalıdır.")]
         public string FirstName { get; set; }
 

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\onrus\\OneDrive\\Belgeler\\OnurUstaoglu_BrightProje1\\EducationApp\\EducationApp.Core\\EducationApp.Core.csproj": {}
+    "D:\\Git\\OnurUstaoglu_BrightProje1\\EducationApp\\EducationApp.Core\\EducationApp.Core.csproj": {}
   },
   "projects": {
-    "C:\\Users\\onrus\\OneDrive\\Belgeler\\OnurUstaoglu_BrightProje1\\EducationApp\\EducationApp.Core\\EducationApp.Core.csproj": {
+    "D:\\Git\\OnurUstaoglu_BrightProje1\\EducationApp\\EducationApp.Core\\EducationApp.Core.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\onrus\\OneDrive\\Belgeler\\OnurUstaoglu_BrightProje1\\EducationApp\\EducationApp.Core\\EducationApp.Core.csproj",
+        "projectUniqueName": "D:\\Git\\OnurUstaoglu_BrightProje1\\EducationApp\\EducationApp.Core\\EducationApp.Core.csproj",
         "projectName": "EducationApp.Core",
-        "projectPath": "C:\\Users\\onrus\\OneDrive\\Belgeler\\OnurUstaoglu_BrightProje1\\EducationApp\\EducationApp.Core\\EducationApp.Core.csproj",
+        "projectPath": "D:\\Git\\OnurUstaoglu_BrightProje1\\EducationApp\\EducationApp.Core\\EducationApp.Core.csproj",
         "packagesPath": "C:\\Users\\onrus\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\onrus\\OneDrive\\Belgeler\\OnurUstaoglu_BrightProje1\\EducationApp\\EducationApp.Core\\obj\\",
+        "outputPath": "D:\\Git\\OnurUstaoglu_BrightProje1\\EducationApp\\EducationApp.Core\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\onrus\\AppData\\Roaming\\NuGet\\NuGet.Config",

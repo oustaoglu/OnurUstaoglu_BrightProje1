@@ -33,12 +33,6 @@ namespace EducationApp.Business.Concrete
 			_instructorRepository.Delete(instructor);
 		}
 
-		public async Task<List<Instructor>> GetAllActiveInstructorsAsync(string categoryUrl = null, string instructorUrl = null)
-		{
-			var result = await _instructorRepository.GetAllActiveInstructorsAsync(categoryUrl, instructorUrl);
-			return result;
-		}
-
 		public async Task<List<Instructor>> GetAllAsync()
 		{
 			var result = await _instructorRepository.GetAllAsync();
@@ -54,18 +48,6 @@ namespace EducationApp.Business.Concrete
 		public async Task<Instructor> GetByIdAsync(int id)
 		{
 			var result = await _instructorRepository.GetByIdAsync(id);
-			return result;
-		}
-
-		public async Task<Instructor> GetInstructorsByUrlAsync(string instructorUrl)
-		{
-			var result = await _instructorRepository.GetInstructorsByUrlAsync(instructorUrl);
-			return result;
-		}
-
-		public async Task<List<Instructor>> GetInstructorsWithFullDataAsync(bool? isActive = null)
-		{
-			var result = await _instructorRepository.GetInstructorsWithFullDataAsync(isActive);
 			return result;
 		}
 

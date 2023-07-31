@@ -3,15 +3,15 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.6.33815.320
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EducationApp.MVC", "EducationApp.MVC\EducationApp.MVC.csproj", "{901B48A6-DE82-49BE-80C6-94025C37EA2F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EducationApp.MVC", "EducationApp.MVC\EducationApp.MVC.csproj", "{901B48A6-DE82-49BE-80C6-94025C37EA2F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EducationApp.Business", "EducationApp.Business\EducationApp.Business.csproj", "{69C30EF7-8ABA-45A7-A941-8D318EADFEDD}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EducationApp.Business", "EducationApp.Business\EducationApp.Business.csproj", "{69C30EF7-8ABA-45A7-A941-8D318EADFEDD}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EducationApp.Data", "EducationApp.Data\EducationApp.Data.csproj", "{76C9A689-24CD-4D5A-9A95-260EF296B55B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EducationApp.Data", "EducationApp.Data\EducationApp.Data.csproj", "{76C9A689-24CD-4D5A-9A95-260EF296B55B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EducationApp.Entity", "EducationApp.Entity\EducationApp.Entity.csproj", "{56794F13-F29D-44E4-B184-103F299F8D09}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EducationApp.Entity", "EducationApp.Entity\EducationApp.Entity.csproj", "{56794F13-F29D-44E4-B184-103F299F8D09}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EducationApp.Core", "EducationApp.Core\EducationApp.Core.csproj", "{8AB268FC-4C2B-4DCE-BB02-6E0838D618F7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EducationApp.Core", "EducationApp.Core\EducationApp.Core.csproj", "{8AB268FC-4C2B-4DCE-BB02-6E0838D618F7}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

@@ -11,42 +11,46 @@ using Microsoft.AspNetCore.Mvc.Rendering;
 namespace EducationApp.MVC.Areas.Admin.Controllers
 {
     [Area("Admin")]
-	[Authorize(Roles = "Admin")]
-	public class InstructorController : Controller
+    [Authorize(Roles = "Admin")]
+    public class InstructorController : Controller
     {
         private readonly IInstructorService _instructorManager;
         private readonly IProductService _productManager;
         private readonly INotyfService _notyf;
 
-		public InstructorController(IInstructorService instructorManager, INotyfService notyf, IProductService productManager)
-		{
-			_instructorManager = instructorManager;
-			_notyf = notyf;
-			_productManager = productManager;
-		}
-
-		#region Listeleme
-		[HttpGet]
+        public InstructorController(IInstructorService instructorManager, INotyfService notyf, IProductService productManager)
+        {
+            _instructorManager = instructorManager;
+            _notyf = notyf;
+            _productManager = productManager;
+        }
+        #region Listeleme
+        [HttpGet]
         public async Task<IActionResult> Index()
         {
             List<Instructor> instructorList = await _instructorManager.GetAllInstructorsAsync(false);
             List<InstructorViewModel> instructorViewModelList = instructorList
-                .Select(a => new InstructorViewModel
+                .Select(i => new InstructorViewModel
                 {
-                    Id = a.Id,
-                    Name = a.FirstName + " " + a.LastName,
-                    CreatedDate = a.CreatedDate,
-                    ModifiedDate = a.ModifiedDate,
-                    About = a.About,
-                    IsActive = a.IsActive,
-                    Url = a.Url,
-                    PhotoUrl = a.PhotoUrl,
-                    BirthOfYear = a.BirthOfYear
+                    Id = i.Id,
+                    Name = i.FirstName + " " + i.LastName,
+                    CreatedDate = i.CreatedDate,
+                    ModifiedDate = i.ModifiedDate,
+                    About = i.About,
+                    IsActive = i.IsActive,
+                    Url = i.Url,
+                    PhotoUrl = i.PhotoUrl,
+                    BirthOfYear = i.BirthOfYear
                 }).ToList();
-            return View(instructorViewModelList);
+            InstructorListViewModel model = new InstructorListViewModel
+            {
+                InstructorViewModelList = instructorViewModelList,
+                SourceAction = "Index"
+            };
+            return View(model);
         }
         #endregion
-        #region Yeni Eğitmen
+        #region Yeni Yazar
         [HttpGet]
         public IActionResult Create()
         {
@@ -76,8 +80,7 @@ namespace EducationApp.MVC.Areas.Admin.Controllers
                     IsActive = instructorAddViewModel.IsActive,
                     BirthOfYear = instructorAddViewModel.BirthOfYear,
                     Url = Jobs.GetUrl(name),
-                    PhotoUrl = "default-profile.jpg"
-
+                    PhotoUrl = "1.png"
                 };
                 await _instructorManager.CreateWithUrl(instructor);
                 _notyf.Success("Yazar kaydı başarıyla tamamlanmıştır.");
@@ -93,7 +96,7 @@ namespace EducationApp.MVC.Areas.Admin.Controllers
         }
 
         #endregion
-        #region Eğitmen Güncelleme
+        #region Yazar Güncelleme
         [HttpGet]
         public async Task<IActionResult> Edit(int id)
         {
@@ -113,6 +116,7 @@ namespace EducationApp.MVC.Areas.Admin.Controllers
                 IsActive = instructor.IsActive,
                 IsDeleted = instructor.IsDeleted,
                 Url = instructor.Url,
+                PhotoUrl = instructor.PhotoUrl,
                 Years = years.Select(y => new SelectListItem
                 {
                     Text = y.ToString(),
@@ -130,14 +134,25 @@ namespace EducationApp.MVC.Areas.Admin.Controllers
             {
                 Instructor instructor = await _instructorManager.GetByIdAsync(instructorEditViewModel.Id);
                 if (instructor == null) { return NotFound(); }
+                string photoUrl = "";
+                string url = Jobs.GetUrl(instructorEditViewModel.FirstName + "-" + instructorEditViewModel.LastName);
+                if (instructorEditViewModel.PhotoFile == null)
+                {
+                    photoUrl = instructor.PhotoUrl;
+                }
+                else
+                {
+                    photoUrl = Jobs.UploadImage(instructorEditViewModel.PhotoFile, url, "(instructors");
+                }
                 instructor.FirstName = instructorEditViewModel.FirstName;
                 instructor.LastName = instructorEditViewModel.LastName;
                 instructor.About = instructorEditViewModel.About;
                 instructor.BirthOfYear = instructorEditViewModel.BirthOfYear;
                 instructor.IsActive = instructorEditViewModel.IsActive;
                 instructor.IsDeleted = instructorEditViewModel.IsDeleted;
-                instructorEditViewModel.Url = Jobs.GetUrl(instructorEditViewModel.FirstName + "-" + instructorEditViewModel.LastName);
+                instructorEditViewModel.Url = url;
                 instructor.Url = instructorEditViewModel.Url;
+                instructor.PhotoUrl = photoUrl;
                 instructor.ModifiedDate = DateTime.Now;
                 _instructorManager.Update(instructor);
                 _notyf.Success("Yazar bilgisi başarıyla güncellenmiştir.", 2);
@@ -167,7 +182,7 @@ namespace EducationApp.MVC.Areas.Admin.Controllers
             return RedirectToAction("Index");
         }
         #endregion
-        #region Eğitmen Kalıcı Silme
+        #region Yazar Kalıcı Silme
         [HttpGet]
         public async Task<IActionResult> Delete(int id)
         {
@@ -193,10 +208,11 @@ namespace EducationApp.MVC.Areas.Admin.Controllers
             Instructor instructor = await _instructorManager.GetByIdAsync(id);
             if (instructor == null) return NotFound();
             _instructorManager.Delete(instructor);
+            await _productManager.UpdateInstructorOfProducts();
             return RedirectToAction("Index");
         }
         #endregion
-        #region Eğitmen Soft Silme
+        #region Yazar Soft Silme
         public async Task<IActionResult> SoftDelete(int id)
         {
             Instructor instructor = await _instructorManager.GetByIdAsync(id);
@@ -204,37 +220,39 @@ namespace EducationApp.MVC.Areas.Admin.Controllers
             {
                 return NotFound();
             }
-            instructor.IsDeleted = true;
+            instructor.IsDeleted = !instructor.IsDeleted;
             instructor.ModifiedDate = DateTime.Now;
             _instructorManager.Update(instructor);
-            return RedirectToAction("Index");
+            string message = instructor.IsDeleted ? "Kayıt silinmiştir. Geri almak için ilgili bölüme geçiniz." : "Kayıt geri alınmıştır.";
+            _notyf.Success(message);
+            return instructor.IsDeleted ? RedirectToAction("Index") : RedirectToAction("DeletedIndex");
         }
-		#endregion
-		#region Silinmiş Eğitmenleri Listeleme
-		[HttpGet]
-		public async Task<IActionResult> DeletedIndex()
-		{
-			List<Instructor> instructorList = await _instructorManager.GetAllInstructorsAsync(true);
-			List<InstructorViewModel> instructorViewModelList = instructorList
-				.Select(a => new InstructorViewModel
-				{
-					Id = a.Id,
-					Name = a.FirstName + " " + a.LastName,
-					CreatedDate = a.CreatedDate,
-					ModifiedDate = a.ModifiedDate,
-					About = a.About,
-					IsActive = a.IsActive,
-					Url = a.Url,
-					PhotoUrl = a.PhotoUrl,
-					BirthOfYear = a.BirthOfYear
-				}).ToList();
-			InstructorListViewModel model = new InstructorListViewModel
-			{
-				InstructorViewModelList = instructorViewModelList,
-				SourceAction = "DeletedIndex"
-			};
-			return View("Index", model);
-		}
-		#endregion
-	}
+        #endregion
+        #region Silinmiş Yazarları Listeleme
+        [HttpGet]
+        public async Task<IActionResult> DeletedIndex()
+        {
+            List<Instructor> instructorList = await _instructorManager.GetAllInstructorsAsync(true);
+            List<InstructorViewModel> instructorViewModelList = instructorList
+                .Select(a => new InstructorViewModel
+                {
+                    Id = a.Id,
+                    Name = a.FirstName + " " + a.LastName,
+                    CreatedDate = a.CreatedDate,
+                    ModifiedDate = a.ModifiedDate,
+                    About = a.About,
+                    IsActive = a.IsActive,
+                    Url = a.Url,
+                    PhotoUrl = a.PhotoUrl,
+                    BirthOfYear = a.BirthOfYear
+                }).ToList();
+            InstructorListViewModel model = new InstructorListViewModel
+            {
+                InstructorViewModelList = instructorViewModelList,
+                SourceAction = "DeletedIndex"
+            };
+            return View("Index", model);
+        }
+        #endregion
+    }
 }

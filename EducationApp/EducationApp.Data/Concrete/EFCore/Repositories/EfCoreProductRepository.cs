@@ -27,12 +27,12 @@ namespace EducationApp.Data.Concrete.EFCore.Repositories
 		{
 			var productCategoryIds = await Context
 				.ProductCategories
-				.Select(bc => bc.ProductId)
+				.Select(pc => pc.ProductId)
 				.Distinct()
 				.ToListAsync();
 			var productIds = await Context
 				.Products
-				.Select(b => b.Id)
+				.Select(p => p.Id)
 				.ToListAsync();
 			List<int> different = productIds.Except(productCategoryIds).ToList();
 			await Context.ProductCategories.AddRangeAsync(different.Select(d => new ProductCategory
@@ -60,21 +60,21 @@ namespace EducationApp.Data.Concrete.EFCore.Repositories
 		{
 			var result = Context
 				.Products
-				.Where(b => b.IsActive && !b.IsDeleted)
-				.Include(b => b.Instructor)
+				.Where(p => p.IsActive && !p.IsDeleted)
+				.Include(p => p.Instructor)
 				.AsQueryable();
 			if (categoryUrl != null)
 			{
 				result = result
-					.Include(b => b.ProductCategories)
-					.ThenInclude(bc => bc.Category)
-					.Where(b => b.ProductCategories.Any(bc => bc.Category.Url == categoryUrl))
+					.Include(p => p.ProductCategories)
+					.ThenInclude(pc => pc.Category)
+					.Where(p => p.ProductCategories.Any(pc => pc.Category.Url == categoryUrl))
 					.AsQueryable();
 			}
 			if (instructorUrl != null)
 			{
 				result = result
-					.Where(b => b.Instructor.Url == instructorUrl)
+					.Where(p => p.Instructor.Url == instructorUrl)
 					.AsQueryable();
 			}
 			return await result.ToListAsync();
@@ -84,8 +84,8 @@ namespace EducationApp.Data.Concrete.EFCore.Repositories
 		{
 			var result = await Context
 				.Products
-				.Where(b => b.IsDeleted == isDeleted)
-				.Include(b => b.Instructor)
+				.Where(p => p.IsDeleted == isDeleted)
+				.Include(p => p.Instructor)
 				.ToListAsync();
 			return result;
 		}
@@ -94,10 +94,10 @@ namespace EducationApp.Data.Concrete.EFCore.Repositories
 		{
 			var result = await Context
 				.Products
-				.Where(b => b.IsActive && !b.IsDeleted && b.Id == id)
-				.Include(b => b.ProductCategories)
+				.Where(p => p.IsActive && !p.IsDeleted && p.Id == id)
+				.Include(p => p.ProductCategories)
 				.ThenInclude(bc => bc.Category)
-				.Include(b => b.Instructor)
+				.Include(p => p.Instructor)
 				.FirstOrDefaultAsync();	
 			return result;
 		}
@@ -106,10 +106,10 @@ namespace EducationApp.Data.Concrete.EFCore.Repositories
 		{
 			var result = await Context
 				.Products
-				.Where(b => b.IsActive && !b.IsDeleted && b.Url == productUrl)
-				.Include(b => b.ProductCategories)
-				.ThenInclude(bc => bc.Category)
-				.Include(b => b.Instructor)
+				.Where(p => p.IsActive && !p.IsDeleted && p.Url == productUrl)
+				.Include(p => p.ProductCategories)
+				.ThenInclude(pc => pc.Category)
+				.Include(p =>p.Instructor)
 				.FirstOrDefaultAsync();
 			return result;
 		}
@@ -118,26 +118,26 @@ namespace EducationApp.Data.Concrete.EFCore.Repositories
 		{
 			var result = Context
 				.Products
-				.Where(b => !b.IsDeleted)
+				.Where(p => !p.IsDeleted)
 				.AsQueryable();
 
 			if (isHome != null)
 			{
 				result = result
-					.Where(b => b.IsHome == isHome)
+					.Where(p => p.IsHome == isHome)
 					.AsQueryable();
 			}
 
 			if (isActive != null)
 			{
 				result = result
-					.Where(b => b.IsActive == isActive)
+					.Where(p => p.IsActive == isActive)
 					.AsQueryable();
 			}
 			result = result
-				.Include(b => b.ProductCategories)
-				.ThenInclude(bc => bc.Category)
-				.Include(b => b.Instructor)
+				.Include(p => p.ProductCategories)
+				.ThenInclude(pc => pc.Category)
+				.Include(p => p.Instructor)
 				.AsQueryable();
 			return await result.ToListAsync();
 		}
@@ -146,7 +146,6 @@ namespace EducationApp.Data.Concrete.EFCore.Repositories
 		{
 			var products = await Context
 				.Products
-				//.Where(b => b.InstructorId == null)
 				.ToListAsync();
 			foreach (var product in products)
 			{
@@ -158,26 +157,26 @@ namespace EducationApp.Data.Concrete.EFCore.Repositories
 
 		public void UpdateProduct(Product product)
 		{
-			Product oldBook = Context
+			Product oldProduct = Context
 				.Products
-				.Include(b => b.ProductCategories)
-				.ThenInclude(bc => bc.Category)
-				.Include(b => b.Instructor)
-				.Where(b => b.Id == product.Id)
+				.Include(p => p.ProductCategories)
+				.ThenInclude(pc => pc.Category)
+				.Include(p => p.Instructor)
+				.Where(p => p.Id == product.Id)
 				.FirstOrDefault();
-			oldBook.Name = product.Name;
-			oldBook.Description = product.Description;
-			oldBook.Price = product.Price;
-			oldBook.IsActive = product.IsActive;
-			oldBook.IsHome = product.IsHome;
-			oldBook.IsDeleted = product.IsDeleted;
-			oldBook.InstructorId = product.InstructorId;
-			oldBook.Url = product.Url;
-			oldBook.ModifiedDate = DateTime.Now;
-			oldBook.ProductCategories = product.ProductCategories;
-			oldBook.ImageUrl = product.ImageUrl;
+			oldProduct.Name = product.Name;
+			oldProduct.Description = product.Description;
+			oldProduct.Price = product.Price;
+			oldProduct.IsActive = product.IsActive;
+			oldProduct.IsHome = product.IsHome;
+			oldProduct.IsDeleted = product.IsDeleted;
+			oldProduct.InstructorId = product.InstructorId;
+			oldProduct.Url = product.Url;
+			oldProduct.ModifiedDate = DateTime.Now;
+			oldProduct.ProductCategories = product.ProductCategories;
+			oldProduct.ImageUrl = product.ImageUrl;
 
-			Context.Products.Update(oldBook);
+			Context.Products.Update(oldProduct);
 			Context.SaveChanges();
 		}
 	}

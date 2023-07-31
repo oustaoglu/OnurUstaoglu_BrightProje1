@@ -30,23 +30,6 @@ namespace EducationApp.Data.Concrete.EFCore.Repositories
             await Context.SaveChangesAsync();
         }
 
-        public async Task<List<Instructor>> GetAllActiveInstructorsAsync(string categoryUrl, string productUrl)
-        {
-
-            var result = Context
-                .Instructors
-                .Where(p => p.IsActive && !p.IsDeleted)
-                .Include(p => p.Products)
-                .AsQueryable();
-            if (categoryUrl != null)
-            {
-                result = result
-                    .Include(p => p.Products)
-                    .AsQueryable();
-            }
-            return await result.ToListAsync();
-        }
-
         public async Task<List<Instructor>> GetAllInstructorsAsync(bool isDeleted, bool? isActive)
         {
             var result = Context
@@ -59,35 +42,6 @@ namespace EducationApp.Data.Concrete.EFCore.Repositories
                     .Where(i => i.IsActive == isActive)
                     .AsQueryable();
             }
-            return await result.ToListAsync();
-        }
-
-        public async Task<Instructor> GetInstructorsByUrlAsync(string url)
-        {
-            var result = await Context
-                .Instructors
-                .Where(b => b.IsActive && !b.IsDeleted && b.Url == url)
-                .FirstOrDefaultAsync();
-            return result;
-        }
-
-        public async Task<List<Instructor>> GetInstructorsWithFullDataAsync(bool? isActive)
-        {
-            var result = Context
-                .Instructors
-                .Where(b => !b.IsDeleted)
-                .AsQueryable();
-
-            if (isActive != null)
-            {
-                result = result
-                    .Where(b => b.IsActive == isActive)
-                    .AsQueryable();
-            }
-            result = result
-                .Include(b => b.Products)
-                .AsQueryable();
-
             return await result.ToListAsync();
         }
     }

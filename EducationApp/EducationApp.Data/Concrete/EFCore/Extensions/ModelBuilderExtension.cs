@@ -16,9 +16,12 @@ namespace EducationApp.Data.Concrete.EfCore.Extensions
             #region Rol Bilgileri
             List<Role> roles = new List<Role>
             {
-				new Role { Name="Admin", Description="Yöneticilerin rolü bu.", NormalizedName="ADMIN"},
-				new Role { Name="User", Description="Diğer tüm kullanıcıların rolü bu.", NormalizedName="USER"},
-			};
+                new Role { Name="Admin", Description="Yöneticilerin rolü bu.", NormalizedName="ADMIN"},
+                new Role { Name="User", Description="Diğer tüm kullanıcıların rolü bu.", NormalizedName="USER"},
+                new Role { Name="Editor", Description="Diğer tüm kullanıcıların rolü bu.", NormalizedName="EDITOR"},
+                new Role { Name="Normal", Description="Diğer tüm kullanıcıların rolü bu.", NormalizedName="NORMAL"},
+                new Role { Name="Strict", Description="Diğer tüm kullanıcıların rolü bu.", NormalizedName="STRICT"}
+            };
             modelBuilder.Entity<Role>().HasData(roles);
             #endregion
             #region Kullanıcı Bilgileri

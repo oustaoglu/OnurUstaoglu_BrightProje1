@@ -13,5 +13,6 @@ namespace EducationApp.Business.Abstract
         Task AddToCart(string userId, int productId, int quantity);
         Task<Cart> GetByIdAsync(int id);
         Task<Cart> GetCartByUserId(string id);
-	}
+        Task DeleteAsync(string userId);
+    }
 }

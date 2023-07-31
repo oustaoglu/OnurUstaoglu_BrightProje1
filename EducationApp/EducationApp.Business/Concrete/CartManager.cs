@@ -23,6 +23,12 @@ namespace EducationApp.Business.Concrete
             await _cartRepository.AddToCartAsync(userId, productId, quantity);
         }
 
+        public async Task DeleteAsync(string userId)
+        {
+            var cart = await GetCartByUserId(userId);
+            _cartRepository.Delete(cart);
+        }
+
         public Task<Cart> GetByIdAsync(int id)
         {
 			return _cartRepository.GetByIdAsync(id);

@@ -17,8 +17,5 @@ namespace EducationApp.Business.Abstract
 
 		Task<List<Instructor>> GetAllInstructorsAsync(bool isDeleted, bool? isActive = null);
 		Task CreateWithUrl(Instructor instructor);
-		Task<List<Instructor>> GetAllActiveInstructorsAsync(string categoryUrl = null, string instructorUrl = null);
-		Task<Instructor> GetInstructorsByUrlAsync(string instructorUrl);
-		Task<List<Instructor>> GetInstructorsWithFullDataAsync(bool? isActive = null);
 	}
 }

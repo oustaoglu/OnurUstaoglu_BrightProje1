@@ -1557,11 +1557,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\onrus\\OneDrive\\Belgeler\\OnurUstaoglu_BrightProje1\\EducationApp\\EducationApp.Data\\EducationApp.Data.csproj",
+      "projectUniqueName": "D:\\Git\\OnurUstaoglu_BrightProje1\\EducationApp\\EducationApp.Data\\EducationApp.Data.csproj",
       "projectName": "EducationApp.Data",
-      "projectPath": "C:\\Users\\onrus\\OneDrive\\Belgeler\\OnurUstaoglu_BrightProje1\\EducationApp\\EducationApp.Data\\EducationApp.Data.csproj",
+      "projectPath": "D:\\Git\\OnurUstaoglu_BrightProje1\\EducationApp\\EducationApp.Data\\EducationApp.Data.csproj",
       "packagesPath": "C:\\Users\\onrus\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\onrus\\OneDrive\\Belgeler\\OnurUstaoglu_BrightProje1\\EducationApp\\EducationApp.Data\\obj\\",
+      "outputPath": "D:\\Git\\OnurUstaoglu_BrightProje1\\EducationApp\\EducationApp.Data\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\onrus\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -1578,11 +1578,11 @@
         "net7.0": {
           "targetAlias": "net7.0",
           "projectReferences": {
-            "C:\\Users\\onrus\\OneDrive\\Belgeler\\OnurUstaoglu_BrightProje1\\EducationApp\\EducationApp.Core\\EducationApp.Core.csproj": {
-              "projectPath": "C:\\Users\\onrus\\OneDrive\\Belgeler\\OnurUstaoglu_BrightProje1\\EducationApp\\EducationApp.Core\\EducationApp.Core.csproj"
+            "D:\\Git\\OnurUstaoglu_BrightProje1\\EducationApp\\EducationApp.Core\\EducationApp.Core.csproj": {
+              "projectPath": "D:\\Git\\OnurUstaoglu_BrightProje1\\EducationApp\\EducationApp.Core\\EducationApp.Core.csproj"
             },
-            "C:\\Users\\onrus\\OneDrive\\Belgeler\\OnurUstaoglu_BrightProje1\\EducationApp\\EducationApp.Entity\\EducationApp.Entity.csproj": {
-              "projectPath": "C:\\Users\\onrus\\OneDrive\\Belgeler\\OnurUstaoglu_BrightProje1\\EducationApp\\EducationApp.Entity\\EducationApp.Entity.csproj"
+            "D:\\Git\\OnurUstaoglu_BrightProje1\\EducationApp\\EducationApp.Entity\\EducationApp.Entity.csproj": {
+              "projectPath": "D:\\Git\\OnurUstaoglu_BrightProje1\\EducationApp\\EducationApp.Entity\\EducationApp.Entity.csproj"
             }
           }
         }

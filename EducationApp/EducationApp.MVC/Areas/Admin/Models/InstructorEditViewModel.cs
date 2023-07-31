@@ -36,12 +36,12 @@ namespace EducationApp.MVC.Areas.Admin.Models
         [DisplayName("Silinmiş mi?")]
         public bool IsDeleted { get; set; }
 
-        
         public string Url { get; set; }
 
-        public string ImageUrl { get; set; } = "1.png";
+        public string PhotoUrl { get; set; }
 
         public List<SelectListItem> Years { get; set; }
+
+        public IFormFile PhotoFile { get; set; }
     }
 }
-
