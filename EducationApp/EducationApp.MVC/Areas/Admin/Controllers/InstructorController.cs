@@ -50,7 +50,7 @@ namespace EducationApp.MVC.Areas.Admin.Controllers
             return View(model);
         }
         #endregion
-        #region Yeni Yazar
+        #region Yeni Eğitmen
         [HttpGet]
         public IActionResult Create()
         {
@@ -96,7 +96,7 @@ namespace EducationApp.MVC.Areas.Admin.Controllers
         }
 
         #endregion
-        #region Yazar Güncelleme
+        #region Eğitmen Güncelleme
         [HttpGet]
         public async Task<IActionResult> Edit(int id)
         {
@@ -182,7 +182,7 @@ namespace EducationApp.MVC.Areas.Admin.Controllers
             return RedirectToAction("Index");
         }
         #endregion
-        #region Yazar Kalıcı Silme
+        #region Eğitmen Kalıcı Silme
         [HttpGet]
         public async Task<IActionResult> Delete(int id)
         {
@@ -212,7 +212,7 @@ namespace EducationApp.MVC.Areas.Admin.Controllers
             return RedirectToAction("Index");
         }
         #endregion
-        #region Yazar Soft Silme
+        #region Eğitmen Soft Silme
         public async Task<IActionResult> SoftDelete(int id)
         {
             Instructor instructor = await _instructorManager.GetByIdAsync(id);
@@ -228,7 +228,7 @@ namespace EducationApp.MVC.Areas.Admin.Controllers
             return instructor.IsDeleted ? RedirectToAction("Index") : RedirectToAction("DeletedIndex");
         }
         #endregion
-        #region Silinmiş Yazarları Listeleme
+        #region Silinmiş Eğitmenleri Listeleme
         [HttpGet]
         public async Task<IActionResult> DeletedIndex()
         {

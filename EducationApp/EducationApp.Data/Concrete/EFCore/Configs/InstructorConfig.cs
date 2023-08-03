@@ -1,4 +1,4 @@
-﻿	using EducationApp.Entity.Concrete;
+﻿using EducationApp.Entity.Concrete;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
 using System;
