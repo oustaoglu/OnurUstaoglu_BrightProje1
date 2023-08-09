@@ -1450,11 +1450,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Git\\OnurUstaoglu_BrightProje1\\EducationApp\\EducationApp.Business\\EducationApp.Business.csproj",
+      "projectUniqueName": "D:\\Git\\education-ecommerce-app\\EducationApp\\EducationApp.Business\\EducationApp.Business.csproj",
       "projectName": "EducationApp.Business",
-      "projectPath": "D:\\Git\\OnurUstaoglu_BrightProje1\\EducationApp\\EducationApp.Business\\EducationApp.Business.csproj",
+      "projectPath": "D:\\Git\\education-ecommerce-app\\EducationApp\\EducationApp.Business\\EducationApp.Business.csproj",
       "packagesPath": "C:\\Users\\onrus\\.nuget\\packages\\",
-      "outputPath": "D:\\Git\\OnurUstaoglu_BrightProje1\\EducationApp\\EducationApp.Business\\obj\\",
+      "outputPath": "D:\\Git\\education-ecommerce-app\\EducationApp\\EducationApp.Business\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\onrus\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -1471,11 +1471,11 @@
         "net7.0": {
           "targetAlias": "net7.0",
           "projectReferences": {
-            "D:\\Git\\OnurUstaoglu_BrightProje1\\EducationApp\\EducationApp.Core\\EducationApp.Core.csproj": {
-              "projectPath": "D:\\Git\\OnurUstaoglu_BrightProje1\\EducationApp\\EducationApp.Core\\EducationApp.Core.csproj"
+            "D:\\Git\\education-ecommerce-app\\EducationApp\\EducationApp.Core\\EducationApp.Core.csproj": {
+              "projectPath": "D:\\Git\\education-ecommerce-app\\EducationApp\\EducationApp.Core\\EducationApp.Core.csproj"
             },
-            "D:\\Git\\OnurUstaoglu_BrightProje1\\EducationApp\\EducationApp.Data\\EducationApp.Data.csproj": {
-              "projectPath": "D:\\Git\\OnurUstaoglu_BrightProje1\\EducationApp\\EducationApp.Data\\EducationApp.Data.csproj"
+            "D:\\Git\\education-ecommerce-app\\EducationApp\\EducationApp.Data\\EducationApp.Data.csproj": {
+              "projectPath": "D:\\Git\\education-ecommerce-app\\EducationApp\\EducationApp.Data\\EducationApp.Data.csproj"
             }
           }
         }

@@ -22,3 +22,15 @@ D:\Git\OnurUstaoglu_BrightProje1\EducationApp\EducationApp.Entity\obj\Debug\net7
 D:\Git\OnurUstaoglu_BrightProje1\EducationApp\EducationApp.Entity\obj\Debug\net7.0\refint\EducationApp.Entity.dll
 D:\Git\OnurUstaoglu_BrightProje1\EducationApp\EducationApp.Entity\obj\Debug\net7.0\EducationApp.Entity.pdb
 D:\Git\OnurUstaoglu_BrightProje1\EducationApp\EducationApp.Entity\obj\Debug\net7.0\ref\EducationApp.Entity.dll
+D:\Git\education-ecommerce-app\EducationApp\EducationApp.Entity\bin\Debug\net7.0\EducationApp.Entity.deps.json
+D:\Git\education-ecommerce-app\EducationApp\EducationApp.Entity\bin\Debug\net7.0\EducationApp.Entity.dll
+D:\Git\education-ecommerce-app\EducationApp\EducationApp.Entity\bin\Debug\net7.0\EducationApp.Entity.pdb
+D:\Git\education-ecommerce-app\EducationApp\EducationApp.Entity\obj\Debug\net7.0\EducationApp.Entity.csproj.AssemblyReference.cache
+D:\Git\education-ecommerce-app\EducationApp\EducationApp.Entity\obj\Debug\net7.0\EducationApp.Entity.GeneratedMSBuildEditorConfig.editorconfig
+D:\Git\education-ecommerce-app\EducationApp\EducationApp.Entity\obj\Debug\net7.0\EducationApp.Entity.AssemblyInfoInputs.cache
+D:\Git\education-ecommerce-app\EducationApp\EducationApp.Entity\obj\Debug\net7.0\EducationApp.Entity.AssemblyInfo.cs
+D:\Git\education-ecommerce-app\EducationApp\EducationApp.Entity\obj\Debug\net7.0\EducationApp.Entity.csproj.CoreCompileInputs.cache
+D:\Git\education-ecommerce-app\EducationApp\EducationApp.Entity\obj\Debug\net7.0\EducationApp.Entity.dll
+D:\Git\education-ecommerce-app\EducationApp\EducationApp.Entity\obj\Debug\net7.0\refint\EducationApp.Entity.dll
+D:\Git\education-ecommerce-app\EducationApp\EducationApp.Entity\obj\Debug\net7.0\EducationApp.Entity.pdb
+D:\Git\education-ecommerce-app\EducationApp\EducationApp.Entity\obj\Debug\net7.0\ref\EducationApp.Entity.dll

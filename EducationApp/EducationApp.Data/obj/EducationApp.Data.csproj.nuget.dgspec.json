@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Git\\OnurUstaoglu_BrightProje1\\EducationApp\\EducationApp.Data\\EducationApp.Data.csproj": {}
+    "D:\\Git\\education-ecommerce-app\\EducationApp\\EducationApp.Data\\EducationApp.Data.csproj": {}
   },
   "projects": {
-    "D:\\Git\\OnurUstaoglu_BrightProje1\\EducationApp\\EducationApp.Core\\EducationApp.Core.csproj": {
+    "D:\\Git\\education-ecommerce-app\\EducationApp\\EducationApp.Core\\EducationApp.Core.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Git\\OnurUstaoglu_BrightProje1\\EducationApp\\EducationApp.Core\\EducationApp.Core.csproj",
+        "projectUniqueName": "D:\\Git\\education-ecommerce-app\\EducationApp\\EducationApp.Core\\EducationApp.Core.csproj",
         "projectName": "EducationApp.Core",
-        "projectPath": "D:\\Git\\OnurUstaoglu_BrightProje1\\EducationApp\\EducationApp.Core\\EducationApp.Core.csproj",
+        "projectPath": "D:\\Git\\education-ecommerce-app\\EducationApp\\EducationApp.Core\\EducationApp.Core.csproj",
         "packagesPath": "C:\\Users\\onrus\\.nuget\\packages\\",
-        "outputPath": "D:\\Git\\OnurUstaoglu_BrightProje1\\EducationApp\\EducationApp.Core\\obj\\",
+        "outputPath": "D:\\Git\\education-ecommerce-app\\EducationApp\\EducationApp.Core\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\onrus\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -65,14 +65,14 @@
         }
       }
     },
-    "D:\\Git\\OnurUstaoglu_BrightProje1\\EducationApp\\EducationApp.Data\\EducationApp.Data.csproj": {
+    "D:\\Git\\education-ecommerce-app\\EducationApp\\EducationApp.Data\\EducationApp.Data.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Git\\OnurUstaoglu_BrightProje1\\EducationApp\\EducationApp.Data\\EducationApp.Data.csproj",
+        "projectUniqueName": "D:\\Git\\education-ecommerce-app\\EducationApp\\EducationApp.Data\\EducationApp.Data.csproj",
         "projectName": "EducationApp.Data",
-        "projectPath": "D:\\Git\\OnurUstaoglu_BrightProje1\\EducationApp\\EducationApp.Data\\EducationApp.Data.csproj",
+        "projectPath": "D:\\Git\\education-ecommerce-app\\EducationApp\\EducationApp.Data\\EducationApp.Data.csproj",
         "packagesPath": "C:\\Users\\onrus\\.nuget\\packages\\",
-        "outputPath": "D:\\Git\\OnurUstaoglu_BrightProje1\\EducationApp\\EducationApp.Data\\obj\\",
+        "outputPath": "D:\\Git\\education-ecommerce-app\\EducationApp\\EducationApp.Data\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\onrus\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -89,11 +89,11 @@
           "net7.0": {
             "targetAlias": "net7.0",
             "projectReferences": {
-              "D:\\Git\\OnurUstaoglu_BrightProje1\\EducationApp\\EducationApp.Core\\EducationApp.Core.csproj": {
-                "projectPath": "D:\\Git\\OnurUstaoglu_BrightProje1\\EducationApp\\EducationApp.Core\\EducationApp.Core.csproj"
+              "D:\\Git\\education-ecommerce-app\\EducationApp\\EducationApp.Core\\EducationApp.Core.csproj": {
+                "projectPath": "D:\\Git\\education-ecommerce-app\\EducationApp\\EducationApp.Core\\EducationApp.Core.csproj"
               },
-              "D:\\Git\\OnurUstaoglu_BrightProje1\\EducationApp\\EducationApp.Entity\\EducationApp.Entity.csproj": {
-                "projectPath": "D:\\Git\\OnurUstaoglu_BrightProje1\\EducationApp\\EducationApp.Entity\\EducationApp.Entity.csproj"
+              "D:\\Git\\education-ecommerce-app\\EducationApp\\EducationApp.Entity\\EducationApp.Entity.csproj": {
+                "projectPath": "D:\\Git\\education-ecommerce-app\\EducationApp\\EducationApp.Entity\\EducationApp.Entity.csproj"
               }
             }
           }
@@ -143,14 +143,14 @@
         }
       }
     },
-    "D:\\Git\\OnurUstaoglu_BrightProje1\\EducationApp\\EducationApp.Entity\\EducationApp.Entity.csproj": {
+    "D:\\Git\\education-ecommerce-app\\EducationApp\\EducationApp.Entity\\EducationApp.Entity.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Git\\OnurUstaoglu_BrightProje1\\EducationApp\\EducationApp.Entity\\EducationApp.Entity.csproj",
+        "projectUniqueName": "D:\\Git\\education-ecommerce-app\\EducationApp\\EducationApp.Entity\\EducationApp.Entity.csproj",
         "projectName": "EducationApp.Entity",
-        "projectPath": "D:\\Git\\OnurUstaoglu_BrightProje1\\EducationApp\\EducationApp.Entity\\EducationApp.Entity.csproj",
+        "projectPath": "D:\\Git\\education-ecommerce-app\\EducationApp\\EducationApp.Entity\\EducationApp.Entity.csproj",
         "packagesPath": "C:\\Users\\onrus\\.nuget\\packages\\",
-        "outputPath": "D:\\Git\\OnurUstaoglu_BrightProje1\\EducationApp\\EducationApp.Entity\\obj\\",
+        "outputPath": "D:\\Git\\education-ecommerce-app\\EducationApp\\EducationApp.Entity\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\onrus\\AppData\\Roaming\\NuGet\\NuGet.Config",

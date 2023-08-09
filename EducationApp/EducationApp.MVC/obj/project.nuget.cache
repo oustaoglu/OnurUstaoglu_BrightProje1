@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "lFvJkxYnJitYLFp2WHvQEBOkyTTtc2/NLjzE44ffljYfJwE/i8Tffpv8/vMg4Lm2KfQvw5+/RplPgeuEwVmdRQ==",
+  "dgSpecHash": "k30ssHh2v9Ft4Bvm7CCi02DUWTqqXReYe6QF7xUP/du1acduTPPNfKOZ8sUAilmJM1Dve/BCTvWqtwS39OeTRg==",
   "success": true,
-  "projectFilePath": "D:\\Git\\OnurUstaoglu_BrightProje1\\EducationApp\\EducationApp.MVC\\EducationApp.MVC.csproj",
+  "projectFilePath": "D:\\Git\\education-ecommerce-app\\EducationApp\\EducationApp.MVC\\EducationApp.MVC.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\onrus\\.nuget\\packages\\aspnetcorehero.toastnotification\\1.1.0\\aspnetcorehero.toastnotification.1.1.0.nupkg.sha512",
     "C:\\Users\\onrus\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",

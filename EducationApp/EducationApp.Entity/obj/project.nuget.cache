@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "3NgODtAuyZscMP/qMNzF9bo2KS1Cs7Rm15NgSs1ZHs58meWSLl6hCwyBSt/tpoYM81TV0n+4IBEcA/lnsMLwIg==",
+  "dgSpecHash": "lDl0SJDg27USnHmP6Tk+kk523kviMmIEP9LvksQUjNKjMSeCSu69+VPeJILjusw7ZVeg9T8pJfhXnI7T40rjFw==",
   "success": true,
-  "projectFilePath": "D:\\Git\\OnurUstaoglu_BrightProje1\\EducationApp\\EducationApp.Entity\\EducationApp.Entity.csproj",
+  "projectFilePath": "D:\\Git\\education-ecommerce-app\\EducationApp\\EducationApp.Entity\\EducationApp.Entity.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\onrus\\.nuget\\packages\\microsoft.aspnetcore.cryptography.internal\\7.0.9\\microsoft.aspnetcore.cryptography.internal.7.0.9.nupkg.sha512",
     "C:\\Users\\onrus\\.nuget\\packages\\microsoft.aspnetcore.cryptography.keyderivation\\7.0.9\\microsoft.aspnetcore.cryptography.keyderivation.7.0.9.nupkg.sha512",
