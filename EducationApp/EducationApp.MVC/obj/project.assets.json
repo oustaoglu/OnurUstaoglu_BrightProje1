@@ -1714,11 +1714,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Git\\education-ecommerce-app\\EducationApp\\EducationApp.MVC\\EducationApp.MVC.csproj",
+      "projectUniqueName": "C:\\Git\\education-ecommerce-app\\EducationApp\\EducationApp.MVC\\EducationApp.MVC.csproj",
       "projectName": "EducationApp.MVC",
-      "projectPath": "D:\\Git\\education-ecommerce-app\\EducationApp\\EducationApp.MVC\\EducationApp.MVC.csproj",
+      "projectPath": "C:\\Git\\education-ecommerce-app\\EducationApp\\EducationApp.MVC\\EducationApp.MVC.csproj",
       "packagesPath": "C:\\Users\\onrus\\.nuget\\packages\\",
-      "outputPath": "D:\\Git\\education-ecommerce-app\\EducationApp\\EducationApp.MVC\\obj\\",
+      "outputPath": "C:\\Git\\education-ecommerce-app\\EducationApp\\EducationApp.MVC\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\onrus\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -1729,18 +1729,17 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-        "C:\\Program Files\\dotnet\\sdk\\7.0.304\\Sdks\\Microsoft.NET.Sdk.Web\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "net7.0": {
           "targetAlias": "net7.0",
           "projectReferences": {
-            "D:\\Git\\education-ecommerce-app\\EducationApp\\EducationApp.Business\\EducationApp.Business.csproj": {
-              "projectPath": "D:\\Git\\education-ecommerce-app\\EducationApp\\EducationApp.Business\\EducationApp.Business.csproj"
+            "C:\\Git\\education-ecommerce-app\\EducationApp\\EducationApp.Business\\EducationApp.Business.csproj": {
+              "projectPath": "C:\\Git\\education-ecommerce-app\\EducationApp\\EducationApp.Business\\EducationApp.Business.csproj"
             },
-            "D:\\Git\\education-ecommerce-app\\EducationApp\\EducationApp.Core\\EducationApp.Core.csproj": {
-              "projectPath": "D:\\Git\\education-ecommerce-app\\EducationApp\\EducationApp.Core\\EducationApp.Core.csproj"
+            "C:\\Git\\education-ecommerce-app\\EducationApp\\EducationApp.Core\\EducationApp.Core.csproj": {
+              "projectPath": "C:\\Git\\education-ecommerce-app\\EducationApp\\EducationApp.Core\\EducationApp.Core.csproj"
             }
           }
         }
@@ -1797,7 +1796,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.304\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.400\\RuntimeIdentifierGraph.json"
       }
     }
   }

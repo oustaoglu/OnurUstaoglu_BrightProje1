@@ -125,7 +125,7 @@ namespace EducationApp.MVC.Controllers
                     var subject = "EducationApp Onay Maili";
                     var body = $"<h1>EducationApp Onay İşlemi</h1>" +
                         $"<p>" +
-                        $"Lütfen üyeliğiniz onaylamak için <a href='http://localhost:5200{url}'>tıklayınız</a>." +
+                        $"Lütfen üyeliğiniz onaylamak için <a href='http://localhost:5285{url}'>tıklayınız</a>." +
                         $"</p>";
                     await _smtpEmailSender.SendEmailAsync(email, subject, body);
                     #endregion
@@ -192,7 +192,7 @@ namespace EducationApp.MVC.Controllers
             var subject = "EducationApp Şifre Sıfırlama";
             var body = $"<h1>EducationApp Şifre Sıfırlama İşlemi</h1>" +
                 $"<p>" +
-                $"Lütfen şifrenizi değiştirmek için <a href='http://localhost:5200{url}'>tıklayınız</a>." +
+                $"Lütfen şifrenizi değiştirmek için <a href='http://localhost:5285{url}'>tıklayınız</a>." +
                 $"</p>";
             await _smtpEmailSender.SendEmailAsync(email, subject, body);
             #endregion
@@ -331,7 +331,6 @@ namespace EducationApp.MVC.Controllers
                     await _signInManager.RefreshSignInAsync(user);
                     return RedirectToAction("Index", "Home");
                 }
-
             }
             _notify.Warning("Bir sorun oluştu");
             List<SelectListItem> genderSelectList = new List<SelectListItem>

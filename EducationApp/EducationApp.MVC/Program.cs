@@ -28,12 +28,9 @@ builder.Services.Configure<IdentityOptions>(options =>
 	options.Password.RequireUppercase = true;
 	options.Password.RequiredLength = 6;
 	options.Password.RequireNonAlphanumeric = true;
-
 	options.Lockout.MaxFailedAccessAttempts = 3; 
 	options.Lockout.DefaultLockoutTimeSpan = TimeSpan.FromMinutes(30);
-
 	options.User.RequireUniqueEmail = true;
-
 	options.SignIn.RequireConfirmedEmail = true;
 	options.SignIn.RequireConfirmedPhoneNumber = false;
 });

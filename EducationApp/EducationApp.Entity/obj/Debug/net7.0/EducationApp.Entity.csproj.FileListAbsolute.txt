@@ -34,3 +34,15 @@ D:\Git\education-ecommerce-app\EducationApp\EducationApp.Entity\obj\Debug\net7.0
 D:\Git\education-ecommerce-app\EducationApp\EducationApp.Entity\obj\Debug\net7.0\refint\EducationApp.Entity.dll
 D:\Git\education-ecommerce-app\EducationApp\EducationApp.Entity\obj\Debug\net7.0\EducationApp.Entity.pdb
 D:\Git\education-ecommerce-app\EducationApp\EducationApp.Entity\obj\Debug\net7.0\ref\EducationApp.Entity.dll
+C:\Git\education-ecommerce-app\EducationApp\EducationApp.Entity\bin\Debug\net7.0\EducationApp.Entity.deps.json
+C:\Git\education-ecommerce-app\EducationApp\EducationApp.Entity\bin\Debug\net7.0\EducationApp.Entity.dll
+C:\Git\education-ecommerce-app\EducationApp\EducationApp.Entity\bin\Debug\net7.0\EducationApp.Entity.pdb
+C:\Git\education-ecommerce-app\EducationApp\EducationApp.Entity\obj\Debug\net7.0\EducationApp.Entity.csproj.AssemblyReference.cache
+C:\Git\education-ecommerce-app\EducationApp\EducationApp.Entity\obj\Debug\net7.0\EducationApp.Entity.GeneratedMSBuildEditorConfig.editorconfig
+C:\Git\education-ecommerce-app\EducationApp\EducationApp.Entity\obj\Debug\net7.0\EducationApp.Entity.AssemblyInfoInputs.cache
+C:\Git\education-ecommerce-app\EducationApp\EducationApp.Entity\obj\Debug\net7.0\EducationApp.Entity.AssemblyInfo.cs
+C:\Git\education-ecommerce-app\EducationApp\EducationApp.Entity\obj\Debug\net7.0\EducationApp.Entity.csproj.CoreCompileInputs.cache
+C:\Git\education-ecommerce-app\EducationApp\EducationApp.Entity\obj\Debug\net7.0\EducationApp.Entity.dll
+C:\Git\education-ecommerce-app\EducationApp\EducationApp.Entity\obj\Debug\net7.0\refint\EducationApp.Entity.dll
+C:\Git\education-ecommerce-app\EducationApp\EducationApp.Entity\obj\Debug\net7.0\EducationApp.Entity.pdb
+C:\Git\education-ecommerce-app\EducationApp\EducationApp.Entity\obj\Debug\net7.0\ref\EducationApp.Entity.dll

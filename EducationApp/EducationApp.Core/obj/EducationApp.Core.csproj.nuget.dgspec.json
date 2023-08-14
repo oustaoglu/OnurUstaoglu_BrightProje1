@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Git\\education-ecommerce-app\\EducationApp\\EducationApp.Core\\EducationApp.Core.csproj": {}
+    "C:\\Git\\education-ecommerce-app\\EducationApp\\EducationApp.Core\\EducationApp.Core.csproj": {}
   },
   "projects": {
-    "D:\\Git\\education-ecommerce-app\\EducationApp\\EducationApp.Core\\EducationApp.Core.csproj": {
+    "C:\\Git\\education-ecommerce-app\\EducationApp\\EducationApp.Core\\EducationApp.Core.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Git\\education-ecommerce-app\\EducationApp\\EducationApp.Core\\EducationApp.Core.csproj",
+        "projectUniqueName": "C:\\Git\\education-ecommerce-app\\EducationApp\\EducationApp.Core\\EducationApp.Core.csproj",
         "projectName": "EducationApp.Core",
-        "projectPath": "D:\\Git\\education-ecommerce-app\\EducationApp\\EducationApp.Core\\EducationApp.Core.csproj",
+        "projectPath": "C:\\Git\\education-ecommerce-app\\EducationApp\\EducationApp.Core\\EducationApp.Core.csproj",
         "packagesPath": "C:\\Users\\onrus\\.nuget\\packages\\",
-        "outputPath": "D:\\Git\\education-ecommerce-app\\EducationApp\\EducationApp.Core\\obj\\",
+        "outputPath": "C:\\Git\\education-ecommerce-app\\EducationApp\\EducationApp.Core\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\onrus\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -61,7 +61,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.304\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.400\\RuntimeIdentifierGraph.json"
         }
       }
     }
