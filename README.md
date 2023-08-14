@@ -1,7 +1,7 @@
-## ASP.NET Core MVC, C#, Entity Framework Core, HTML, CSS, Bootstrap ve JavaScript kullanarak geliştirdiğim proje
-- Kullanıcılar üye olduktan sonra mail onayı istenmesi ve e-mailine gönderilen linki tıkladıktan sonra üyelik aktif edilmesi
-- Ürünlerin kategorilerine göre filtrelenmesi
-- Sepete ürün ekleme/silme ve güncelleme işlemlerini yapılması
-- Sepetteki ürünlerin detayı ve onay verildikten sonra ödeme yapılabilmesi (iyzico entegrasyonu yapılarak test edilmiştir)
-- Üyelerin göremeyeceği admin paneli hazırlanmış olup gerekli kontroller ve sipariş detayları izlenebilmektedir
-- Admin panelinde ise yetki yönetimi, yeni kategori açılması, yeni ürün girişi ve aynı zamanda düzenlenmesi ve silinmesi gibi işlemler yapılabilmektedir
+## Hi there, 👋 I want to introduce you to my application that I developed using ASP.NET Core MVC, C#, HTML, CSS, Bootstrap and JavaScript language.
+-Requesting e-mail confirmation after users become members and activating membership after clicking the link sent to their e-mail
+-Filtering products by category
+-Adding/deleting and updating products to the cart
+-Detail of the products in the basket and payment after approval (tested by iyzico integration)
+-An admin panel, which is not visible to members, has been prepared and necessary controls and order details can be monitored
+-In the admin panel, operations such as authorization management, opening a new category, new product entry, as well as editing and deleting can be done.
