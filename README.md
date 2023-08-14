@@ -1,4 +1,4 @@
-## ASP.NET Core MVC, C#, Entity Framework Core HTML, CSS, Bootstrap ve JavaScript kullanarak geliştirdiğim proje
+## ASP.NET Core MVC, C#, Entity Framework Core, HTML, CSS, Bootstrap ve JavaScript kullanarak geliştirdiğim proje
 - Kullanıcılar üye olduktan sonra mail onayı istenmesi ve e-mailine gönderilen linki tıkladıktan sonra üyelik aktif edilmesi
 - Ürünlerin kategorilerine göre filtrelenmesi
 - Sepete ürün ekleme/silme ve güncelleme işlemlerini yapılması
